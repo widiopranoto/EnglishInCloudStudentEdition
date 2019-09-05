@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>English in Cloud</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="w3schools/w3css/4/w3.css">
+    <link rel="stylesheet" href="ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/eic_green_16x16.png" type="image/png" sizes="16x16">
+    <script src="w3schools/lib/w3.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class="w3-container">
+    <h2>Testing W3.JS with CSS</h2>
+
+    <p id="id01" class="w3-xlarge">{{result}}
+    </p>
+
+    <script>
+        var inputGAS =
+            "https: //script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?";
+        var inputUrlSpreadSheet =
+            'https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
+        var inputNamaSheet = 'login';
+        var action = 'login';
+        var username = '12345';
+        var password = '12345';
+        w3.getHttpObject(
+            "https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+            inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&username=" +
+            username + "&password=" + password,
+            myFunction);
+
+        function myFunction(myObject) {
+            w3.displayObject("id01", myObject);
+        }
+    </script>
+
+</body>
+
+</html>
