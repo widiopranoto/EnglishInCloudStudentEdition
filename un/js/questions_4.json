@@ -1,0 +1,760 @@
+dir_1={"title":"LISTENING COMPREHENSION",
+       "aud": "2016_dir_1.mp3",
+	   "pic": "2016_dir_1.jpg",
+	   "q"  : "",
+       "dir_a": "In this section of the test, you will have the chance to show how well you understand spoken English. There are four parts to this section with special directions for each part.",
+	   "dir_b": "Part I. Pictures",
+       "dir_c": "For each item, there is a picture in your test book and four short statements about it on the tape. They are spoken TWICE, and are not written out in your test bock, so you must listen carefully. You must choose one statement – (A), (B), (C), or (D) – that best describes the picture. Then, on your answer sheet, mark your choice.",
+	   "dir_d": "Example: Look at the following picture:",
+	   "dir_e": "A. The man is wearing a tie.</br>B. The woman is wearing a jacket.</br>C. The woman is wearing a hat.</br>D. They are both wearing glasses.",
+	   "dir_f": "Choice (A) – “The man is wearing a tie.” – best describes what is seen in the picture. Therefore, you should mark (A) on your answer sheet.",
+	   "dir_g": "Let’s begin with question number one."
+       }; 
+dir_2={"title":"",
+       "aud": "2016_dir_2.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part II. Question – Responses",
+	   "dir_b": "",
+       "dir_c": "Directions: In this part of the test, you will hear several questions spoken in English, followed by four responses, also spoken in English. The questions and responses will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand what the speakers say. You have to choose the best response to each question.",
+	   "dir_d": "Now listen to a sample question",
+	   "dir_e": "<p>You will hear: </p><p>Woman: Could you tell me how to get to the convention center? </p><p>You will also hear </p><p>Man:</p><p><form>A. No. The convention was already over.</br>B. Sure. Go two blocks and turn left.</br>C. Yes. I have to get in now.</br>D. Yes. I met her there.</br></form>",
+	   "dir_f": "Choice (B) “Sure. Go two blocks and turn left.” – is the response to the question “Could you tell me how to get to the convention center?”</p>  <p>Therefore, you should mark (B) on your answer sheet.",
+	   "dir_g": ""
+       }; 	   
+dir_3={"title":"",
+       "aud": "2016_dir_3.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part III. Short Conversations",
+	   "dir_b": "",
+       "dir_c": "Directions: In this section of the test, you will hear several short conversations. You will hear the conversations TWICE. The conversations will not be printed in your test book, so you must listen carefully to understand what the speakers say. In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.",
+	   "dir_d": "<p>Example:</p><p>You will hear: </p><p>Woman : I ordered that last Tuesday. It should have arrived by now.</p><p>Man : Maybe there was a delay in sending it. Have you called them?</p><p>Woman : Not yet. I will call them now.</p>",
+	   "dir_e": "<p>You will read</p><p>What will the woman probably do?</p><form>A. phone the company.</br>B. order the software.</br>C. cancel the order.</br>D. arrive at the store</br></form>",
+	   "dir_f": "<p>Choice (A) – “phone the company”  is the best answer to the question, “What will the woman probably do?” Therefore, you should mark (A) on your answer sheet.</p>",
+	   "dir_g": ""
+       }; 
+dir_4={"title":"",
+       "aud": "2016_dir_4.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part IV. Short Talks",
+	   "dir_b": "Directions: In this part of the test, you will hear several short monologues. Each will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand and remember what is said.</p><p>In your test book, you will read two or more questions about each short monologue. Each question will be followed by four answers. You have to choose the best answer to each question and mark it on your answer sheet.",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+dir_5={"title":"READING SECTION",
+       "aud": "",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "",
+	   "dir_b": "Directions: In this part of the test, you have to read and answer each question by choosing A, B, C, or D",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+   q_1={
+      "no": 1,
+      "type": "pictures",
+      "pic": "2013_q_1.jpg",
+      "aud": "2013_q_1.mp3",
+      "tran": "",
+      "q": "",
+      "key": "D",
+      "expl": "Terlihat sekelompok orang marching band.",
+      "A": "People are selling food",
+      "B": "The cars are parking in the parking area.",
+      "C": "They are performing on the stage.",
+      "D": "They are practicing musical instruments."
+   };
+   q_2={
+      "no": 2,
+      "type": "pictures",
+      "pic": "2013_q_2.jpg",
+      "aud": "2013_q_2.mp3",
+      "tran": "",
+      "q": "",
+      "key": "A",
+      "expl": "Terlihat bahwa makanan diperlihatkan di dalam display.",
+      "A": "The food is on display.",
+      "B": "The plates are in the jar.",
+      "C": "The woman is behind the vendor.",
+      "D": "The kitchen utensils are on the wall."
+   };
+   q_3={
+      "no": 3,
+      "type": "pictures",
+      "pic": "2013_q_3.jpg",
+      "aud": "2013_q_3.mp3",
+      "tran": "",
+      "q": "",
+      "key": "A",
+      "expl": "Wanita tersebut memakai pakaian berlengan panjang (long sleeves).",
+      "A": "The woman wears long sleeves.",
+      "B": "She has curly, black hair.",
+      "C": "The girl wears long tight trousers.",
+      "D": "She waters the plant."
+   };
+   q_4={
+      "no": 4,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2013_q_4.mp3",
+      "tran": "",
+      "q": "Let's fax this document to the head office.",
+      "key": "B",
+      "expl": "Tanya: Mari kita kirim dokumen dengan fax ke kantor pusat. Respon: Itu ide yang bagus.",
+      "A": "Yes, I have all the faxes.",
+      "B": "That's a good idea.",
+      "C": "I haven't faxed it.",
+      "D": ""
+   };
+   q_5={
+      "no": 5,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2013_q_5.mp3",
+      "tran": "",
+      "q": "How about going to concert next week.",
+      "key": "B",
+      "expl": "Tanya: Bagaimana jika kita pergi ke konser minggu depan? Respon: Saya suka itu, tapi saya sedang bersiap untuk tes.",
+      "A": "I am really concerned with the music of Indonesia.",
+      "B": "I'd love to, but I'm preparing a test.",
+      "C": "It's going to take about two hours.",
+      "D": ""
+   };
+   q_6={
+      "no": 6,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2013_q_6.mp3",
+      "tran": "",
+      "q": "Where is the location of the seminar?",
+      "key": "A",
+      "expl": "Tanya: Di mana lokasi dari seminar? Respon: Lokasinya ada di dalam gedung Billy Carla.",
+      "A": "It is in the Billy Carla building.",
+      "B": "On Friday at 10 am.",
+      "C": "Yes, it is the right location.",
+      "D": ""
+   };
+   q_7={
+      "no": 7,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2013_q_7.mp3",
+      "tran": "Man: What do you do in the morning?<br />Woman: I get up at about 7 o’clock and then drink a cup of coffee<br />Man: How do you get to work and what time do you arrive there?<br />Woman: I travel on the underground and I arrive at my office at 8:45",
+      "q": "When does the woman get up?",
+      "key": "A",
+      "expl": "Wanita tersebut bangun jam 7 pagi.",
+      "A": "At 7.",
+      "B": "At 8.45.",
+      "C": "At the office.",
+      "D": "Underground."
+   };
+   q_8={
+      "no": 8,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2013_q_8.mp3",
+      "tran": "Man: Good morning. Can I book a table for tomorrow evening?<br />Woman: Certainly Sir, How many people would that be for?<br />Man: Seven. We would be there at eleven o’clock",
+      "q": "What is the dialogue about?",
+      "key": "C",
+      "expl": "Dialog tersebut adalah tentang reservasi/pemesanan sebuah meja di sebuah restoran.",
+      "A": "A complaint.",
+      "B": "An arrangement.",
+      "C": "A reservation.",
+      "D": "A bargain."
+   };
+   q_9={
+      "no": 9,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2013_q_9.mp3",
+      "tran": "Man: Can I pay by a credit card? <br />Woman: I’m afraid you can’t because our machine isn’t working today.<br />Man: It’s okay. I’ll pay it in cash",
+      "q": "What did the man ask the woman?",
+      "key": "A",
+      "expl": "Pria tersebut menanyakan apakah ia bisa membayar dengan memakai kartu kredit.",
+      "A": "Can he pay by credit card?",
+      "B": "Can he pay in cash?",
+      "C": "Can she accept money?",
+      "D": "Is she afraid of the card?"
+   };
+   q_10={
+      "no": 10,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2013_q_10.mp3",
+      "tran": "Woman: I really think I should start looking around for another job.<br />Man: What are you talking about? I thought you like it here.<br />Woman: I used to but this is the second time I haven’t got promotion. I just don’t understand why the director chose another person. I am tired of this.",
+      "q": "What are they talking about?",
+      "key": "D",
+      "expl": "Si wanita ingin keluar dari pekerjaannya karena tidak dipromosikan untuk naik jabatan kedua kalinya dan ia merasa kesal karena yang dipilih justru orang lain.",
+      "A": "How to get a promotion in the company.",
+      "B": "Looking for another employee.",
+      "C": "The promotion of a new employee.",
+      "D": "A reason to quit a job."
+   };
+   q_11={
+      "no": 11,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2013_q_11.mp3",
+      "tran": "To use your milligram tape recorder, follow this easy instruction.<br />First, put the tape in the machine then push the play button.<br />Next, adjust the volume. To record with your new tape recorder, just push the record button.<br />Then speak into the microphone. Push the rewind button to rewind the tape.<br />Next, push “play” to listen to your recording.",
+      "q": "What is the procedure about?",
+      "key": "B",
+      "expl": "Prosedur ini menjelaskan cara mengoperasikan sebuah tape recorder.",
+      "A": "An instruction to push a button.",
+      "B": "Instruction to operate a tape recorder.",
+      "C": "How to adjust the volume.",
+      "D": "How to listen to a recording."
+   };
+   q_12={
+      "no": 12,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2013_q_12.mp3",
+      "tran": "To use your milligram tape recorder, follow this easy instruction.<br />First, put the tape in the machine then push the play button.<br />Next, adjust the volume. To record with your new tape recorder, just push the record button.<br />Then speak into the microphone. Push the rewind button to rewind the tape.<br />Next, push “play” to listen to your recording.",
+      "q": "What will you do after pushing the record button?",
+      "key": "B",
+      "expl": "Setelah menkan tombol 'record', kita bisa mulai mengucapkan yang ingin direkam ke mikrofon.",
+      "A": "Adjust the volume.",
+      "B": "Speak into the microphone.",
+      "C": "Put the tape in the machine.",
+      "D": "Push PLAY to listen to the recording."
+   };
+   q_13={
+      "no": 13,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2013_q_13.mp3",
+      "tran": "To use your milligram tape recorder, follow this easy instruction.<br />First, put the tape in the machine then push the play button.<br />Next, adjust the volume. To record with your new tape recorder, just push the record button.<br />Then speak into the microphone. Push the rewind button to rewind the tape.<br />Next, push “play” to listen to your recording.",
+      "q": "Why do we push PLAY button?",
+      "key": "B",
+      "expl": "Kita menekan tombol 'play' setelah merekam suara kita untuk mendengarkan ulang suara kita.",
+      "A": "To rewind the tape.",
+      "B": "To listen to the recording.",
+      "C": "To adjust the volume.",
+      "D": "To record the voice."
+   };
+   q_14={
+      "no": 14,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2013_q_14.mp3",
+      "tran": "Our catalogue now offers even faster service. For additional 9 dollar handling charge, we can guarantee deliver anywhere in the continental United States within two business states. The same two days services is offered to our customers in Alaska and Hawaii for 19 dollars.",
+      "q": "What is advertised?",
+      "key": "B",
+      "expl": "Yang diiklankan adalah jasa pengiriman.",
+      "A": "Package service.",
+      "B": "Delivery agent.",
+      "C": "Company's Catalogue.",
+      "D": "US Continental."
+   };
+   q_15={
+      "no": 15,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2013_q_15.mp3",
+      "tran": "Our catalogue now offers even faster service. For additional 9 dollar handling charge, we can guarantee deliver anywhere in the continental United States within two business states. The same two days services is offered to our customers in Alaska and Hawaii for 19 dollars.",
+      "q": "How much should the customer pay for two-day service in Hawaii?",
+      "key": "D",
+      "expl": "Untuk pelanggan di Hawaii dan Alaska, mereka harus membayar 19 dollar untuk mendapatkan pelayanan dua hari sampai.",
+      "A": "US $6",
+      "B": "US $8",
+      "C": "US $9",
+      "D": "US $19"
+   };
+   q_16={
+      "no": 16,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Google Inc. is an American public corporation specializing in the internet search. It also generates profits from advertising bought on its similarly free-to-use email, online mapping, office productivity, social networking and video-sharing service. Advertisement-free version is available via paid subscription. Google has more recently developed an open source web browser and mobile phone operating system. Its headquarters, often referred as Googleplex, is located in Mountain View, California. As of March 31, 2009, the company had 19,786 full-time employees. It runs thousands of servers across the world, processing millions of search requests each day and about one petabyte of user-generated data each hour.",
+      "q": "According to the text, from which of the following items does Google generate profits?",
+      "key": "B",
+      "expl": "Salah satu sumber pendapatan yang didapat oleh Google adalah pelanggan email berbayar.",
+      "A": "The internet search.",
+      "B": "Pay for user email.",
+      "C": "Unproductivity.",
+      "D": "Video game sharing services"
+   };
+   q_17={
+      "no": 17,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Google Inc. is an American public corporation specializing in the internet search. It also generates profits from advertising bought on its similarly free-to-use email, online mapping, office productivity, social networking and video-sharing service. Advertisement-free version is available via paid subscription. Google has more recently developed an open source web browser and mobile phone operating system. Its headquarters, often referred as Googleplex, is located in Mountain View, California. As of March 31, 2009, the company had 19,786 full-time employees. It runs thousands of servers across the world, processing millions of search requests each day and about one petabyte of user-generated data each hour.",
+      "q": "What is the text about?",
+      "key": "C",
+      "expl": "Teks ini adalah tentang Google.",
+      "A": "Social networking",
+      "B": "Advertisement-free version",
+      "C": "The Google overview",
+      "D": "American public corporation"
+   };
+   q_18={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "PT Intrasat is an Indonesian telecommunication network and service provider. It is a cellular company and a provider of international long distance services in Indonesia. The company also provides Musical Instrument Digital Interface (MIDI) services for domestic and regional corporate and wholesale customers as well as domestic retail customers. The company’s product and services include: cellular services, MIDI services and fixed telecommunication (voice) services. It provides GSM 900 and 1800 and 3G cellular services to approximately 59.6 million cellular subscribers throughout Indonesia. It provides broadband and narrowband MIDI services consisting on internet services and data communication services. It also offers satellite – based services such as transponder leasing and Very Small Aperture Terminal (VSAT) services and IT services, such as disaster recovery center, data center services, and Intrasat Cloud Services with infrastructure-as- a-service.<br>PT Intrasat together with its subsidiaries, provides various telecommunication services in Indonesia. The company operates in three segments: cellular, fixed telecommunication, and MIDI. The cellular segment provides voice and data transfer services through post-paid and prepaid plans. The fixed telecommunication segment offers international long distance services, fixed services, ‘sambunganlangsungjarakjauh’ services, and local fixed telephony services. The MIDI segment provides products and services, which include the internet, high speed point-to-point international and domestic digital leased line broadband and narrowband services, packet-switching service, satellite transponder leasing, and broadcasting services.",
+      "q": "According to the text, PT Intrasat ..",
+      "key": "C",
+      "expl": "Intrasat menyediakan berbagai layanan band, yaitu layanan broadband dan narrowband.",
+      "A": "Becomes a very big wholesaler in Indonesia",
+      "B": "Fixed telecommunication network and system",
+      "C": "Provides various band widths of cellular services",
+      "D": "Coordinates cellular subscribers throughout Indonesia"
+   };
+   q_19={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "PT Intrasat is an Indonesian telecommunication network and service provider. It is a cellular company and a provider of international long distance services in Indonesia. The company also provides Musical Instrument Digital Interface (MIDI) services for domestic and regional corporate and wholesale customers as well as domestic retail customers. The company’s product and services include: cellular services, MIDI services and fixed telecommunication (voice) services. It provides GSM 900 and 1800 and 3G cellular services to approximately 59.6 million cellular subscribers throughout Indonesia. It provides broadband and narrowband MIDI services consisting on internet services and data communication services. It also offers satellite – based services such as transponder leasing and Very Small Aperture Terminal (VSAT) services and IT services, such as disaster recovery center, data center services, and Intrasat Cloud Services with infrastructure-as- a-service.<br>PT Intrasat together with its subsidiaries, provides various telecommunication services in Indonesia. The company operates in three segments: cellular, fixed telecommunication, and MIDI. The cellular segment provides voice and data transfer services through post-paid and prepaid plans. The fixed telecommunication segment offers international long distance services, fixed services, ‘sambunganlangsungjarakjauh’ services, and local fixed telephony services. The MIDI segment provides products and services, which include the internet, high speed point-to-point international and domestic digital leased line broadband and narrowband services, packet-switching service, satellite transponder leasing, and broadcasting services.",
+      "q": "What does the cellular segment provide?",
+      "key": "A",
+      "expl": "Jasa seluler yang ditawarkan adalah suara dan transfer data.",
+      "A": "Voice and data transfer services",
+      "B": "Domestic narrowband services",
+      "C": "Satellite transponder leasing",
+      "D": "Fixed wireless services"
+   };
+   q_20={
+      "no": 20,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "PT Intrasat is an Indonesian telecommunication network and service provider. It is a cellular company and a provider of international long distance services in Indonesia. The company also provides Musical Instrument Digital Interface (MIDI) services for domestic and regional corporate and wholesale customers as well as domestic retail customers. The company’s product and services include: cellular services, MIDI services and fixed telecommunication (voice) services. It provides GSM 900 and 1800 and 3G cellular services to approximately 59.6 million cellular subscribers throughout Indonesia. It provides broadband and narrowband MIDI services consisting on internet services and data communication services. It also offers satellite – based services such as transponder leasing and Very Small Aperture Terminal (VSAT) services and IT services, such as disaster recovery center, data center services, and Intrasat Cloud Services with infrastructure-as- a-service.<br>PT Intrasat together with its subsidiaries, provides various telecommunication services in Indonesia. The company operates in three segments: cellular, fixed telecommunication, and MIDI. The cellular segment provides voice and data transfer services through post-paid and prepaid plans. The fixed telecommunication segment offers international long distance services, fixed services, ‘sambunganlangsungjarakjauh’ services, and local fixed telephony services. The MIDI segment provides products and services, which include the internet, high speed point-to-point international and domestic digital leased line broadband and narrowband services, packet-switching service, satellite transponder leasing, and broadcasting services.",
+      "q": "What does the writer tell about Intrasat?",
+      "key": "B",
+      "expl": "Intrasat dikatakan memiliki banyak pengguna.",
+      "A": "It is the only Indonesia’s cellular company.",
+      "B": "It has a big number of customers in Indonesia.",
+      "C": "It operates more than three different segments.",
+      "D": "It is not affiliated to other international companies."
+   };
+   q_21={
+      "no": 21,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Hop on down to Bunny Motors for our huge sales event!<br>We have the fastest and most expensive cars on the market, but you can now save up to 50% on the purchase of a new automobile.<br>Want to seem richer and be smarter than all your neighbors?<br>Then hop on down to Bunny Motors today!",
+      "q": "What kind of cars does Bunny Motor sell?",
+      "key": "D",
+      "expl": "Bunny motor menjual mobil mahal (fastest and most expensive cars).",
+      "A": "Rich ones",
+      "B": "Smart ones",
+      "C": "Antique ones",
+      "D": "Expensive ones"
+   };
+   q_22={
+      "no": 22,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Hop on down to Bunny Motors for our huge sales event!<br>We have the fastest and most expensive cars on the market, but you can now save up to 50% on the purchase of a new automobile.<br>Want to seem richer and be smarter than all your neighbors?<br>Then hop on down to Bunny Motors today!",
+      "q": "How much can you save at Bunny Motors?",
+      "key": "B",
+      "expl": "Diskonnya adalah up to 50% (hingga 50%)",
+      "A": "Fifty times",
+      "B": "50% or less",
+      "C": "Fifty dollars",
+      "D": "More than 50%"
+   };
+   q_23={
+      "no": 23,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "To Do List<br>October 14<br><br><br>Check my e-mail box<br>Cancel the product presentation<br>Reserve a taxi for tomorrow (6.30 a.m.)<br>Confirm next week’s meeting in London<br>Phone Franquis Leclerc (do it 1st thing in the morning)<br>Book room at the Imperial Hotel<br>Business lunch with Mr. Tanaka<br>Buy flower for Susana<br>Expect Mr. Muller to ring up at 10:30 sharp",
+      "q": "What kind of information is mentioned in the document?",
+      "key": "C",
+      "expl": "Daftar ini adalah daftar rencana yang akan dilaksanakan",
+      "A": "Book titles",
+      "B": "Phone numbers",
+      "C": "Tasks to be completed",
+      "D": "Lists of holiday activities"
+   };
+   q_24={
+      "no": 24,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "To Do List<br>October 14<br><br><br>Check my e-mail box<br>Cancel the product presentation<br>Reserve a taxi for tomorrow (6.30 a.m.)<br>Confirm next week’s meeting in London<br>Phone Franquis Leclerc (do it 1st thing in the morning)<br>Book room at the Imperial Hotel<br>Business lunch with Mr. Tanaka<br>Buy flower for Susana<br>Expect Mr. Muller to ring up at 10:30 sharp",
+      "q": "What is planned for today?",
+      "key": "C",
+      "expl": "Book room at the Imperial Hotel.",
+      "A": "A presentation",
+      "B": "A business dinner",
+      "C": "A hotel reservation",
+      "D": "A meeting in London"
+   };
+   q_25={
+      "no": 25,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "To Do List<br>October 14<br><br><br>Check my e-mail box<br>Cancel the product presentation<br>Reserve a taxi for tomorrow (6.30 a.m.)<br>Confirm next week’s meeting in London<br>Phone Franquis Leclerc (do it 1st thing in the morning)<br>Book room at the Imperial Hotel<br>Business lunch with Mr. Tanaka<br>Buy flower for Susana<br>Expect Mr. Muller to ring up at 10:30 sharp",
+      "q": "Who will phone this morning?",
+      "key": "B",
+      "expl": "Mr. Muller akan menelpon jam 10.30",
+      "A": "Susana",
+      "B": "Mr. Muller",
+      "C": "Mr. Leclerc",
+      "D": "Mr. Tanaka"
+   };
+   q_26={
+      "no": 26,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Development of Honda Motor Co., Ltd.</b><br>In 1937, Honda founded Tōkai Seiki to produce piston rings for Toyota. During World War II, a US B-29 bomber attack destroyed Tōkai Seiki's Yamashita plant in 1944 and the Iwata plant collapsed in the 1945 Mikawa earthquake. After the war, Honda sold the salvageable remains of the company to Toyota for ¥450,000 and used the proceeds to found the Honda Technical Research Institute in October 1946. In 1948 he started producing a complete motorized bicycle, the Type A, which was driven by the first mass-produced engine designed by Honda, and was sold until 1951. The Type D in 1949 was a true motorcycle with a pressed-steel frame designed and produced by Honda and with a 2-stroke, 98 cc (6.0 cu in) 3 hp (2.2 kW) engine, and became the very first model in the Dream series of motorcycles. The Society of Automotive Engineers of Japan (in Japanese) lists both the Type A and the Type D models as two of their 240 Landmarks of Japanese Automotive Technology.<br>As president of the Honda Motor Company, Soichiro Honda turned the company into a billion-dollar multinational that produced the best-selling motorcycles in the world. Honda's engineering and marketing skills resulted in Honda motorcycles outselling Triumph and Harley-Davidson in their respective home markets. The next year, Honda was reacquainted with Takeo Fujisawa, whom he knew during his days as a supplier of piston rings to Nakajima Aircraft Company. Honda hired Fujisawa, who oversaw the financial side of the company and helped the firm expand. In 1959, Honda Motorcycles opened its first dealership in the United States.<br>Honda remained president until his retirement in 1973, where he stayed on as director and was appointed \"supreme advisor\" in 1983. His status was such that People magazine placed him on their \"25 Most Intriguing People of the Year\" list for 1980, dubbing him \"the Japanese Henry Ford.\" In retirement, Honda busied himself with work connected with the Honda Foundation.",
+      "q": "According to the text, Honda Motor Co., Ltd. …",
+      "key": "B",
+      "expl": "Paragraf 1: Honda didirikan untuk memproduksi sepeda motor.",
+      "A": "had been big since founded",
+      "B": "was founded to produce motorcycles",
+      "C": "produced the world best-selling motorcycles",
+      "D": "was popular because they opened a dealer in the United States"
+   };
+   q_27={
+      "no": 27,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Development of Honda Motor Co., Ltd.</b><br>In 1937, Honda founded Tōkai Seiki to produce piston rings for Toyota. During World War II, a US B-29 bomber attack destroyed Tōkai Seiki's Yamashita plant in 1944 and the Iwata plant collapsed in the 1945 Mikawa earthquake. After the war, Honda sold the salvageable remains of the company to Toyota for ¥450,000 and used the proceeds to found the Honda Technical Research Institute in October 1946. In 1948 he started producing a complete motorized bicycle, the Type A, which was driven by the first mass-produced engine designed by Honda, and was sold until 1951. The Type D in 1949 was a true motorcycle with a pressed-steel frame designed and produced by Honda and with a 2-stroke, 98 cc (6.0 cu in) 3 hp (2.2 kW) engine, and became the very first model in the Dream series of motorcycles. The Society of Automotive Engineers of Japan (in Japanese) lists both the Type A and the Type D models as two of their 240 Landmarks of Japanese Automotive Technology.<br>As president of the Honda Motor Company, Soichiro Honda turned the company into a billion-dollar multinational that produced the best-selling motorcycles in the world. Honda's engineering and marketing skills resulted in Honda motorcycles outselling Triumph and Harley-Davidson in their respective home markets. The next year, Honda was reacquainted with Takeo Fujisawa, whom he knew during his days as a supplier of piston rings to Nakajima Aircraft Company. Honda hired Fujisawa, who oversaw the financial side of the company and helped the firm expand. In 1959, Honda Motorcycles opened its first dealership in the United States.<br>Honda remained president until his retirement in 1973, where he stayed on as director and was appointed \"supreme advisor\" in 1983. His status was such that People magazine placed him on their \"25 Most Intriguing People of the Year\" list for 1980, dubbing him \"the Japanese Henry Ford.\" In retirement, Honda busied himself with work connected with the Honda Foundation.",
+      "q": "What products of Honda were getting phenomenal?",
+      "key": "D",
+      "expl": "Paragraf 1: Honda menjadi fenomenal karena mengalahkan penjualan Harley dan Triumph di negara asalnya.",
+      "A": "bicycle",
+      "B": "aircrafts",
+      "C": "piston rings",
+      "D": "motor bike"
+   };
+   q_28={
+      "no": 28,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Development of Honda Motor Co., Ltd.</b><br>In 1937, Honda founded Tōkai Seiki to produce piston rings for Toyota. During World War II, a US B-29 bomber attack destroyed Tōkai Seiki's Yamashita plant in 1944 and the Iwata plant collapsed in the 1945 Mikawa earthquake. After the war, Honda sold the salvageable remains of the company to Toyota for ¥450,000 and used the proceeds to found the Honda Technical Research Institute in October 1946. In 1948 he started producing a complete motorized bicycle, the Type A, which was driven by the first mass-produced engine designed by Honda, and was sold until 1951. The Type D in 1949 was a true motorcycle with a pressed-steel frame designed and produced by Honda and with a 2-stroke, 98 cc (6.0 cu in) 3 hp (2.2 kW) engine, and became the very first model in the Dream series of motorcycles. The Society of Automotive Engineers of Japan (in Japanese) lists both the Type A and the Type D models as two of their 240 Landmarks of Japanese Automotive Technology.<br>As president of the Honda Motor Company, Soichiro Honda turned the company into a billion-dollar multinational that produced the best-selling motorcycles in the world. Honda's engineering and marketing skills resulted in Honda motorcycles outselling Triumph and Harley-Davidson in their respective home markets. The next year, Honda was reacquainted with Takeo Fujisawa, whom he knew during his days as a supplier of piston rings to Nakajima Aircraft Company. Honda hired Fujisawa, who oversaw the financial side of the company and helped the firm expand. In 1959, Honda Motorcycles opened its first dealership in the United States.<br>Honda remained president until his retirement in 1973, where he stayed on as director and was appointed \"supreme advisor\" in 1983. His status was such that People magazine placed him on their \"25 Most Intriguing People of the Year\" list for 1980, dubbing him \"the Japanese Henry Ford.\" In retirement, Honda busied himself with work connected with the Honda Foundation.",
+      "q": "Mass media nominated Soichiro Honda as …",
+      "key": "B",
+      "expl": "Paragraf 3",
+      "A": "The dream series of motorcycles",
+      "B": "25 most intriguing people of the year",
+      "C": "Landmarks of Japanese automotive technology",
+      "D": "Outselling Triumph and Harley-Davidson in their respective home markets."
+   };
+   q_29={
+      "no": 29,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Relaxing Hotel Spa</b><br>Relaxing Hotel Spa preserves traditional production of salt of sea water and tourists can watch and learn the process. Its organic garden grows papaya, pineapple, banana and other fruits. Guests can also check our handicraft from Bali, Lombok, and Javanese souvenir stores. Enjoy other relaxing activities as well such as spa treatment, snorkeling or swimming in the pool. Check booking dates for this hotel.",
+      "q": "What does the hotel offer for relaxing body?",
+      "key": "B",
+      "expl": "Pelayanan spa tersedia bagi tamu yang ingin bersantai.",
+      "A": "Swimming pool",
+      "B": "Spa treatments",
+      "C": "Herbal medicine",
+      "D": "Some organic food"
+   };
+   q_30={
+      "no": 30,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Relaxing Hotel Spa</b><br>Relaxing Hotel Spa preserves traditional production of salt of sea water and tourists can watch and learn the process. Its organic garden grows papaya, pineapple, banana and other fruits. Guests can also check our handicraft from Bali, Lombok, and Javanese souvenir stores. Enjoy other relaxing activities as well such as spa treatment, snorkeling or swimming in the pool. Check booking dates for this hotel.",
+      "q": "‘<u>Its</u> organic garden grows …’",
+      "key": "B",
+      "expl": "Its yang digaris bawahi adalah hotel itu sendiri.",
+      "A": "The souvenir store",
+      "B": "Relaxing Hotel Spa",
+      "C": "Traditional production",
+      "D": "Another relaxing activity"
+   };
+   q_31={
+      "no": 31,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "To ensure that your reservation on China Air is not canceled, you must check-in for all domestic flights one hour before boarding time. You must be at the departure gate twenty minutes before boarding time. For international flights, you must check in at least two hours before boarding time. You must be at the departure gate thirty minutes before boarding time.<br>Travelers to Hong Kong or Macao must check in 90 minutes before boarding time.<br>All international travelers are required to reconfirm their flight at least 72 hours prior to departure. Flights to Hong Kong or Macao do not require confirmation. ",
+      "q": "When must domestic travelers report to the departure gate?",
+      "key": "B",
+      "expl": "Paragraf 1: traveler domestik harus tiba di pintu keberangkatan 20 menit sebelum waktu boarding.",
+      "A": "Before checking in.",
+      "B": "20 minutes before boarding.",
+      "C": "A half hour before boarding.",
+      "D": "Immediately after checking in."
+   };
+   q_32={
+      "no": 32,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "To ensure that your reservation on China Air is not canceled, you must check-in for all domestic flights one hour before boarding time. You must be at the departure gate twenty minutes before boarding time. For international flights, you must check in at least two hours before boarding time. You must be at the departure gate thirty minutes before boarding time.<br>Travelers to Hong Kong or Macao must check in 90 minutes before boarding time.<br>All international travelers are required to reconfirm their flight at least 72 hours prior to departure. Flights to Hong Kong or Macao do not require confirmation. ",
+      "q": "Which travelers must confirm three days in advance to ensure their reservations?",
+      "key": "A",
+      "expl": "Paragraf 3: traveler internasional harus konfirmasi 3 hari sebelumnya.",
+      "A": "International travelers",
+      "B": "Domestic travelers",
+      "C": "Travelers to Macao or Hong Kong",
+      "D": "All travelers follow the same procedure"
+   };
+   q_33={
+      "no": 33,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "In reference to the regulation from the Local Employment Board, all female employees, both full time and part time employees, deserve the three-month maternity leave: one month in pre-maternity and two months in post-maternity period. Those who do not take the one month leave in pre-maternity period will not deserve the prolonged in the post-maternity period. The salary and benefits during maternity leave will be given to full-time employees only.<br>James Fonda<br>HRD Manager",
+      "q": "Who will get the salary during maternity leave?",
+      "key": "D",
+      "expl": "Karyawati tetap maupun part-time mendapatkan gaji penuh saat cuti hamil.",
+      "A": "All employees",
+      "B": "Full time employees",
+      "C": "Part-time employees",
+      "D": "All female employees"
+   };
+   q_34={
+      "no": 34,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "In reference to the regulation from the Local Employment Board, all female employees, both full time and part time employees, deserve the three-month maternity leave: one month in pre-maternity and two months in post-maternity period. Those who do not take the one month leave in pre-maternity period will not deserve the prolonged in the post-maternity period. The salary and benefits during maternity leave will be given to full-time employees only.<br>James Fonda<br>HRD Manager",
+      "q": "What will happen if an employee does not take the one month leave in pre-maternity period?",
+      "key": "A",
+      "expl": "Karyawati yang tidak mengambil cuti hamil sebulan sebelum kelahiran tidak akan ditambah waktu cutinya.",
+      "A": "She will not get additional leave",
+      "B": "She will get additional position",
+      "C": "She will get additional salary",
+      "D": "She will not be promoted"
+   };
+   q_35={
+      "no": 35,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Distributor: Would you mind sending us the price list of your product?<br>Producer: We’d be glad to. When will you need it?<br>Distributor: The sooner, the better.",
+      "q": "When will the distributor want the producer to send the price list?",
+      "key": "A",
+      "expl": "The sooner, the better = semakin cepat semakin baik.",
+      "A": "Immediately",
+      "B": "Not in a short time/",
+      "C": "The distributor can wait.",
+      "D": "Whenever the producer wants to."
+   };
+   q_36={
+      "no": 36,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Receptionist: Good morning. May I help you?<br>Visitor: Can I see the director, please? We’ve had an appointment.<br>Receptionist: Well, you must be Mrs. Bertha. Please sit down. I will announce your coming to him.",
+      "q": "Why does the visitor come to the office?",
+      "key": "B",
+      "expl": "Tamu tersebut datang untuk bertemu direktur.",
+      "A": "To see Mrs. Bertha.",
+      "B": "To meet the director.",
+      "C": "To give announcement.",
+      "D": "To help the receptionist."
+   };
+   q_37={
+      "no": 37,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Husband: We had to take a limousine to the airport.<br>Wife: That must have been pretty expensive.<br>Husband: Yes, but there just wasn’t enough time to wait for the shuttle bus. I don’t want us to miss our flight.",
+      "q": "Why did the man not take the shuttle bus?",
+      "key": "A",
+      "expl": "Si suami tidak ingin ketinggalan pesawat.",
+      "A": "He wanted to save time.",
+      "B": "There was no room on the bus.",
+      "C": "He wanted to impress his wife.",
+      "D": "The limousine is waiting for them."
+   };
+   q_38={
+      "no": 38,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Passenger 1: Isn’t this your usual stop?<br>Passenger 2: Yes, but today I’m going to the library first.<br>Passenger 1: Oh, then you should get off at the next stop and walk up to Clifton Avenue.",
+      "q": "Where is this conversation taking place?",
+      "key": "A",
+      "expl": "Percakapan ini terjadi di dalam bis.",
+      "A": "On a bus",
+      "B": "At the library",
+      "C": "At the next stop",
+      "D": "On Clifton Avenue"
+   };
+   q_39={
+      "no": 39,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Priyo: Good evening.  ... I’m Priyo from Sidoarjo. Do you remember?<br>Sonny: I’m sorry. I think I don’t have a good memory. My name’s Sonny, by the way.<br>Priyo: Mr. Sonny! We attended IT training together several years ago. ",
+      "key": "B",
+      "expl": "Priyo merasa yakin pernah bertemu Sonny.",
+      "A": "I think you remember me.",
+      "B": "I’m sure we’ve met before.",
+      "C": "I don’t think you forget me.",
+      "D": "I’m not sure we’ve met before."
+   };
+   q_40={
+      "no": 40,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Dede: Among the three subjects in the national examination,  ...?<br>Dudu: I think mathematics because many of the calculations are not used in the daily life.<br>Ded: What about English? We don’t use English every day, either.  ",
+      "key": "C",
+      "expl": "the most difficult one = pelajaran yang paling sulit",
+      "A": "Which is the easiest one",
+      "B": "Which one is the easier one",
+      "C": "Which subject is the most difficult one",
+      "D": "Which subject is the more difficult one"
+   };
+   q_41={
+      "no": 41,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Anwar: Let’s go to the basketball court.<br>Detty: Why? What for?<br>Anwar: Don’t you remember?  ... against another class team.  ",
+      "key": "B",
+      "expl": "Anwar mengajak Anwar untuk menonton pertandingan basket yang sedang berlangsung.",
+      "A": "Our classmates play basketball.",
+      "B": "Our classmates are playing basketball.",
+      "C": "Our classmates have just played basketball.",
+      "D": "Our classmates played basketball."
+   };
+   q_42={
+      "no": 42,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Ida: What a beautiful gown you’re wearing!<br>Erni: Thank you.  ...<br>Ida: I mean it. Where did you buy it from? ",
+      "key": "A",
+      "expl": "Etika dipuji adalah berterima kasih, lalu balas memuji.",
+      "A": "So is your dress.",
+      "B": "Neither is your dress.",
+      "C": "My gown is beautiful either.",
+      "D": "You’re wearing a gown too."
+   };
+   q_43={
+      "no": 43,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Dina: Did you see the accident last night?<br>Dian: Yes. It was terrible.  ...<br>Dina: How did it happen? ",
+      "key": "D",
+      "expl": "Twelve people were killed karena twelve people (jamak) diikuti were dalam simple past passive.",
+      "A": "Twelve people killed",
+      "B": "Twelve people had killed",
+      "C": "Twelve people was killed",
+      "D": "Twelve people were killed"
+   };
+   q_44={
+      "no": 44,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Debby: Why don’t you go to bed?...<br>Baby: Yup. I had shooting until 2 after midnight.<br>Debby: It's time for you to have a rest, then. ",
+      "key": "C",
+      "expl": "Debby menyarankan agar Baby tidur karena ia terlihat mengantuk.",
+      "A": "You sound hungry",
+      "B": "You feel thirsty",
+      "C": "You look sleepy",
+      "D": "You appear fresh"
+   };
+   q_45={
+      "no": 45,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Dian: Which TV station do you prefer watching?<br>Andi:  ... because it’s full of information.<br>Dian: I prefer watching MTV because it’s full of entertainment. ",
+      "key": "A",
+      "expl": "pola yang benar adalah A (… like+V+better than+V…)",
+      "A": "I like Metro TV better.",
+      "B": "I’d rather TVRI.",
+      "C": "I’d prefer watching RCTI.",
+      "D": "I prefer watch SCTV."
+   };
+   q_46={
+      "no": 46,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Employee 1: Why was Mr. Johnson fired from his position?<br>Employee 2: I heard that  ...<br>Employee 1: So, not all foreign employees are experts, are they? ",
+      "key": "D",
+      "expl": "incapable of handling his duties = tidak mampu menangani tugas-tugasnya",
+      "A": "He was able to handle his duties.",
+      "B": "He managed to accomplish his duties",
+      "C": "He was capable of handling his duties",
+      "D": "He was incapable of handling his duties"
+   };
+   q_47={
+      "no": 47,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Anise: I am accepted to work in a restaurant as a waitress, Mom.<br>Mother: What does a waiter do?<br>Anise: A waitress takes customers’ orders, serves food, gives bills and  ...",
+      "key": "C",
+      "expl": "simple present; seorang pelayan menerima tips (di restoran Amerika dan Eropa)",
+      "A": "She gives tips",
+      "B": "She cooks food",
+      "C": "She receives tips",
+      "D": "She pays the food"
+   };
+   q_48={
+      "no": 48,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Trisna:  ... I’ll be passing by your house.<br>Tracy: No, thanks. I’m waiting for my brother to pick me up.<br>Trisna: So, let me go ahead.  Have a nice rest! ",
+      "key": "B",
+      "expl": "Trisna menawarkan tumpangan",
+      "A": "Can you give me a lift?",
+      "B": "Let me give you a lift.",
+      "C": "May I have a lift.",
+      "D": "I’m sure you’ll give me a lift."
+   };
+   q_49={
+      "no": 49,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Tio:  ... My name is Tio.<br>Uti: Hi! My name is Uti.<br>Tio: Nice to meet you! ",
+      "key": "B",
+      "expl": "Tio memperkenalkan dirinya sendiri.",
+      "A": "Have you met me?",
+      "B": "Let me introduce myself!",
+      "C": "Please introduce yourself!",
+      "D": "Can you introduce yourself?"
+   };
+   q_50={
+      "no": 50,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Devy:  ... How do you keep it?<br>Tono: Nothing special, but maybe because my brother grows his beard and mustache. I like sport and music.<br>Devy: That explains it. ",
+      "key": "D",
+      "expl": "Devy bertanya pada Tono bagaimana Tono bisa terlihat lebih muda dari adik laki-lakinya.",
+      "A": "You look older than your brother.",
+      "B": "You look younger than your brother.",
+      "C": "You look older than your  younger brother.",
+      "D": "You look younger than your younger brother."
+   }

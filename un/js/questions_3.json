@@ -1,0 +1,760 @@
+dir_1={"title":"LISTENING COMPREHENSION",
+       "aud": "2016_dir_1.mp3",
+	   "pic": "2016_dir_1.jpg",
+	   "q"  : "",
+       "dir_a": "In this section of the test, you will have the chance to show how well you understand spoken English. There are four parts to this section with special directions for each part.",
+	   "dir_b": "Part I. Pictures",
+       "dir_c": "For each item, there is a picture in your test book and four short statements about it on the tape. They are spoken TWICE, and are not written out in your test bock, so you must listen carefully. You must choose one statement – (A), (B), (C), or (D) – that best describes the picture. Then, on your answer sheet, mark your choice.",
+	   "dir_d": "Example: Look at the following picture:",
+	   "dir_e": "A. The man is wearing a tie.</br>B. The woman is wearing a jacket.</br>C. The woman is wearing a hat.</br>D. They are both wearing glasses.",
+	   "dir_f": "Choice (A) – “The man is wearing a tie.” – best describes what is seen in the picture. Therefore, you should mark (A) on your answer sheet.",
+	   "dir_g": "Let’s begin with question number one."
+       }; 
+dir_2={"title":"",
+       "aud": "2016_dir_2.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part II. Question – Responses",
+	   "dir_b": "",
+       "dir_c": "Directions: In this part of the test, you will hear several questions spoken in English, followed by four responses, also spoken in English. The questions and responses will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand what the speakers say. You have to choose the best response to each question.",
+	   "dir_d": "Now listen to a sample question",
+	   "dir_e": "<p>You will hear: </p><p>Woman: Could you tell me how to get to the convention center? </p><p>You will also hear </p><p>Man:</p><p><form>A. No. The convention was already over.</br>B. Sure. Go two blocks and turn left.</br>C. Yes. I have to get in now.</br>D. Yes. I met her there.</br></form>",
+	   "dir_f": "Choice (B) “Sure. Go two blocks and turn left.” – is the response to the question “Could you tell me how to get to the convention center?”</p>  <p>Therefore, you should mark (B) on your answer sheet.",
+	   "dir_g": ""
+       }; 	   
+dir_3={"title":"",
+       "aud": "2016_dir_3.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part III. Short Conversations",
+	   "dir_b": "",
+       "dir_c": "Directions: In this section of the test, you will hear several short conversations. You will hear the conversations TWICE. The conversations will not be printed in your test book, so you must listen carefully to understand what the speakers say. In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.",
+	   "dir_d": "<p>Example:</p><p>You will hear: </p><p>Woman : I ordered that last Tuesday. It should have arrived by now.</p><p>Man : Maybe there was a delay in sending it. Have you called them?</p><p>Woman : Not yet. I will call them now.</p>",
+	   "dir_e": "<p>You will read</p><p>What will the woman probably do?</p><form>A. phone the company.</br>B. order the software.</br>C. cancel the order.</br>D. arrive at the store</br></form>",
+	   "dir_f": "<p>Choice (A) – “phone the company”  is the best answer to the question, “What will the woman probably do?” Therefore, you should mark (A) on your answer sheet.</p>",
+	   "dir_g": ""
+       }; 
+dir_4={"title":"",
+       "aud": "2016_dir_4.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part IV. Short Talks",
+	   "dir_b": "Directions: In this part of the test, you will hear several short monologues. Each will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand and remember what is said.</p><p>In your test book, you will read two or more questions about each short monologue. Each question will be followed by four answers. You have to choose the best answer to each question and mark it on your answer sheet.",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+dir_5={"title":"READING SECTION",
+       "aud": "",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "",
+	   "dir_b": "Directions: In this part of the test, you have to read and answer each question by choosing A, B, C, or D",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+   q_1={
+      "no": 1,
+      "type": "pictures",
+      "pic": "2014_q_1.jpg",
+      "aud": "2014_q_1.mp3",
+      "tran": "",
+      "q": "",
+      "key": "B",
+      "expl": "Keluarga tersebut sedang berlarian di atas pasir.",
+      "A": "The people are swimming in the sea.",
+      "B": "The family is running on the sand.",
+      "C": "The strangers are going into the water.",
+      "D": "They are writing at the pool."
+   };
+   q_2={
+      "no": 2,
+      "type": "pictures",
+      "pic": "2014_q_2.jpg",
+      "aud": "2014_q_2.mp3",
+      "tran": "",
+      "q": "",
+      "key": "D",
+      "expl": "Wanita tersebut sedang berdiri di dekat sebuah meja.",
+      "A": "She is standing in front of the shelf.",
+      "B": "She is writing by the rack.",
+      "C": "She is sitting on a bench.",
+      "D": "She is standing next to the table."
+   };
+   q_3={
+      "no": 3,
+      "type": "pictures",
+      "pic": "2014_q_3.jpg",
+      "aud": "2014_q_3.mp3",
+      "tran": "",
+      "q": "",
+      "key": "D",
+      "expl": "Pria tersebut punya alis mata tebal.",
+      "A": "The woman has short, curly hair.",
+      "B": "The man looks very angry.",
+      "C": "The couple are wearing bracelets.",
+      "D": "The man has thick eyebrows."
+   };
+   q_4={
+      "no": 4,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2014_q_4.mp3",
+      "tran": "",
+      "q": "Shouldn’t we check in with the receptionist?",
+      "key": "C",
+      "expl": "Tanya: Haruskah kita check-in ke resepsionis? Respon: Ya, saya kira juga demikian.",
+      "A": "I didn't bring my cheque book.",
+      "B": "Yes, we should check it out.",
+      "C": "Yes, I suppose so.",
+      "D": ""
+   };
+   q_5={
+      "no": 5,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2014_q_5.mp3",
+      "tran": "",
+      "q": "Would you participate in our family gathering?",
+      "key": "A",
+      "expl": "Tentu saja, dengan senang hati.",
+      "A": "Sure, I'd love to.",
+      "B": "Yes, I have a lot to do.",
+      "C": "My family is not gathering.",
+      "D": ""
+   };
+   q_6={
+      "no": 6,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2014_q_6.mp3",
+      "tran": "",
+      "q": "How do I get to the boarding room?",
+      "key": "B",
+      "expl": "Tanya: Bagaimana saya bisa ke ruang tunggu? Respon: Jalan saja di sekitar sudut itu.",
+      "A": "She is getting bored.",
+      "B": "Just walk around the corner.",
+      "C": "We don't have enough rooms.",
+      "D": ""
+   };
+   q_7={
+      "no": 7,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2014_q_7.mp3",
+      "tran": "",
+      "q": "Do you need some help with that package?",
+      "key": "B",
+      "expl": "Tanya: Apa Anda butuh bantuan dengan paket itu? Respon: Tentu, terima kasih.",
+      "A": "Yes, they had picked it up.",
+      "B": "Sure, thanks.",
+      "C": "Sorry, but I just can't help you.",
+      "D": ""
+   };
+   q_8={
+      "no": 8,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2014_q_8.mp3",
+      "tran": "Woman: What does your sister do in the office? <br>Man: She usually handles phone calls and arranges meetings.",
+      "q": "What is the dialogue about",
+      "key": "C",
+      "expl": "Dialog tersebut membicarakan apa yang biasa dilakukan saudara perempuan si wanita di kantor.",
+      "A": "Office stationary.",
+      "B": "Handling phones.",
+      "C": "Someone's job activity.",
+      "D": "Arrangement of meeting."
+   };
+   q_9={
+      "no": 9,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2014_q_9.mp3",
+      "tran": "Woman: Can I reserve 2 business class tickets from Surabaya to Makassar.<br>for Sunday the 20th?<br>Man: Okay. One moment, please. I can book you on Jaya Airway. <br>leaving at 9 a.m. on the 20th with our ___ in Jakarta. <br>Woman: Great. I’ll take it.",
+      "q": "What does the woman want?",
+      "key": "D",
+      "expl": "Wanita tersebut ingin pesan tiket penerbangan dari Surabaya ke Makassar. (purchase=buy=membeli)",
+      "A": "Attends he class for business subject.",
+      "B": "Serves her business colleagues.",
+      "C": "Leaves for Jakarta via Surabaya.",
+      "D": "Purchases tickets for her flight."
+   };
+   q_10={
+      "no": 10,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2014_q_10.mp3",
+      "tran": "Woman: Do you mind if I use your computer?<br>Man: No. Please shut it down after you finish.<br>Woman: I will. Thank you.",
+      "q": "What will the man do?",
+      "key": "B",
+      "expl": "Wanita itu ingin meminjam komputer si pria. Si pria bersedia meminjamkan (lend) komputernya.",
+      "A": "Finish his computer.",
+      "B": "Lend his computer.",
+      "C": "Borrow the computer.",
+      "D": "Shut down the laptop."
+   };
+   q_11={
+      "no": 11,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2014_q_11.mp3",
+      "tran": "Woman: Hi, John. How was your vacation?<br>Man: It was excellent. I went to Hawaii with my cousin. We had a great time.<br>Woman: Lucky you. How long were you there?<br>Man: About a week. ",
+      "q": "What did the man do?",
+      "key": "B",
+      "expl": "Pria tersebut baru berlibur di Hawaii (had a vacation).",
+      "A": "Looked for his cousin in Hawaii.",
+      "B": "Had a vacation in Hawaii.",
+      "C": "Joined his friends for vacation.",
+      "D": "Asked the woman to search his cousin."
+   };
+   q_12={
+      "no": 12,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2014_q_12.mp3",
+      "tran": "Good evening, everyone. Welcome to the Tanjung Real Estate Training Course.<br>My name is Arif Hidayat and I am a licensed real estate and personal director for Tanjung.<br>At the end of our 5 week course all of you hopefully will be able to pass real estate exam and become Tanjung’s agent. Here’s something to note before we begin our training.<br>First, you need to hand in or bring class registration form at the table in the front of the room.<br>Then, go to the table against the right wall to find your nametag and a package of course information. Next, go to the table at the back corner to pick up your textbook.<br>Once you have done all these things, find a seat and sit down. When everyone is ready, Putra Perkasa, our company president would say a few words.<br>After that, we’ll hit down to the conference room for tonight’s 3rd class.",
+      "q": "What is the main purpose of the talk?",
+      "key": "A",
+      "expl": "Tujuan dari penjelasan tersebut adalah prosedur atau langkah-langkah mendaftar sebagai agen sebuah perusahaan real estate.",
+      "A": "To explain procedures.",
+      "B": "To introduce a president.",
+      "C": "To teach a real estate class.",
+      "D": "To ask some questions."
+   };
+   q_13={
+      "no": 13,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2014_q_13.mp3",
+      "tran": "Good evening, everyone. Welcome to the Tanjung Real Estate Training Course.<br>My name is Arif Hidayat and I am a licensed real estate and personal director for Tanjung.<br>At the end of our 5 week course all of you hopefully will be able to pass real estate exam and become Tanjung’s agent. Here’s something to note before we begin our training.<br>First, you need to hand in or bring class registration form at the table in the front of the room.<br>Then, go to the table against the right wall to find your nametag and a package of course information. Next, go to the table at the back corner to pick up your textbook.<br>Once you have done all these things, find a seat and sit down. When everyone is ready, Putra Perkasa, our company president would say a few words.<br>After that, we’ll hit down to the conference room for tonight’s 3rd class.",
+      "q": "What should the participants do after picking up their text book?",
+      "key": "B",
+      "expl": "Setelah mengambil buku pelajaran, para peserta kursus diharapkan untuk duduk.",
+      "A": "Hand in their registration forms.",
+      "B": "Find a seat and sit down.",
+      "C": "Get a name tag.",
+      "D": "Take a package of course information."
+   };
+   q_14={
+      "no": 14,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2014_q_14.mp3",
+      "tran": "We are pleased to announce that the company will be opening its very own cafeteria next month. Now, if it is best to bring your lunch to work, you won’t have to leave the building to get a delicious and nutritious lunch. The cafetaria  will ___ sandwiches, fruits, and other delicious ____ at reasonable prices. Salads, snacks, coffee, tea, and soda will also be available. Each week on Monday morning, the chef will post the menu on the bulletin board near the entrance. Our growth in this industry this year has allowed us to make much needed improvement to our work environment.",
+      "q": "What is being announced?",
+      "key": "A",
+      "expl": "Yang sedang diumumkan adalah pembukaan sebuah kafetaria baru.",
+      "A": "The opening of a cafetaria.",
+      "B": "The menu of the cafetaria.",
+      "C": "The menu schedule.",
+      "D": "The price of some food."
+   };
+   q_15={
+      "no": 15,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2014_q_15.mp3",
+      "tran": "We are pleased to announce that the company will be opening its very own cafeteria next month. Now, if it is best to bring your lunch to work, you won’t have to leave the building to get a delicious and nutritious lunch. The cafetaria  will ___ sandwiches, fruits, and other delicious ____ at reasonable prices. Salads, snacks, coffee, tea, and soda will also be available. Each week on Monday morning, the chef will post the menu on the bulletin board near the entrance. Our growth in this industry this year has allowed us to make much needed improvement to our work environment.",
+      "q": "Who will post the menu on each week at Monday morning?",
+      "key": "D",
+      "expl": "Chef akan menempelkan menu tiap Senin pagi.",
+      "A": "The company.",
+      "B": "The cafetaria.",
+      "C": "The employee.",
+      "D": "The chef."
+   };
+   q_16={
+      "no": 16,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>How to Connect to a Modem to a Computer</b><br>Things You’ll Need: Modem, modem power supply, Ethernet cable, USB cable, telephone wire (depending on the type of modem),  cable wire (depending on the type of the modem).<br><br>1.Power off your computer. Connect the modem to the signal source. If the source is a cable signal, connect the modem with a cable wire. If it’s a DSL signal, connect it with a telephone wire.<br>2.Connect the proper ends of the USB wire to the USB ports on the modem and the computer.<br>3.Connect the Ethernet cable to the modem and the computer.<br>4.Insert the power source into the modem and then plug it into the wall socket or the series circuit.<br>5.Wait until all the lights on the modem are lit and then turn on the computer. “When the Hardware Wizard detects the new device, you may have to insert the disc that came with it install the software for the device. This will complete the connection of the modem to the computer.",
+      "q": "Connecting a modem to a pc is …",
+      "key": "B",
+      "expl": "Dapat disimpulkan bahwa menghubungkan modem ke PC itu tidak mudah tapi memungkinkan.",
+      "A": "Easy but impossible",
+      "B": "Not easy but possible",
+      "C": "Difficult and impossible",
+      "D": "Not difficult but not possible"
+   };
+   q_17={
+      "no": 17,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>How to Connect to a Modem to a Computer</b><br>Things You’ll Need: Modem, modem power supply, Ethernet cable, USB cable, telephone wire (depending on the type of modem),  cable wire (depending on the type of the modem).<br><br>1.Power off your computer. Connect the modem to the signal source. If the source is a cable signal, connect the modem with a cable wire. If it’s a DSL signal, connect it with a telephone wire.<br>2.Connect the proper ends of the USB wire to the USB ports on the modem and the computer.<br>3.Connect the Ethernet cable to the modem and the computer.<br>4.Insert the power source into the modem and then plug it into the wall socket or the series circuit.<br>5.Wait until all the lights on the modem are lit and then turn on the computer. “When the Hardware Wizard detects the new device, you may have to insert the disc that came with it install the software for the device. This will complete the connection of the modem to the computer.",
+      "q": "The first thing that you have to do before connecting a modem  to a PC is …",
+      "key": "A",
+      "expl": "Sebelum mulai menghubungkan modem ke PC, PC harus dimatikan terlebih dahulu.",
+      "A": "To power off the computer",
+      "B": "To insert the power source",
+      "C": "To connect the Ethernet cable",
+      "D": "To connect the proper ends of USB wire"
+   };
+   q_18={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>How to Connect to a Modem to a Computer</b><br>Things You’ll Need: Modem, modem power supply, Ethernet cable, USB cable, telephone wire (depending on the type of modem),  cable wire (depending on the type of the modem).<br><br>1.Power off your computer. Connect the modem to the signal source. If the source is a cable signal, connect the modem with a cable wire. If it’s a DSL signal, connect it with a telephone wire.<br>2.Connect the proper ends of the USB wire to the USB ports on the modem and the computer.<br>3.Connect the Ethernet cable to the modem and the computer.<br>4.Insert the power source into the modem and then plug it into the wall socket or the series circuit.<br>5.Wait until all the lights on the modem are lit and then turn on the computer. “When the Hardware Wizard detects the new device, you may have to insert the disc that came with it install the software for the device. This will complete the connection of the modem to the computer.",
+      "q": "Before you connect the modem to your PC, you must have a …",
+      "key": "D",
+      "expl": "Sebelum menghubungkan modem, Anda harus sudah memiliki sambungan telepon kabel terlebih dahulu.",
+      "A": "Net book",
+      "B": "Television set",
+      "C": "Unit of printer",
+      "D": "Telephone installation"
+   };
+   q_19={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Thanks for purchasing JC-315 super cyclone series vacuum cleaner product. Hope you will enjoy it! Thanks again for your choice!<br><b>Vacuum cleaner use: </b><br>Attach the according tool to the appliance, then operate the vacuum by pressing the power switch, return the switch to switch off. Please make sure switch off and power cut when change and clean accessories or remove dirt.<br><b>Accessories cleaning: </b><br>Do not use corrosive liquid wipe or clean machine and accessories. <br><b>Filter cleaning: </b><br>Make sure power switch cut off and the plug pulled out when cleaning the filter.<br>These accessories can be cleaned by water but no immersing in water. Otherwise, there might be damage of malfunction. It must be dried before using.<br>Keep these parts with electricity far away any liquid. Do not use wet hand to operate the appliance. Only wipe with dry cloth, otherwise, it may cause electric shock or the problem of personal safety.",
+      "q": "As it uses electric power, for our safety, the important thing that we should remember when we use and clean this equipment is …",
+      "key": "B",
+      "expl": "Saat menggunakan dan membersihkan alat ini kita harus berhati-hati.",
+      "A": "Easy to do",
+      "B": "To be careful",
+      "C": "User friendly tool",
+      "D": "Economical to operate"
+   };
+   q_20={
+      "no": 20,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Thanks for purchasing JC-315 super cyclone series vacuum cleaner product. Hope you will enjoy it! Thanks again for your choice!<br><b>Vacuum cleaner use: </b><br>Attach the according tool to the appliance, then operate the vacuum by pressing the power switch, return the switch to switch off. Please make sure switch off and power cut when change and clean accessories or remove dirt.<br><b>Accessories cleaning: </b><br>Do not use corrosive liquid wipe or clean machine and accessories. <br><b>Filter cleaning: </b><br>Make sure power switch cut off and the plug pulled out when cleaning the filter.<br>These accessories can be cleaned by water but no immersing in water. Otherwise, there might be damage of malfunction. It must be dried before using.<br>Keep these parts with electricity far away any liquid. Do not use wet hand to operate the appliance. Only wipe with dry cloth, otherwise, it may cause electric shock or the problem of personal safety.",
+      "q": "What may happen if we immerse this equipment into water?",
+      "key": "C",
+      "expl": "Tanya: apa yang akan terjadi jika kita rendam alat ini dalam air? Jawab: kita tak bisa menggunakannya lagi.",
+      "A": "It will be clean",
+      "B": "We must dry it first",
+      "C": "We cannot use it again",
+      "D": "It will look like new again"
+   };
+   q_21={
+      "no": 21,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Thanks for purchasing JC-315 super cyclone series vacuum cleaner product. Hope you will enjoy it! Thanks again for your choice!<br><b>Vacuum cleaner use: </b><br>Attach the according tool to the appliance, then operate the vacuum by pressing the power switch, return the switch to switch off. Please make sure switch off and power cut when change and clean accessories or remove dirt.<br><b>Accessories cleaning: </b><br>Do not use corrosive liquid wipe or clean machine and accessories. <br><b>Filter cleaning: </b><br>Make sure power switch cut off and the plug pulled out when cleaning the filter.<br>These accessories can be cleaned by water but no immersing in water. Otherwise, there might be damage of malfunction. It must be dried before using.<br>Keep these parts with electricity far away any liquid. Do not use wet hand to operate the appliance. Only wipe with dry cloth, otherwise, it may cause electric shock or the problem of personal safety.",
+      "q": "When it may cause electric shock while we are using this cleaner?",
+      "key": "A",
+      "expl": "Tanya: kapan alat ini dapat menyebabkan sengatan listrik saat dipakai? Jawab: Jika tangan kita basah.",
+      "A": "If our hands are wet",
+      "B": "When the equipment is dirty",
+      "C": "If we don’t switch off after using it",
+      "D": "When we plug it into electric power"
+   };
+   q_22={
+      "no": 22,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "There will be a town meeting at the Wetlands Community Center on Manchester Blvd, on Saturday at 9:00 a.m. We encourage all citizens to get involved in the community and to attend the meeting. Speakers from the development company and an environmental group will be discussing the pros and cons of the proposed industrial and residential areas.<br>The City Manager’s Office will be taking up the issue of development in sessions beginning next month. Before that happens, we feel that the community needs to be well informed so that we can, in turn, guide our leaders in the action that they take. The future of our community very much depends on the outcome of this current debate.<br>Breakfast will be served. We ask everyone to bring a list of questions and concerns to be presented to the speakers. We look forward to seeing you there. Remember, our community’s future is in your hands.<br>We will distribute the agenda for the meeting by the end of the week. That flyer will confirm the details of the meeting.",
+      "q": "Who should attend the meeting?",
+      "key": "D",
+      "expl": "Paragraf 1: all citizens to get involved",
+      "A": "Residents of Manchester Boulevard",
+      "B": "Out-of-state tourists",
+      "C": "A building contractor",
+      "D": "All the community members"
+   };
+   q_23={
+      "no": 23,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "There will be a town meeting at the Wetlands Community Center on Manchester Blvd, on Saturday at 9:00 a.m. We encourage all citizens to get involved in the community and to attend the meeting. Speakers from the development company and an environmental group will be discussing the pros and cons of the proposed industrial and residential areas.<br>The City Manager’s Office will be taking up the issue of development in sessions beginning next month. Before that happens, we feel that the community needs to be well informed so that we can, in turn, guide our leaders in the action that they take. The future of our community very much depends on the outcome of this current debate.<br>Breakfast will be served. We ask everyone to bring a list of questions and concerns to be presented to the speakers. We look forward to seeing you there. Remember, our community’s future is in your hands.<br>We will distribute the agenda for the meeting by the end of the week. That flyer will confirm the details of the meeting.",
+      "q": "What will probably happen at the meeting?",
+      "key": "C",
+      "expl": "Paragraf 1: pembicara-pembicara dari perusahaan dan kelompok lingkungan akan berbeda pendapat.",
+      "A": "One invited speaker will make a presentation.",
+      "B": "City leaders will decide how many buildings to allow.",
+      "C": "Presenters will give different points of view.",
+      "D": "All new building will be prohibited."
+   };
+   q_24={
+      "no": 24,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "There will be a town meeting at the Wetlands Community Center on Manchester Blvd, on Saturday at 9:00 a.m. We encourage all citizens to get involved in the community and to attend the meeting. Speakers from the development company and an environmental group will be discussing the pros and cons of the proposed industrial and residential areas.<br>The City Manager’s Office will be taking up the issue of development in sessions beginning next month. Before that happens, we feel that the community needs to be well informed so that we can, in turn, guide our leaders in the action that they take. The future of our community very much depends on the outcome of this current debate.<br>Breakfast will be served. We ask everyone to bring a list of questions and concerns to be presented to the speakers. We look forward to seeing you there. Remember, our community’s future is in your hands.<br>We will distribute the agenda for the meeting by the end of the week. That flyer will confirm the details of the meeting.",
+      "q": "Why should the local residents go to the meeting?",
+      "key": "D",
+      "expl": "Paragraf 3: pertemuan ini menyangkut masa depan lingkungan.",
+      "A": "To elect officials",
+      "B": "To join an environmental group.",
+      "C": "For breakfast and to meet their neighbors.",
+      "D": "To help decide the future of their community."
+   };
+   q_25={
+      "no": 25,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "William Henry ‘Bill” Gates III (born October 28, 1955) is an American business magnate, philanthropist, investor, computer programmer, and inventor. In 1975, Gates co-founded Microsoft, that became the world’s largest PC software company, with Paul Allen. During his career at Microsoft, Gates held the positions of chairman, CEO and chief software architect, and was the largest individual shareholder until May 2014. Gates has authored and co-authored several books.<br>Starting in 1987, Gates was included in the Forbes list of the world’s wealthiest people and was the wealthiest overall from 1995 to 2014 – excluding a few years after the financial crises of 2008. Between 2009 and 2014 his wealth more than doubled from $40 billion to more than $82 billion. Between 2013 and 2014 his wealth increased by $15 billion. Gates is currently the richest man in the world. <br>Gates is one of the best-known entrepreneurs of the personal computer revolution. Gates has been criticized for his business tactics, which have been considered anti-competitive, an opinion which has in some cases been upheld by numerous court rulings. Later in his career, Gates pursued a number of philanthropic endeavors, donating large amounts of money to various charitable organizations and scientific research programs through Bill & Melinda Gates Foundation, established in 2000.<br>Gates stepped down as CEO of Microsoft in January 2000. He remained as chairman and created the position of Chief Software Architect for himself. In June 2006, Gates announced that he would be transitioning from full-time work at Microsoft to part-time work, and full-time work at the Bill & Melinda  Gates  Foundation. He gradually transferred his duties to Ray Ozzie, chief software architect and Craid Mundie, chief research and strategy officer. Ozzie later left the company. Gates last full-time day at Microsoft was June 27, 2008. He stepped down as Chairman of Microsoft in February 2014, taking on a new post as technology advisor to support newly appointed CEO Satya Nadella.",
+      "q": "According to the text above, Bill Gates …",
+      "key": "B",
+      "expl": "Paragraf 3: Bill Gates menyerahkan tugasnya kepada Ray Ozzie",
+      "A": "has been the chief of his company all his life",
+      "B": "has done regeneration successfully in his company. ",
+      "C": "since 1987 until now has been the wealthiest in the world.",
+      "D": "has been doing business without paying attention to social life"
+   };
+   q_26={
+      "no": 26,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "William Henry ‘Bill” Gates III (born October 28, 1955) is an American business magnate, philanthropist, investor, computer programmer, and inventor. In 1975, Gates co-founded Microsoft, that became the world’s largest PC software company, with Paul Allen. During his career at Microsoft, Gates held the positions of chairman, CEO and chief software architect, and was the largest individual shareholder until May 2014. Gates has authored and co-authored several books.<br>Starting in 1987, Gates was included in the Forbes list of the world’s wealthiest people and was the wealthiest overall from 1995 to 2014 – excluding a few years after the financial crises of 2008. Between 2009 and 2014 his wealth more than doubled from $40 billion to more than $82 billion. Between 2013 and 2014 his wealth increased by $15 billion. Gates is currently the richest man in the world. <br>Gates is one of the best-known entrepreneurs of the personal computer revolution. Gates has been criticized for his business tactics, which have been considered anti-competitive, an opinion which has in some cases been upheld by numerous court rulings. Later in his career, Gates pursued a number of philanthropic endeavors, donating large amounts of money to various charitable organizations and scientific research programs through Bill & Melinda Gates Foundation, established in 2000.<br>Gates stepped down as CEO of Microsoft in January 2000. He remained as chairman and created the position of Chief Software Architect for himself. In June 2006, Gates announced that he would be transitioning from full-time work at Microsoft to part-time work, and full-time work at the Bill & Melinda  Gates  Foundation. He gradually transferred his duties to Ray Ozzie, chief software architect and Craid Mundie, chief research and strategy officer. Ozzie later left the company. Gates last full-time day at Microsoft was June 27, 2008. He stepped down as Chairman of Microsoft in February 2014, taking on a new post as technology advisor to support newly appointed CEO Satya Nadella.",
+      "q": "Beside as a computer programmer, he was also a …",
+      "key": "A",
+      "expl": "Paragraf 1: Bill Gates telah menulis beberapa buku.",
+      "A": "book writer",
+      "B": "computer seller",
+      "C": "fashion designer",
+      "D": "product marketer"
+   };
+   q_27={
+      "no": 27,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "William Henry ‘Bill” Gates III (born October 28, 1955) is an American business magnate, philanthropist, investor, computer programmer, and inventor. In 1975, Gates co-founded Microsoft, that became the world’s largest PC software company, with Paul Allen. During his career at Microsoft, Gates held the positions of chairman, CEO and chief software architect, and was the largest individual shareholder until May 2014. Gates has authored and co-authored several books.<br>Starting in 1987, Gates was included in the Forbes list of the world’s wealthiest people and was the wealthiest overall from 1995 to 2014 – excluding a few years after the financial crises of 2008. Between 2009 and 2014 his wealth more than doubled from $40 billion to more than $82 billion. Between 2013 and 2014 his wealth increased by $15 billion. Gates is currently the richest man in the world. <br>Gates is one of the best-known entrepreneurs of the personal computer revolution. Gates has been criticized for his business tactics, which have been considered anti-competitive, an opinion which has in some cases been upheld by numerous court rulings. Later in his career, Gates pursued a number of philanthropic endeavors, donating large amounts of money to various charitable organizations and scientific research programs through Bill & Melinda Gates Foundation, established in 2000.<br>Gates stepped down as CEO of Microsoft in January 2000. He remained as chairman and created the position of Chief Software Architect for himself. In June 2006, Gates announced that he would be transitioning from full-time work at Microsoft to part-time work, and full-time work at the Bill & Melinda  Gates  Foundation. He gradually transferred his duties to Ray Ozzie, chief software architect and Craid Mundie, chief research and strategy officer. Ozzie later left the company. Gates last full-time day at Microsoft was June 27, 2008. He stepped down as Chairman of Microsoft in February 2014, taking on a new post as technology advisor to support newly appointed CEO Satya Nadella.",
+      "q": "How did Bill Gates leave and finally entrust Microsoft Company to other people?",
+      "key": "C",
+      "expl": "Paragraf 3: Bill Gates menyerahkan tugasnya secara berangsur (gradually).",
+      "A": "Never until the end of his life.",
+      "B": "Quickly after finding his substitute.",
+      "C": "Gradually step by step to ensure its stability",
+      "D": "After establishing Bill and Melinda Foundation"
+   };
+   q_28={
+      "no": 28,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Gedung Merdeka</b><br>Gedung Merdeka was located in the corner of ‘Groote Postweg’ (now Jalan Asia Afrika) and ‘Bragaweg’ (now Jalan braga).<br>Its left wing is next to Tjikapoendoeng River (Cikapundung) which was very comfortable since there were many thick trees growing.<br>Regarding Indonesian Government decree (1954), to inaugurate Bandung as the city of Asian-African, the building was chosen as the venue for the conference, because it was the biggest and most luxurious in Bandung. Furthermore, it was located in the middle of the city and close to the best hotels in town, Savoy Homann and Preanger Hotel.",
+      "q": "When did the government choose Gedung Merdeka as the venue for Asian-African Conference?",
+      "key": "D",
+      "expl": "Paragraf 3: KAA diputuskan tahun 1954, sedangkan Indonesia merdeka tahun 1945.",
+      "A": "During the Dutch colonialism.",
+      "B": "During the Japanese colonialism",
+      "C": "Before the Independence of Indonesia.",
+      "D": "After the Independence of Indonesia."
+   };
+   q_29={
+      "no": 29,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Gedung Merdeka</b><br>Gedung Merdeka was located in the corner of ‘Groote Postweg’ (now Jalan Asia Afrika) and ‘Bragaweg’ (now Jalan braga).<br>Its left wing is next to Tjikapoendoeng River (Cikapundung) which was very comfortable since there were many thick trees growing.<br>Regarding Indonesian Government decree (1954), to inaugurate Bandung as the city of Asian-African, the building was chosen as the venue for the conference, because it was the biggest and most luxurious in Bandung. Furthermore, it was located in the middle of the city and close to the best hotels in town, Savoy Homann and Preanger Hotel.",
+      "q": "Where is Gedung Merdeka located?",
+      "key": "A",
+      "expl": "Paragraf 1",
+      "A": "In the corner of Groote Postweg and Bragaweg.",
+      "B": "Between Savoy Homann and Preanger Hotel.",
+      "C": "In the corner of Jalan Asia-Afrika and Jalan Braga.",
+      "D": "Far from Savoy Homann and Preanger Hotel."
+   };
+   q_30={
+      "no": 30,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Gedung Merdeka</b><br>Gedung Merdeka was located in the corner of ‘Groote Postweg’ (now Jalan Asia Afrika) and ‘Bragaweg’ (now Jalan braga).<br>Its left wing is next to Tjikapoendoeng River (Cikapundung) which was very comfortable since there were many thick trees growing.<br>Regarding Indonesian Government decree (1954), to inaugurate Bandung as the city of Asian-African, the building was chosen as the venue for the conference, because it was the biggest and most luxurious in Bandung. Furthermore, it was located in the middle of the city and close to the best hotels in town, Savoy Homann and Preanger Hotel.",
+      "q": "Furthermore, it was located in the middle of the city and <u>close to</u> the best hotels in town. The underlined ‘close to’ mean the same as …",
+      "key": "B",
+      "expl": "close to = near",
+      "A": "far",
+      "B": "near",
+      "C": "among",
+      "D": "between"
+   };
+   q_31={
+      "no": 31,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Withdrawal at an ATM</b><br><br><br>Step 1: Use an instant debit card. To do this, you need to have your debit card set up with your bank account to use it at an ATM. Usually using an ATM affiliated with your bank is the best. However, most cash machine will work but they might incur fees from the ATM owner and/or your bank.<br>Step 2: Insert your card and your PIN. If you don’t have one, call your bank beforehand and request one. You will not be able to withdraw without a PIN.<br>Step 3: Follow the onscreen instructions. If you have more than one account, (like both from checking and saving) you need to specify which account you want the money to come from. Be sure to push the correct button. Then specify how much money you want to withdraw.<br>Step  4: Wait for the machine to process your transaction, then take your receipt, money and card out of the machine.",
+      "q": "What do you have to do after inserting the card",
+      "key": "D",
+      "expl": "Step 2: Insert your card and your PIN",
+      "A": "Withdraw money without PIN.",
+      "B": "Follow the onscreen instruction.",
+      "C": "Specify  how much money you want.",
+      "D": "Enter your Personal Identification Number."
+   };
+   q_32={
+      "no": 32,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Withdrawal at an ATM</b><br><br><br>Step 1: Use an instant debit card. To do this, you need to have your debit card set up with your bank account to use it at an ATM. Usually using an ATM affiliated with your bank is the best. However, most cash machine will work but they might incur fees from the ATM owner and/or your bank.<br>Step 2: Insert your card and your PIN. If you don’t have one, call your bank beforehand and request one. You will not be able to withdraw without a PIN.<br>Step 3: Follow the onscreen instructions. If you have more than one account, (like both from checking and saving) you need to specify which account you want the money to come from. Be sure to push the correct button. Then specify how much money you want to withdraw.<br>Step  4: Wait for the machine to process your transaction, then take your receipt, money and card out of the machine.",
+      "q": "What will happen if you use another ATM?",
+      "key": "C",
+      "expl": "Step 1: jika kita pakai ATM dari bank lain, akan dikenakan biaya",
+      "A": "The transaction will fail.",
+      "B": "You may not get receipt.",
+      "C": "You may have to pay fees.",
+      "D": "The withdrawal will be rejected."
+   };
+   q_33={
+      "no": 33,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Withdrawal at an ATM</b><br><br><br>Step 1: Use an instant debit card. To do this, you need to have your debit card set up with your bank account to use it at an ATM. Usually using an ATM affiliated with your bank is the best. However, most cash machine will work but they might incur fees from the ATM owner and/or your bank.<br>Step 2: Insert your card and your PIN. If you don’t have one, call your bank beforehand and request one. You will not be able to withdraw without a PIN.<br>Step 3: Follow the onscreen instructions. If you have more than one account, (like both from checking and saving) you need to specify which account you want the money to come from. Be sure to push the correct button. Then specify how much money you want to withdraw.<br>Step  4: Wait for the machine to process your transaction, then take your receipt, money and card out of the machine.",
+      "q": "‘…they might <u>incur</u> fees from …’ (step 1) The underlined words are closest in meaning to …",
+      "key": "D",
+      "expl": "incur = be charged ",
+      "A": "Give up",
+      "B": "Get away",
+      "C": "Taken into",
+      "D": "Be charged"
+   };
+   q_34={
+      "no": 34,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Dika: I have two extra tickets for Iwan cool concert. Would you like to go with me?<br>Bimo: Are you kidding me? Of course. I’d love to. I’ll pick you up on that day.<br>Dika: Deal! See you next week.",
+      "q": "According to the dialog, we know that …",
+      "key": "C",
+      "expl": "Dika yang memiliki 2 tiket, Bimo tidak memiliki tiket tapi akan menjemput Dika.",
+      "A": "Bimo has the concert tickets.",
+      "B": "Dika doesn’t want to go with Bimo. ",
+      "C": "Dika will go to the concert with Bimo",
+      "D": "Dika will pick Bimo up to the concert."
+   };
+   q_35={
+      "no": 35,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Alex: Are you interested in painting?<br>Lucy: No, I’m interested in photography. What about you?<br>Alex: I like potteries.<br>Lucy: Well, it’s not bad.",
+      "q": "We know from the dialog that they are talking about?",
+      "key": "A",
+      "expl": "Mereka membicarakan tentang hobi.",
+      "A": "hobbies",
+      "B": "painting",
+      "C": "potteries",
+      "D": "photography"
+   };
+   q_36={
+      "no": 36,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Secretary: May I help you?<br>Visitor: Yes, please. May I speak to the production manager?<br>Secretary: I’m sorry, he’s busy right now. He will be free in a few minutes. ",
+      "q": "Based on the dialog, I think …",
+      "key": "C",
+      "expl": "Karena manajer sedang rapat, tamu harus menunggu beberapa menit lagi.",
+      "A": "The secretary will not allow the visitor to meet the manager.",
+      "B": "The manager will not allow the secretary to meet the visitor.",
+      "C": "The visitor will be able to wait a few minutes to meet the manager.",
+      "D": "The secretary, the manager, and the visitor are going to have a meeting."
+   };
+   q_37={
+      "no": 37,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Ahmad: Where were you last month, Anita?<br>Anita: I went to Pangandaran beach.<br>Ahmad: Pangandaran beach? What was it like there?<br>Anita: Fantastic! The weather was beautiful. The sea was warm.",
+      "q": "After knowing from Anita, Ahmad …",
+      "key": "A",
+      "expl": "Setelah diberi penjelasan oleh Anita, Ahmad barangkali tertarik untuk pergi ke Pangandaran juga.",
+      "A": "Wants to go there",
+      "B": "Has no interest to go there",
+      "C": "Will invite Anita to go there",
+      "D": "Won’t  let Anita go there anymore"
+   };
+   q_38={
+      "no": 38,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Sally: I need your advice. Another company is offering me a new job.<br>Reni: If I were you, I wouldn’t leave the present job before being accepted exactly in the new company.<br>Sally: That’s right.",
+      "q": "According to the dialogue …",
+      "key": "D",
+      "expl": "Reni memberi saran agar Sally menunggu kerja dulu sebelum keluar dari pekerjaannya sekarang.",
+      "A": "Sally asked Reni to take a new job.",
+      "B": "Reni wanted to have a job like Sally.",
+      "C": "Sally agreed if Reni worked in another company.",
+      "D": "Reni suggested Sally wait if she was accepted in another company."
+   };
+   q_39={
+      "no": 39,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "New employee: Excuse me,  ... myself. My name’s Putri.<br>Senior staff: My name’s  Dimas. How do you do?<br>New employee: How do you do? ",
+      "key": "A",
+      "expl": "Putri memperkenalkan diri sendiri.",
+      "A": "May I introduce",
+      "B": "Can you introduce",
+      "C": "Please introduce",
+      "D": "I’d like you to introduce"
+   };
+   q_40={
+      "no": 40,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Satrio: I bought my mobile phone in 2006.<br>Priyo: I bought my mobile phone in 2009.<br>Satrio: So, my mobile phone is  .... yours. ",
+      "key": "D",
+      "expl": "Telepon genggam punya Satrio lebih tua (older than) telepon Priyo.",
+      "A": "the same age as",
+      "B": "newer than",
+      "C": "as old as",
+      "D": "older than"
+   };
+   q_41={
+      "no": 41,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Ikke: What’s your hobby?<br>Cahya: I like  ... to music.<br>Ikke: What kind of music do you like the best?  ...",
+      "key": "A",
+      "expl": "like' + v-ing menandakan kebiasaan, 'like' + to menandakan hal yang baru akan dilakukan",
+      "A": "singing and listening",
+      "B": "to sing and to listen",
+      "C": "sing and listen",
+      "D": "singing and to listen"
+   };
+   q_42={
+      "no": 42,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Receptionist: Good afternoon.  ...?<br>Guest: I’d like to meet the director, please.<br>Receptionist: I am sorry, he’s having a meeting now.  ",
+      "key": "A",
+      "expl": "Tawaran bantuan dari tuan rumah untuk tamu adalah 'May I help you'",
+      "A": "May I help you.",
+      "B": "Can you help me.",
+      "C": "Could you do me a favor",
+      "D": "Would you like to help me"
+   };
+   q_43={
+      "no": 43,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Ani: What did you do last semester holiday?<br>Ana:  ... grandmother because she was not well.<br>Ani: I’m sorry to hear that. How’s she now? ",
+      "key": "B",
+      "expl": "Pertanyaan dalam simple past, dijawab dalam simple past.",
+      "A": "I visit my",
+      "B": "We visited our",
+      "C": "You have visited your",
+      "D": "She visits her"
+   };
+   q_44={
+      "no": 44,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Manager: Do we have to work over time next Sunday?<br>Staff: We don’t think so, Sir. Why?<br>Manager: We  ... to my house for the dinner party. ",
+      "key": "A",
+      "expl": "Pertanyaan dalam simple present, dijawab dalam simple present.",
+      "A": "want to invite you",
+      "B": "will visit you",
+      "C": "are going to visit",
+      "D": "would like you to invite me"
+   };
+   q_45={
+      "no": 45,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Nani: What do you think of my new bag?<br>Nina:  ...! It matches your dress perfectly.<br>Nani: Really? I bought it cheaply actually. ",
+      "key": "A",
+      "expl": "Pola compliment yang benar 'What a beautiful bag'",
+      "A": "What a beautiful bag",
+      "B": "How beautiful is your bag",
+      "C": "Your bag is what beautiful",
+      "D": "How much is your beautiful bag"
+   };
+   q_46={
+      "no": 46,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Buyer: I’m ... that the camera I bought last week seems to have been out of order.<br>Seller: I’m so sorry. What happened?<br>Buyer: I don’t know. I used it normally according to the manual. ",
+      "key": "A",
+      "expl": "Pembeli meminta maaf karena akan merepotkan toko tempat ia membeli.",
+      "A": "sorry to tell you",
+      "B": "happy to say this",
+      "C": "tired to inform you",
+      "D": "glad to let you know"
+   };
+   q_47={
+      "no": 47,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Emma: ... the way to the nearest post office, please?<br>Emmi: It’s not so far. Just go straight on and it’s on the right.<br>Emma: I see. Thanks. ",
+      "key": "C",
+      "expl": "mind + v-ing (gerund)",
+      "A": "May you show me",
+      "B": "Would you like telling me",
+      "C": "Would you mind telling me",
+      "D": "Why don’t you want to show me"
+   };
+   q_48={
+      "no": 48,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Putri: My education is the lowest among all staffs in the office, Dad.<br>Father: You  ... your study, but follow the procedure in your office, of course.<br>Putri: I’ll do it as soon as I have a chance. Thanks, Dad. ",
+      "key": "B",
+      "expl": "Saran memakai 'shou;d', 'had better', 'ought to'",
+      "A": "should stop",
+      "B": "had better continue",
+      "C": "would prefer to move",
+      "D": "would rather accelerate"
+   };
+   q_49={
+      "no": 49,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Manager: We have communication difficulty with foreign customers.<br>Director: If we used English in the daily conversation, we  ... with them.<br>Manager: We plan to have English hours in this office every day, Sir. ",
+      "key": "C",
+      "expl": "conditional type 2",
+      "A": "will have no communication difficulty",
+      "B": "cannot have no communication difficulty",
+      "C": "wouldn’t have communication difficulty",
+      "D": "Wouldn’t have had communication difficulty"
+   };
+   q_50={
+      "no": 50,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Man: It’s very hot in here, isn’t it?<br>Woman: Oh, yes.  ...<br>Man: Not at all. ",
+      "key": "D",
+      "expl": "Wanita tersebut minta izin untuk membuka jaketnya karena udara yang panas.",
+      "A": "Can you give me a fan?",
+      "B": "Will you please close that window?",
+      "C": "Please let me know what you wear?",
+      "D": "Would you mind if I took off my coat?"
+   }

@@ -1,0 +1,760 @@
+dir_1={"title":"LISTENING COMPREHENSION",
+       "aud": "2016_dir_1.mp3",
+	   "pic": "2016_dir_1.jpg",
+	   "q"  : "",
+       "dir_a": "In this section of the test, you will have the chance to show how well you understand spoken English. There are four parts to this section with special directions for each part.",
+	   "dir_b": "Part I. Pictures",
+       "dir_c": "For each item, there is a picture in your test book and four short statements about it on the tape. They are spoken TWICE, and are not written out in your test bock, so you must listen carefully. You must choose one statement – (A), (B), (C), or (D) – that best describes the picture. Then, on your answer sheet, mark your choice.",
+	   "dir_d": "Example: Look at the following picture:",
+	   "dir_e": "A. The man is wearing a tie.</br>B. The woman is wearing a jacket.</br>C. The woman is wearing a hat.</br>D. They are both wearing glasses.",
+	   "dir_f": "Choice (A) – “The man is wearing a tie.” – best describes what is seen in the picture. Therefore, you should mark (A) on your answer sheet.",
+	   "dir_g": "Let’s begin with question number one."
+       }; 
+dir_2={"title":"",
+       "aud": "2016_dir_2.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part II. Question – Responses",
+	   "dir_b": "",
+       "dir_c": "Directions: In this part of the test, you will hear several questions spoken in English, followed by four responses, also spoken in English. The questions and responses will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand what the speakers say. You have to choose the best response to each question.",
+	   "dir_d": "Now listen to a sample question",
+	   "dir_e": "<p>You will hear: </p><p>Woman: Could you tell me how to get to the convention center? </p><p>You will also hear </p><p>Man:</p><p><form>A. No. The convention was already over.</br>B. Sure. Go two blocks and turn left.</br>C. Yes. I have to get in now.</br>D. Yes. I met her there.</br></form>",
+	   "dir_f": "Choice (B) “Sure. Go two blocks and turn left.” – is the response to the question “Could you tell me how to get to the convention center?”</p>  <p>Therefore, you should mark (B) on your answer sheet.",
+	   "dir_g": ""
+       }; 	   
+dir_3={"title":"",
+       "aud": "2016_dir_3.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part III. Short Conversations",
+	   "dir_b": "",
+       "dir_c": "Directions: In this section of the test, you will hear several short conversations. You will hear the conversations TWICE. The conversations will not be printed in your test book, so you must listen carefully to understand what the speakers say. In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.",
+	   "dir_d": "<p>Example:</p><p>You will hear: </p><p>Woman : I ordered that last Tuesday. It should have arrived by now.</p><p>Man : Maybe there was a delay in sending it. Have you called them?</p><p>Woman : Not yet. I will call them now.</p>",
+	   "dir_e": "<p>You will read</p><p>What will the woman probably do?</p><form>A. phone the company.</br>B. order the software.</br>C. cancel the order.</br>D. arrive at the store</br></form>",
+	   "dir_f": "<p>Choice (A) – “phone the company”  is the best answer to the question, “What will the woman probably do?” Therefore, you should mark (A) on your answer sheet.</p>",
+	   "dir_g": ""
+       }; 
+dir_4={"title":"",
+       "aud": "2016_dir_4.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part IV. Short Talks",
+	   "dir_b": "Directions: In this part of the test, you will hear several short monologues. Each will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand and remember what is said.</p><p>In your test book, you will read two or more questions about each short monologue. Each question will be followed by four answers. You have to choose the best answer to each question and mark it on your answer sheet.",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+dir_5={"title":"READING SECTION",
+       "aud": "",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "",
+	   "dir_b": "Directions: In this part of the test, you have to read and answer each question by choosing A, B, C, or D",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+   q_1={
+      "no": 1,
+      "type": "pictures",
+      "pic": "2011_q_1.jpg",
+      "aud": "2011_q_1.mp3",
+      "tran": "",
+      "q": "",
+      "key": "C",
+      "expl": "Terlihat dalam gambar orang yang sedang jogging di tread mill.",
+      "A": "The athletes are running along the track.",
+      "B": "They are working on the computer.",
+      "C": "People are jogging on the treadmill.",
+      "D": "They are having a nice competition."
+   };
+   q_2={
+      "no": 2,
+      "type": "pictures",
+      "pic": "2011_q_2.jpg",
+      "aud": "2011_q_2.mp3",
+      "tran": "",
+      "q": "",
+      "key": "A",
+      "expl": "Terlihat orang-orang sedang berolah raga fun bike.",
+      "A": "They are having a fun bike.",
+      "B": "They are preparing for a racing competition.",
+      "C": "The people want to ride the bikes.",
+      "D": "The bikes are parked on the side of the road."
+   };
+   q_3={
+      "no": 3,
+      "type": "pictures",
+      "pic": "2011_q_3.jpg",
+      "aud": "2011_q_3.mp3",
+      "tran": "",
+      "q": "",
+      "key": "D",
+      "expl": "Terlihat salah satu dari tiga wanita itu mengenakan kalung (necklace).",
+      "A": "All the ladies are wearing glasses.",
+      "B": "The woman in the middle is crying.",
+      "C": "They are sitting in front of a picture.",
+      "D": "One of the women is wearing a necklace."
+   };
+   q_4={
+      "no": 4,
+      "type": "pictures",
+      "pic": "2011_q_4.jpg",
+      "aud": "2011_q_4.mp3",
+      "tran": "",
+      "q": "",
+      "key": "C",
+      "expl": "Terlihat kereta api baru saja melintasi sebuah terowongan (tunnel).",
+      "A": "The train is crossing over the bridge.",
+      "B": "The passengers are boarding on the train.",
+      "C": "The train runs through the tunnel.",
+      "D": "The man is getting off the train."
+   };
+   q_5={
+      "no": 5,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2011_q_5.mp3",
+      "tran": "",
+      "q": "Why do you like travelling by bus?",
+      "key": "B",
+      "expl": "Tanya: Kenapa Anda suka bepergian dengan kereta api? Respon: Saya pikir kereta api lebih aman.",
+      "A": "He likes travelling by bus.",
+      "B": "I think the train is safer.",
+      "C": "The bus is too cheap.",
+      "D": ""
+   };
+   q_6={
+      "no": 6,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2011_q_6.mp3",
+      "tran": "",
+      "q": "What kind of music do you like the most?",
+      "key": "C",
+      "expl": "Tanya: Jenis musik apa yang Anda paling suka? Respon: Saya sangat suka jazz.",
+      "A": "I like listening to music.",
+      "B": "Music is my favorite subject.",
+      "C": "I love jazz very much.",
+      "D": ""
+   };
+   q_7={
+      "no": 7,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2011_q_7.mp3",
+      "tran": "",
+      "q": "What is your opinion about the selling of our product this year?",
+      "key": "B",
+      "expl": "Tanya: Apa pendapat Anda tentang penjualan produk tahun ini? Respon: Saya pikir penjualan telah meningkat sejak tahun lalu.",
+      "A": "He is going to sell a new product.",
+      "B": "I think the sales have increased since last year.",
+      "C": "I don't know about the product.",
+      "D": ""
+   };
+   q_8={
+      "no": 8,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2011_q_8.mp3",
+      "tran": "",
+      "q": "Do you want to see the exhibition?",
+      "key": "B",
+      "expl": "Tanya: Apa kamu mau melihat pameran? Respon: Kedengarannya bagus, mari kita pergi.",
+      "A": "The exhibition would start soon.",
+      "B": "That sounds great, let's go then.",
+      "C": "I see, it's very interesting.",
+      "D": ""
+   };
+   q_9={
+      "no": 9,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2011_q_9.mp3",
+      "tran": "Man: Do you cook every night? <br> Woman: No, my room-mate and I take turn. How about you? <br> Oh, my maid does it.",
+      "q": "Who helps the woman do the cooking?",
+      "key": "D",
+      "expl": "Wanita tersebut tidak dibantu siapa-siapa.",
+      "A": "The man",
+      "B": "The maid",
+      "C": "The room-mate.",
+      "D": "No one."
+   };
+   q_10={
+      "no": 10,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2011_q_10.mp3",
+      "tran": "Woman: We used to have three dictionaries here. What happened?<br>Man: Our friend borrowed them and forgot to bring them back<br />Woman: Maybe the supervisor can send them memo about returning them. <br />",
+      "q": "What did the people do when the dictionaries were in the office?",
+      "key": "A",
+      "expl": "Orang-orang meminjam kamus-kamus tersebut saat kamus-kamus tersebut masih ada.",
+      "A": "They borrowed them.",
+      "B": "The supervisor brought them.",
+      "C": "People sent the memo.",
+      "D": "We lent some of them."
+   };
+   q_11={
+      "no": 11,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2011_q_11.mp3",
+      "tran": "Man: I live alone. I don't need this large room. <br> Woman: I have a small one bedroom unit you may like it better and it's even cheaper.<br> Man: Let's take a look at that one.",
+      "q": "What room might that man like?",
+      "key": "B",
+      "expl": "Pria tersebut membutuhkan kamar yang tidak terlalu luas karena ia tinggal sendirian.",
+      "A": "The large one.",
+      "B": "The small one.",
+      "C": "The expensive one.",
+      "D": "The beautiful one."
+   };
+   q_12={
+      "no": 12,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2011_q_12.mp3",
+      "tran": "Would you like to join International Social Security Association I.S.S.A. The procedure for joining I.S.S.A is simple. Contact the I.S.S.A general secretariat in Geneve either online, by phone, or by mail for your application. The secretariat would provide you with any further information you need and guide you through the application process before you pay your membership. As an independent international organization, I.S.S.A is financed by member contributions. For further information about cost of membership for your organization, please email a consultant via the I.S.S.A website, w.w.w.issa.imt-joint.com or contact the I.S.S.A general secretariat at 041-22799-6617",
+      "q": "What is the presentation about?",
+      "key": "A",
+      "expl": "Presentasi ini adalah tentang bagaimana cara bergabung dengan sebuah organisasi, yaitu ISSA.",
+      "A": "Joining an organization.",
+      "B": "Phoning someone important.",
+      "C": "Calculating the budget.",
+      "D": "Contributing an idea."
+   };
+   q_13={
+      "no": 13,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2011_q_13.mp3",
+      "tran": "Would you like to join International Social Security Association I.S.S.A. The procedure for joining I.S.S.A is simple. Contact the I.S.S.A general secretariat in Geneve either online, by phone, or by mail for your application. The secretariat would provide you with any further information you need and guide you through the application process before you pay your membership. As an independent international organization, I.S.S.A is financed by member contributions. For further information about cost of membership for your organization, please email a consultant via the I.S.S.A website, w.w.w.issa.imt-joint.com or contact the I.S.S.A general secretariat at 041-22799-6617",
+      "q": "What do you have to do after applying the application?",
+      "key": "C",
+      "expl": "Organisasi yang tertarik bergabung harus mengajukan aplikasi dan membayar biaya pendaftaran.",
+      "A": "Visit the office.",
+      "B": "Consult the secretary.",
+      "C": "Pay the membership.",
+      "D": "Contact the security."
+   };
+   q_14={
+      "no": 14,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2011_q_14.mp3",
+      "tran": "When you think of Viking mountain, you probably think of world-class skiing and with good reason. But Viking mountain is much much more. It's also a world class summer resorts, offering challenging  eighteen holes golf courses, and the lake for swimming, fishing and boating. In late June, there is famous Viking mountain jazz music festival. In July, an art and craft fair and summer hotel rates are more than reasonable, rooms are half the ski season rate. So come up now for summer fun on Viking mountain.",
+      "q": "What is being advertised?",
+      "key": "B",
+      "expl": "Yang sedang diiklankan adalah sebuah tempat peristirahatan musim panas kelas dunia yaitu Viking Mountain (world-class summer resort).",
+      "A": "Some mountain resorts.",
+      "B": "A world-class summer resort.",
+      "C": "Jazz mountain festivals.",
+      "D": "Summer hotel rates."
+   };
+   q_15={
+      "no": 15,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2011_q_15.mp3",
+      "tran": "When you think of Viking mountain, you probably think of world-class skiing and with good reason. But Viking mountain is much much more. It's also a world class summer resorts, offering challenging  eighteen holes golf courses, and the lake for swimming, fishing and boating. In late June, there is famous Viking mountain jazz music festival. In July, an art and craft fair and summer hotel rates are more than reasonable, rooms are half the ski season rate. So come up now for summer fun on Viking mountain.",
+      "q": "What do you have in July?",
+      "key": "C",
+      "expl": "Yang diadakan tiap Juli adalah pasar seni dan kerajinan (arts and crafts fair).",
+      "A": "A famous Viking Mountain Jazz festival.",
+      "B": "Winter fun at the hotel.",
+      "C": "An arts and crafts fair.",
+      "D": "World-class skiing."
+   };
+   q_16={
+      "no": 16,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "PT Natari Corporation is an Indonesia-based company which engaged in infrastructure, telecommunication and plantations. The company's activities comprises general trading, construction, agriculture, mining, industry — especially steel pipe manufacturing, building materials and construction products telecommunication systems, electronic and electrical goods, and investment including equity investment in other companies.<br>The three core business areas of the company manage: infrastructure support sector, which participates in accelerating infrastructure programs set by government; telecommunication sector, which further improves the marketing of its products and services in order to maximize profit; and plantation sector, which prominently produces palm oil, latex and natural rubber. As of December 31, 2011, the company owned 22 direct subsidiaries.",
+      "q": "The Natari Corporation increases the company’s market …",
+      "key": "D",
+      "expl": "Paragraf 2: sektor telekomunikasi meningkatkan penjualan produk dan jasanya.",
+      "A": "through the plantation sector",
+      "B": "by selling its products cheaply",
+      "C": "by accelerating infrastructure programs",
+      "D": "through its telecommunication sector business"
+   };
+   q_17={
+      "no": 17,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "PT Natari Corporation is an Indonesia-based company which engaged in infrastructure, telecommunication and plantations. The company's activities comprises general trading, construction, agriculture, mining, industry — especially steel pipe manufacturing, building materials and construction products telecommunication systems, electronic and electrical goods, and investment including equity investment in other companies.<br>The three core business areas of the company manage: infrastructure support sector, which participates in accelerating infrastructure programs set by government; telecommunication sector, which further improves the marketing of its products and services in order to maximize profit; and plantation sector, which prominently produces palm oil, latex and natural rubber. As of December 31, 2011, the company owned 22 direct subsidiaries.",
+      "q": "Which sector of the company often deals with the authority?",
+      "key": "C",
+      "expl": "Paragraf 2: sektor infrastruktur mempercepat program pembangunan dari Pemerintah. ",
+      "A": "The plantation sector",
+      "B": "The investment sector",
+      "C": "The infrastructure sector",
+      "D": "The telecommunication sector"
+   };
+   q_18={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "PT Natari Corporation is an Indonesia-based company which engaged in infrastructure, telecommunication and plantations. The company's activities comprises general trading, construction, agriculture, mining, industry — especially steel pipe manufacturing, building materials and construction products telecommunication systems, electronic and electrical goods, and investment including equity investment in other companies.<br>The three core business areas of the company manage: infrastructure support sector, which participates in accelerating infrastructure programs set by government; telecommunication sector, which further improves the marketing of its products and services in order to maximize profit; and plantation sector, which prominently produces palm oil, latex and natural rubber. As of December 31, 2011, the company owned 22 direct subsidiaries.",
+      "q": "How does the writer describe PT Nastari?",
+      "key": "C",
+      "expl": "Perusahaan ini bergerak dalam 3 bidang (mutisektor).",
+      "A": "a foreign firm",
+      "B": "a franchise business",
+      "C": "a multi-sector company",
+      "D": "a new developing branch"
+   };
+   q_19={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>The Feast for the Dead of Torajan</b><br><br>The Torajan are accustomed to colorful feast for the dead offering to make sure that the soul of the dead may pass to the after world with the same status as that they have in this world.<br>The ceremony costs much money because the kin groups will save and work for money for years to prepare this.<br>A man is considered dead when his funeral feast has been done. At the meantime, the decease is regarded as sick. He is kept in a special house called Tongkonan. He is fed and visited as if he were alive.",
+      "q": "What is the first paragraph about?",
+      "key": "D",
+      "expl": "Paragraf 1 menceritakan tentang upacara pemakaman Toraja.",
+      "A": "House of corpse in Toraja.",
+      "B": "Expensive tradition in Toraja.",
+      "C": "The traditional corpse in Toraja.",
+      "D": "The funeral ceremony in Toraja."
+   };
+   q_20={
+      "no": 20,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>The Feast for the Dead of Torajan</b><br><br>The Torajan are accustomed to colorful feast for the dead offering to make sure that the soul of the dead may pass to the after world with the same status as that they have in this world.<br>The ceremony costs much money because the kin groups will save and work for money for years to prepare this.<br>A man is considered dead when his funeral feast has been done. At the meantime, the decease is regarded as sick. He is kept in a special house called Tongkonan. He is fed and visited as if he were alive.",
+      "q": "What is Tongkongan?",
+      "key": "A",
+      "expl": "Tongkongan adalah rumah khusus bagi orang yang meninggal tapi belum dimakamkan.",
+      "A": "It is a special house for the sick deceased.",
+      "B": "It is a special house for the ceremony.",
+      "C": "It is money for the kin groups.",
+      "D": "It is Torajan colorful feast."
+   };
+   q_21={
+      "no": 21,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "My neighbor bought a new computer last week. She asked me to tell her the instruction. Here they are:<br>1.Plug the power cord.<br>2.Press the power button on. After a few minutes you will see a window menu on the monitor.<br>3.Look at the left button of the monitor.<br>4.Then hold the mouse gently.<br>5.Move the arrow pointer on to the ‘Start’ menu.<br>6.Click it.<br>7.Click the program menu and choose MS Word. Now you are ready to type.",
+      "q": "What should we do after we move the arrow?",
+      "key": "B",
+      "expl": "Setelah menggerakkan tanda panah ke Start menu, kita harus klik mouse.",
+      "A": "move the arrow",
+      "B": "click the start menu",
+      "C": "plug the power cord",
+      "D": "look at the left button."
+   };
+   q_22={
+      "no": 22,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "My neighbor bought a new computer last week. She asked me to tell her the instruction. Here they are:<br>1.Plug the power cord.<br>2.Press the power button on. After a few minutes you will see a window menu on the monitor.<br>3.Look at the left button of the monitor.<br>4.Then hold the mouse gently.<br>5.Move the arrow pointer on to the ‘Start’ menu.<br>6.Click it.<br>7.Click the program menu and choose MS Word. Now you are ready to type.",
+      "q": "According to the text, we know that the computer …",
+      "key": "D",
+      "expl": "Komputer tersebut milik tetangga.",
+      "A": "belonged to the writer",
+      "B": "was not ready to be used",
+      "C": "was bought by the writer",
+      "D": "belonged to the writer’s neighbor"
+   };
+   q_23={
+      "no": 23,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Pointview office will be closed from December 28 to January 5 due to New Year’s holidays. You must submit your inquiry through the online inquiry forms. However, please note that we will not be able to reply your inquiry during this period.<br>We will respond to you as soon as possible after the holiday. We apologize for the inconvenience this may take and thank you for your understanding.",
+      "q": "Why will the Pointview office cease trading?",
+      "key": "C",
+      "expl": "Kantor akan libur karena liburan tahun baru.",
+      "A": "Because of the December 28",
+      "B": "Because of the December holiday",
+      "C": "Because of the New Year’s holiday",
+      "D": "Because of the online inquiry forms"
+   };
+   q_24={
+      "no": 24,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Pointview office will be closed from December 28 to January 5 due to New Year’s holidays. You must submit your inquiry through the online inquiry forms. However, please note that we will not be able to reply your inquiry during this period.<br>We will respond to you as soon as possible after the holiday. We apologize for the inconvenience this may take and thank you for your understanding.",
+      "q": "How can the customers send the inquiry application during the closing period?",
+      "key": "C",
+      "expl": "Pesanan dapat dikirim secara online selama libur.",
+      "A": "By phone",
+      "B": "By letter",
+      "C": "By online",
+      "D": "By courier"
+   };
+   q_25={
+      "no": 25,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Our boss bought a new computer last week. Now, our secretary is trying to type our work on it, but she forgot how to start. She called me to ask how to do it. I wrote the instruction as follows:<br>First, plug in the power cord. Then press the power button on. After a few minutes, you will see a windows menu on the monitor.<br>Next, look at the left bottom of the monitor. After that, hold it most gently. Move the arrow pointer onto the ‘start’ menu and then click it.<br>Then, click the program menu. Finally, choose MS Word.<br>Now, you are ready to type.",
+      "q": "Where can we find MS Word?",
+      "key": "B",
+      "expl": "MS Word dapat ditemukan dalam menu program.",
+      "A": "Inside the monitor",
+      "B": "On the program menu",
+      "C": "Next to the arrow pointer",
+      "D": "At the bottom of the computer"
+   };
+   q_26={
+      "no": 26,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Our boss bought a new computer last week. Now, our secretary is trying to type our work on it, but she forgot how to start. She called me to ask how to do it. I wrote the instruction as follows:<br>First, plug in the power cord. Then press the power button on. After a few minutes, you will see a windows menu on the monitor.<br>Next, look at the left bottom of the monitor. After that, hold it most gently. Move the arrow pointer onto the ‘start’ menu and then click it.<br>Then, click the program menu. Finally, choose MS Word.<br>Now, you are ready to type.",
+      "q": "Who will find this information very useful?",
+      "key": "B",
+      "expl": "Informasi ini berguna bagi pengguna komputer.",
+      "A": "Travelers",
+      "B": "Computer users",
+      "C": "SMK students only",
+      "D": "International celebrities"
+   };
+   q_27={
+      "no": 27,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Hawaii Goes Freestyle with NCL<b><br><br>You will have four unique ways to see America’s paradise with NCL. By 2006, the line will have four ships based in Hawaii. Three of the ships – Pride of Aloha, Pride of America and Pride of Hawaii  will be U.S. – flagged and 100 percent U.S. – crewed, sailing exclusively among the islands, and one international ship – Norwegian Wind – will continue sailing between the islands of Hawaii and Fanning Island.<br>Collin Veitch, president and CEO of NCL Corporation, says ‘These ships will also create thousands of U.S. jobs and more than three-quarters of billion dollars of expenditures in U.S.  economy. <br>NCL is the only cruise line to offer seven-day, inter island itineraries to Hawaii. Shorter days at sea and longer port visits – up to 96 hours – give you ample time to explore the wonders of paradise. And with NCL’s signature Freestyle Cruising you can enjoy a more resort-style cruise experience, including relaxed casual attire, the freedom to dine when you choose, and guest-friendly disembarkation allowing you to enjoy the final morning in the cruise and depart the ship at your own leisure.",
+      "q": "What is the topic of paragraph 1?",
+      "key": "A",
+      "expl": "Paragraf 1 berisi tentang jasa yang ditawarkanNCL.",
+      "A": "NCL’s service",
+      "B": "Longer port visits",
+      "C": "Freestyle Cruising",
+      "D": "Itineraries to Hawaii"
+   };
+   q_28={
+      "no": 28,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Hawaii Goes Freestyle with NCL</b><br><br>You will have four unique ways to see America’s paradise with NCL. By 2006, the line will have four ships based in Hawaii. Three of the ships – Pride of Aloha, Pride of America and Pride of Hawaii  will be U.S. – flagged and 100 percent U.S. – crewed, sailing exclusively among the islands, and one international ship – Norwegian Wind – will continue sailing between the islands of Hawaii and Fanning Island.<br>Collin Veitch, president and CEO of NCL Corporation, says ‘These ships will also create thousands of U.S. jobs and more than three-quarters of billion dollars of expenditures in U.S.  economy. <br>NCL is the only cruise line to offer seven-day, inter island itineraries to Hawaii. Shorter days at sea and longer port visits – up to 96 hours – give you ample time to explore the wonders of paradise. And with NCL’s signature Freestyle Cruising you can enjoy a more resort-style cruise experience, including relaxed casual attire, the freedom to dine when you choose, and guest-friendly disembarkation allowing you to enjoy the final morning in the cruise and depart the ship at your own leisure.",
+      "q": "Which of the following cruises sails between the islands of Hawaii and Fanning island?",
+      "key": "C",
+      "expl": "Norwegian Wind adalah kapal yang berlayar antara Hawaii dan pulau Fanning.",
+      "A": "Pride of Aloha",
+      "B": "Pride of Hawaii",
+      "C": "Norwegian Wind",
+      "D": "Pride of America"
+   };
+   q_29={
+      "no": 29,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Hawaii Goes Freestyle with NCL</b><br><br>You will have four unique ways to see America’s paradise with NCL. By 2006, the line will have four ships based in Hawaii. Three of the ships – Pride of Aloha, Pride of America and Pride of Hawaii  will be U.S. – flagged and 100 percent U.S. – crewed, sailing exclusively among the islands, and one international ship – Norwegian Wind – will continue sailing between the islands of Hawaii and Fanning Island.<br>Collin Veitch, president and CEO of NCL Corporation, says ‘These ships will also create thousands of U.S. jobs and more than three-quarters of billion dollars of expenditures in U.S.  economy. <br>NCL is the only cruise line to offer seven-day, inter island itineraries to Hawaii. Shorter days at sea and longer port visits – up to 96 hours – give you ample time to explore the wonders of paradise. And with NCL’s signature Freestyle Cruising you can enjoy a more resort-style cruise experience, including relaxed casual attire, the freedom to dine when you choose, and guest-friendly disembarkation allowing you to enjoy the final morning in the cruise and depart the ship at your own leisure.",
+      "q": "What does ‘guest-friendly disembarkation’ mean?",
+      "key": "C",
+      "expl": "Guest –friendly bermakna bahwa di hari terakhir, para penumpang bebas pergi sesuai waktu luangnya (leisure).",
+      "A": "Guest enjoy full time services on board.",
+      "B": "Guests have freedom to eat anytime they like.",
+      "C": "Passengers have flexible time to leave the ship.",
+      "D": "Passengers wear casual clothes in their spare time."
+   };
+   q_30={
+      "no": 30,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "The connection of the VCD player and the TV set:<br>1.If there is AV port in your TV set, please connect the player and the TV set with the attached AUDIO/VIDEO line, ensure correctly, and reset the TV status.<br>2.If there is only an AUDIO input port, connect the red AUDIO line.<br>3.If there isn’t AV port in your TV set, then please connect the RF cable of the player to the high frequency head of the TV set (input port of antenna).<br>NOTE:<br>Adjust PAL/NTSC of the TV set based on the disc. ",
+      "q": "From the instruction, we understand that we should connect the VCD player and the TV set using …",
+      "key": "B",
+      "expl": "VCD player dan TV dihubungkan dengan kabel AV atau RF.",
+      "A": "both the AUDIO/VIDEO line and the RF cable. ",
+      "B": "either the AUDIO/VIDEO line or the RF cable.",
+      "C": "neither the AUDIO/VIDEO line and the RF cable.",
+      "D": "not only the AUDIO/VIDEO line and the RF cable."
+   };
+   q_31={
+      "no": 31,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "The connection of the VCD player and the TV set:<br>1.If there is AV port in your TV set, please connect the player and the TV set with the attached AUDIO/VIDEO line, ensure correctly, and reset the TV status.<br>2.If there is only an AUDIO input port, connect the red AUDIO line.<br>3.If there isn’t AV port in your TV set, then please connect the RF cable of the player to the high frequency head of the TV set (input port of antenna).<br>NOTE:<br>Adjust PAL/NTSC of the TV set based on the disc. ",
+      "q": "‘<u>Adjust</u> PAL/NTSC of the TV set ..’ The synonym of the underlined word is …",
+      "key": "A",
+      "expl": "Adjust=set",
+      "A": "set",
+      "B": "judge",
+      "C": "admire",
+      "D": "justify"
+   };
+   q_32={
+      "no": 32,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Man: Why do I never see Alice, the new financial staff?<br>Woman: She often goes from one branch to another, Sir.<br>Man: What for? Withdrawing money?<br>Woman: Yes, with Mr. Jack, the driver.",
+      "q": "What does Alice often do?",
+      "key": "D",
+      "expl": "Alice sering pergi berkeliling cabang lain untuk mengambil uang perusahaan bersama Mr. Jack.",
+      "A": "Absent from work.",
+      "B": "Goes around the office.",
+      "C": "Accompanies Mr. Jack.",
+      "D": "Takes the company money."
+   };
+   q_33={
+      "no": 33,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Man: Huh, the negotiation was very hard! What’s the next agenda?<br>Woman: There will be visitors from a spare part supplier, Sir. They are going to talk about the possibility of using their spare parts for our machinery.<br>Man: Oh yes, I remember. Let me have a rest for a while.",
+      "q": "What official activity is the man going to do?",
+      "key": "D",
+      "expl": "Setelah melakukan suatu negosiasi, pria tersebut harus menemui tamu lain.",
+      "A": "He will take a rest.",
+      "B": "He will use the spare parts.",
+      "C": "He is going to do a negotiation.",
+      "D": "He is going to talk to the visitors."
+   };
+   q_34={
+      "no": 34,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Woman: Can you accompany me to buy a computer?<br>Man: Why a computer? A laptop is more useful than a computer.<br>Woman: Why didn’t I think of that? What about the price?",
+      "q": "From the dialog, we know that …",
+      "key": "C",
+      "expl": "Kita tahu bahwa sebuah laptop lebih portabel daripada komputer.",
+      "A": "A laptop is cheaper than a computer.",
+      "B": "A computer is more useful than a laptop.",
+      "C": "A laptop is more portable than a computer.",
+      "D": "A computer is less sophisticated than a laptop."
+   };
+   q_35={
+      "no": 35,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Caller: Can I speak to Mr. Satori, please?<br>Operator: Sorry. He’s having a meeting right now. Would you like to leave a message?<br>Caller: Well, please tell him to fax the computer specification that he ordered immediately to CAC (Computer and Accessories Center). Thank you.",
+      "q": "What does the caller want?",
+      "key": "D",
+      "expl": "Penelepon ingin agar diberi fax tentang spesifikasi komputer.",
+      "A": "He likes to see Mr. Satori.",
+      "B": "He wants to meet Mr. Satori.",
+      "C": "He hopes to buy a computer from Mr. Satori.",
+      "D": "He needs specification of a computer from Mr. Satori."
+   };
+   q_36={
+      "no": 36,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Manager: Good morning. How are you?<br>Secretary: Good morning, Sir. I’m very well, thank you. May I introduce Ms. Putri Resmiati. She’s a new staff member in our Accounting Department. She’s going to start to work today.<br>Manager: How do you do?",
+      "q": "The one the secretary introduced was…",
+      "key": "B",
+      "expl": "Sekretaris tersebut memperkenalkan pegawai akunting yang baru.",
+      "A": "the director of the company",
+      "B": "the employee in accounting department",
+      "C": "the head of accounting department",
+      "D": "a man, senior staff in the company."
+   };
+   q_37={
+      "no": 37,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Patient: What’s wrong with me, Doctor?<br>Doctor: Don’t be worried. It’s not a serious disease. Just  a cough and flu. Have enough rest, a lot of fresh fruit and drink, but not much sweet and rich food.<br>Patient: I see, thank you, Doctor.",
+      "q": "According to the doctor, the patient shouldn’t …",
+      "key": "D",
+      "expl": "Menurut dokter, pasien disarankan  banyak makan, tapi jangan makanan manis dan pedas.",
+      "A": "have enough rest ",
+      "B": "drink much",
+      "C": "buy sugar",
+      "D": "eat fat and spicy food"
+   };
+   q_38={
+      "no": 38,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Sofia: Hi, Lina. Are you doing anything special this weekend?<br>Lina: I don’t know yet. Why?<br>Sofia: How about coming to my house this Saturday? We’re having a party.<br>Lina: I’m not sure I can. The family might already have other plans.<br>Sofia: Come on! Bring the whole family!<br>Lina: OK, I’ll give you a call and let you know.",
+      "q": "How does Sofia know that Lina will come?",
+      "key": "D",
+      "expl": "Lina akan menghubungi Sofia untuk memberi kepastian apakah ia jadi datang atau tidak.",
+      "A": "Lina will send a message.",
+      "B": "Sofia will tell her family.",
+      "C": "Lina will write an email.",
+      "D": "Lina will contact her."
+   };
+   q_39={
+      "no": 39,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "The telephone at home is ringing.<br>Mother: Anyone there? Someone is calling<br>Ira:  ..., Mom. ",
+      "key": "C",
+      "expl": "will dipakai ketika akan langsung dilakukan.",
+      "A": "I answer it.",
+      "B": "I’m answering it.",
+      "C": "I’ll answer it.",
+      "D": "I want to answer it."
+   };
+   q_40={
+      "no": 40,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Director: Why do you think Sonny is suitable for the position?<br>Manager:  ...<br>Director: I know, but, what about Sally? I think she is, too. ",
+      "key": "B",
+      "expl": "Sonny adalah orang yang mandiri (independent) tapi juga siap bekerjasama (cooperative).",
+      "A": "He is not an independent, nor a cooperative employee.",
+      "B": "He is an independent employee but ready to be cooperative.",
+      "C": "He is not an independent employee but ready to be cooperative.",
+      "D": "He is an independent employee but not to be cooperative."
+   };
+   q_41={
+      "no": 41,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Dino: Will it be possible for her to forgive me?<br>Dina: If you ask me for an apology, I am sure, she  ...<br>Dino: Do you think so? ",
+      "key": "B",
+      "expl": "if+imple present,…will…",
+      "A": "Forgives you",
+      "B": "Will forgive you",
+      "C": "Would forgive you",
+      "D": "Had forgiven you"
+   };
+   q_42={
+      "no": 42,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Ms. Yanti: Do you teach Putri, the 2nd grader of Electronics A?<br>Ms. Novy: I do. She always gets good mark in every test.<br>Ms. Yanti: That’s right.  ",
+      "key": "C",
+      "expl": "Karena Putri adalah siswi yang rajin, ia akan selalu mendapat nilai yang baik.",
+      "A": "Diligent students won’t never get bad marks.",
+      "B": "Lazy students will never get bad marks.",
+      "C": "Diligent students will always get good marks.",
+      "D": "Lazy students will always get good marks."
+   };
+   q_43={
+      "no": 43,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Bambang: I am sure you kept watching Shanti at the party last night.<br>Slamet: I don’t even know her. What’s she like?<br>Bambang: You must be kidding  ",
+      "key": "C",
+      "expl": "Shanti dideskripsikan sebagai wanita yang cantik.",
+      "A": "She likes a film star.",
+      "B": "She is like you very much.",
+      "C": "She is beautiful with long hair and fair skin.",
+      "D": "She has a flat nose, stocky body with dark skin."
+   };
+   q_44={
+      "no": 44,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Anne: What do you want to be?<br>Dena: I want to be a cook. I like cooking.<br>Anne: You can be a model if you want to.  ...",
+      "key": "C",
+      "expl": "Anne mendeskripsikan postur tubuh Dena cocok menjadi foto model.",
+      "A": "You have a short and fat body.",
+      "B": "You can cook and makes cakes.",
+      "C": "You have a tall and slim body.",
+      "D": "You are stocky and muscular."
+   };
+   q_45={
+      "no": 45,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Sri: What’s your activity to kill your spare time?<br>Dio:  ... . What about you?<br>Sri: So do I. Technology grows very fast, so we must be always up to date. ",
+      "key": "A",
+      "expl": "Pola simple present yang benar adalah I+V1 (tanpa tambahan s/es).",
+      "A": "I usually surf and browse through the internet.",
+      "B": "I usually surfed and browsed through the internet.",
+      "C": "I usually surfs and browses through the internet.",
+      "D": "I usually surfing and browsing through the internet."
+   };
+   q_46={
+      "no": 46,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Mr. Dodi: I am confused. My son was accepted to study in a favorite university, but we don’t enough money to pay.<br>Mr. Dudi: If I were you,  ...<br>Mr. Dodi: Of course, you have no financial problems. ",
+      "key": "B",
+      "expl": "Pola conditional type 2: If+simple past, S+would+…",
+      "A": "I would be confused, too.",
+      "B": "I would be very happy.",
+      "C": "I would be very sad.",
+      "D": "I would be bored."
+   };
+   q_47={
+      "no": 47,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Tia: You look very busy with your work.  ...<br>Nia: Oh, it’ll be great. But I’m afraid it’ll trouble you.<br>Tia: Don’t worry! I have been relaxed now.  ",
+      "key": "C",
+      "expl": "Tia menawarkan bantuan kepada Nia.",
+      "A": "Can you give me a hand?",
+      "B": "You must use my hand",
+      "C": "Let me give you a hand",
+      "D": "Shall I clean your hand"
+   };
+   q_48={
+      "no": 48,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Anti: What’s your plan after you graduate your study here, continuing your study?<br>Budi: No,  ...<br>Anti: Neither do I. ...",
+      "key": "C",
+      "expl": "Budi tidak ingin meneruskan belajar setelah lulus.",
+      "A": "I will not want continue studying",
+      "B": "I am not want to continue to study",
+      "C": "I do not want to continue studying",
+      "D": "I want not continue my study"
+   };
+   q_49={
+      "no": 49,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Yuli: Both developing countries and advanced countries must take part in reducing green-house gas emissions.<br>Iwan:  ... Every country must take part in it. ",
+      "key": "B",
+      "expl": "Iwan setuju dengan pendapat Yuli, maka kita pilih I'm on your side.",
+      "A": "I don’t think so.",
+      "B": "I’m on your side.",
+      "C": "I disagree with you.",
+      "D": "I don’t think it’s true."
+   };
+   q_50={
+      "no": 50,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Ririn: The math test is difficult,  ...?<br>Ani: Yes, I guess so. ",
+      "key": "B",
+      "expl": "Ririn menanyakan pendapat Ani bahwa tes matematika tersebut sulit; dan Ani setuju.",
+      "A": "Can you help me",
+      "B": "Don’t you think so",
+      "C": "Do you know the lesson",
+      "D": "Do you have any suggestions"
+   }

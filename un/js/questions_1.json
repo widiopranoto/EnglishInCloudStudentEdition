@@ -1,0 +1,761 @@
+// JavaScript Document
+dir_1={"title":"LISTENING COMPREHENSION",
+       "aud": "2016_dir_1.mp3",
+	   "pic": "2016_dir_1.jpg",
+	   "q"  : "",
+       "dir_a": "In this section of the test, you will have the chance to show how well you understand spoken English. There are four parts to this section with special directions for each part.",
+	   "dir_b": "Part I. Pictures",
+       "dir_c": "For each item, there is a picture in your test book and four short statements about it on the tape. They are spoken TWICE, and are not written out in your test bock, so you must listen carefully. You must choose one statement – (A), (B), (C), or (D) – that best describes the picture. Then, on your answer sheet, mark your choice.",
+	   "dir_d": "Example: Look at the following picture:",
+	   "dir_e": "A. The man is wearing a tie.</br>B. The woman is wearing a jacket.</br>C. The woman is wearing a hat.</br>D. They are both wearing glasses.",
+	   "dir_f": "Choice (A) – “The man is wearing a tie.” – best describes what is seen in the picture. Therefore, you should mark (A) on your answer sheet.",
+	   "dir_g": "Let’s begin with question number one."
+       }; 
+dir_2={"title":"",
+       "aud": "2016_dir_2.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part II. Question – Responses",
+	   "dir_b": "",
+       "dir_c": "Directions: In this part of the test, you will hear several questions spoken in English, followed by four responses, also spoken in English. The questions and responses will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand what the speakers say. You have to choose the best response to each question.",
+	   "dir_d": "Now listen to a sample question",
+	   "dir_e": "<p>You will hear: </p><p>Woman: Could you tell me how to get to the convention center? </p><p>You will also hear </p><p>Man:</p><p><form>A. No. The convention was already over.</br>B. Sure. Go two blocks and turn left.</br>C. Yes. I have to get in now.</br>D. Yes. I met her there.</br></form>",
+	   "dir_f": "Choice (B) “Sure. Go two blocks and turn left.” – is the response to the question “Could you tell me how to get to the convention center?”</p>  <p>Therefore, you should mark (B) on your answer sheet.",
+	   "dir_g": ""
+       }; 	   
+dir_3={"title":"",
+       "aud": "2016_dir_3.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part III. Short Conversations",
+	   "dir_b": "",
+       "dir_c": "Directions: In this section of the test, you will hear several short conversations. You will hear the conversations TWICE. The conversations will not be printed in your test book, so you must listen carefully to understand what the speakers say. In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.",
+	   "dir_d": "<p>Example:</p><p>You will hear: </p><p>Woman : I ordered that last Tuesday. It should have arrived by now.</p><p>Man : Maybe there was a delay in sending it. Have you called them?</p><p>Woman : Not yet. I will call them now.</p>",
+	   "dir_e": "<p>You will read</p><p>What will the woman probably do?</p><form>A. phone the company.</br>B. order the software.</br>C. cancel the order.</br>D. arrive at the store</br></form>",
+	   "dir_f": "<p>Choice (A) – “phone the company”  is the best answer to the question, “What will the woman probably do?” Therefore, you should mark (A) on your answer sheet.</p>",
+	   "dir_g": ""
+       }; 
+dir_4={"title":"",
+       "aud": "2016_dir_4.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part IV. Short Talks",
+	   "dir_b": "Directions: In this part of the test, you will hear several short monologues. Each will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand and remember what is said.</p><p>In your test book, you will read two or more questions about each short monologue. Each question will be followed by four answers. You have to choose the best answer to each question and mark it on your answer sheet.",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+dir_5={"title":"READING SECTION",
+       "aud": "",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "",
+	   "dir_b": "Directions: In this part of the test, you have to read and answer each question by choosing A, B, C, or D",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+   q_1= {
+      "no": "1",
+      "type": "pictures",
+      "pic": "2016_q_1.jpg",
+      "aud": "2016_q_1.mp3",
+      "tran": "",
+      "q": "",
+      "key": "D",
+      "expl": "Gambar menunjukkan orang-orang yang duduk berdekatan dalam perahu.",
+      "A": "There is a huge wave on the lake.",
+      "B": "The boat is in front of the ship.",
+      "C": "The life jackets are on the roof of the boat.",
+      "D": "The passengers are sitting next to each other."
+   };
+   q_2= {
+      "no": "2",
+      "type": "pictures",
+      "pic": "2016_q_2.jpg",
+      "aud": "2016_q_2.mp3",
+      "tran": "",
+      "q": "",
+      "key": "C",
+      "expl": "Gambar menunjukkan salah seorang gadis memakai kalung.",
+      "A": "The girls look quite unhappy.",
+      "B": "They put on their jackets.",
+      "C": "One of the girls is wearing a necklace.",
+      "D": "They are looking at one another."
+   };
+   q_3= {
+      "no": "3",
+      "type": "pictures",
+      "pic": "2016_q_3.jpg",
+      "aud": "2016_q_3.mp3",
+      "tran": "",
+      "q": "",
+      "key": "B",
+      "expl": "Gambar menunjukkan sebuah restoran yang ramai.",
+      "A": "They are eating on a floating restaurant.",
+      "B": "The restaurant is quite crowded.",
+      "C": "They are enjoying the live music.",
+      "D": "The meals are being prepared."
+   };
+   q_4= {
+      "no": "4",
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2016_q_4.mp3",
+      "tran": "",
+      "q": "Why didn't you tell your supervisor?",
+      "key": "B",
+      "expl": "Tanya: Mengapa Anda tidak bilang saja ke supervisor Anda?</br>Respon: Saya pikir saya bisa menanganinya sendiri.",
+      "A": "I didn't tell her why.",
+      "B": "I thought I can handle it myself.",
+      "C": "That would be fine, too.",
+      "D": "The problem was quite serious."
+   };
+   q_5= {
+      "no": "5",
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2016_q_5.mp3",
+      "tran": "",
+      "q": "Will you come to my sister's birthday dinner tomorrow?",
+      "key": "D",
+      "expl": "Tanya: Apakah Anda mau datang ke makan malam ultah saudara perempuan saya? </br>Respon: Ya, akan sangat menyenangkan.",
+      "A": "I'm afraid they won't join us.",
+      "B": "No, I've just had my dinner.",
+      "C": "Tonight would be the right time..",
+      "D": "Yes, that would be lovely."
+   };
+   q_6= {
+      "no": 6,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2016_q_6.mp3",
+      "tran": "",
+      "q": "How often do you have to turn in financial reports?",
+      "key": "B",
+      "expl": "Tanya: Berapa seringkah Anda harus menyerahkan laporan keuangan? </br> Respon: Sekali sebulan.",
+      "A": "Mrs. Gomez is our financial manager.",
+      "B": "Once a month.",
+      "C": "He's a very good reporter.",
+      "D": "I think it was last month."
+   };
+   q_7= {
+      "no": 7,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2016_q_7.mp3",
+      "tran": "",
+      "q": "Will the train stop at the next destination?",
+      "key": "D",
+      "expl": "Tanya: Akankah kereta ini berhenti di tujuan berikutnya? </br> Respon: Tidak. Sampai kita tiba di stasiun pusat.",
+      "A": "Yes. He will control his destiny.",
+      "B": "No. The bus stop is over there..",
+      "C": "Yes. I hope the rain will stop soon.",
+      "D": "No. Not until we arrive at the main station."
+   };
+   q_8= {
+      "no": 8,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2016_q_8.mp3",
+      "tran": "Man: Hi Jenny. Fancy seeing you here in the reading room.</br>Woman: I dont come here very often, but Ive arranged to meet my cousin here. Do you always read here?</br>Man: Just sometimes when I get bored.",
+      "q": "What does the man do when he gets bored?",
+      "key": "C",
+      "expl": "Tanya: Apa yang dikerjakan pria itu ketika ia bosan? </br> Jawab: Ia menghabiskan waktu di ruang baca.",
+      "A": "He meets his cousin.",
+      "B": "He watches news on TV.",
+      "C": "He spends time in the reading room.",
+      "D": "He reads magazine at his desk."
+   };
+   q_9= {
+      "no": 9,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2016_q_9.mp3",
+      "tran": "Woman: My friend recommended this store. She said you have nice business suits.</br>Man: Yes. We have a wide variety. Is this suit for you?</br>Woman: No. For my husband. I think heâ€™s looking better in black.",
+      "q": "What is the woman looking for?",
+      "key": "A",
+      "expl": "Tanya: Apa yang dicari wanita tersebut? </br> Jawab: Setelan baju bisnis (jas).",
+      "A": "A business suit.",
+      "B": "A nice sweater.",
+      "C": "A pair of black shoes.",
+      "D": "Some shirts for her husband."
+   };
+   q_10= {
+      "no": 10,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2016_q_10.mp3",
+      "tran": "Man: Welcome home! How was your flight?</BR>Woman: Terrible. The passengers had to wait for two hours before boarding. </BR>Man: Iâ€™m so sorry. You must be exhausted.",
+      "q": "What happened to the woman?",
+      "key": "A",
+      "expl": "Tanya: Apa yang terjadi pada wanita tersebut? <//br> Jawab: Penerbangannya tertunda.",
+      "A": "Her flight was delayed.",
+      "B": "She sat on the wrong plane.",
+      "C": "She lost her boarding pass.",
+      "D": "She couldn't find the ticket."
+   };
+   q_11= {
+      "no": 11,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2016_q_11.mp3",
+      "tran": "Man: We should move now on our investments in the Republic of Grandland. Theyâ€™ve just lifted the trade restrictions.</BR>Woman: Thatâ€™s a good news. But do you think itâ€™s a good idea to go in so early?</br>Man: Iâ€™d say itâ€™s quite promising.",
+      "q": "What does the man say about the investment?",
+      "key": "C",
+      "expl": "Tanya: Apakah yang dikatakan pria itu mengenai investasi? </br>Jawab: Barangkali akan menguntungkan.",
+      "A": "It has to be restricted.",
+      "B": "It is too early to go.",
+      "C": "It is possibly profitable.",
+      "D": "It has no free trade."
+   };
+   q_12= {
+      "no": 12,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2016_q_12.mp3",
+      "tran": " Step one: plan your business. It should include market, SWOT analysis, and production plan. </BR>Step two: write your business plan. Youâ€™d better off sticking to lean business plan which is quicker and easier to write and and distill your plan down to the essential. </BR>Step three: register your domain name and set up your website. Make sure your chosen domain name is ready for use. </BR>Step four: make it legal. The most important distinction between doing business online and in person is online business law regarding distribution of your customersâ€™ personal information as well as other privacy and intellectual property regulations.",
+      "q": "What is the instruction about?",
+      "key": "D",
+      "expl": "Tanya: Mengenai apa instruksi tersebut?</br>Jawab: Langkah-langkah menyusun website bisnis.",
+      "A": "Principles of online business laws.",
+      "B": "Process to start an online business.",
+      "C": "Plans in writing a business proposal.",
+      "D": "Steps in setting up a business website."
+   };
+   q_13= {
+      "no": 13,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2016_q_13.mp3",
+      "tran": " Step one: plan your business. It should include market, SWOT analysis, and production plan. </BR>Step two: write your business plan. Youâ€™d better off sticking to lean business plan which is quicker and easier to write and and distill your plan down to the essential. </BR>Step three: register your domain name and set up your website. Make sure your chosen domain name is ready for use. </BR>Step four: make it legal. The most important distinction between doing business online and in person is online business law regarding distribution of your customersâ€™ personal information as well as other privacy and intellectual property regulations.",
+      "q": "Which of the following is mentioned as part of online business laws?",
+      "key": "A",
+      "expl": "Tanya: Mana yang termasuk sebagai bagian dari hukum bisnis online?</br>Jawab: Penghormatan terhadap identitas resmi lain.",
+      "A": "Recognition of other legal accounts.",
+      "B": "Extraction of essential business plans.",
+      "C": "Registration of website domain names.",
+      "D": "Distribution of customers' personal information."
+   };
+   q_14= {
+      "no": 14,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2016_q_14.mp3",
+      "tran": "Fuji House is a Japanese restaurant full of wonderful aromas and taste. The restaurant specializes in sushi. It also offers customers tasty dishes from Thailand. The Japanese dishes such as the sushi and salmon tempura are the best you can find anywhere. Thai dishes include wonderful sweet and sour duck and delicious steamed seafood. Fuji House is open for lunch and dinner. And all its dishes are moderately priced.",
+      "q": "What will interested listeners probably do after hearing the information?",
+      "key": "C",
+      "expl": "Tanya: Apa yang mungkin akan dilakukan oleh pendengar yang tertarik?</br>Jawab: Mencari lokasi restoran.",
+      "A": "Go to the market and buy salmon.",
+      "B": "Buy sushi and salmon tempura.",
+      "C": "Search the location of the restaurant.",
+      "D": "Talk to the chef of the restaurant."
+   };
+   q_15= {
+      "no": 15,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2016_q_15.mp3",
+      "tran": "Fuji House is a Japanese restaurant full of wonderful aromas and taste. The restaurant specializes in sushi. It also offers customers tasty dishes from Thailand. The Japanese dishes such as the sushi and salmon tempura are the best you can find anywhere. Thai dishes include wonderful sweet and sour duck and delicious steamed seafood. Fuji House is open for lunch and dinner. And all its dishes are moderately priced.",
+      "q": "Which poultry item is a wonderful choice for dinner?",
+      "key": "B",
+      "expl": "Tanya: Jenis unggas apa yang menjadi pilihan bagus untuk makan malam?</br>Jawab: Bebek.",
+      "A": "Chicken.",
+      "B": "Duck.",
+      "C": "Turkey.",
+      "D": "Goose."
+   };
+   q_16= {
+      "no": 16,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "GASUS takes its name from Pegasus, the winged horse in Greek mythology that symbolizes wisdom and knowledge. Gasus embodies the strength, purity, and adventurous spirit of this fantastic creature, and soars to new heights with each new product it creates.<br>This Taiwan information industry has grown enormously over the last few decades and the country is now a dominant force in the global market. Gasus has long been at the forefront of this growth and while the company started life as a humble motherboard manufacturer with just a handful of employees, it is the leading technology company in Taiwan with over 12,500 employees worldwide. Gasus makes product in almost every area of information technology too, including PC components, peripheral, notebooks, tablets, servers and smartphones.<br>Innovation is the key to success of Gasus. Having unveiled the PadFone to a rapturous audience at Computes 2011, this year, Hasus chairman Johny Shaw raised the bar once more by announcing the Maichi and Transformer Book dual-purpose ultraportable. ",
+      "q": "How did Gasus begin its business?",
+      "key": "B",
+      "expl": "Gasus memulai bisnisnya dengan memproduksi motherboard.",
+      "A": "By producing phone and motherboard.",
+      "B": "By starting life as a humble motherboard manufacturer.",
+      "C": "By announcing the Transformer Book.",
+      "D": "By making product in almost area of IT."
+   };
+   q_17= {
+      "no": 17,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "GASUS takes its name from Pegasus, the winged horse in Greek mythology that symbolizes wisdom and knowledge. Gasus embodies the strength, purity, and adventurous spirit of this fantastic creature, and soars to new heights with each new product it creates.<br>This Taiwan information industry has grown enormously over the last few decades and the country is now a dominant force in the global market. Gasus has long been at the forefront of this growth and while the company started life as a humble motherboard manufacturer with just a handful of employees, it is the leading technology company in Taiwan with over 12,500 employees worldwide. Gasus makes product in almost every area of information technology too, including PC components, peripheral, notebooks, tablets, servers and smartphones.<br>Innovation is the key to success of Gasus. Having unveiled the PadFone to a rapturous audience at Computes 2011, this year, Hasus chairman Johny Shaw raised the bar once more by announcing the Maichi and Transformer Book dual-purpose ultraportable. ",
+      "q": "Which of the followings is NOT produced by Gasus?",
+      "key": "C",
+      "expl": "Yang tidak diproduksi oleh Gasus adalah gantungan kunci.",
+      "A": "Tablets",
+      "B": "Notebooks",
+      "C": "Key chains",
+      "D": "Peripherals"
+   };
+   q_18= {
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "GASUS takes its name from Pegasus, the winged horse in Greek mythology that symbolizes wisdom and knowledge. Gasus embodies the strength, purity, and adventurous spirit of this fantastic creature, and soars to new heights with each new product it creates.<br>This Taiwan information industry has grown enormously over the last few decades and the country is now a dominant force in the global market. Gasus has long been at the forefront of this growth and while the company started life as a humble motherboard manufacturer with just a handful of employees, it is the leading technology company in Taiwan with over 12,500 employees worldwide. Gasus makes product in almost every area of information technology too, including PC components, peripheral, notebooks, tablets, servers and smartphones.<br>Innovation is the key to success of Gasus. Having unveiled the PadFone to a rapturous audience at Computes 2011, this year, Hasus chairman Johny Shaw raised the bar once more by announcing the Maichi and Transformer Book dual-purpose ultraportable. ",
+      "q": "From the text we can conclude that Gasus company ... ",
+      "key": "B",
+      "expl": "Disimpulkan bahwa Gasus membuat berbagai macam alat di bidang IT.",
+      "A": "is the only IT industry in Taiwan.",
+      "B": "manufactures various tools in IT.",
+      "C": "has grown quite slowly over the past few decades.",
+      "D": "dominates the world markets in all sectors."
+   };
+   q_19= {
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Malioboro is the name of a street in Yogyakarta. Malioboro street is very popular and becomes one of the tourist destinations. Even if we want to take our pictures next to the street signs, we have to stand in line. The name of Malioboro comes from Sanskrit which means bouquet. What makes Malioboro street popular?<br>Malioboro street offers the never ending culinary and shopping experience. We will see many street vendors who sell clothes, bags, sandals, key holders, handicrafts, batiks, accessories, and other unique merchandise in reasonable price at daytime. In the evening, we will see many local food stalls provide traditional food along the street.<br>The other thing we can enjoy in Malioboro street is some people in unique costumes, such as traditional armies, and zombies. We can have pictures with them by giving some money.",
+      "q": "What is the main idea of the first paragraph? ",
+      "key": "A",
+      "expl": "Ide utama paragraf pertama adalah Malioboro merupakan salah satu tujuan wisata di Yogyakarta.",
+      "A": "Malioboro is one of the tourist destinations in Yogyakarta.",
+      "B": "The history of Sanskrit is related to Yogyakarta.",
+      "C": "People have to stand in line in Yogyakarta.",
+      "D": "Another place to visit is Yogyakarta."
+   };
+   q_20= {
+      "no": 20,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Malioboro is the name of a street in Yogyakarta. Malioboro street is very popular and becomes one of the tourist destinations. Even if we want to take our pictures next to the street signs, we have to stand in line. The name of Malioboro comes from Sanskrit which means bouquet. What makes Malioboro street popular?<br>Malioboro street offers the never ending culinary and shopping experience. We will see many street vendors who sell clothes, bags, sandals, key holders, handicrafts, batiks, accessories, and other unique merchandise in reasonable price at daytime. In the evening, we will see many local food stalls provide traditional food along the street.<br>The other thing we can enjoy in Malioboro street is some people in unique costumes, such as traditional armies, and zombies. We can have pictures with them by giving some money.",
+      "q": "What do the local stalls have in the evening?",
+      "key": "A",
+      "expl": "Yang dijual di warung setempat pada malam hari adalah makanan tradisional.",
+      "A": "Traditional foods.",
+      "B": "Beautiful bouquet.",
+      "C": "Traditional armies.",
+      "D": "Unique merchandise."
+   };
+   q_21= {
+      "no": 21,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Levi Strauss came to the United States from Bavaria as a teenager. After spending several years in New York, he made a journey to California when the gold rush was at its peak. He got the idea to sell tents to the gold miners, but they were not interested. He recycled the brown canvas cloth into sturdy pants which became a great demand in mining camps. Later he began making workpants in a blue cotton fabric imported from France, called ‘Serge de Nimes’, but known in America as ‘Denim’.<br>Along with Jacob Davis, a tailor from Nevada, Strauss patented a pattern of copper rivets to strengthen the stress point on pants, especially pocket. They first became known as waist overalls, then ‘Levis’. They became so popular that Strauss concentrated most of his effort on the manufacture and sales of the durable work pants.",
+      "q": "What is the main idea of paragraph one?",
+      "key": "D",
+      "expl": "Pikiran utama pada paragraf pertama adalah bisnis awal dari Levi Strauss.",
+      "A": "The life of Levi Strauss.",
+      "B": "The history of gold rush",
+      "C": "The favourite workpants.",
+      "D": "The early business of Levi Strauss."
+   };
+   q_22= {
+      "no": 22,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Levi Strauss came to the United States from Bavaria as a teenager. After spending several years in New York, he made a journey to California when the gold rush was at its peak. He got the idea to sell tents to the gold miners, but they were not interested. He recycled the brown canvas cloth into sturdy pants which became a great demand in mining camps. Later he began making workpants in a blue cotton fabric imported from France, called ‘Serge de Nimes’, but known in America as ‘Denim’.<br>Along with Jacob Davis, a tailor from Nevada, Strauss patented a pattern of copper rivets to strengthen the stress point on pants, especially pocket. They first became known as waist overalls, then ‘Levis’. They became so popular that Strauss concentrated most of his effort on the manufacture and sales of the durable work pants.",
+      "q": "We can conlude from the text that ...",
+      "key": "D",
+      "expl": "Disimpulkan bahwa bahan celana jins disebut Denim.",
+      "A": "Strauss once lived in France.",
+      "B": "Strauss sold the pants to schools.",
+      "C": "The pants had special details on the zipper.",
+      "D": "The material of the pants was called Denim."
+   };
+   q_23= {
+      "no": 23,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "(1) Read an installation guide for your printer if you have it.<br>(2) Plug the printer into your computer.<br>(3) Turn on the printer.<br>(4) Wait for the operating system to detect and install the printer.<br>(5) Install the software that comes with the printer.<br>(6) Download the drivers from manufacturer’s website if you do not have the disc driver.<br>(7) Run the downloaded drivers.<br>(8) After installing the drivers, your printer should now be ready to print from any program on your computer that supports printing.<br>Note: if you don’t have the installation guide, please read it on manufacturer’s website.'",
+      "q": "How do we install a printer?",
+      "key": "C",
+      "expl": "Cara menginstal printer adalah menjalankan driver yang telah didownload.",
+      "A": "By unplugging the computer.",
+      "B": "By detecting the operating system.",
+      "C": "By running the downloadeded driver.",
+      "D": "By the downloading the software picture."
+   };
+   q_24= {
+      "no": 24,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "(1) Read an installation guide for your printer if you have it.<br>(2) Plug the printer into your computer.<br>(3) Turn on the printer.<br>(4) Wait for the operating system to detect and install the printer.<br>(5) Install the software that comes with the printer.<br>(6) Download the drivers from manufacturer’s website if you do not have the disc driver.<br>(7) Run the downloaded drivers.<br>(8) After installing the drivers, your printer should now be ready to print from any program on your computer that supports printing.<br>Note: if you don’t have the installation guide, please read it on manufacturer’s website.'",
+      "q": "We can conclude from the text that …",
+      "key": "D",
+      "expl": "Disimpulkan bahwa petunjuk instalasi dapat dicari di internet.",
+      "A": "the system is interchangeable for all users.",
+      "B": "the printer is very expensive but sophisticated.",
+      "C": "the manufacturer only provides printed manuals.",
+      "D": "the installation guide can be found in the internet."
+   };
+   q_25= {
+      "no": 25,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "I am sorry to announce that our Seattle Office will close December 31 in order to reduce our overhead, the function of this branch will be combined with the New York office. Some of the employees here will be transferred to New York office.<br>We regret that we will be unable to take all of you with us. A generous severance pay will be unable to those whose employment with Seattle will end, and I would be very pleased to furnish anyone who asks with a very positive reference.<br>I deeply appreciate our association over the years, and regret the events which have made this decision necessary.",
+      "q": "For those whose employment will end, Seattle office will give ... ",
+      "key": "B",
+      "expl": "Karyawan yang dipecat akan mendapat surat keterangan kerja yang positif",
+      "A": "monthly payment",
+      "B": "positive reference",
+      "C": "transportation facility",
+      "D": "housing and furniture"
+   };
+   q_26= {
+      "no": 26,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "I am sorry to announce that our Seattle Office will close December 31 in order to reduce our overhead, the function of this branch will be combined with the New York office. Some of the employees here will be transferred to New York office.<br>We regret that we will be unable to take all of you with us. A generous severance pay will be unable to those whose employment with Seattle will end, and I would be very pleased to furnish anyone who asks with a very positive reference.<br>I deeply appreciate our association over the years, and regret the events which have made this decision necessary.",
+      "q": "We can conclude that ... ",
+      "key": "A",
+      "expl": "Disimpulkan bahwa employment will end artinya beberapa karyawan akan dipecat",
+      "A": "some employees will be fired.",
+      "B": "all branch offices were closed.",
+      "C": "the association was over 31 years.",
+      "D": "the office will be moved to New York."
+   };
+   q_27= {
+      "no": 27,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Rumors of another killer wave sparked mass panic on Wednesday in the resort area hardest hit by the Indonesian tsunami, while the death toll rose to 531, with more than 270 missing. Earlier reports had put the toll at 550. The change was not immediately explained.<br>More than 1000 residents of the beach town of Pangandaran fled inland, running, bicycling or driving amid shouts of ‘the water is coming!’. The Monday’s tsunami, triggered by a magnitude of 7.7 undersea earthquake, smashed into a 110 mile stretch of Java’s coastline, which was unaffected by the devastating wave in 2004.<br>Waves more than 6 feet high reached 200 yards inland in some places, destroying scores of houses, restaurants and hotels. Cars, motorbikes and boats were left mangled amid fishing nets, furniture and other debris. ",
+      "q": "When did the tsunami happen in Pangandaran beach?",
+      "key": "B",
+      "expl": "Tsunami di Pangandaran terjadi pada hari Senin (paragraf 2).",
+      "A": "Wednesday",
+      "B": "Monday",
+      "C": "In 2004",
+      "D": "On Monday and Wednesday"
+   };
+   q_28= {
+      "no": 28,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Rumors of another killer wave sparked mass panic on Wednesday in the resort area hardest hit by the Indonesian tsunami, while the death toll rose to 531, with more than 270 missing. Earlier reports had put the toll at 550. The change was not immediately explained.<br>More than 1000 residents of the beach town of Pangandaran fled inland, running, bicycling or driving amid shouts of ‘the water is coming!’. The Monday’s tsunami, triggered by a magnitude of 7.7 undersea earthquake, smashed into a 110 mile stretch of Java’s coastline, which was unaffected by the devastating wave in 2004.<br>Waves more than 6 feet high reached 200 yards inland in some places, destroying scores of houses, restaurants and hotels. Cars, motorbikes and boats were left mangled amid fishing nets, furniture and other debris. ",
+      "q": "How many people were finally reported dead?",
+      "key": "A",
+      "expl": "Korban jiwa mencapai 531 setelah dikoreksi dari yang diberitakan sebelumnya yaitu 550 (paragraf 1).",
+      "A": "531",
+      "B": "270",
+      "C": "550",
+      "D": "More than 1000"
+   };
+   q_29= {
+      "no": 29,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Rumors of another killer wave sparked mass panic on Wednesday in the resort area hardest hit by the Indonesian tsunami, while the death toll rose to 531, with more than 270 missing. Earlier reports had put the toll at 550. The change was not immediately explained.<br>More than 1000 residents of the beach town of Pangandaran fled inland, running, bicycling or driving amid shouts of ‘the water is coming!’. The Monday’s tsunami, triggered by a magnitude of 7.7 undersea earthquake, smashed into a 110 mile stretch of Java’s coastline, which was unaffected by the devastating wave in 2004.<br>Waves more than 6 feet high reached 200 yards inland in some places, destroying scores of houses, restaurants and hotels. Cars, motorbikes and boats were left mangled amid fishing nets, furniture and other debris. ",
+      "q": "‘ … <u>destroying</u> scores of houses, restaurants and hotels.’ (paragraph 3). The opposite of the underlined word means …",
+      "key": "D",
+      "expl": "Antonim dari destroy (merussak) adalah construct (membangun)",
+      "A": "flooding",
+      "B": "bleeding",
+      "C": "damaging",
+      "D": "constructing"
+   };
+   q_30= {
+      "no": 30,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "IRENE BOUTIQUE<br>Jl. Fatmawati 59<br>Jakarta Selatan<br>Telp./Fax 021-7666213<br><br>January 7, 2003<br><br>PT Sunflower Garment<br>Jl. Leuwigajah 146<br>Cimahi 40532<br><br>Dear Sirs,<br><br>I am interested in your advertisement in a fortnightly magazine about your new pullover products. I wonder if I could get three pieces of each color, size and model through the postal service, I would really appreciate it if you could tell us the terms of payment and delivery.<br>I am looking forward to hearing from you, preferably by facsimile.<br><br>Yours sincerely,<br><br>Irene Susanto<br>Manager",
+      "q": "What does Irene Boutique order?",
+      "key": "C",
+      "expl": "Mereka ingin memesan pullover (sweater tak berkerah)",
+      "A": "Magazines",
+      "B": "Advertisements",
+      "C": "Pullovers",
+      "D": "Sunflowers"
+   };
+   q_31= {
+      "no": 31,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "IRENE BOUTIQUE<br>Jl. Fatmawati 59<br>Jakarta Selatan<br>Telp./Fax 021-7666213<br><br>January 7, 2003<br><br>PT Sunflower Garment<br>Jl. Leuwigajah 146<br>Cimahi 40532<br><br>Dear Sirs,<br><br>I am interested in your advertisement in a fortnightly magazine about your new pullover products. I wonder if I could get three pieces of each color, size and model through the postal service, I would really appreciate it if you could tell us the terms of payment and delivery.<br>I am looking forward to hearing from you, preferably by facsimile.<br><br>Yours sincerely,<br><br>Irene Susanto<br>Manager",
+      "q": "How do they want the order delivered?",
+      "key": "D",
+      "expl": "Mereka ingin pesanannya agar dikirim melalui pos (postal service)",
+      "A": "By messenger",
+      "B": "By phone",
+      "C": "By fax",
+      "D": "By post"
+   };
+   q_32= {
+      "no": 32,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "68 Walker Street<br>Coorparo 4151<br>22nd January 2016<br>Phone 07 246 9623<br><br>The State Manager<br>Brace-Cooper Plastic<br>PO Box 4001<br>Brisbane 2001 <br><br>Dear Sir/madam,<br>I am applying for the position of assistant store man/woman advertised in the Courier of January 2016.<br>I have had wide experience in this kind of work over number of years, and I have completed training in computerized stock control.<br>I believe that my clerical accuracy, knowledge and experience in stock control and handling system, public contact, and piping and plumbing materials make me very suitable for the position.<br>Copies of my resume and references are attached. I am available for an interview at your convenience.<br>Yours  faithfully,<br><br>Bill Davis",
+      "q": "What position does the write want?",
+      "key": "C",
+      "expl": "Posisi yang dilamar adalah assistant store man/woman (paragraf 1)",
+      "A": "Sales clerk",
+      "B": "State manager",
+      "C": "Assistant store man",
+      "D": "Assistant state manager"
+   };
+   q_33= {
+      "no": 33,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "68 Walker Street<br>Coorparo 4151<br>22nd January 2016<br>Phone 07 246 9623<br><br>The State Manager<br>Brace-Cooper Plastic<br>PO Box 4001<br>Brisbane 2001 <br><br>Dear Sir/madam,<br>I am applying for the position of assistant store man/woman advertised in the Courier of January 2016.<br>I have had wide experience in this kind of work over number of years, and I have completed training in computerized stock control.<br>I believe that my clerical accuracy, knowledge and experience in stock control and handling system, public contact, and piping and plumbing materials make me very suitable for the position.<br>Copies of my resume and references are attached. I am available for an interview at your convenience.<br>Yours  faithfully,<br><br>Bill Davis",
+      "q": "What might the state manager do?",
+      "key": "A",
+      "expl": "State manager adalah yang dikirimi surat lamaran ini dan berhak mengadakan interview pelamar kerja.",
+      "A": "Give an interview",
+      "B": "Advertise the vacancy",
+      "C": "Employ him as a truck driver",
+      "D": "Copy his resume and references"
+   };
+   q_34= {
+      "no": 34,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "68 Walker Street<br>Coorparo 4151<br>22nd January 2016<br>Phone 07 246 9623<br><br>The State Manager<br>Brace-Cooper Plastic<br>PO Box 4001<br>Brisbane 2001 <br><br>Dear Sir/madam,<br>I am applying for the position of assistant store man/woman advertised in the Courier of January 2016.<br>I have had wide experience in this kind of work over number of years, and I have completed training in computerized stock control.<br>I believe that my clerical accuracy, knowledge and experience in stock control and handling system, public contact, and piping and plumbing materials make me very suitable for the position.<br>Copies of my resume and references are attached. I am available for an interview at your convenience.<br>Yours  faithfully,<br><br>Bill Davis",
+      "q": "‘I am <u>available</u> for an interview at your convenience.’ (last line). The underlined word means similar to …",
+      "key": "A",
+      "expl": "Available = ready",
+      "A": "ready",
+      "B": "capable",
+      "C": "allowed",
+      "D": "convenient"
+   };
+   q_35= {
+      "no": 35,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Production manager: What’s wrong?<br>Secretary: That customer, sitting down at the corner, wants to make a complaint.<br>Production manager: What will she complain about?<br>Secretary: Our products, Sir.",
+      "q": "What does the customer think about the product?",
+      "key": "D",
+      "expl": "Adanya konsumen yang membuat keluhan tentang produk mereka menandakan konsumen tersebut tidak puas (unsatisfying).",
+      "A": "Expensive",
+      "B": "Satisfying",
+      "C": "Reasonable",
+      "D": "Unsatisfying"
+   };
+   q_36= {
+      "no": 36,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Ahmad: What do you usually do in the morning?<br>Brian: I usually wake up at 6. After having breakfast, I feed my fish and enjoy watching them for a while. Then, I leave to work.",
+      "q": "What does Brian do after having breakfast?",
+      "key": "A",
+      "expl": "Yang dilakukan Brian setelah sarapan pagi adalah memberi makan ikan miliknya.",
+      "A": "He feeds the fish.",
+      "B": "He leaves for work.",
+      "C": "He goes swimming.",
+      "D": "He washes dishes."
+   };
+   q_37= {
+      "no": 37,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Irfan: Someday I want to be an engineer, because nowadays our country needs a large number of engineers for nation-building. What about you, Randi?<br>Randi: You know that my father is a doctor, and he wants me to take the same profession. But that’s all right for me. In my home town, being a doctor means to help people over there by giving proper treatment.",
+      "q": "Why does Randi want to be a doctor?",
+      "key": "D",
+      "expl": "Randi ingin menjadi seorang dokter untuk membantu orang-orang di kampung halamannya.",
+      "A": "His father was not a doctor.",
+      "B": "He does not want to be an engineer.",
+      "C": "He wants to go to his native village.",
+      "D": "He wants to help people in his hometown."
+   };
+   q_38= {
+      "no": 38,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Axel: Mona and I are going to have wedding anniversary next Saturday. So, could you please come?<br>Aunt Rasi: Of course, I’ll be there with your uncle.<br>Axel: Thank you. See you both on Saturday at 11.00 in Hall Building near my house.<br>Aunt Rasi: See you.",
+      "q": "What did Axel ask Aunt Rasi?",
+      "key": "D",
+      "expl": "Axel mengundang Bibi Rasi untuk datang ke acara ultah pernikahannya bersama Mona",
+      "A": "To thank Mona about the party.",
+      "B": "To come to his house on Saturday.",
+      "C": "To invite Mona to attend the party.",
+      "D": "To come to his wedding anniversary."
+   };
+   q_39= {
+      "no": 39,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Santi: Harry Potter's is the best movie ever.</br>Anna: ... It is totally an irrational movie.",
+      "key": "B",
+      "expl": "Anna tidak setuju dengan pendapat Santi. I couldn't agree more artinya sangat setuju. ",
+      "A": "I'm on your side.",
+      "B": "I am against you.",
+      "C": "I think you're right.",
+      "D": "I couldn't agree more."
+   };
+   q_40= {
+      "no": 40,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Arjuna: I think I have a stomachache. It really hurts ...</br>Shinta: You should take medicine and you can buy it at the chemist.",
+      "key": "D",
+      "expl": "Arjuna meminta saran dari Shinta karena ia sakit perut.",
+      "A": "That's a good idea.",
+      "B": "What's your feeling?",
+      "C": "Tell anyone about it!",
+      "D": "Do you have any idea?"
+   };
+   q_41= {
+      "no": 41,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Tiwi: It's so cool here.</BR>Tika: ... and make hot tea for you?",
+      "key": "B",
+      "expl": "Karena udara yang dingin, Tika menawarkan bantuan kepada Tiwi untuk menghidupkan pemanas ruang dan membuatkan teh hangat.",
+      "A": "Would you like me to turn on the AC",
+      "B": "Would you like me to turn on the heater",
+      "C": "Would you like to go out for a while",
+      "D": "Would you like to use your own fan"
+   };
+   q_42= {
+      "no": 42,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Mother: The coffe is bitter....</BR>Adi: Here it is, Mom.",
+      "key": "B",
+      "expl": "Karena kopinya pahit, Mother (ibu) meminta bantuan kepada Adi untuk diambilkan gula.",
+      "A": "Take me the salt, please.",
+      "B": "Pass me the sugar, please.",
+      "C": "Can you make some coffee?",
+      "D": "Would you like a cup of coffee?"
+   };
+   q_43= {
+      "no": 43,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Jane: Where's John?</BR>Joe: He's in the kitchen now. ... We'll have special guest tonight.",
+      "key": "A",
+      "expl": "John sedang memasak di dapur karena ada tamu istimewa nanti malam",
+      "A": "He's cooking dinner.",
+      "B": "He's having breakfast.",
+      "C": "We're having lunch together.",
+      "D": "We're eating our meal."
+   };
+   q_44= {
+      "no": 44,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Riska: I'm a little confused to select the movie we're going to watch.</BR>Riri: ...? </BR>Riska: No, I prefer the comedy movie to the action one.",
+      "key": "C",
+      "expl": "Riri memberi saran menonton film aksi yang kemudian usulnya ditolak oleh Riska yang lebih suka film komedi",
+      "A": "Do you like going to the cinema",
+      "B": "How about watching the comedy",
+      "C": "What about 'Spiderman 3'",
+      "D": "What do you suggest"
+   };
+   q_45= {
+      "no": 45,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Woman: What time does the plane from New York take off?</BR>Man: ... It will be announced.</BR>Woman: Thank you.",
+      "key": "D",
+      "expl": "Wanita tersebut bertanya tentang jam keberangkatan pesawat dari New York dan dijawab dengan jam keberangkatan pesawat",
+      "A": "It leaves from New Yourk everyday.",
+      "B": "It leaves every 5 hours.",
+      "C": "It leaves from gate 15.",
+      "D": "It leaves at 5:45"
+   };
+   q_46= {
+      "no": 46,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Tiara: What is your sister fond of?</BR>Marni: She always watches Master Chef on TV. ...",
+      "key": "C",
+      "expl": "Acara Master Chef adalah acara masak-memasak",
+      "A": "She is an actress.",
+      "B": "She likes eating cakes.",
+      "C": "She likes cooking very much.",
+      "D": "She helps cutting the vegetables."
+   };
+   q_47= {
+      "no": 47,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Priyo: Do you like the black gown or the pink one? </BR>Putri: If you ask me, ...",
+      "key": "B",
+      "expl": "Warna gaun pink adalah warna yang terang yang lebih disukai Putri",
+      "A": "I'd rather wear the newest",
+      "B": "I prefer the brighter colour",
+      "C": "I like the most expensive one",
+      "D": "We'd better have the bigger size"
+   };
+   q_48= {
+      "no": 48,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Mother: You are going to celebrate your 17th birthday. What will you do?</BR>Clara: ... I plan to have a small party with them.",
+      "key": "B",
+      "expl": "Kalimat pertanyaan future tense maka responnya juga future tense.",
+      "A": "I would send some cards.",
+      "B": "I'll invite my friends.",
+      "C": "I've gone to the bakeries.",
+      "D": "I am making invitations."
+   };
+   q_49= {
+      "no": 49,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Nina: Where did you go last night, Martha?</BR>Martha: ... My sister delivered her baby there.",
+      "key": "D",
+      "expl": "Kalimat pertanyaan simple past maka responnya juga simple past",
+      "A": "I write a receipt for my patient",
+      "B": "I am undergoing an operation",
+      "C": "I've gone to the bakeries.",
+      "D": "I was in the hospital"
+   };
+   q_50= {
+      "no": 50,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Riza: The items for the fair are piled up in the corner of the room. They must be ready tomorrow.</BR>Ryan: Do you know which paintings will be exhibited?</BR>Rizal: We don't know yet. ...",
+      "key": "A",
+      "expl": "Kalimat present maka diikuti kalimat present juga.",
+      "A": "They are still being selected.",
+      "B": "We were selecting the paintings.",
+      "C": "The exhibition will start tomorrow.",
+      "D": "The painting was piled up yesterday."
+   }

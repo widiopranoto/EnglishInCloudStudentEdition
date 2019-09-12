@@ -1,0 +1,760 @@
+dir_1={"title":"LISTENING COMPREHENSION",
+       "aud": "2016_dir_1.mp3",
+	   "pic": "2016_dir_1.jpg",
+	   "q"  : "",
+       "dir_a": "In this section of the test, you will have the chance to show how well you understand spoken English. There are four parts to this section with special directions for each part.",
+	   "dir_b": "Part I. Pictures",
+       "dir_c": "For each item, there is a picture in your test book and four short statements about it on the tape. They are spoken TWICE, and are not written out in your test bock, so you must listen carefully. You must choose one statement – (A), (B), (C), or (D) – that best describes the picture. Then, on your answer sheet, mark your choice.",
+	   "dir_d": "Example: Look at the following picture:",
+	   "dir_e": "A. The man is wearing a tie.</br>B. The woman is wearing a jacket.</br>C. The woman is wearing a hat.</br>D. They are both wearing glasses.",
+	   "dir_f": "Choice (A) – “The man is wearing a tie.” – best describes what is seen in the picture. Therefore, you should mark (A) on your answer sheet.",
+	   "dir_g": "Let’s begin with question number one."
+       }; 
+dir_2={"title":"",
+       "aud": "2016_dir_2.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part II. Question – Responses",
+	   "dir_b": "",
+       "dir_c": "Directions: In this part of the test, you will hear several questions spoken in English, followed by four responses, also spoken in English. The questions and responses will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand what the speakers say. You have to choose the best response to each question.",
+	   "dir_d": "Now listen to a sample question",
+	   "dir_e": "<p>You will hear: </p><p>Woman: Could you tell me how to get to the convention center? </p><p>You will also hear </p><p>Man:</p><p><form>A. No. The convention was already over.</br>B. Sure. Go two blocks and turn left.</br>C. Yes. I have to get in now.</br>D. Yes. I met her there.</br></form>",
+	   "dir_f": "Choice (B) “Sure. Go two blocks and turn left.” – is the response to the question “Could you tell me how to get to the convention center?”</p>  <p>Therefore, you should mark (B) on your answer sheet.",
+	   "dir_g": ""
+       }; 	   
+dir_3={"title":"",
+       "aud": "2016_dir_3.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part III. Short Conversations",
+	   "dir_b": "",
+       "dir_c": "Directions: In this section of the test, you will hear several short conversations. You will hear the conversations TWICE. The conversations will not be printed in your test book, so you must listen carefully to understand what the speakers say. In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.",
+	   "dir_d": "<p>Example:</p><p>You will hear: </p><p>Woman : I ordered that last Tuesday. It should have arrived by now.</p><p>Man : Maybe there was a delay in sending it. Have you called them?</p><p>Woman : Not yet. I will call them now.</p>",
+	   "dir_e": "<p>You will read</p><p>What will the woman probably do?</p><form>A. phone the company.</br>B. order the software.</br>C. cancel the order.</br>D. arrive at the store</br></form>",
+	   "dir_f": "<p>Choice (A) – “phone the company”  is the best answer to the question, “What will the woman probably do?” Therefore, you should mark (A) on your answer sheet.</p>",
+	   "dir_g": ""
+       }; 
+dir_4={"title":"",
+       "aud": "2016_dir_4.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part IV. Short Talks",
+	   "dir_b": "Directions: In this part of the test, you will hear several short monologues. Each will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand and remember what is said.</p><p>In your test book, you will read two or more questions about each short monologue. Each question will be followed by four answers. You have to choose the best answer to each question and mark it on your answer sheet.",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+dir_5={"title":"READING SECTION",
+       "aud": "",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "",
+	   "dir_b": "Directions: In this part of the test, you have to read and answer each question by choosing A, B, C, or D",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+   q_1={
+      "no": 1,
+      "type": "pictures",
+      "pic": "2010_q_1.jpg",
+      "aud": "2010_q_1.mp3",
+      "tran": "",
+      "q": "",
+      "key": "C",
+      "expl": "Dua orang tersebut sedang memandang/mempelajari sebuah lukisan.",
+      "A": "The man is talking to the woman.",
+      "B": "The people are looking at the wall.",
+      "C": "They are studying a picture.",
+      "D": "The visitors are praying."
+   };
+   q_2={
+      "no": 2,
+      "type": "pictures",
+      "pic": "2010_q_2.jpg",
+      "aud": "2010_q_2.mp3",
+      "tran": "",
+      "q": "",
+      "key": "A",
+      "expl": "Ada sedikit mobil berlalu lalang di jalan tersebut.",
+      "A": "There is a very little traffic.",
+      "B": "The buildings are standing in a row.",
+      "C": "Pedestrians are crowding to walkways.",
+      "D": "The woman has found her way."
+   };
+   q_3={
+      "no": 3,
+      "type": "pictures",
+      "pic": "2010_q_3.jpg",
+      "aud": "2010_q_3.mp3",
+      "tran": "",
+      "q": "",
+      "key": "C",
+      "expl": "Pasien tersebut sedang diperiksa.",
+      "A": "The woman is touching the screen.",
+      "B": "The doctor is sitting behind the patient.",
+      "C": "The patient is being examined.",
+      "D": "The visitors are leaving the hospital."
+   };
+   q_4={
+      "no": 4,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2010_q_4.mp3",
+      "tran": "",
+      "q": "WOMAN: Why don’t you see the doctor to do treatment to your illness?",
+      "key": "C",
+      "expl": "Tanya: Kenapa kamu tak pergi ke dokter untuk merawatmu? Respon: Oke, aku akan periksa besok.",
+      "A": "You're right, that's we all do.",
+      "B": "The doctor has just moved here.",
+      "C": "Okay, I'll take the examination tomorrow.",
+      "D": ""
+   };
+   q_5={
+      "no": 5,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2010_q_5.mp3",
+      "tran": "",
+      "q": "MAN : Can you tell me how to get to the music building from here? I have a lecture to attend there.",
+      "key": "B",
+      "expl": "Tanya: Bisakah Anda memberitahukan kepada saya bagaimana cara sampai ke gedung musik dari sini? Saya ada perkuliahan yang harus dihadiri di sana. <br> Respon: Jalan sepanjang jalan ini. Gedungnya ada di sebelah kanan.",
+      "A": "Sure, I'll get there in a moment.",
+      "B": "Walk along this street. It's on the right.",
+      "C": "The building is under construction.",
+      "D": ""
+   };
+   q_6={
+      "no": 6,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2010_q_6.mp3",
+      "tran": "",
+      "q": "MAN: Who won the basketball competition last year?",
+      "key": "B",
+      "expl": "Tanya: Siapa yang menang kompetisi basket tahun lau? Respon: Tim sekolah kami yang menang.",
+      "A": "I don't want to see that game.",
+      "B": "Our school team did.",
+      "C": "We will join the competition.",
+      "D": ""
+   };
+   q_7={
+      "no": 7,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2010_q_7.mp3",
+      "tran": "",
+      "q": "WOMAN: Will your father be going with you to the ceremony?",
+      "key": "B",
+      "expl": "Tanya: Apakah ayahmu akan datang denganmu ke upacara? Respon: Tidak, beliau sedang tidak enak badan akhir-akhir ini.",
+      "A": "Yes, he spent all of time working in this company.",
+      "B": "No, he hasn't being feeling well lately.",
+      "C": "I'm sure he is going to be here soon.",
+      "D": ""
+   };
+   q_8={
+      "no": 8,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2010_q_8.mp3",
+      "tran": "MAN: How many meals do you have a day?<br>WOMAN: I usually have three. But sometime I have no breakfast because I’m late for school and I have to hurry.<br>MAN: Do you often eat in the restaurant with your family too?<br>WOMAN : No, I don’t. My mom enjoys cooking. She is very good cook. So we hardly ever go to the restaurant.",
+      "q": "What does the woman say about her mother?",
+      "key": "A",
+      "expl": "Ibu si wanita tersebut suka memasak (My mom ejoys cooking).",
+      "A": "She can cook well.",
+      "B": "She owns a restaurant.",
+      "C": "She's always in hurry.",
+      "D": "She never has breakfast."
+   };
+   q_9={
+      "no": 9,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2010_q_9.mp3",
+      "tran": "MAN: I love to spend the afternoon looking through the used bookstore.<br>WOMAN: Me too. And this book is so much cheaper than the new one.<br>MAN: Well, for me, that’s not the point. I’m looking for the first edition. And ever, hard-to-find books.",
+      "q": "What does the woman think about used bookstores?",
+      "key": "D",
+      "expl": "Wanita tersebut bilang bahwa buku bekas itu lebih murah (less expensive).",
+      "A": "They are available only in the afternoon.",
+      "B": "They are hard to find anywhere.",
+      "C": "They provide first editions.",
+      "D": "They are less expensive."
+   };
+   q_10={
+      "no": 10,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2010_q_10.mp3",
+      "tran": "MAN : I left the phone ring but there’s no answer from the loading dock.<br>WOMAN: It’s ten o’clock. Maybe they are still having their coffee break.<br>MAN: OK. That’s explaining it. I’ll call back in fifteen minutes.",
+      "q": "Why didn't the man get an answer?",
+      "key": "B",
+      "expl": "Panggilan telepon pria tersebut tidak dijawab karena tidak ada orang di bagian bongkar muat (loading dock) saat mereka sedang istirahat untuk coffee break.",
+      "A": "The phone is out of order.",
+      "B": "Nobody was in the office.",
+      "C": "The line was very busy.",
+      "D": "It's a wrong number."
+   };
+   q_11={
+      "no": 11,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2010_q_11.mp3",
+      "tran": "MAN: You can take out up to five books.<br>WOMAN: Here is my borrowing card.<br>MAN: These are due back in thirty days.",
+      "q": "How many books are allowed to be borrowed at one time?",
+      "key": "D",
+      "expl": "Tiap peminjam diperbolehkan meminjam 5 buku dalam sekali peminjaman (up to five books).",
+      "A": "More than five books.",
+      "B": "Two books only.",
+      "C": "Thirty books.",
+      "D": "Five books."
+   };
+   q_12={
+      "no": 12,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2010_q_12.mp3",
+      "tran": "Before I start today’s Sociology lecture, I’d like to talk with you about the papers that you should be working on. As you know, the topic for the paper is The Relationship between Gun Control and Violence. The paper itself is due in two weeks. But, I would like to see your outline by Friday of this week so that I can be sure that you are on the right track with the assignment.",
+      "q": "Who will most likely be listening to this announcement?",
+      "key": "C",
+      "expl": "Monolog ini adalah sebuah perkuliahan tentang sosiologi yang disimak oleh para mahasiswa.",
+      "A": "The lecturers.",
+      "B": "The sociologists.",
+      "C": "The students.",
+      "D": "The announcers."
+   };
+   q_13={
+      "no": 13,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2010_q_13.mp3",
+      "tran": "Before I start today’s Sociology lecture, I’d like to talk with you about the papers that you should be working on. As you know, the topic for the paper is The Relationship between Gun Control and Violence. The paper itself is due in two weeks. But, I would like to see your outline by Friday of this week so that I can be sure that you are on the right track with the assignment.",
+      "q": "When should the students submit the paper?",
+      "key": "D",
+      "expl": "Para mahasiswa diminta mengumpulkan tugas/paper dalam 2 minggu, tapi kerangka karangannya (outline) diselesaikan hari Jum'at minggu depan.",
+      "A": "Today",
+      "B": "By Friday",
+      "C": "This week",
+      "D": "In two weeks"
+   };
+   q_14={
+      "no": 14,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2010_q_14.mp3",
+      "tran": "These days, everyone seems to be drinking bottled water. And why not? It’s refreshing, pure, and safe. But, if you drink Plain Spring bottled water, you get more than just drink water. You get all the vitamins unit a day, for any little more money. Drinking 1 liter Plain Spring is equivalent of taking the best selling multivitamin tablet with 100% of the minimum daily requirement of vitamin A, C, and B plus the other vitamins needed by human nutrition. Available in half liter or little bottle and in pack for a single little bottle.",
+      "q": "What is being advertised?",
+      "key": "A",
+      "expl": "Iklan ini menjelaskan tentang air kemasan (bottled water) yang berisi berbagai macam vitamin.",
+      "A": "A multi-vitamin drinking bottle.",
+      "B": "A new brand of bottled water.",
+      "C": "The best-selling multi-vitamin tablets.",
+      "D": "Vitamins needed for human nutrition."
+   };
+   q_15={
+      "no": 15,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2010_q_15.mp3",
+      "tran": "These days, everyone seems to be drinking bottled water. And why not? It’s refreshing, pure, and safe. But, if you drink Plain Spring bottled water, you get more than just drink water. You get all the vitamins unit a day, for any little more money. Drinking 1 liter Plain Spring is equivalent of taking the best selling multivitamin tablet with 100% of the minimum daily requirement of vitamin A, C, and B plus the other vitamins needed by human nutrition. Available in half liter or little bottle and in pack for a single little bottle.",
+      "q": "What is the main advantage offered in the advertisement?",
+      "key": "A",
+      "expl": "Keunggulan produk ini adalah kecukupan vitamin untuk sehari (100% of the minimum daily requirement of vitamin A, C, and B ).",
+      "A": "Having the vitamins needed for one day.",
+      "B": "Purchasing for much more money.",
+      "C": "Getting more than a liter of water.",
+      "D": "Packing some good bottles."
+   };
+   q_16={
+      "no": 16,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Pele is the most iconic footballer of the Twentieth Century. He epitomized the flair, joy and passion the Brazilians bought to the game.<br>Pele’s career spanned throughout the 1950s, 1960s and 1970s.<br>In his early career, the young and unknown Pele helped inspire Brazil to victory in the 1958 World Cup. In 1962, Brazil retained the World Cup. In 1966, Brazil was hot favorites, but, lost out to the home nation England.<br>His crowning glory was the Brazilian victory in the 1970 World Cup in Mexico. In this World Cup, some of the football played by Brazil and Pele was widely considered to the greatest in the history of the game. Brazil won the final 4-1 against Italy; it was a genuine advertisement for the ‘beautiful game’ and a fitting pinnacle of Pele’s international career.<br>Pele went on to score over 1,000 goals in professional games. (The 1000th goal coming as a penalty in the US league – sparking celebrations around the world). His strike rate in international games was one of the highest ever. In 92 appearances, he scored 77 goals.<br>In the domestic league, Pele made his debut for Santos aged just 16. He played for Santos in the Brazilian league from until the 1972-73 season.<br>Pele finished his career in the lucrative US league. In 1975, he signed for New York Cosmos and played three seasons. He led the New York Cosmos to the US title in 1977 – the year of his retirement.<br>After retiring has gone on to be a great ambassador for football and sport in general. In 1992, Pelé was appointed a UN ambassador for ecology and the environment. He was also appointed a UNESCO goodwill ambassador. He is not only one of the most gifted footballers of his generation, but, also a mild-mannered man who used his fame and prestige for a positive effect.",
+      "q": "Who is being talked in the text above?",
+      "key": "D",
+      "expl": "Yang dibicarakan dalam teks tersebut adalah Pele, seorang pemain sepakbola terkenal.",
+      "A": "A real entertainer",
+      "B": "A US ambassador",
+      "C": "A wild mannered man",
+      "D": "A famous football player"
+   };
+   q_17={
+      "no": 17,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Pele is the most iconic footballer of the Twentieth Century. He epitomized the flair, joy and passion the Brazilians bought to the game.<br>Pele’s career spanned throughout the 1950s, 1960s and 1970s.<br>In his early career, the young and unknown Pele helped inspire Brazil to victory in the 1958 World Cup. In 1962, Brazil retained the World Cup. In 1966, Brazil was hot favorites, but, lost out to the home nation England.<br>His crowning glory was the Brazilian victory in the 1970 World Cup in Mexico. In this World Cup, some of the football played by Brazil and Pele was widely considered to the greatest in the history of the game. Brazil won the final 4-1 against Italy; it was a genuine advertisement for the ‘beautiful game’ and a fitting pinnacle of Pele’s international career.<br>Pele went on to score over 1,000 goals in professional games. (The 1000th goal coming as a penalty in the US league – sparking celebrations around the world). His strike rate in international games was one of the highest ever. In 92 appearances, he scored 77 goals.<br>In the domestic league, Pele made his debut for Santos aged just 16. He played for Santos in the Brazilian league from until the 1972-73 season.<br>Pele finished his career in the lucrative US league. In 1975, he signed for New York Cosmos and played three seasons. He led the New York Cosmos to the US title in 1977 – the year of his retirement.<br>After retiring has gone on to be a great ambassador for football and sport in general. In 1992, Pelé was appointed a UN ambassador for ecology and the environment. He was also appointed a UNESCO goodwill ambassador. He is not only one of the most gifted footballers of his generation, but, also a mild-mannered man who used his fame and prestige for a positive effect.",
+      "q": "What event did Pele inspire Brazil about football?",
+      "key": "A",
+      "expl": "Pele menginspirasi Brazil menjadi juara dunia Piala Dunia 1958.",
+      "A": "World Cup in 1958",
+      "B": "Domestic league in 1972",
+      "C": "US League in 1975",
+      "D": "New York Cosmos in 1977"
+   };
+   q_18={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Pele is the most iconic footballer of the Twentieth Century. He epitomized the flair, joy and passion the Brazilians bought to the game.<br>Pele’s career spanned throughout the 1950s, 1960s and 1970s.<br>In his early career, the young and unknown Pele helped inspire Brazil to victory in the 1958 World Cup. In 1962, Brazil retained the World Cup. In 1966, Brazil was hot favorites, but, lost out to the home nation England.<br>His crowning glory was the Brazilian victory in the 1970 World Cup in Mexico. In this World Cup, some of the football played by Brazil and Pele was widely considered to the greatest in the history of the game. Brazil won the final 4-1 against Italy; it was a genuine advertisement for the ‘beautiful game’ and a fitting pinnacle of Pele’s international career.<br>Pele went on to score over 1,000 goals in professional games. (The 1000th goal coming as a penalty in the US league – sparking celebrations around the world). His strike rate in international games was one of the highest ever. In 92 appearances, he scored 77 goals.<br>In the domestic league, Pele made his debut for Santos aged just 16. He played for Santos in the Brazilian league from until the 1972-73 season.<br>Pele finished his career in the lucrative US league. In 1975, he signed for New York Cosmos and played three seasons. He led the New York Cosmos to the US title in 1977 – the year of his retirement.<br>After retiring has gone on to be a great ambassador for football and sport in general. In 1992, Pelé was appointed a UN ambassador for ecology and the environment. He was also appointed a UNESCO goodwill ambassador. He is not only one of the most gifted footballers of his generation, but, also a mild-mannered man who used his fame and prestige for a positive effect.",
+      "q": "What happened to Pele in 1992?",
+      "key": "A",
+      "expl": "Tahun 1992, Pele menjadi duta UNESCO.",
+      "A": "He was appointed as an UN ambassador.",
+      "B": "He played in the World Cup in Mexico.",
+      "C": "He decided to retire from playing football.",
+      "D": "He was inaugurated as the only gifted athlete."
+   };
+   q_19={
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "ANNOUNCEMENT<br><br>Welcome to the Jogjakarta Public Library. Books can only be borrowed by members. Anyone who resides, works, pays property taxes, or attends school in Jogjakarta, is eligible to be library member. To be a member you just simply register yourself in the front desk. You will be asked to fill a form, show your ID card, and pay registration fee. Most books can be borrowed for 28 days. Borrowing can be prolonged once for 10 days if no one else wants the book. ",
+      "q": "What does the text tell us?",
+      "key": "B",
+      "expl": "Teks ini berisi cara menjadi anggota sebuah perpustakaan.",
+      "A": "How to register to be a librarian.",
+      "B": "How to be the library member.",
+      "C": "How to renew the library.",
+      "D": "How to buy the book."
+   };
+   q_20={
+      "no": 20,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "ANNOUNCEMENT<br><br>Welcome to the Jogjakarta Public Library. Books can only be borrowed by members. Anyone who resides, works, pays property taxes, or attends school in Jogjakarta, is eligible to be library member. To be a member you just simply register yourself in the front desk. You will be asked to fill a form, show your ID card, and pay registration fee. Most books can be borrowed for 28 days. Borrowing can be prolonged once for 10 days if no one else wants the book. ",
+      "q": "How long can a member borrow a book maximally for?",
+      "key": "D",
+      "expl": "Buku dapat dipinjam 28 hari dan dapat diperpanjang maksimal 10 hari lagi jika tak ada yang menginginkan buku itu.",
+      "A": "10 days",
+      "B": "18 days",
+      "C": "28 days",
+      "D": "38 days"
+   };
+   q_21={
+      "no": 21,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Situated in Pantai Indah Kapuk in North Jakarta, the Angke Kapuk natural tourism park covers an area of 99.82 hectares overlooking the Jakarta bay. With an entrance fee of Rp 25,000 (US$1.87) per person for adults and Rp 10,000 for children, the place offers river cruising on a motorboat as well as walking and cycling around the forest through bamboo and wooden paths. A six-seat motorboat can be rented for Rp 350,000 per boat. A bigger size, which can accommodate up to eight people, is available for Rp 400,000. Fauna watching is one of the perks that visitors can expect to enjoy while cruising the mangrove forest. During our recent visit, several wild birds were standing at wooden poles scattered among the trees.<br>\"If you arrive earlier in the morning, you can also see some lizards swimming in the river,\" said our boatman, Agus. In addition to a bird watching area, which is best seen from a wooden bridge connecting one mangrove zone to another, there is also an avian nursery reachable by bike. When it is close to sunset, visitors can be found lingering at and around a 20-meter tower near the cottage area. Made entirely from wood, the accommodation options are perfect for those seeking to enjoy the lush trees and calm river overnight.",
+      "q": "What can we do when visiting the ‘Angke Kapuk’ Natural Tourism Park?",
+      "key": "B",
+      "expl": "Kita bisa melihat sekumpulan burung di Angke Kapuk.",
+      "A": "Driving along the park.",
+      "B": "Watching a folk of birds.",
+      "C": "Enjoying special culinary.",
+      "D": "Staying in luxurious hotel."
+   };
+   q_22={
+      "no": 22,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Situated in Pantai Indah Kapuk in North Jakarta, the Angke Kapuk natural tourism park covers an area of 99.82 hectares overlooking the Jakarta bay. With an entrance fee of Rp 25,000 (US$1.87) per person for adults and Rp 10,000 for children, the place offers river cruising on a motorboat as well as walking and cycling around the forest through bamboo and wooden paths. A six-seat motorboat can be rented for Rp 350,000 per boat. A bigger size, which can accommodate up to eight people, is available for Rp 400,000. Fauna watching is one of the perks that visitors can expect to enjoy while cruising the mangrove forest. During our recent visit, several wild birds were standing at wooden poles scattered among the trees.<br>\"If you arrive earlier in the morning, you can also see some lizards swimming in the river,\" said our boatman, Agus. In addition to a bird watching area, which is best seen from a wooden bridge connecting one mangrove zone to another, there is also an avian nursery reachable by bike. When it is close to sunset, visitors can be found lingering at and around a 20-meter tower near the cottage area. Made entirely from wood, the accommodation options are perfect for those seeking to enjoy the lush trees and calm river overnight.",
+      "q": "What would people think of touring the park?",
+      "key": "B",
+      "expl": "Wisata di Angke Kapuk bersifat unik.",
+      "A": "It is lack of beauty and passion.",
+      "B": "It is a unique experience.",
+      "C": "It is a boring exploration.",
+      "D": "It is all about animals."
+   };
+   q_23={
+      "no": 23,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Situated in Pantai Indah Kapuk in North Jakarta, the Angke Kapuk natural tourism park covers an area of 99.82 hectares overlooking the Jakarta bay. With an entrance fee of Rp 25,000 (US$1.87) per person for adults and Rp 10,000 for children, the place offers river cruising on a motorboat as well as walking and cycling around the forest through bamboo and wooden paths. A six-seat motorboat can be rented for Rp 350,000 per boat. A bigger size, which can accommodate up to eight people, is available for Rp 400,000. Fauna watching is one of the perks that visitors can expect to enjoy while cruising the mangrove forest. During our recent visit, several wild birds were standing at wooden poles scattered among the trees.<br>\"If you arrive earlier in the morning, you can also see some lizards swimming in the river,\" said our boatman, Agus. In addition to a bird watching area, which is best seen from a wooden bridge connecting one mangrove zone to another, there is also an avian nursery reachable by bike. When it is close to sunset, visitors can be found lingering at and around a 20-meter tower near the cottage area. Made entirely from wood, the accommodation options are perfect for those seeking to enjoy the lush trees and calm river overnight.",
+      "q": "“..., there is also an avian nursery <u>reachable</u> by bike.”(Paragraph 2). The underlined word means almost the same as …",
+      "key": "B",
+      "expl": "Reachable=can be accessed.",
+      "A": "Unable to reach.",
+      "B": "That can be accessed.",
+      "C": "Which cannot be reached.",
+      "D": "With the ability of riding."
+   };
+   q_24={
+      "no": 24,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Electrical conduit fittings form the outer covering for most electrical wiring from one point to the next. They shield the wires from the external environment so as to make the wire last longer and also to keep humans and pets safe from electric shocks or other such vulnerabilities. Electrical conduits are predominantly made of insulating and sturdy material for optimum functionality. Here are the ways to do the simple ones:<br>1.Choose the right material for installing electrical conduit fittings: The most preferred material is known as EMT (Electrical Metallic Tubing). EMT is very easy to install as you can effortlessly bend it and assemble it as per your needs.<br>2.Chalk out a wiring plan: Find out the location of the electrical boxes on your wall to trace the route of the conduit. Draw the path from the main power source to the electrical box.<br>3.Measure the amount of conduit that you would need: Make appropriate marks in pencil wherever you think the bends should be, and measure the total length of the conduit that would be needed to finish the entire electrical conduit fittings. Now cut the length that you just measured with a tool called hacksaw.<br>4.Make the necessary bends: It is now time to make bends that you had marked on the pipe in the previous step. Owing to the easy flexibility of EMT, this should not be very difficult. Conduit benders come in handy for doing this bending.<br>5.Attach fittings to the wall: You can use screws and straps with either single or double holes, available at electrical surplus shops, to attach electrical conduit fittings to the wall.<br>6.Tape the ends and put the wires in place: Use a widely available fish tape and run it through the entire route of the conduit fittings you just installed.",
+      "q": "Which one is NOT needed to prepare for the activities?",
+      "key": "A",
+      "expl": "Tidak butuh ikan.",
+      "A": "Fish",
+      "B": "Chalk",
+      "C": "Straps",
+      "D": "Screws"
+   };
+   q_25={
+      "no": 25,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Electrical conduit fittings form the outer covering for most electrical wiring from one point to the next. They shield the wires from the external environment so as to make the wire last longer and also to keep humans and pets safe from electric shocks or other such vulnerabilities. Electrical conduits are predominantly made of insulating and sturdy material for optimum functionality. Here are the ways to do the simple ones:<br>1.Choose the right material for installing electrical conduit fittings: The most preferred material is known as EMT (Electrical Metallic Tubing). EMT is very easy to install as you can effortlessly bend it and assemble it as per your needs.<br>2.Chalk out a wiring plan: Find out the location of the electrical boxes on your wall to trace the route of the conduit. Draw the path from the main power source to the electrical box.<br>3.Measure the amount of conduit that you would need: Make appropriate marks in pencil wherever you think the bends should be, and measure the total length of the conduit that would be needed to finish the entire electrical conduit fittings. Now cut the length that you just measured with a tool called hacksaw.<br>4.Make the necessary bends: It is now time to make bends that you had marked on the pipe in the previous step. Owing to the easy flexibility of EMT, this should not be very difficult. Conduit benders come in handy for doing this bending.<br>5.Attach fittings to the wall: You can use screws and straps with either single or double holes, available at electrical surplus shops, to attach electrical conduit fittings to the wall.<br>6.Tape the ends and put the wires in place: Use a widely available fish tape and run it through the entire route of the conduit fittings you just installed.",
+      "q": "Why is it recommended to use the EMT?",
+      "key": "A",
+      "expl": "EMT mudah dipasang dan ditekuk.",
+      "A": "It’s easy to install.",
+      "B": "It’s very expensive.",
+      "C": "It’s made of plastic.",
+      "D": "It doesn’t need tape."
+   };
+   q_26={
+      "no": 26,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Electrical conduit fittings form the outer covering for most electrical wiring from one point to the next. They shield the wires from the external environment so as to make the wire last longer and also to keep humans and pets safe from electric shocks or other such vulnerabilities. Electrical conduits are predominantly made of insulating and sturdy material for optimum functionality. Here are the ways to do the simple ones:<br>1.Choose the right material for installing electrical conduit fittings: The most preferred material is known as EMT (Electrical Metallic Tubing). EMT is very easy to install as you can effortlessly bend it and assemble it as per your needs.<br>2.Chalk out a wiring plan: Find out the location of the electrical boxes on your wall to trace the route of the conduit. Draw the path from the main power source to the electrical box.<br>3.Measure the amount of conduit that you would need: Make appropriate marks in pencil wherever you think the bends should be, and measure the total length of the conduit that would be needed to finish the entire electrical conduit fittings. Now cut the length that you just measured with a tool called hacksaw.<br>4.Make the necessary bends: It is now time to make bends that you had marked on the pipe in the previous step. Owing to the easy flexibility of EMT, this should not be very difficult. Conduit benders come in handy for doing this bending.<br>5.Attach fittings to the wall: You can use screws and straps with either single or double holes, available at electrical surplus shops, to attach electrical conduit fittings to the wall.<br>6.Tape the ends and put the wires in place: Use a widely available fish tape and run it through the entire route of the conduit fittings you just installed.",
+      "q": "What is the function of conduit fittings?",
+      "key": "D",
+      "expl": "Fitting ini dibutuhkan untuk mencegah terjadinya kecelakaan akibat arus listrik.",
+      "A": "To decorate the building more beautifully.",
+      "B": "To cover the environment of the house.",
+      "C": "To let the electrician works easily.",
+      "D": "To prevent from electrical shocks."
+   };
+   q_27={
+      "no": 27,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "The staff at Wonderful's Picture Frames would like you to join us on our opening day. When you visit us on Saturday 1, you will be eligible for a 15% discount on any item! Just mention code WPF1WN at the time of purchase. We are addressed at the corner of Wilson and Smith Avenue, and our hour operation are 9:00 a.m. - 6:00 p.m., Tuesday through Sunday.<br> We are confident that you will love our selection of frames. Our frame specialist will be happy to answer any questions you may have, and they will help you to choose the frame that is right for you. For more information, visit us online at www.wonderfulpictureframes.com or call us at (022) 239007.",
+      "q": "What is the topic of the text?",
+      "key": "D",
+      "expl": "Teks ini berisi tentang undangan untuk mendapatkan diskon dalam sebuah pembukaan toko.",
+      "A": "An opening of a competition",
+      "B": "Purchasing of specialists.",
+      "C": "Online trade.",
+      "D": "An invitation of discount."
+   };
+   q_28={
+      "no": 28,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "The staff at Wonderful's Picture Frames would like you to join us on our opening day. When you visit us on Saturday 1, you will be eligible for a 15% discount on any item! Just mention code WPF1WN at the time of purchase. We are addressed at the corner of Wilson and Smith Avenue, and our hour operation are 9:00 a.m. - 6:00 p.m., Tuesday through Sunday.<br> We are confident that you will love our selection of frames. Our frame specialist will be happy to answer any questions you may have, and they will help you to choose the frame that is right for you. For more information, visit us online at www.wonderfulpictureframes.com or call us at (022) 239007.",
+      "q": "What will the interested one that receives the letter do?",
+      "key": "A",
+      "expl": "Orang yang diundang dan tertarik dengan tawaran toko ini akan datang pada saat pembukaan toko.",
+      "A": "He/she will come on the opening day.",
+      "B": "He/she will go to a store and buy frames.",
+      "C": "He/she will apply for a job at the store.",
+      "D": "He/she will visit the owner."
+   };
+   q_29={
+      "no": 29,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "The staff at Wonderful's Picture Frames would like you to join us on our opening day. When you visit us on Saturday 1, you will be eligible for a 15% discount on any item! Just mention code WPF1WN at the time of purchase. We are addressed at the corner of Wilson and Smith Avenue, and our hour operation are 9:00 a.m. - 6:00 p.m., Tuesday through Sunday.<br> We are confident that you will love our selection of frames. Our frame specialist will be happy to answer any questions you may have, and they will help you to choose the frame that is right for you. For more information, visit us online at www.wonderfulpictureframes.com or call us at (022) 239007.",
+      "q": "You will be <u>eligible</u> for 15% discount. The underlined word means similar to …",
+      "key": "C",
+      "expl": "Eligible=berhak",
+      "A": "has a complaint",
+      "B": "has a compliment",
+      "C": "has a right",
+      "D": "has a request"
+   };
+   q_30={
+      "no": 30,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Belgrade, January 5, 2016<br><br>Reference: Invitation for interview as a result of application<br>Dear Sir/Madam,<br>As a result of your application for the role of quality control personnel, we would like to invite you to attend an interview on Thursday, January 29, 2016, at 8 a.m. at aour branch. You will have an interview with the head of the department, William McCoy and the udersigned. The interview will last about 45 minutes. Could you please bring a copy of your identity documents as well as a copy of your certificates with you to the interview? Should the date or time be convenient, please contact Ivan Octavo, the program officer, in order to arrange another appointment. We look forward to seeing you.<br>Kind regards,<br>Nancy McCaine.",
+      "q": "What is the topic of the text?",
+      "key": "B",
+      "expl": "Topik dari teks ini adalah undangan untuk menghadiri interview pekerjaan.",
+      "A": "Application letter",
+      "B": "Invitation for an interview",
+      "C": "Invitation for a dinner",
+      "D": "Invitation for a meeting"
+   };
+   q_31={
+      "no": 31,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Belgrade, January 5, 2016<br><br>Reference: Invitation for interview as a result of application<br>Dear Sir/Madam,<br>As a result of your application for the role of quality control personnel, we would like to invite you to attend an interview on Thursday, January 29, 2016, at 8 a.m. at aour branch. You will have an interview with the head of the department, William McCoy and the udersigned. The interview will last about 45 minutes. Could you please bring a copy of your identity documents as well as a copy of your certificates with you to the interview? Should the date or time be convenient, please contact Ivan Octavo, the program officer, in order to arrange another appointment. We look forward to seeing you.<br>Kind regards,<br>Nancy McCaine.",
+      "q": "What will the receiver the letter do ?",
+      "key": "A",
+      "expl": "Pelamar yang diundang interview harus datang ke tempat interview.",
+      "A": "Come to the interview.",
+      "B": "Contact Ivan Octavo",
+      "C": "Reply the letter",
+      "D": "Write an application letter"
+   };
+   q_32={
+      "no": 32,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Belgrade, January 5, 2016<br><br>Reference: Invitation for interview as a result of application<br>Dear Sir/Madam,<br>As a result of your application for the role of quality control personnel, we would like to invite you to attend an interview on Thursday, January 29, 2016, at 8 a.m. at aour branch. You will have an interview with the head of the department, William McCoy and the udersigned. The interview will last about 45 minutes. Could you please bring a copy of your identity documents as well as a copy of your certificates with you to the interview? Should the date or time be convenient, please contact Ivan Octavo, the program officer, in order to arrange another appointment. We look forward to seeing you.<br>Kind regards,<br>Nancy McCaine.",
+      "q": "Should the date or time be <u>inconvenient</u> . The underlined word has opposite meaning to  …",
+      "key": "A",
+      "expl": "inconvenient=tidak sesuai, maka antonimnya adalah sesuai (suitable)",
+      "A": "Suitable",
+      "B": "Uncomfortable",
+      "C": "Unpleasant",
+      "D": "Irreponsible"
+   };
+   q_33={
+      "no": 33,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "From: Halley<br>To: Mr. Bean<br>I'm sorry to tell you this but the car is still in the garage. Thrre are so many things to be done to the car. So far the mechanics have welded the radiator. They have also changed the old brake with new one. Besides that they have also cleaned the carburettor. So, we don't have to change it with the new one. They have also changed the old gear belt with  the new one. Luckily the tires are still all right. So no more worries with the car and our journey. The mechanics have changed the brake oil with the new one. It's called BENZOLLA. They said it's the best brake oil. The last spare parts they have changed are sparkplugs. I've told them that our spark plugs are just a three-month old buth they kept suggesting me to change them with the new ones.",
+      "q": "What is the main idea of this letter?",
+      "key": "A",
+      "expl": "Pikiran utama teks ini adalah bahwa mobil Mr. Bean masih ada di bengkel.",
+      "A": "The car is still in the garage.",
+      "B": "The car has to be changed.",
+      "C": "The car is called BENZOLLA.",
+      "D": "The car is repaired."
+   };
+   q_34={
+      "no": 34,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "From: Halley<br>To: Mr. Bean<br>I'm sorry to tell you this but the car is still in the garage. Thrre are so many things to be done to the car. So far the mechanics have welded the radiator. They have also changed the old brake with new one. Besides that they have also cleaned the carburettor. So, we don't have to change it with the new one. They have also changed the old gear belt with  the new one. Luckily the tires are still all right. So no more worries with the car and our journey. The mechanics have changed the brake oil with the new one. It's called BENZOLLA. They said it's the best brake oil. The last spare parts they have changed are sparkplugs. I've told them that our spark plugs are just a three-month old buth they kept suggesting me to change them with the new ones.",
+      "q": "What are the tires?",
+      "key": "B",
+      "expl": "Tires=roda, termasuk suku cadang (spare part) dari mobil.",
+      "A": "Sparkplugs",
+      "B": "Spare parts",
+      "C": "Machine",
+      "D": "Carburettor"
+   };
+   q_35={
+      "no": 35,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "From: Halley<br>To: Mr. Bean<br>I'm sorry to tell you this but the car is still in the garage. Thrre are so many things to be done to the car. So far the mechanics have welded the radiator. They have also changed the old brake with new one. Besides that they have also cleaned the carburettor. So, we don't have to change it with the new one. They have also changed the old gear belt with  the new one. Luckily the tires are still all right. So no more worries with the car and our journey. The mechanics have changed the brake oil with the new one. It's called BENZOLLA. They said it's the best brake oil. The last spare parts they have changed are sparkplugs. I've told them that our spark plugs are just a three-month old buth they kept suggesting me to change them with the new ones.",
+      "q": "So no more worries with the car and our journey'. What is the antonym of the word 'worries'?",
+      "key": "A",
+      "expl": "Worry=khawatir. Antonimnya adalah tak peduli (no care)",
+      "A": "No care",
+      "B": "Afraid",
+      "C": "Disturbed",
+      "D": "Scared"
+   };
+   q_36={
+      "no": 36,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Erna: What is your main job as a chef at the hotel?<br>Juli: Well, I arrange the menu, supervise the preparation of food, and cook food in the restaurant. I also taste the food for correct seasoning.",
+      "q": "According to the dialog, which is the responsibility of a chef?",
+      "key": "B",
+      "expl": "Tugas chef: menyajikan menu.",
+      "A": "To taste the food.",
+      "B": "To serve the menu.",
+      "C": "To clean the room.",
+      "D": "To supervise the hotel."
+   };
+   q_37={
+      "no": 37,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Nina: My school will have an art festival next Saturday to celebrate our school anniversary. And guess what? Didi Band will be performing.<br>Leo: That’s cool.",
+      "q": "How does Nina’s school celebrate the anniversary?",
+      "key": "C",
+      "expl": "Ulang tahun sekolah Nina akan dirayakan dengan pentas seni.",
+      "A": "By exhibiting students’ work.",
+      "B": "By having students’ fair.",
+      "C": "By having an art feast.",
+      "D": "By having band contest."
+   };
+   q_38={
+      "no": 38,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Nina: What does your father do?<br>Tatang: He’s a mechanic. He’s very dedicated to his job.<br>Nina: I see. How long has he been working?<br>Tatang: About twenty years.<br>Nina: He must be very skilful in his job.",
+      "q": "What did Nina say about Tatang’s father?",
+      "key": "A",
+      "expl": "Nina mengatakan bahwa pasti ayah Tatang sangat terampil.",
+      "A": "He is a skilful worker.",
+      "B": "He is against his job.",
+      "C": "He is not committed.",
+      "D": "He is unemployed."
+   };
+   q_39={
+      "no": 39,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Tiwi: It’s so cool bere.<br>Tika:  ... and make hot tea for you? ",
+      "key": "D",
+      "expl": "Karena udara yang dingin, Tika menawarkan bantuan kepada Tiwi untuk menghidupkan pemanas ruang dan membuatkan teh hangat.",
+      "A": "Would you like to use our new fan",
+      "B": "Would you like to go out for a while",
+      "C": "Would you like me to turn on the AC",
+      "D": "Would you like me to turn on the heater"
+   };
+   q_40={
+      "no": 40,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Prisca: He is very careless. He shouldn’t have told everyone about the secret.<br>Arman:  ... He might have mistaken and oversight. ",
+      "key": "A",
+      "expl": "Arman memberi saran kepada Prisca utnuk mengklarifikasi masalah antara Prisca.",
+      "A": "Talk to him about it",
+      "B": "Don’t keep your secret",
+      "C": "He must share the secret",
+      "D": "You make some mistakes"
+   };
+   q_41={
+      "no": 41,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Jane: Where's John?<br>Joe: He's in the kitchen now. ... We'll have special guest tonight. ",
+      "key": "A",
+      "expl": "John sedang memasak di dapur karena ada tamu istimewa nanti malam",
+      "A": "He's cooking dinner.",
+      "B": "He's having breakfast.",
+      "C": "We're having lunch together.",
+      "D": "We're eating our meal."
+   };
+   q_42={
+      "no": 42,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Woman: What time does the plane from New York take off?<br>Man: ... It will be announced.<br>Woman: Thank you. ",
+      "key": "B",
+      "expl": "Wanita tersebut bertanya tentang jam keberangkatan pesawat dari New York dan dijawab dengan jam keberangkatan pesawat",
+      "A": "It leaves from New Yourk everyday.",
+      "B": "It leaves every 5 hours.",
+      "C": "It leaves from gate 15.",
+      "D": "It leaves at 5:45"
+   };
+   q_43={
+      "no": 43,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Karni: Let’s watch an adventure movie this weekend.<br>Deni: Sorry, I don’t really like it  ... Which is an outdoor activity. ",
+      "key": "B",
+      "expl": "Love atau like diikuti gerund (V+ing) jika menandakan suatu kebiasaan.",
+      "A": "I enjoy cooking",
+      "B": "I love travelling",
+      "C": "I had better stay at home",
+      "D": "I am fond of listening to music"
+   };
+   q_44={
+      "no": 44,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Priyo: Do you like the black gown or the pink one? <br>Putri: If you ask me, ...",
+      "key": "B",
+      "expl": "Warna gaun pink adalah warna yang terang yang lebih disukai Putri",
+      "A": "I'd rather wear the newest",
+      "B": "I prefer the brighter colour",
+      "C": "I like the most expensive one",
+      "D": "We'd better have the bigger size"
+   };
+   q_45={
+      "no": 45,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Mother: You are going to celebrate your 17th birthday. What will you do?<br>Clara: ... I plan to have a small party with them. ",
+      "key": "B",
+      "expl": "Kalimat pertanyaan future tense maka responnya juga future tense.",
+      "A": "I would send some cards.",
+      "B": "I'll invite my friends.",
+      "C": "I've gone to the bakeries.",
+      "D": "I am making invitations."
+   };
+   q_46={
+      "no": 46,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Nina: Where did you go last night, Martha?<br>Martha: ... My sister delivered her baby there. ",
+      "key": "D",
+      "expl": "Kalimat pertanyaan simple past maka responnya juga simple past",
+      "A": "I write a receipt for my patient",
+      "B": "I am undergoing an operation",
+      "C": "I've gone to the bakeries.",
+      "D": "I was in the hospital"
+   };
+   q_47={
+      "no": 47,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Azkiya: You seem to be waiting for something these days.<br>Aini: That’s true. I’m waiting for the reply to my inquiry letter  ... last week. And there’s no answer until now. ",
+      "key": "C",
+      "expl": "Suratnya dikirim minggu lalu (it was sent last week)",
+      "A": "I propose it",
+      "B": "It is being read",
+      "C": "It was sent",
+      "D": "I am replying it"
+   };
+   q_48={
+      "no": 48,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Son: Mom, Dad ... This is Tina and this is Nita.<br>Mother: Nice to meet you. Please come in and sit down!<br>Father: Glad to see you. My son has told us a lot about both of you. ",
+      "key": "B",
+      "expl": "Pola yang lebih sopan adalah: let me introduce my friends.",
+      "A": "Please introduce your friends to me",
+      "B": "Let me introduce my friends.",
+      "C": "This is my friends",
+      "D": "I want to introduce my friends"
+   };
+   q_49={
+      "no": 49,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Lena: Why do you recommend this restaurant?<br>Nula: The food is more delicious and  ...<br>Lena: What about the services? Are they better than the one where we last came? ",
+      "key": "A",
+      "expl": "Restoran yang direkomendasikan lebih lezat makanannya (more delicious) dan lebih murah harganya (cheaper).",
+      "A": "the prices are cheaper",
+      "B": "the place is less comfortable",
+      "C": "the secretary is worse",
+      "D": "the situation is noisier."
+   };
+   q_50={
+      "no": 50,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Passenger: What time does the train leave? What time is it now?<br>Officer:  ... The train leaves at 1.45 p.m.<br>Passenger: Well, I still have 2 hours before leaving. I can have lunch first. ",
+      "key": "D",
+      "expl": "Karena masih 2 jam lagi, maka jam sekarang adalah jam 11.45 (kereta berangkat jam 1.45).",
+      "A": "It is fifteen to eleven.",
+      "B": "It is twelve forty five.",
+      "C": "It’s fifteen past eleven.",
+      "D": "It’s eleven forty five."
+   }

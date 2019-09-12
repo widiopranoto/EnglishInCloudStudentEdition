@@ -8,7 +8,6 @@
 <link rel="icon" href="image/eic_green_16x16.png" type="image/png" sizes="16x16">
 <script src="w3schools/lib/w3.js"></script>
 <script src="js/function.js"></script>
-<script src="js/getScorePractice.js"></script>
 <script src="json/speaking.json"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 
@@ -23,7 +22,7 @@
 <div class="w3-sidebar w3-bar-block w3-green w3-xxlarge" style="width:80px">
   <a href="#home" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#home')"><img src="image/home.png" style="width:65px"></img></a> 
   <a href="#login" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#login')"><img src="image/login.png" style="width:40px"></img></a> 
-  <a href="#practice" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#practice')"><img src="image/practice.png" style="width:60px"></img></a> 
+  <a href="#game" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#game')"><img src="image/game.png" style="width:60px"></img></a> 
   <a href="#learn" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#learn')"><img src="image/learn.png" style="width:60px"></img></a>
   <a href="#un" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#un')"><img src="image/un.png" style="width:60px"></img></a> 
   <a href="#score" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#score')"><img src="image/score.png" style="width:60px"></img></a> 
@@ -63,12 +62,12 @@
 
         <div class="w3-third w3-section">
             <div class="w3-card-2">
-                <a href="#practice" class="w3-bar-item w3-button" onclick="show('#practice')">			
+                <a href="#game" class="w3-bar-item w3-button" onclick="show('#game')">			
                 <img src="image/practice.png">
 				</a>
                 <div class="w3-container w3-blue">
-                    <h2>Practice</h2>
-                    <p>Practice your skills here
+                    <h2>Game</h2>
+                    <p>Play English game here
                 </p></div>
             </div>
             <br><br><br>
@@ -210,58 +209,53 @@ span.psw {
     </div>
   </div>
 </div>
-<div id='practice' class="w3-container w3-animate-left">
-  <h2 class="w3-animate-left">Practice</h2>
+<div id='game' class="w3-container w3-animate-left">
+  <h2 class="w3-animate-left">Let's play game!</h2>
 <div class="w3-row-padding w3-theme">
-
-        <div class="w3-quarter w3-section">
-            <div class="w3-card-2">
-                <a href="#listening" class="w3-bar-item w3-button" onclick="show('#listening')">			
-                <img src="image/listening.png">
+        <div class="w3-section">
+            <div class="w3-quarter w3-card-2">
+                <a href="#beginner" class="w3-bar-item w3-button" onclick="show('#beginner')">			
+                <img src="image/beginner.png">
 				</a>
                 <div class="w3-container w3-blue">
-                    <h2>Listening</h2>
-                    <p>Practice your listening skill</p>
+                    <h2>Beginner</h2>
+                    <p></p>
                 </div>
             </div>
         </div>
-
-        <div class="w3-quarter w3-section">
-            <div class="w3-card-2">
-                <a href="#speaking" class="w3-bar-item w3-button" onclick="show('#speaking')">			
-                <img src="image/speaking.png">
+        <div class="w3-section w3-disabled">
+            <div class="w3-quarter w3-card-2">
+                <a href="#beginner_intermediate" class="w3-bar-item w3-button" onclick="show('#beginner_intermediate')">			
+                <img src="image/beginner_intermediate.png">
 				</a>
                 <div class="w3-container w3-blue">
-                    <h2>Speaking</h2>
-                    <p>Practice your speaking skill</p>
+                    <h2>Beginner Intermediate</h2>
+                    <p></p>
                 </div>
             </div>
         </div>
-
-    
-
-        <div class="w3-quarter w3-section">
-            <div class="w3-card-2">
-                <a href="#reading" class="w3-bar-item w3-button" onclick="show('#reading')">			
-                <img src="image/reading.png">
+        <div class="w3-section w3-disabled">
+            <div class="w3-quarter w3-card-2">
+                <a href="#intermediate" class="w3-bar-item w3-button" onclick="show('#intermediate')">			
+                <img src="image/intermediate.png">
 				</a>
                 <div class="w3-container w3-blue">
-                    <h2>Reading</h2>
-                    <p>Practice your reading skill</p>
-					</div>
-            </div>
-        </div>
-        <div class="w3-quarter w3-section">
-            <div class="w3-card-2">
-                <a href="#writing" class="w3-bar-item w3-button" onclick="show('#writing')">			
-                <img src="image/writing.png">
-				</a>
-                <div class="w3-container w3-blue">
-                    <h2>Writing</h2>
-                    <p>Practice your writing skill</p>
+                    <h2>Intermediate</h2>
+                    <p></p>
                 </div>
             </div>
-        </div>		
+        </div>
+        <div class="w3-section w3-disabled">
+            <div class="w3-quarter w3-card-2">
+                <a href="#intermediate_advanced" class="w3-bar-item w3-button" onclick="show('#intermediate_advanced')">			
+                <img src="image/intermediate_advanced.png">
+				</a>
+                <div class="w3-container w3-blue">
+                    <h2>Intermediate Advanced</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>			
 </div>
 </div>
 <div id='learn' class="w3-container w3-animate-left">
@@ -349,52 +343,13 @@ span.psw {
   <h2 class="w3-animate-left">Score</h2>
 
 <div class="w3-row-padding w3-theme">
+
         <div class="w3-section">
             <div class="w3-card-2">
 				<img src="image/score.png"></img>
 <div class="w3-container w3-light-gray">
   <h2>Your Score</h2>
-  <div class="w3-center">  
-    <div class="w3-bar">
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD1()">Show score KD1</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD2()">Show score KD2</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD3()">Show score KD3</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD4()">Show score KD4</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD5()">Show score KD5</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD6()">Show score KD6</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD7()">Show score KD7</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD8()">Show score KD8</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD9()">Show score KD9</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD10()">Show score KD10</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD11()">Show score KD11</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD12()">Show score KD12</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD13()">Show score KD13</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD14()">Show score KD14</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD15()">Show score KD15</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD16()">Show score KD16</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD17()">Show score KD17</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD18()">Show score KD18</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD19()">Show score KD19</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD20()">Show score KD20</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD21()">Show score KD21</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD22()">Show score KD22</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD23()">Show score KD23</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD24()">Show score KD24</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD25()">Show score KD25</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD26()">Show score KD26</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD27()">Show score KD27</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD28()">Show score KD28</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD29()">Show score KD29</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD30()">Show score KD30</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD31()">Show score KD 31</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD32()">Show score KD 32</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD33()">Show score KD 33</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD34()">Show score KD 34</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD35()">Show score KD 35</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD36()">Show score KD 36</button>
-      <button class="w3-button w3-green" type="submit" onclick="getScorePracticeKD37()">Show score KD 37</button>
-    </div>
-  </div>
+  <p></p>
 
   <table class="w3-table-all">
     <tr>
@@ -403,117 +358,30 @@ span.psw {
       <th>Speaking</th>
       <th>Reading</th>	 
       <th>Writing</th>
+      <th>UN 1</th>
+      <th>UN 2</th>
+      <th>UN 3 </th>
+      <th>UN 4</th>
+      <th>UN 5</th>
+      <th>UN 6</th>
+      <th>UN 7</th>
+	  
     </tr>
     <tr>
-      <td>1</td><td id='score_listening_kd1'></td><td id='score_speaking_kd1'></td><td id='score_reading_kd1'></td><td id='score_writing_kd1'></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>	  
+      <td></td>
+      <td></td>	
+      <td></td>	  
+      <td></td>
+      <td></td>		  
     </tr>
-    <tr>
-      <td>2</td><td id='score_listening_kd2'></td><td id='score_speaking_kd2'></td><td id='score_reading_kd2'></td><td id='score_writing_kd2'></td>
-	</tr>  
-    <tr>
-      <td>3</td><td id='score_listening_kd3'></td><td id='score_speaking_kd3'></td><td id='score_reading_kd3'></td><td id='score_writing_kd3'></td>
-    </tr>
-    <tr>
-      <td>4</td><td id='score_listening_kd4'></td><td id='score_speaking_kd4'></td><td id='score_reading_kd4'></td><td id='score_writing_kd4'></td>
-    </tr>
-    <tr>
-      <td>5</td><td id='score_listening_kd5'></td><td id='score_speaking_kd5'></td><td id='score_reading_kd5'></td><td id='score_writing_kd5'></td>
-    </tr>
-    <tr>
-      <td>6</td><td id='score_listening_kd6'></td><td id='score_speaking_kd6'></td><td id='score_reading_kd6'></td><td id='score_writing_kd6'></td>
-    </tr>
-    <tr>
-      <td>7</td><td id='score_listening_kd7'></td><td id='score_speaking_kd7'></td><td id='score_reading_kd7'></td><td id='score_writing_kd7'></td>
-    </tr>
-    <tr>
-      <td>8</td><td id='score_listening_kd8'></td><td id='score_speaking_kd8'></td><td id='score_reading_kd8'></td><td id='score_writing_kd8'></td>
-    </tr>
-    <tr>
-      <td>9</td><td id='score_listening_kd9'></td><td id='score_speaking_kd9'></td><td id='score_reading_kd9'></td><td id='score_writing_kd9'></td>
-    <tr>
-      <td>10</td><td id='score_listening_kd10'></td><td id='score_speaking_kd10'></td><td id='score_reading_kd10'></td><td id='score_writing_kd10'></td>
-    </tr>
-    <tr>
-      <td>11</td><td id='score_listening_kd11'></td><td id='score_speaking_kd11'></td><td id='score_reading_kd11'></td><td id='score_writing_kd11'></td>
-    </tr>
-    <tr>
-      <td>12</td><td id='score_listening_kd12'></td><td id='score_speaking_kd12'></td><td id='score_reading_kd12'></td><td id='score_writing_kd12'></td>
-    </tr>
-    <tr>
-      <td>13</td><td id='score_listening_kd13'></td><td id='score_speaking_kd13'></td><td id='score_reading_kd13'></td><td id='score_writing_kd13'></td>
-	</tr>  
-    <tr>
-      <td>14</td><td id='score_listening_kd14'></td><td id='score_speaking_kd14'></td><td id='score_reading_kd14'></td><td id='score_writing_kd14'></td>
-    </tr>
-    <tr>
-      <td>15</td><td id='score_listening_kd15'></td><td id='score_speaking_kd15'></td><td id='score_reading_kd15'></td><td id='score_writing_kd15'></td>
-    </tr>
-    <tr>
-      <td>16</td><td id='score_listening_kd16'></td><td id='score_speaking_kd16'></td><td id='score_reading_kd16'></td><td id='score_writing_kd16'></td>
-    </tr>
-    <tr>
-      <td>17</td><td id='score_listening_kd17'></td><td id='score_speaking_kd17'></td><td id='score_reading_kd17'></td><td id='score_writing_kd17'></td>
-    </tr>
-    <tr>
-      <td>18</td><td id='score_listening_kd18'></td><td id='score_speaking_kd18'></td><td id='score_reading_kd18'></td><td id='score_writing_kd18'></td>
-    </tr>
-    <tr>
-      <td>19</td><td id='score_listening_kd19'></td><td id='score_speaking_kd19'></td><td id='score_reading_kd19'></td><td id='score_writing_kd19'></td>
-    </tr>
-    <tr>
-      <td>20</td><td id='score_listening_kd20'></td><td id='score_speaking_kd20'></td><td id='score_reading_kd20'></td><td id='score_writing_kd20'></td>
-    </tr>
-    <tr>
-      <td>21</td><td id='score_listening_kd21'></td><td id='score_speaking_kd21'></td><td id='score_reading_kd21'></td><td id='score_writing_kd21'></td>
-    </tr>
-    <tr>
-      <td>22</td><td id='score_listening_kd22'></td><td id='score_speaking_kd22'></td><td id='score_reading_kd22'></td><td id='score_writing_kd22'></td>
-    </tr>
-    <tr>
-      <td>23</td><td id='score_listening_kd23'></td><td id='score_speaking_kd23'></td><td id='score_reading_kd23'></td><td id='score_writing_kd23'></td>
-    </tr>
-    <tr>
-      <td>24</td><td id='score_listening_kd24'></td><td id='score_speaking_kd24'></td><td id='score_reading_kd24'></td><td id='score_writing_kd24'></td>
-    </tr>
-    <tr>
-      <td>25</td><td id='score_listening_kd25'></td><td id='score_speaking_kd25'></td><td id='score_reading_kd25'></td><td id='score_writing_kd25'></td>
-    </tr>
-    <tr>
-      <td>26</td><td id='score_listening_kd26'></td><td id='score_speaking_kd26'></td><td id='score_reading_kd26'></td><td id='score_writing_kd26'></td>
-    </tr>
-    <tr>
-      <td>27</td><td id='score_listening_kd27'></td><td id='score_speaking_kd27'></td><td id='score_reading_kd27'></td><td id='score_writing_kd27'></td>
-    </tr>
-    <tr>
-      <td>28</td><td id='score_listening_kd28'></td><td id='score_speaking_kd28'></td><td id='score_reading_kd28'></td><td id='score_writing_kd28'></td>
-    </tr>
-    <tr>
-      <td>29</td><td id='score_listening_kd29'></td><td id='score_speaking_kd29'></td><td id='score_reading_kd29'></td><td id='score_writing_kd29'></td>
-    </tr>
-    <tr>
-      <td>30</td><td id='score_listening_kd30'></td><td id='score_speaking_kd30'></td><td id='score_reading_kd30'></td><td id='score_writing_kd30'></td>
-    </tr>
-    <tr>
-      <td>31</td><td id='score_listening_kd31'></td><td id='score_speaking_kd31'></td><td id='score_reading_kd31'></td><td id='score_writing_kd31'></td>
-	</tr>
-    <tr>
-      <td>32</td><td id='score_listening_kd32'></td><td id='score_speaking_kd32'></td><td id='score_reading_kd32'></td><td id='score_writing_kd32'></td>
-    </tr>
-    <tr>
-      <td>33</td><td id='score_listening_kd33'></td><td id='score_speaking_kd33'></td><td id='score_reading_kd33'></td><td id='score_writing_kd33'></td>
-    </tr>
-    <tr>
-      <td>34</td><td id='score_listening_kd34'></td><td id='score_speaking_kd34'></td><td id='score_reading_kd34'></td><td id='score_writing_kd34'></td>
-    </tr>
-    <tr>
-      <td>35</td><td id='score_listening_kd35'></td><td id='score_speaking_kd35'></td><td id='score_reading_kd35'></td><td id='score_writing_kd35'></td>
-    </tr>
-    <tr>
-      <td>36</td><td id='score_listening_kd36'></td><td id='score_speaking_kd36'></td><td id='score_reading_kd36'></td><td id='score_writing_kd36'></td>
-    </tr>
-    <tr>
-      <td>37</td><td id='score_listening_kd37'></td><td id='score_speaking_kd37'></td><td id='score_reading_kd37'></td><td id='score_writing_kd37'></td>
-    </tr>	
+
   </table>
 </div>
             </div>
@@ -545,7 +413,7 @@ span.psw {
 				<img src="image/listening.png"></img>
                 <div class="w3-container w3-light-gray">
                    <div class="w3-center">
-                     <div class="w3-bar">			
+                     <div class="w3-bar>">			
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd1')">KD 1<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd2')">KD 2<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd3')">KD 3<i class="w3-margin-left fa fa-angle-double-right"></i></button>
@@ -573,7 +441,7 @@ span.psw {
 				<img src="image/listening.png"></img>
                 <div class="w3-container w3-light-gray">
                    <div class="w3-center">
-                     <div class="w3-bar">			
+                     <div class="w3-bar>">			
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd14')">KD 14<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd15')">KD 15<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd16')">KD 16<i class="w3-margin-left fa fa-angle-double-right"></i></button>
@@ -600,7 +468,7 @@ span.psw {
 				<img src="image/listening.png"></img>
                 <div class="w3-container w3-light-gray">
                    <div class="w3-center">
-                     <div class="w3-bar">			
+                     <div class="w3-bar>">			
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd27')">KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd28')">KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd29')">KD 29<i class="w3-margin-left fa fa-angle-double-right"></i></button>
@@ -619,7 +487,7 @@ span.psw {
 				<img src="image/listening.png"></img>
                 <div class="w3-container w3-light-gray">
                    <div class="w3-center">
-                     <div class="w3-bar">			
+                     <div class="w3-bar>">			
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd33')">KD 33<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd34')">KD 34<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                      <button class="w3-button w3-green" id="" title="" onclick="show('#listening_kd35')">KD 35<i class="w3-margin-left fa fa-angle-double-right"></i></button>
@@ -995,28 +863,19 @@ span.psw {
             <div class="w3-card-2">
                 <img src="image/listening.png">
                 <div class="w3-container w3-light-gray">
-                  <div class=""> 
+                  <div class="youtube"> 
 				    <h3>Watch this video and fill in the gaps:</h3>
-					<div id='listening_youtube'></div>
-					
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/mHuoOXiHvM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
 				    <p>Questions:</p>
-					<div id='listening_soal'></div>
-                    						
+                    <iframe width="100%" height="400"src="listening/listening_kd1.htm"></iframe>						
 		          </div>
               </div>
             </div>
+			
+			
+			
 	    </div>	
   </div>
-       <script>
-	   //kasih link youtube
-	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','listening','getOneItem',1,1,'listening_youtube');
-	   var listening_youtube=retrieveItem('listening_youtube');
-       document.getElementById('listening_youtube').innerHTML="<iframe width='100%' height='400' src="+listening_youtube+" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";	   
-	   //kasih link soal
-	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','listening','getOneItem',2,1,'listening_soal');
-	   var listening_soal=retrieveItem('listening_soal');
-       document.getElementById('listening_soal').innerHTML="<iframe width='100%' height='400' src="+listening_soal+"></iframe>";	   
-	   </script>
 </div>
 
 <div id='learn_x' class="w3-container w3-animate-left">

@@ -1,0 +1,761 @@
+// JavaScript Document
+dir_1={"title":"LISTENING COMPREHENSION",
+       "aud": "2016_dir_1.mp3",
+	   "pic": "2016_dir_1.jpg",
+	   "q"  : "",
+       "dir_a": "In this section of the test, you will have the chance to show how well you understand spoken English. There are four parts to this section with special directions for each part.",
+	   "dir_b": "Part I. Pictures",
+       "dir_c": "For each item, there is a picture in your test book and four short statements about it on the tape. They are spoken TWICE, and are not written out in your test bock, so you must listen carefully. You must choose one statement – (A), (B), (C), or (D) – that best describes the picture. Then, on your answer sheet, mark your choice.",
+	   "dir_d": "Example: Look at the following picture:",
+	   "dir_e": "A. The man is wearing a tie.</br>B. The woman is wearing a jacket.</br>C. The woman is wearing a hat.</br>D. They are both wearing glasses.",
+	   "dir_f": "Choice (A) – “The man is wearing a tie.” – best describes what is seen in the picture. Therefore, you should mark (A) on your answer sheet.",
+	   "dir_g": "Let’s begin with question number one."
+       }; 
+dir_2={"title":"",
+       "aud": "2016_dir_2.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part II. Question – Responses",
+	   "dir_b": "",
+       "dir_c": "Directions: In this part of the test, you will hear several questions spoken in English, followed by four responses, also spoken in English. The questions and responses will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand what the speakers say. You have to choose the best response to each question.",
+	   "dir_d": "Now listen to a sample question",
+	   "dir_e": "<p>You will hear: </p><p>Woman: Could you tell me how to get to the convention center? </p><p>You will also hear </p><p>Man:</p><p><form>A. No. The convention was already over.</br>B. Sure. Go two blocks and turn left.</br>C. Yes. I have to get in now.</br>D. Yes. I met her there.</br></form>",
+	   "dir_f": "Choice (B) “Sure. Go two blocks and turn left.” – is the response to the question “Could you tell me how to get to the convention center?”</p>  <p>Therefore, you should mark (B) on your answer sheet.",
+	   "dir_g": ""
+       }; 	   
+dir_3={"title":"",
+       "aud": "2016_dir_3.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part III. Short Conversations",
+	   "dir_b": "",
+       "dir_c": "Directions: In this section of the test, you will hear several short conversations. You will hear the conversations TWICE. The conversations will not be printed in your test book, so you must listen carefully to understand what the speakers say. In your test book, you will read a question about each conversation. The question will be followed by four answers. You have to choose the best answer to each question, and mark it on your answer sheet.",
+	   "dir_d": "<p>Example:</p><p>You will hear: </p><p>Woman : I ordered that last Tuesday. It should have arrived by now.</p><p>Man : Maybe there was a delay in sending it. Have you called them?</p><p>Woman : Not yet. I will call them now.</p>",
+	   "dir_e": "<p>You will read</p><p>What will the woman probably do?</p><form>A. phone the company.</br>B. order the software.</br>C. cancel the order.</br>D. arrive at the store</br></form>",
+	   "dir_f": "<p>Choice (A) – “phone the company”  is the best answer to the question, “What will the woman probably do?” Therefore, you should mark (A) on your answer sheet.</p>",
+	   "dir_g": ""
+       }; 
+dir_4={"title":"",
+       "aud": "2016_dir_4.mp3",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "Part IV. Short Talks",
+	   "dir_b": "Directions: In this part of the test, you will hear several short monologues. Each will be spoken TWICE. They will not be printed in your test book, so you must listen carefully to understand and remember what is said.</p><p>In your test book, you will read two or more questions about each short monologue. Each question will be followed by four answers. You have to choose the best answer to each question and mark it on your answer sheet.",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+dir_5={"title":"READING SECTION",
+       "aud": "",
+	   "pic": "",
+	   "q"  : "",
+       "dir_a": "",
+	   "dir_b": "Directions: In this part of the test, you have to read and answer each question by choosing A, B, C, or D",
+       "dir_c": "",
+	   "dir_d": "",
+	   "dir_e": "",
+	   "dir_f": "",
+	   "dir_g": ""
+       }; 
+ q_1= {
+      "no": 1,
+      "type": "pictures",
+      "pic": "2015_q_1.jpg",
+      "aud": "2015_q_1.mp3",
+      "tran": "",
+      "q": "",
+      "key": "B",
+      "expl": "Gambar menunjukkan anak yang sedang memancing di danau (lake).",
+      "A": "The fisherman is catching some lobsters at the beach.",
+      "B": "The young boy is fishing in the lake.",
+      "C": " The father is watching his son playing",
+      "D": "There are many people around the pond."
+   };
+   q_2= {
+      "no": 2,
+      "type": "pictures",
+      "pic": "2015_q_2.jpg",
+      "aud": "2015_q_2.mp3",
+      "tran": "",
+      "q": "",
+      "key": "D",
+      "expl": "Gambar menunjukkan meja yang terletak dekat dengan lemari (cupboard).",
+      "A": "The book is on the floor.",
+      "B": "The mirror is between the lamps.",
+      "C": "The TV is above the chair.",
+      "D": "The table is next to the cupboard."
+   };
+   q_3= {
+      "no": 3,
+      "type": "pictures",
+      "pic": "2015_q_3.jpg",
+      "aud": "2015_q_3.mp3",
+      "tran": "",
+      "q": "",
+      "key": "A",
+      "expl": "Gambar menunjukkan wanita-wanita yang berpakaian biasa (tidak resmi).",
+      "A": "They are wearing casual clothes.",
+      "B": "The girls have wavy hair.",
+      "C": "They look sad.",
+      "D": "The girls are slim"
+   };
+   q_4= {
+      "no": 4,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2015_q_4.mp3",
+      "tran": "",
+      "q": "How about some sushi for lunch?",
+      "key": "C",
+      "expl": "Tanya: Bagaimana kalau kita makan sushi untuk makan siang? Jawab: Itu ide yang bagus sekali.",
+      "A": "I don't think you'd come.",
+      "B": "I haven’t got my lunch yet.",
+      "C": "That sounds like a good idea.",
+      "D": ""
+   };
+   q_5= {
+      "no": 5,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2015_q_5.mp3",
+      "tran": "",
+      "q": "What did you think of the movie last night?",
+      "key": "A",
+      "expl": "Tanya: Apa pendapatmu tentang film tadi malam? Jawab: Kupikir filmnya sangat membosankan (dull).",
+      "A": "I find it extremely dull.",
+      "B": "I just moved here last night",
+      "C": "Let's go to the 9.30 show.",
+      "D": ""
+   };
+   q_6= {
+      "no": 6,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2015_q_6.mp3",
+      "tran": "",
+      "q": "Shall I put this file on your desk?",
+      "key": "A",
+      "expl": "Tanya: Apakah saya harus meletakkan file ini di atas meja Anda? Jawab: Saya ambil saja sekarang.",
+      "A": "I'll take it now.",
+      "B": "It's probably under my desk.",
+      "C": "It's on the shelf.",
+      "D": ""
+   };
+   q_7= {
+      "no": 7,
+      "type": "question_responses",
+      "pic": "",
+      "aud": "2015_q_7.mp3",
+      "tran": "",
+      "q": "Excuse me, where can I catch the bus going uptown?",
+      "key": "A",
+      "expl": "Tanya: Permisi, di mana saya bisa mencegat bis arah pusat kota? Jawab: Di jalan stasiun nomor 25",
+      "A": "At the 25th street station.",
+      "B": "I'll catch up with you later.",
+      "C": "We don't go to the town.",
+      "D": ""
+   };
+   q_8= {
+      "no": 8,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2015_q_8.mp3",
+      "tran": "Man: how was your new job? <br> Woman: Great, except one thing. I only get paid once a month and my supervisor keeps me busy all the time.<br> Man: That's no good. I get my paycheck every two weeks and my manager likes to help me out every time.",
+      "q": "What dow the woman's supervisor do?",
+      "key": "C",
+      "expl": "Wanita tersebut mendapat gaji sekali sebulan dan supervisornya selalu menyibukkannya sepanjang waktu.",
+      "A": "Help her everytime.",
+      "B": "Keep the man working.",
+      "C": "Make her busy.",
+      "D": "Pay her 2 times a month."
+   };
+   q_9= {
+      "no": 9,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2015_q_9.mp3",
+      "tran": "Woman : I would like to make  a hotel reservation, suite room please.<br>Man   : All right. How long will you be staying for?<br>Woman : I need the room for three nights.<br>Man   : We have booked the room for you. Please be sure to arrive before 4 p.m on your check in date.",
+      "q": "What does the woman do?",
+      "key": "A",
+      "expl": "Wanita tersebut memesan sebuah kamar suite.",
+      "A": "Reserve a suite room",
+      "B": "Need a reservation code.",
+      "C": "Arrive at night.",
+      "D": "Check in at the hotel."
+   };
+   q_10= {
+      "no": 10,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2015_q_10.mp3",
+      "tran": "Woman : Are these yours?<br>Man   : No, those are Andrew’s. He lent me the stuff to make my job easier. He let me keep it.<br>Woman : Can you lend me this one? I really need it to print my papers.<br>Man   : Sure, but only two hours. Just put it back on my desk.",
+      "q": "What does the woman want?",
+      "key": "D",
+      "expl": "Wanita tersebut ingin meminjam printer untuk mencetak (print) dokumennya.",
+      "A": "Keep the printers for two hours.",
+      "B": "Put the printer on the ma's desk.",
+      "C": "Lend her printer.",
+      "D": "Borrow the printer."
+   };
+   q_11= {
+      "no": 11,
+      "type": "short_conversations",
+      "pic": "",
+      "aud": "2015_q_11.mp3",
+      "tran": "Man : I think we need more papers to print these reports.<br>Woman : Talk to the supply staff and order enough paper for all of us.<br>Man : Yes, but some division apparently use more than they should.",
+      "q": "Why does the man need more paper?",
+      "key": "A",
+      "expl": "Suplai kertas habis (running out=habis).",
+      "A": "The paper supply is running out.",
+      "B": "The woman doesn't supply much paper.",
+      "C": "The man did not order the right number.",
+      "D": "The divisions used enough paper."
+   };
+   q_12= {
+      "no": 12,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2015_q_12.mp3",
+      "tran": "The resident of Vanessa University may use the bicycle parking space by following the rules specified below.<br>1. Each resident may park one bicycle.<br>2. A resident who uses the bicycle parking space should affix the special sticker of a dormitory on his or her bicycle.<br>3. A resident shall always park his or her bicycle, locked it, and take sufficient care against theft.<br>4. No car, motorbike or motorized bicycle are allowed in the bicycle parking space.<br>The dormitory manager shall not be responsible or liable for theft, damage or other loss of bicycle.",
+      "q": "What are the conditions to park bicycles for a resident?",
+      "key": "B",
+      "expl": "Tanya: apa syarat untuk memarkir sepeda bagi penghuni asrama? Jawab: Hanya memarkir satu sepeda.",
+      "A": "Add more locks.",
+      "B": "Park only one bicycle.",
+      "C": "Lock the motorbike well.",
+      "D": "Use only authorized motorized bicycle."
+   };
+   q_13= {
+      "no": 13,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2015_q_13.mp3",
+      "tran": "The resident of Vanessa University may use the bicycle parking space by following the rules specified below.<br>1. Each resident may park one bicycle.<br>2. A resident who uses the bicycle parking space should affix the special sticker of a dormitory on his or her bicycle.<br>3. A resident shall always park his or her bicycle, locked it, and take sufficient care against theft.<br>4. No car, motorbike or motorized bicycle are allowed in the bicycle parking space.<br>The dormitory manager shall not be responsible or liable for theft, damage or other loss of bicycle.",
+      "q": "Who should be responsible if there is any damage or other loss while parking the bicycle?",
+      "key": "D",
+      "expl": "Tanya: siapa yang bertanggung jawab jika ada kerusakan atau kehilangan ketika memarkir sepeda? Jawab: Pemilik sepeda.",
+      "A": "All the residents.",
+      "B": "The dormitory manager.",
+      "C": "The university staff.",
+      "D": "The owner of the bicycle."
+   };
+   q_14= {
+      "no": 14,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2015_q_14.mp3",
+      "tran": "Dear Parents,<br>Jupiter First Pre-School presents the 5th annual holiday boutique bazaar. It’s on Saturday, October 18, 2014 from 9 a.m to 3 p.m. Meet us at Indian Park way Jupiter Florida. Please join us and bring your friends for a fun day of shopping for designer accessories, handbags, clothing, home decor, baby gifts, jewelry and so much more.",
+      "q": "What goods are sold in the bazaar?",
+      "key": "A",
+      "expl": "Barang yang dijual adalah tas tangan (hand bag).",
+      "A": "Handbags.",
+      "B": "Baby accessories.",
+      "C": "Summer clothes.",
+      "D": "Kitchen appliances."
+   };
+   q_15= {
+      "no": 15,
+      "type": "short_talks",
+      "pic": "",
+      "aud": "2015_q_15.mp3",
+      "tran": "Dear Parents,<br>Jupiter First Pre-School presents the 5th annual holiday boutique bazaar. It’s on Saturday, October 18, 2014 from 9 a.m to 3 p.m. Meet us at Indian Park way Jupiter Florida. Please join us and bring your friends for a fun day of shopping for designer accessories, handbags, clothing, home decor, baby gifts, jewelry and so much more.",
+      "q": "What activity is the school organizing?",
+      "key": "C",
+      "expl": "Sekolah tersebut sedang mengadakan sebuah bazaar.",
+      "A": "Help parents design clothes.",
+      "B": "Inite customers to buy products.",
+      "C": "Hold an Annual Holiday Bazaar.",
+      "D": "Gather parents for a meeting."
+   };
+   q_16= {
+      "no": 16,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "At the age of 40, Tom Bloch was the head of H&R Bloch, a huge company that helps people prepare their tax forms. He was very successful. Although Bloch earned a lot of money, he wasn’t very happy. He spent too much time at work and didn’t have enough time to spend with his family. Suddenly, he left H&R Block and became a teacher in a poor neighborhood. “I want to help people who don’t have the opportunities as I had,” Bloch explained.<br>Learning to control the students was hard at first. But the rewards-helping the children and hearing the students say he’s their favorite teacher are great. Besides, Bloch is able to spend more time with his family now.",
+      "q": "What is the text about",
+      "key": "B",
+      "expl": "Teks ini adalah tentang Tom Bloch",
+      "A": "H&R Bloch",
+      "B": "Tom Bloch",
+      "C": "Tax Company",
+      "D": "A tax teacher"
+   };
+   q_17= {
+      "no": 17,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "At the age of 40, Tom Bloch was the head of H&R Bloch, a huge company that helps people prepare their tax forms. He was very successful. Although Bloch earned a lot of money, he wasn’t very happy. He spent too much time at work and didn’t have enough time to spend with his family. Suddenly, he left H&R Block and became a teacher in a poor neighborhood. “I want to help people who don’t have the opportunities as I had,” Bloch explained.<br>Learning to control the students was hard at first. But the rewards-helping the children and hearing the students say he’s their favorite teacher are great. Besides, Bloch is able to spend more time with his family now.",
+      "q": "Tom’s reason to be a teacher in a poor neighborhood is …",
+      "key": "A",
+      "expl": "Alasan Tom menjadi guru di daerah miskin adalah untuk membantu orang yang tidak seberuntung seperti dia.",
+      "A": "To help people with no opportunities like him.",
+      "B": "To help people prepare their tax forms.",
+      "C": "To be the favorite teacher.",
+      "D": "To earn a lot of money."
+   };
+   q_18= {
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "At the age of 40, Tom Bloch was the head of H&R Bloch, a huge company that helps people prepare their tax forms. He was very successful. Although Bloch earned a lot of money, he wasn’t very happy. He spent too much time at work and didn’t have enough time to spend with his family. Suddenly, he left H&R Block and became a teacher in a poor neighborhood. “I want to help people who don’t have the opportunities as I had,” Bloch explained.<br>Learning to control the students was hard at first. But the rewards-helping the children and hearing the students say he’s their favorite teacher are great. Besides, Bloch is able to spend more time with his family now.",
+      "q": "“…<u>their</u> tax forms” (paragraph 1) What does the underlined word refer to?",
+      "key": "D",
+      "expl": "Their = orang-orang",
+      "A": "Companies",
+      "B": "H&R Bloch",
+      "C": "Tax forms",
+      "D": "People"
+   };
+   q_19= {
+      "no": 18,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Malacca Butterfly Park is situated along the Air Keoh Kuala Lumpur Highway. In this park the butterflies fly freely and set on the flowers on the walkways and even on the visitors.<br>The park is surrounded by a net which avoids the butterflies from flying away. There are hundreds of multi-colored butterflies and many varieties of beautiful flowering plants set in a natural landscape with a waterfall, a pond, and some small caves.<br>There is an insect area on the same site. The insects are strange and beautiful. The visitors can find ‘leaf insects’, whose colors are so much like the surroundings. They can hardly see the insect even though the insects are in front of them.",
+      "q": "What is the second paragraph about?",
+      "key": "A",
+      "expl": "Paragraf kedua menjelaskan tentang taman yang ditutupi dengan jaring.",
+      "A": "The park enclosed by a net",
+      "B": "The multi-colored butterflies",
+      "C": "The park is located in a a highway",
+      "D": "The flowers surrounding the small caves."
+   };
+   q_20= {
+      "no": 20,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Malacca Butterfly Park is situated along the Air Keoh Kuala Lumpur Highway. In this park the butterflies fly freely and set on the flowers on the walkways and even on the visitors.<br>The park is surrounded by a net which avoids the butterflies from flying away. There are hundreds of multi-colored butterflies and many varieties of beautiful flowering plants set in a natural landscape with a waterfall, a pond, and some small caves.<br>There is an insect area on the same site. The insects are strange and beautiful. The visitors can find ‘leaf insects’, whose colors are so much like the surroundings. They can hardly see the insect even though the insects are in front of them.",
+      "q": "Why can the visitors hardly see the strange insects?",
+      "key": "C",
+      "expl": "Leaf insect mampu mengubah warna tubuhnya sesuai dengan warna lingkungannya.",
+      "A": "The leaf insects are colorful.",
+      "B": "They fly freely and set on the flowers.",
+      "C": "Their colors are so much like the leaves.",
+      "D": "Their surrounding sets in natural landscape."
+   };
+   q_21= {
+      "no": 21,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Olivium</b><br><br>Discover the world of olive oil<br><br>Visit our museum retracing the history of olive oil and enjoy our video presentation explaining its production and various applications in gastronomy, medicine, and cosmetology. <br>Half-hour guided tour through the year. <br>April 1 to October 31<br>7 days a week<br>10:30 – 11:30 – 2:30 – 3:30 – 4:30 – 5:30 – 6:30<br>November 1 to March 31<br>10:30 – 3:30 – 4:30 5:30<br>Closed Sunday through Tuesday<br>Admission tickets<br>-Adult: 8 Euros<br>Half price for children (under 12)",
+      "q": "What is the admission charge for children?",
+      "key": "A",
+      "expl": "Karena tiket masuk anak-anak adalah separuh harga (half price) tiket masuk orang dewasa yang 8 Euro, maka tiket anak adalah 4 Euro.",
+      "A": "4 Euros",
+      "B": "8 Euros",
+      "C": "12 Euros",
+      "D": "16 Euros"
+   };
+   q_22= {
+      "no": 22,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>Olivium</b><br><br>Discover the world of olive oil<br><br>Visit our museum retracing the history of olive oil and enjoy our video presentation explaining its production and various applications in gastronomy, medicine, and cosmetology. <br>Half-hour guided tour through the year. <br>April 1 to October 31<br>7 days a week<br>10:30 – 11:30 – 2:30 – 3:30 – 4:30 – 5:30 – 6:30<br>November 1 to March 31<br>10:30 – 3:30 – 4:30 5:30<br>Closed Sunday through Tuesday<br>Admission tickets<br>-Adult: 8 Euros<br>Half price for children (under 12)",
+      "q": "Why do people come to this place?",
+      "key": "D",
+      "expl": "Orang datang ke museum tentang minyak zaitun untuk mempelajari sejarah dan penerapannya.",
+      "A": "Family picnic",
+      "B": "Guided tours",
+      "C": "Health check up",
+      "D": "History and applications of something"
+   };
+   q_23= {
+      "no": 23,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Curry Soup Mix<br>Please follow the directions carefully!<br>(1) Empty contents of this packet into soup bowl.<br>(2) Add boiling water until desired consistency is reached.<br>(3) Stir well.<br>(4) Cover and let stand for 5 minutes.<br>(5) Eat immediately to ensure maximum taste and nutrition.",
+      "q": "Where the text should be found?",
+      "key": "C",
+      "expl": "Teks ini ditemukan di bungkus makanan karena ada perintah 1 (empty contents of this packet)",
+      "A": "In a cook book",
+      "B": "In a newspaper.",
+      "C": "On a package label.",
+      "D": "On the restaurant menu."
+   };
+   q_24= {
+      "no": 24,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Curry Soup Mix<br>Please follow the directions carefully!<br>(1) Empty contents of this packet into soup bowl.<br>(2) Add boiling water until desired consistency is reached.<br>(3) Stir well.<br>(4) Cover and let stand for 5 minutes.<br>(5) Eat immediately to ensure maximum taste and nutrition.",
+      "q": "Eat <u>immediately</u>. The underlined word means … ",
+      "key": "D",
+      "expl": "immediately = soon=segera",
+      "A": "next",
+      "B": "later",
+      "C": "then",
+      "D": "soon"
+   };
+   q_25= {
+      "no": 25,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "To: All staff members<br>From: Eric Sato, Office Manager<br><br>I know you will all be pleased to learn that the new photocopy machine has finally arrived. The new machine has more features and performs more function than the old one. While this will make things more convenient for us in the long run, it can make it more complicated to learn how to operate the machine initially. In addition, we all want to avoid the problems of constant breakdown that we had with the old machine. Therefore, if you have any problems with the machine, please ask may assistant, Ms. Ono, to help you. Similarly, please do not attempt to remove paper jams, add toner, or refill the paper bin until Ms. Ono has shown you how to do this. <br>Ms. Ono has received training from the manufacturer of the machine and is fully knowledgeable about how to run it and how to troubleshoot it. Thank you for your cooperation and enjoy the new machine.",
+      "q": "What is the purpose of the text?",
+      "key": "B",
+      "expl": "Tujuan teks ini adalah memberitahukan tentang mesin fotokopi yang baru.",
+      "A": "To inform the staff that the old machine is broken",
+      "B": "To tell the staff about the new photocopy machine.",
+      "C": "To explain the staff how to run a photocopy machine.",
+      "D": "To let the staff know that Ms. Ono will receive training."
+   };
+   q_26= {
+      "no": 26,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "To: All staff members<br>From: Eric Sato, Office Manager<br><br>I know you will all be pleased to learn that the new photocopy machine has finally arrived. The new machine has more features and performs more function than the old one. While this will make things more convenient for us in the long run, it can make it more complicated to learn how to operate the machine initially. In addition, we all want to avoid the problems of constant breakdown that we had with the old machine. Therefore, if you have any problems with the machine, please ask may assistant, Ms. Ono, to help you. Similarly, please do not attempt to remove paper jams, add toner, or refill the paper bin until Ms. Ono has shown you how to do this. <br>Ms. Ono has received training from the manufacturer of the machine and is fully knowledgeable about how to run it and how to troubleshoot it. Thank you for your cooperation and enjoy the new machine.",
+      "q": "What should the staff members do if they have difficulties with the machine.",
+      "key": "A",
+      "expl": "Karena mesin ini rumit, dilarang memperbaikinya kecuali atas izin Ms. Ono.",
+      "A": "Speak to Ms. Ono.",
+      "B": "Call the manufacturer.",
+      "C": "Ask the office manager for assistance.",
+      "D": "Contact the maintenance department."
+   };
+   q_27= {
+      "no": 27,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Compaq Computer Corporation was an American personal computer company founded in 1982. Once the largest supplier of personal computing system in the world. Compaq existed as an independent corporation until 2002, when it was acquired by Hewlett Packard.<br>The company was founded by Rod Canion, Jim Harris and Bill Murio – former Texas Instruments senior managers. The name ‘Compaq’ was derived from ‘compatibility and quality’. As its formation, Compaq produced some of the first IBM PC compatible computers. <br>Prior to its takeover, the company was headquartered in northwest Harris County, Texas, United States.",
+      "q": "What is the text about?",
+      "key": "D",
+      "expl": "Teks ini berisi tentang perusahaan Compaq.",
+      "A": "IBM PC",
+      "B": "Hewlett Packard",
+      "C": "Harris County, Texas",
+      "D": "Compaq Computer, Co"
+   };
+   q_28= {
+      "no": 28,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "Compaq Computer Corporation was an American personal computer company founded in 1982. Once the largest supplier of personal computing system in the world. Compaq existed as an independent corporation until 2002, when it was acquired by Hewlett Packard.<br>The company was founded by Rod Canion, Jim Harris and Bill Murio – former Texas Instruments senior managers. The name ‘Compaq’ was derived from ‘compatibility and quality’. As its formation, Compaq produced some of the first IBM PC compatible computers. <br>Prior to its takeover, the company was headquartered in northwest Harris County, Texas, United States.",
+      "q": "How long had Compaq existed as an independent corporation before it was taken over by Hewlett Packard?",
+      "key": "B",
+      "expl": "Compaq berdiri sejak 1982 hingga diakuisisi tahun 2002, total 20 tahun sebagai perusahaan mandiri (independen). ",
+      "A": "10 years",
+      "B": "20 years",
+      "C": "30 years",
+      "D": "40 years"
+   };
+   q_29= {
+      "no": 29,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>National Monument (Monas)</b><br>This monument has several museums such as the Freedom Hall and the Hall of Contemplation. The Freedom Hall tells the story about the struggle of Indonesians for their freedom while the Hall of Contemplation displays  the Declaration of Independence and the recording of the speech. Inside there are lifts to the Observation Platform where one can see a bird’s-eye view of the city of Jakarta. The size of the platform is 11 m x 11 m and has the capability to hold up to 50 people. It represents the spirit of the Indonesians to fight for their independence.<br>Those who are coming to Monas can come in via the entrance around the Medan Merdeka Park Plaza, at the northern area of Monas. In that area there is a fountain and a statue of Prince Diponegoro riding a horse. This statue is made of 8 ton bronze sculpted by Italian artist Prof. Coberlatto.",
+      "q": "The monument was made to encourage … spirit of all Indonesian people.",
+      "key": "C",
+      "expl": "Monas dibangun untuk membangikitkan semangat nasionalisme Indonesia.",
+      "A": "tourism",
+      "B": "luxury",
+      "C": "nationalism",
+      "D": "achitecture"
+   };
+   q_30= {
+      "no": 30,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>National Monument (Monas)</b><br>This monument has several museums such as the Freedom Hall and the Hall of Contemplation. The Freedom Hall tells the story about the struggle of Indonesians for their freedom while the Hall of Contemplation displays  the Declaration of Independence and the recording of the speech. Inside there are lifts to the Observation Platform where one can see a bird’s-eye view of the city of Jakarta. The size of the platform is 11 m x 11 m and has the capability to hold up to 50 people. It represents the spirit of the Indonesians to fight for their independence.<br>Those who are coming to Monas can come in via the entrance around the Medan Merdeka Park Plaza, at the northern area of Monas. In that area there is a fountain and a statue of Prince Diponegoro riding a horse. This statue is made of 8 ton bronze sculpted by Italian artist Prof. Coberlatto.",
+      "q": "If we want to see the whole city of Jakarta, we should go to …",
+      "key": "B",
+      "expl": "Jika ingin melihat seluruh Jakarta, kita harus naik ke Panggung Observasi",
+      "A": "The Freedom Hall",
+      "B": "The Observation Platform",
+      "C": "The Hall of Contemplation",
+      "D": "The entrance around the Medan Merdeka Park Plaza"
+   };
+   q_31= {
+      "no": 31,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>National Monument (Monas)</b><br>This monument has several museums such as the Freedom Hall and the Hall of Contemplation. The Freedom Hall tells the story about the struggle of Indonesians for their freedom while the Hall of Contemplation displays  the Declaration of Independence and the recording of the speech. Inside there are lifts to the Observation Platform where one can see a bird’s-eye view of the city of Jakarta. The size of the platform is 11 m x 11 m and has the capability to hold up to 50 people. It represents the spirit of the Indonesians to fight for their independence.<br>Those who are coming to Monas can come in via the entrance around the Medan Merdeka Park Plaza, at the northern area of Monas. In that area there is a fountain and a statue of Prince Diponegoro riding a horse. This statue is made of 8 ton bronze sculpted by Italian artist Prof. Coberlatto.",
+      "q": "The size of the platform is 11 m and 11 m and has the capability <u>to hold up</u> 50 people. The underlined words ‘to hold up’ mean almost the same as …",
+      "key": "B",
+      "expl": "to hold up = to accommodate = menampung",
+      "A": "To touch",
+      "B": "To accommodate",
+      "C": "To tell",
+      "D": "To move"
+   };
+   q_32= {
+      "no": 32,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>A Dictionary of American Idioms<b><br><br>Over 4000 commonly used American idiomatic expressions<br>Include slangs, proverbs, clichés<br>Each defined and illustrated<br>Completely up-to-date<br><br><b>Excellent for Foreign Speakers<b><br>Equally valuable for students of American English<br>By Maxine Tull Boatner and  John Edward Gates<br>Update Editor: Adam Makkai<br><br>$5.95<br>Barron’s Educational Series, Inc.",
+      "q": "What is being advertised here?",
+      "key": "A",
+      "expl": "Yang sedang diiklankan adalah sebuah kamus idiom Amerika.",
+      "A": "A dictionary",
+      "B": "American idioms",
+      "C": "Foreign speakers",
+      "D": "American English"
+   };
+   q_33= {
+      "no": 33,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>A Dictionary of American Idioms<b><br><br>Over 4000 commonly used American idiomatic expressions<br>Include slangs, proverbs, clichés<br>Each defined and illustrated<br>Completely up-to-date<br><br><b>Excellent for Foreign Speakers<b><br>Equally valuable for students of American English<br>By Maxine Tull Boatner and  John Edward Gates<br>Update Editor: Adam Makkai<br><br>$5.95<br>Barron’s Educational Series, Inc.",
+      "q": "What is the price?",
+      "key": "C",
+      "expl": "Harganya tertera 5.95 dollar.",
+      "A": "$4000",
+      "B": "No information",
+      "C": "$5.95",
+      "D": "Not expensive"
+   };
+   q_34= {
+      "no": 34,
+      "type": "reading",
+      "pic": "",
+      "aud": "",
+      "tran": "<b>A Dictionary of American Idioms<b><br><br>Over 4000 commonly used American idiomatic expressions<br>Include slangs, proverbs, clichés<br>Each defined and illustrated<br>Completely up-to-date<br><br><b>Excellent for Foreign Speakers<b><br>Equally valuable for students of American English<br>By Maxine Tull Boatner and  John Edward Gates<br>Update Editor: Adam Makkai<br><br>$5.95<br>Barron’s Educational Series, Inc.",
+      "q": "Equally <u>valuable</u> for students of American English. The underlined word means similar to …",
+      "key": "D",
+      "expl": "Valuable = precious=berharga",
+      "A": "invaluable",
+      "B": "applicable",
+      "C": "famous",
+      "D": "precious"
+   };
+   q_35= {
+      "no": 35,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Mr. Roost: I work in a Batik Cooperative shop.<br>Journalist: How do you sell batik? Just to customers who come up to buy?<br>Mr. Roost: We both serve our customers and export to some other countries too.",
+      "q": "What do we know from the dialog?",
+      "key": "A",
+      "expl": "Dapat disimpulkan bahwa mereka sedang membicarakan siapa yang membeli batik.",
+      "A": "Who buys batik.",
+      "B": "How to make batik.",
+      "C": "Where batik is produced.",
+      "D": "When we should wear batik clothes."
+   };
+   q_36= {
+      "no": 36,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Man: Excuse me, let me introduce myself. My name’s Ahmad.<br>Woman: Hi! My name’s Ellyn. How do you do?<br>Man: How do you do? I’m the representative of Publisher Association.",
+      "q": "What do you learn from the dialogue?",
+      "key": "A",
+      "expl": "Pria tersebut sedang memperkenalkan diri.",
+      "A": "The man introduces himself to the woman.",
+      "B": "The woman introduces herself to the man.",
+      "C": "The man introduces the woman.",
+      "D": "The woman introduces the man."
+   };
+   q_37= {
+      "no": 37,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Mrs. Tanti: What’s your plan after work? I’m going to do shopping.<br>Mr. Tanta: I’ll go home. Or, second thought, I’ll join you. I’ll buy some snack.<br>Mrs. Tanti: So, you can give me a lift, can’t you?",
+      "q": "What will Mr. Tanta do finally?",
+      "key": "C",
+      "expl": "Mr. Tanta akan membeli snack, tidak jadi langsung pulang.",
+      "A": "He will go home.",
+      "B": "He will ask for a lift.",
+      "C": "He will buy some snack.",
+      "D": "He will talk to Mrs. Tanti."
+   };
+   q_38= {
+      "no": 38,
+      "type": "dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "Yuwi: Do you like the fishing in your free time?<br>Mike: Yes, I really do. And you?<br>Yuwi: I do too. I often go fishing in the lake near my house.<br>Mike: We are on the same line.",
+      "q": "From the dialogue above, we know that …",
+      "key": "C",
+      "expl": "Mereka punya hobi yang sama.",
+      "A": "Mike often stays at home.",
+      "B": "Mike and Yuwi go fishing together.",
+      "C": "Mike and Yuwi have the same hooby.",
+      "D": "Yuwi doesn’t have any activities in leisure time."
+   };
+   q_39= {
+      "no": 39,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Moderator: For further explanation, we’d like to invite Mr. Gofers to come forward.<br>Mr. Gofers:  Before going to my explanation  ...",
+      "key": "C",
+      "expl": "Moderator akan memperkenalkan diri sebelum memulai presentasi.",
+      "A": "Please introduce yourself first.",
+      "B": "I’ll let all of you to introduce myself.",
+      "C": "I’d like to introduce myself first.",
+      "D": "Please allow me to know all of you."
+   };
+   q_40= {
+      "no": 40,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Rio: What’s the price of your helmet? It’s rather heavy.<br>Roy: You won’t believe it. It’s three and half million rupiah.<br>Rio: Really? ...",
+      "key": "D",
+      "expl": "Helmnya berharga 3,5 juta, jadi terhitung mahal (expensive).",
+      "A": "It’s cheap.",
+      "B": "It’s reasonable.",
+      "C": "It’s very strong.",
+      "D": "It’s very expensive."
+   };
+   q_41= {
+      "no": 41,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Clerk 1: What do you think of our manager’s public speaking skills?<br>Clerk 2: Excellent, I think. <br>Clerk 1: But, look!  ...",
+      "key": "C",
+      "expl": "Kata-kata' look' menandakan sesuatu sedang terjadi (present continuous).",
+      "A": "One of them sleeps soundly.",
+      "B": "One of them were sleeping soundly.",
+      "C": "One of them is sleeping soundly.",
+      "D": "One of them slept soundly."
+   };
+   q_42= {
+      "no": 42,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Rini: I was invited to an interview but the job offered to me was as a saleswoman.<br>Riri: Why don’t you want to be a saleswoman?<br>Rini:  ... and I can’t convince other people.  ...",
+      "key": "C",
+      "expl": "Rini merasa tidak mampu menjadi saleswoman karena ia kurang agresif dan tidak bisa meyakinkan orang lain (convince).",
+      "A": "I am aggressive enough.",
+      "B": "I am diligent enough.",
+      "C": "I am not an aggressive woman.",
+      "D": "I am not too diligent."
+   };
+   q_43= {
+      "no": 43,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Rita: I wonder why Tira never replied my sms.<br>Tari: Possibly, she was out of town.<br>Rita: Or,  ...",
+      "key": "C",
+      "expl": "Kata Tari 'possibly' menandakan bahwa mereka sedan membicarakan suatu kemungkinan; maka Rita menambahkan dengan 'might' yang menandakan kemungkinan pula.",
+      "A": "She can’t have got any money.",
+      "B": "She must have bought internet package.",
+      "C": "She might have had no connection signal.",
+      "D": "She should have received a lot of messages."
+   };
+   q_44= {
+      "no": 44,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Security Guard 1: Who’s that coming?<br>Security Guard 2: I don’t know. I think  .... Look! He’s holding a folder in his hand.<br>Security Guard 1: I guess so. ...",
+      "key": "C",
+      "expl": "Pertanyaan dalam present continuous maka jawaban juga dalam bentuk present continuous.",
+      "A": "He applies for a job.",
+      "B": "He applied for a job.",
+      "C": "He is applying for a job.",
+      "D": "He will apply for a job."
+   };
+   q_45= {
+      "no": 45,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Graduate 1: What would you do if you were the mayor of this town?<br>Graduate 2:  ..., I would do all my best to make our people prosperous.<br>Graduate 1: Well, we would be prosperous if the mayor had the same idea as you. ",
+      "key": "B",
+      "expl": "Conditional type II yaitu 'if I were you'",
+      "A": "If I am the mayor",
+      "B": "If I were the mayor",
+      "C": "Unless I would be the mayor",
+      "D": "Unless I had been the mayor"
+   };
+   q_46= {
+      "no": 46,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Visitor: ... My cigarette has made the hole in the table cloth.<br>Host: No problem. It’s not new anymore.<br>Visitor: I am really sorry. ...",
+      "key": "A",
+      "expl": "Tamu meminta maaf karena rokoknya menyebabkan lubang di taplak meja.",
+      "A": "Please, forgive me.",
+      "B": "Please, apologize to me.",
+      "C": "I may be sorry.",
+      "D": "You should be sorry."
+   };
+   q_47= {
+      "no": 47,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Man: I am still studying. What about you, have you worked?<br>Woman: Yes, I have. But, is it possible for me to continue studying while working?<br>Man: My sister is studying and working at the same time. And, it seems she has no problems  ... when she is off work. ",
+      "key": "B",
+      "expl": "Kalimat dalam simple present.",
+      "A": "She go to campus every Saturday and Sunday.",
+      "B": "She goes to campus every Saturday and Sunday.",
+      "C": "She will go to campus every Saturday and Sunday.",
+      "D": "She has gone to campus every Saturday and Sunday."
+   };
+   q_48= {
+      "no": 48,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Andri: Did you join the study tour program?<br>Diana: If my parents had given me permission,  ...<br>Andri: It was a pity. The program was very useful. ",
+      "key": "C",
+      "expl": "Conditional type III",
+      "A": "I will join it.",
+      "B": "I would join it.",
+      "C": "I would have joined it.",
+      "D": "I wouldn’t have joined it."
+   };
+   q_49= {
+      "no": 49,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Aunt: Sherly! Help me, please!<br>Sherly: With pleasure, Aunty.  ...?<br>Aunt: Wash all the dishes while I’m preparing the breakfast. ",
+      "key": "D",
+      "expl": "Sherly menawarkan bantuan.",
+      "A": "How are you doing",
+      "B": "What do you do",
+      "C": "How do you do",
+      "D": "What can I do"
+   };
+   q_50= {
+      "no": 50,
+      "type": "incomplete_dialog",
+      "pic": "",
+      "aud": "",
+      "tran": "",
+      "q": "Farmer 1:  ...?<br>Farmer 2: Well, if the rice price is always rising, we have no choice.<br>Farmer 1: What we are worrying about is the abuse of it. ",
+      "key": "B",
+      "expl": "(A)'need' harus diikuti to, ( C ) 'need' tidak bisa diikuti v-ing kecuali bentuk pasif, (D) bentuk pasifnya salah.",
+      "A": "Do we need  import rice",
+      "B": "Do we have to import rice",
+      "C": "Are we need importing rice",
+      "D": "Is rice need importing by us"
+   }

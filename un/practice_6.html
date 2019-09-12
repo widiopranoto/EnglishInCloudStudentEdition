@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice 6 of English National Examination for SMK </title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/my_style.css" rel="stylesheet" type="text/css">
+	<script src="js/storeValue.js"></script>
+    <script src="js/questions_6.json"></script>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  </head>
+  <body style="padding-top: 70px">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#inverseNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand" href="#"><img src="images/logo smk 2 transparan.png" width="20" height="20" alt=""/></a></div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="inverseNavbar1">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class=""><a href="practice_1_start.html">Practice 1</a></li>
+          <li class=""><a href="practice_2_start.html">Practice 2</a></li>
+          <li class=""><a href="practice_3_start.html">Practice 3</a></li>
+          <li class=""><a href="practice_4_start.html">Practice 4</a></li>
+          <li class=""><a href="practice_5_start.html">Practice 5</a></li>
+          <li class="active"><a href="#direction1">Practice 6</a></li>
+          <li class=""><a href="practice_7_start.html">Practice 7</a></li>
+          <li class=""><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+<!--start-->
+<!--<script>storeAllQuestions();</script>-->
+  <script>
+    removeAllDirsQs();
+	resetAllAudios();
+    storeAllQuestions();
+    removeAllAnswersScores();
+   </script>
+
+<div id='direction1' class="container-fluid"></div>
+<div id='q1' class="container-fluid"></div>
+<div id='q2' class="container-fluid"></div>
+<div id='q3' class="container-fluid"></div>
+<div id='q4' class="container-fluid"></div>
+<div id='direction2' class="container-fluid"></div>
+<div id='q5' class="container-fluid"></div>
+<div id='q6' class="container-fluid"></div>
+<div id='q7' class="container-fluid"></div>
+<div id='direction3' class="container-fluid"></div>
+<div id='q8' class="container-fluid"></div>
+<div id='q9' class="container-fluid"></div>
+<div id='q10' class="container-fluid"></div>
+<div id='q11' class="container-fluid"></div>
+<div id='direction4' class="container-fluid"></div>
+<div id='q12' class="container-fluid"></div>
+<div id='q13' class="container-fluid"></div>
+<div id='q14' class="container-fluid"></div>
+<div id='q15' class="container-fluid"></div>
+<div id='direction5' class="container-fluid"></div>
+<div id='q16' class="container-fluid"></div>
+<div id='q17' class="container-fluid"></div>
+<div id='q18' class="container-fluid"></div>
+<div id='q19' class="container-fluid"></div>
+<div id='q20' class="container-fluid"></div>
+<div id='q21' class="container-fluid"></div>
+<div id='q22' class="container-fluid"></div>
+<div id='q23' class="container-fluid"></div>
+<div id='q24' class="container-fluid"></div>
+<div id='q25' class="container-fluid"></div>
+<div id='q26' class="container-fluid"></div>
+<div id='q27' class="container-fluid"></div>
+<div id='q28' class="container-fluid"></div>
+<div id='q29' class="container-fluid"></div>
+<div id='q30' class="container-fluid"></div>
+<div id='q31' class="container-fluid"></div>
+<div id='q32' class="container-fluid"></div>
+<div id='q33' class="container-fluid"></div>
+<div id='q34' class="container-fluid"></div>
+<div id='q35' class="container-fluid"></div>
+<div id='q36' class="container-fluid"></div>
+<div id='q37' class="container-fluid"></div>
+<div id='q38' class="container-fluid"></div>
+<div id='q39' class="container-fluid"></div>
+<div id='q40' class="container-fluid"></div>
+<div id='q41' class="container-fluid"></div>
+<div id='q42' class="container-fluid"></div>
+<div id='q43' class="container-fluid"></div>
+<div id='q44' class="container-fluid"></div>
+<div id='q45' class="container-fluid"></div>
+<div id='q46' class="container-fluid"></div>
+<div id='q47' class="container-fluid"></div>
+<div id='q48' class="container-fluid"></div>
+<div id='q49' class="container-fluid"></div>
+<div id='q50' class="container-fluid"></div>
+<script>
+writeScore();
+writeExpl();
+writeDivDir('direction1','LISTENING COMPREHENSION','dir_1','aud_dir_1','#direction1','page_dir_1','#q1');
+writeQ('q1','1','q_1','select_1','answer_1','container_1','a_1','#direction1','page_1','#q2');
+writeQ('q2','2','q_2','select_2','answer_2','container_2','a_2','#q1','page_2','#q3');
+writeQ('q3','3','q_3','select_3','answer_3','container_3','a_3','#q2','page_3','#q4');
+writeQ('q4','4','q_4','select_4','answer_4','container_4','a_4','#q3','page_4','#direction2');
+writeDivDir('direction2','LISTENING COMPREHENSION','dir_2','aud_dir_2','#q4','page_dir_2','#q5');
+writeQ('q5','5','q_5','select_5','answer_5','container_5','a_5','#direction2','page_5','#q6');
+writeQ('q6','6','q_6','select_6','answer_6','container_6','a_6','#q5','page_6','#q7');
+writeQ('q7','7','q_7','select_7','answer_7','container_7','a_7','#q6','page_7','#direction3');
+writeDivDir('direction3','LISTENING COMPREHENSION','dir_3','aud_dir_3','#q7','page_dir_3','#q8');
+writeQ('q8','8','q_8','select_8','answer_8','container_8','a_8','#direction3','page_8','#q9');
+writeQ('q9','9','q_9','select_9','answer_9','container_9','a_9','#q8','page_9','#q10');
+writeQ('q10','10','q_10','select_10','answer_10','container_10','a_10','#q9','page_10','#q11');
+writeQ('q11','11','q_11','select_11','answer_11','container_11','a_11','#q10','page_11','#direction4');
+writeDivDir('direction4','LISTENING COMPREHENSION','dir_4','aud_dir_4','#q11','page_dir_4','#q12');
+writeQ('q12','12','q_12','select_12','answer_12','container_12','a_12','#direction4','page_12','#q13');
+writeQ('q13','13','q_13','select_13','answer_13','container_13','a_13','#q12','page_13','#q14');
+writeQ('q14','14','q_14','select_14','answer_14','container_14','a_14','#q13','page_14','#q15');
+writeQ('q15','15','q_15','select_15','answer_15','container_15','a_15','#q14','page_15','#direction5');
+writeDivDir('direction5','READING SECTION','dir_5','aud_dir_5','#q15','page_dir_5','#q16');
+writeQ('q16','16','q_16','select_16','answer_16','container_16','a_16','#direction5','page_16','#q17');
+writeQ('q17','17','q_17','select_17','answer_17','container_17','a_17','#q16','page_17','#q18');
+writeQ('q18','18','q_18','select_18','answer_18','container_18','a_18','#q17','page_18','#q19');
+writeQ('q19','19','q_19','select_19','answer_19','container_19','a_19','#q18','page_19','#q20');
+writeQ('q20','20','q_20','select_20','answer_20','container_20','a_20','#q19','page_21','#q21');
+writeQ('q21','21','q_21','select_21','answer_21','container_21','a_21','#q20','page_21','#q22');
+writeQ('q22','22','q_22','select_22','answer_22','container_22','a_22','#q21','page_22','#q23');
+writeQ('q23','23','q_23','select_23','answer_23','container_23','a_23','#q22','page_23','#q24');
+writeQ('q24','24','q_24','select_24','answer_24','container_24','a_24','#q23','page_24','#q25');
+writeQ('q25','25','q_25','select_25','answer_25','container_25','a_25','#q24','page_25','#q26');
+writeQ('q26','26','q_26','select_26','answer_26','container_26','a_26','#q25','page_26','#q27');
+writeQ('q27','27','q_27','select_27','answer_27','container_27','a_27','#q26','page_27','#q28');
+writeQ('q28','28','q_28','select_28','answer_28','container_28','a_28','#q27','page_28','#q29');
+writeQ('q29','29','q_29','select_29','answer_29','container_29','a_29','#q28','page_29','#q30');
+writeQ('q30','30','q_30','select_30','answer_30','container_30','a_30','#q29','page_30','#q31');
+writeQ('q31','31','q_31','select_31','answer_31','container_31','a_31','#q30','page_31','#q32');
+writeQ('q32','32','q_32','select_32','answer_32','container_32','a_32','#q31','page_32','#q33');
+writeQ('q33','33','q_33','select_33','answer_33','container_33','a_33','#q32','page_33','#q34');
+writeQ('q34','34','q_34','select_34','answer_34','container_34','a_34','#q33','page_34','#q35');
+writeQ('q35','35','q_35','select_35','answer_35','container_35','a_35','#q34','page_35','#q36');
+writeQ('q36','36','q_36','select_36','answer_36','container_36','a_36','#q35','page_36','#q37');
+writeQ('q37','37','q_37','select_37','answer_37','container_37','a_37','#q36','page_37','#q38');
+writeQ('q38','38','q_38','select_38','answer_38','container_38','a_38','#q37','page_38','#q39');
+writeQ('q39','39','q_39','select_39','answer_39','container_39','a_39','#q38','page_39','#q40');
+writeQ('q40','40','q_40','select_40','answer_40','container_40','a_40','#q39','page_40','#q41');
+writeQ('q41','41','q_41','select_41','answer_41','container_41','a_41','#q40','page_41','#q42');
+writeQ('q42','42','q_42','select_42','answer_42','container_42','a_42','#q41','page_42','#q43');
+writeQ('q43','43','q_43','select_43','answer_43','container_43','a_43','#q42','page_43','#q44');
+writeQ('q44','44','q_44','select_44','answer_44','container_44','a_44','#q43','page_44','#q45');
+writeQ('q45','45','q_45','select_45','answer_45','container_45','a_45','#q44','page_45','#q46');
+writeQ('q46','46','q_46','select_46','answer_46','container_46','a_46','#q45','page_46','#q47');
+writeQ('q47','47','q_47','select_47','answer_47','container_47','a_47','#q46','page_47','#q48');
+writeQ('q48','48','q_48','select_48','answer_48','container_48','a_48','#q47','page_48','#q49');
+writeQ('q49','49','q_49','select_49','answer_49','container_49','a_49','#q48','page_49','#q50');
+writeQ('q50','50','q_50','select_50','answer_50','container_50','a_50','#q49','page_50','#score');
+//writeScore();
+//writeExpl();
+appear('#direction1');
+counterAudAll();
+</script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+	    <div class="navbar-footer" id='footer'>
+            <div align='center'><article><span id='white'>Timer:  <span id='timer'></span></span></article></div>;
+        </div>
+	</div>
+    <!-- /.container-fluid -->
+  </nav>
+<script>
+    	$(document).ready(function(){
+			var c = 60*60*2;
+        	var t;
+           	timedCount();
+           	function timedCount() {
+           		var hours = parseInt( c / 3600 ) % 24;
+           		var minutes = parseInt( c / 60 ) % 60;
+           		var seconds = c % 60;
+           		var result = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds  < 10 ? "0" + seconds : seconds);
+           		$('#timer').html(result);
+               	if(c == 0 ){ c = 60*60*60; }
+               	c = c - 1;
+               	t = setTimeout(function(){ timedCount() }, 1000);
+           	}
+    	});
+</script>
+<script>
+timeIsUp();
+</script>
+<script src="js/jquery-1.11.1.min.js"></script>
+</body>
+</html>
