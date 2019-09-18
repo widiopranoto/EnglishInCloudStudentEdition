@@ -17,7 +17,7 @@ var noteContent = '';
 
 // Get all notes from previous sessions and display them.
 var notes = getAllNotes();
-renderNotes(notes);
+//renderNotes(notes);
 
 
 
