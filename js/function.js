@@ -1,6 +1,7 @@
 function hideAll(){
   w3.hide('#welcome');	
   w3.hide('#home');	
+  w3.hide('#home_asli');	
   w3.hide('#login');
   w3.hide('#learn');
   w3.hide('#learn_x');
@@ -354,23 +355,44 @@ function loginOffline(usernameStored,elShown){
 document.getElementById(elShown).innerHTML='Your username (offline): '+usernameStored;
 }	
 
-function loginOnline(username,elShown){
+function passwordOnline(usernameStored,passwordStored){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var pass=JSON.parse(this.responseText).result;
+      localStorage.setItem('passwordOnline',1);	  
+    }
+	else {return 0;}
+  };
+  var inputUrlSpreadSheet='https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
+  var inputNamaSheet='login';
+  var action='getItem';
+  var noKolom=2;
+  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+            inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+usernameStored+"+&noKolom="+noKolom;
+  xhttp.open("GET", req, true);
+  xhttp.send();
+}
+function loginOnline(usernameStored,passwordStored,elShown){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 	  var obj=JSON.parse(this.responseText).result;	
-      document.getElementById(elShown).innerHTML='Your username (online): '+obj;
-	  localStorage.setItem('loginOnline',1);
+	  passwordOnline(usernameStored,passwordStored);
+	  if(toString(obj)==toString(usernameStored) && parseInt(localStorage.getItem('passwordOnline'))==1)
+	  { localStorage.setItem('loginOnline',1);
+        document.getElementById(elShown).innerHTML='Your username (online): '+obj; 
+	  }
     }
 	else {localStorage.setItem('loginOnline',0);}
   };
   var inputUrlSpreadSheet='https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
   var inputNamaSheet='login';
   var action='getItem';
-  var nis=username;
+  var nis=usernameStored;
   var noKolom=0;
   var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
-            inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+nis+"+&noKolom="+noKolom;
+            inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+usernameStored+"+&noKolom="+noKolom;
   xhttp.open("GET", req, true);
   xhttp.send();
 }
@@ -511,13 +533,17 @@ function storeNilaiSkillKD(inputNamaSheet,inputNamaSkill,noKD){
 	var loginOnline=parseInt(localStorage.getItem('loginOnline'));
 	var varStored=inputNamaSkill+'ScoreTotalKD'+noKD;
 	var noKD=parseInt(noKD);
-	var noKolom=noKD+1;
+	var noKolom=parseInt(noKD)+1;
 	var valStored=localStorage.getItem(varStored);
-	if(valStored!=undefined || valStored!=null){return true;}
 	if(valStored==undefined || valStored==null)
 	{
 	if(loginOnline==1)
-	  { storeOneItem("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noKolom,varStored);
+	  { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noKolom,varStored);
+        var skillPassKDId=inputNamaSkill+'PassKD'+noKD;
+		var skillScoreTotalKDId=inputNamaSkill+'ScoreTotalKD'+noKD;
+		var skillScoreTotalKDDefault=localStorage.getItem(skillScoreTotalKDId);
+		if(parseInt(skillScoreTotalKDDefault)>79){var skillPassKDDefault=1;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
+		if(parseInt(skillScoreTotalKDDefault)<80){var skillPassKDDefault=0;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
 	  }	
 	}
 }
@@ -698,4 +724,11 @@ function storeNilaiPerItem(noKD,inputNamaSkill,inputNamaSheet){
 	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal10,varStored10);
 	    }			
       }
+}
+function refresh(idRefresh){
+    var container = document.getElementById(idRefresh);
+    var content = container.innerHTML;
+    container.innerHTML= content; 
+   //this line is to watch the result in console , you can remove it later	
+    console.log("Refreshed"); 	
 }

@@ -15,6 +15,7 @@ showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuA
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_speaking','getNilai',retrieveItem('usernameStored'),'4','score_speaking_kd3');
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_reading','getNilai',retrieveItem('usernameStored'),'4','score_reading_kd3');
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_writing','getNilai',retrieveItem('usernameStored'),'4','score_writing_kd3');
+storeNilaiPerItem(3,'speaking','hasil_speaking_peritem');
 }
 function getScorePracticeKD4(){
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_listening','getNilai',retrieveItem('usernameStored'),'5','score_listening_kd4');
@@ -159,6 +160,7 @@ showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuA
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_speaking','getNilai',retrieveItem('usernameStored'),'28','score_speaking_kd27');
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_reading','getNilai',retrieveItem('usernameStored'),'28','score_reading_kd27');
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_writing','getNilai',retrieveItem('usernameStored'),'28','score_writing_kd27');
+storeNilaiPerItem(27,'speaking','hasil_speaking_peritem');
 }
 function getScorePracticeKD28(){
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_listening','getNilai',retrieveItem('usernameStored'),'29','score_listening_kd28');
@@ -233,4 +235,236 @@ function showNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,elShown
             nis + "&noKolom=" + noKolom;
   xhttp.open("GET", req, true);
   xhttp.send();
+}
+
+function storeScoreKD1(){
+	storeNilaiSkillKD('hasil_listening','listening',1);
+	storeNilaiSkillKD('hasil_speaking','speaking',1);
+	storeNilaiSkillKD('hasil_reading','reading',1);
+	storeNilaiSkillKD('hasil_writing','writing',1);
+    storeNilaiPerItem(1,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD2(){
+	storeNilaiSkillKD('hasil_listening','listening',2);
+	storeNilaiSkillKD('hasil_speaking','speaking',2);
+	storeNilaiSkillKD('hasil_reading','reading',2);
+	storeNilaiSkillKD('hasil_writing','writing',2);
+    storeNilaiPerItem(2,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD3(){
+	storeNilaiSkillKD('hasil_listening','listening',3);
+	storeNilaiSkillKD('hasil_speaking','speaking',3);
+	storeNilaiSkillKD('hasil_reading','reading',3);
+	storeNilaiSkillKD('hasil_writing','writing',3);
+    storeNilaiPerItem(3,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD4(){
+	storeNilaiSkillKD('hasil_listening','listening',4);
+	storeNilaiSkillKD('hasil_speaking','speaking',4);
+	storeNilaiSkillKD('hasil_reading','reading',4);
+	storeNilaiSkillKD('hasil_writing','writing',4);
+    storeNilaiPerItem(4,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD5(){
+	storeNilaiSkillKD('hasil_listening','listening',5);
+	storeNilaiSkillKD('hasil_speaking','speaking',5);
+	storeNilaiSkillKD('hasil_reading','reading',5);
+	storeNilaiSkillKD('hasil_writing','writing',5);
+    storeNilaiPerItem(5,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD7(){
+	storeNilaiSkillKD('hasil_listening','listening',7);
+	storeNilaiSkillKD('hasil_speaking','speaking',7);
+	storeNilaiSkillKD('hasil_reading','reading',7);
+	storeNilaiSkillKD('hasil_writing','writing',7);
+    storeNilaiPerItem(7,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD8(){
+	storeNilaiSkillKD('hasil_listening','listening',8);
+	storeNilaiSkillKD('hasil_speaking','speaking',8);
+	storeNilaiSkillKD('hasil_reading','reading',8);
+	storeNilaiSkillKD('hasil_writing','writing',8);
+    storeNilaiPerItem(8,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD9(){
+	storeNilaiSkillKD('hasil_listening','listening',9);
+	storeNilaiSkillKD('hasil_speaking','speaking',9);
+	storeNilaiSkillKD('hasil_reading','reading',9);
+	storeNilaiSkillKD('hasil_writing','writing',9);
+    storeNilaiPerItem(9,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD10(){
+	storeNilaiSkillKD('hasil_listening','listening',10);
+	storeNilaiSkillKD('hasil_speaking','speaking',10);
+	storeNilaiSkillKD('hasil_reading','reading',10);
+	storeNilaiSkillKD('hasil_writing','writing',10);
+    storeNilaiPerItem(10,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD11(){
+	storeNilaiSkillKD('hasil_listening','listening',11);
+	storeNilaiSkillKD('hasil_speaking','speaking',11);
+	storeNilaiSkillKD('hasil_reading','reading',11);
+	storeNilaiSkillKD('hasil_writing','writing',11);
+    storeNilaiPerItem(11,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD12(){
+	storeNilaiSkillKD('hasil_listening','listening',12);
+	storeNilaiSkillKD('hasil_speaking','speaking',12);
+	storeNilaiSkillKD('hasil_reading','reading',12);
+	storeNilaiSkillKD('hasil_writing','writing',12);
+    storeNilaiPerItem(12,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD13(){
+	storeNilaiSkillKD('hasil_listening','listening',13);
+	storeNilaiSkillKD('hasil_speaking','speaking',13);
+	storeNilaiSkillKD('hasil_reading','reading',13);
+	storeNilaiSkillKD('hasil_writing','writing',13);
+    storeNilaiPerItem(13,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD14(){
+	storeNilaiSkillKD('hasil_listening','listening',14);
+	storeNilaiSkillKD('hasil_speaking','speaking',14);
+	storeNilaiSkillKD('hasil_reading','reading',14);
+	storeNilaiSkillKD('hasil_writing','writing',14);
+    storeNilaiPerItem(14,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD15(){
+	storeNilaiSkillKD('hasil_listening','listening',15);
+	storeNilaiSkillKD('hasil_speaking','speaking',15);
+	storeNilaiSkillKD('hasil_reading','reading',15);
+	storeNilaiSkillKD('hasil_writing','writing',15);
+    storeNilaiPerItem(15,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD17(){
+	storeNilaiSkillKD('hasil_listening','listening',17);
+	storeNilaiSkillKD('hasil_speaking','speaking',17);
+	storeNilaiSkillKD('hasil_reading','reading',17);
+	storeNilaiSkillKD('hasil_writing','writing',17);
+    storeNilaiPerItem(17,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD18(){
+	storeNilaiSkillKD('hasil_listening','listening',18);
+	storeNilaiSkillKD('hasil_speaking','speaking',18);
+	storeNilaiSkillKD('hasil_reading','reading',18);
+	storeNilaiSkillKD('hasil_writing','writing',18);
+    storeNilaiPerItem(18,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD19(){
+	storeNilaiSkillKD('hasil_listening','listening',19);
+	storeNilaiSkillKD('hasil_speaking','speaking',19);
+	storeNilaiSkillKD('hasil_reading','reading',19);
+	storeNilaiSkillKD('hasil_writing','writing',19);
+    storeNilaiPerItem(19,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD20(){
+	storeNilaiSkillKD('hasil_listening','listening',20);
+	storeNilaiSkillKD('hasil_speaking','speaking',20);
+	storeNilaiSkillKD('hasil_reading','reading',20);
+	storeNilaiSkillKD('hasil_writing','writing',20);
+    storeNilaiPerItem(20,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD21(){
+	storeNilaiSkillKD('hasil_listening','listening',21);
+	storeNilaiSkillKD('hasil_speaking','speaking',21);
+	storeNilaiSkillKD('hasil_reading','reading',21);
+	storeNilaiSkillKD('hasil_writing','writing',21);
+    storeNilaiPerItem(21,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD22(){
+	storeNilaiSkillKD('hasil_listening','listening',22);
+	storeNilaiSkillKD('hasil_speaking','speaking',22);
+	storeNilaiSkillKD('hasil_reading','reading',22);
+	storeNilaiSkillKD('hasil_writing','writing',22);
+    storeNilaiPerItem(22,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD23(){
+	storeNilaiSkillKD('hasil_listening','listening',23);
+	storeNilaiSkillKD('hasil_speaking','speaking',23);
+	storeNilaiSkillKD('hasil_reading','reading',23);
+	storeNilaiSkillKD('hasil_writing','writing',23);
+    storeNilaiPerItem(23,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD24(){
+	storeNilaiSkillKD('hasil_listening','listening',24);
+	storeNilaiSkillKD('hasil_speaking','speaking',24);
+	storeNilaiSkillKD('hasil_reading','reading',24);
+	storeNilaiSkillKD('hasil_writing','writing',24);
+    storeNilaiPerItem(24,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD25(){
+	storeNilaiSkillKD('hasil_listening','listening',25);
+	storeNilaiSkillKD('hasil_speaking','speaking',25);
+	storeNilaiSkillKD('hasil_reading','reading',25);
+	storeNilaiSkillKD('hasil_writing','writing',25);
+    storeNilaiPerItem(25,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD27(){
+	storeNilaiSkillKD('hasil_listening','listening',27);
+	storeNilaiSkillKD('hasil_speaking','speaking',27);
+	storeNilaiSkillKD('hasil_reading','reading',27);
+	storeNilaiSkillKD('hasil_writing','writing',27);
+    storeNilaiPerItem(27,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD28(){
+	storeNilaiSkillKD('hasil_listening','listening',28);
+	storeNilaiSkillKD('hasil_speaking','speaking',28);
+	storeNilaiSkillKD('hasil_reading','reading',28);
+	storeNilaiSkillKD('hasil_writing','writing',28);
+    storeNilaiPerItem(28,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD29(){
+	storeNilaiSkillKD('hasil_listening','listening',29);
+	storeNilaiSkillKD('hasil_speaking','speaking',29);
+	storeNilaiSkillKD('hasil_reading','reading',29);
+	storeNilaiSkillKD('hasil_writing','writing',29);
+    storeNilaiPerItem(29,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD30(){
+	storeNilaiSkillKD('hasil_listening','listening',30);
+	storeNilaiSkillKD('hasil_speaking','speaking',30);
+	storeNilaiSkillKD('hasil_reading','reading',30);
+	storeNilaiSkillKD('hasil_writing','writing',30);
+    storeNilaiPerItem(30,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD31(){
+	storeNilaiSkillKD('hasil_listening','listening',31);
+	storeNilaiSkillKD('hasil_speaking','speaking',31);
+	storeNilaiSkillKD('hasil_reading','reading',31);
+	storeNilaiSkillKD('hasil_writing','writing',31);
+    storeNilaiPerItem(31,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD32(){
+	storeNilaiSkillKD('hasil_listening','listening',32);
+	storeNilaiSkillKD('hasil_speaking','speaking',32);
+	storeNilaiSkillKD('hasil_reading','reading',32);
+	storeNilaiSkillKD('hasil_writing','writing',32);
+    storeNilaiPerItem(32,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD33(){
+	storeNilaiSkillKD('hasil_listening','listening',33);
+	storeNilaiSkillKD('hasil_speaking','speaking',33);
+	storeNilaiSkillKD('hasil_reading','reading',33);
+	storeNilaiSkillKD('hasil_writing','writing',33);
+    storeNilaiPerItem(33,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD34(){
+	storeNilaiSkillKD('hasil_listening','listening',34);
+	storeNilaiSkillKD('hasil_speaking','speaking',34);
+	storeNilaiSkillKD('hasil_reading','reading',34);
+	storeNilaiSkillKD('hasil_writing','writing',34);
+    storeNilaiPerItem(34,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD35(){
+	storeNilaiSkillKD('hasil_listening','listening',35);
+	storeNilaiSkillKD('hasil_speaking','speaking',35);
+	storeNilaiSkillKD('hasil_reading','reading',35);
+	storeNilaiSkillKD('hasil_writing','writing',35);
+    storeNilaiPerItem(35,'speaking','hasil_speaking_peritem');	
+}
+function storeScoreKD37(){
+	storeNilaiSkillKD('hasil_listening','listening',37);
+	storeNilaiSkillKD('hasil_speaking','speaking',37);
+	storeNilaiSkillKD('hasil_reading','reading',37);
+	storeNilaiSkillKD('hasil_writing','writing',37);
+    storeNilaiPerItem(37,'speaking','hasil_speaking_peritem');	
 }

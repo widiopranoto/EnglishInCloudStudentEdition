@@ -120,7 +120,8 @@ function a(noKD){
 					if(localStorage.getItem(speakingScoreId10) !=null) {var speakingScore10=parseInt(localStorage.getItem(speakingScoreId10));}
                     //jika speakingScore kosong
 					if(localStorage.getItem(speakingScoreId1)==null || localStorage.getItem(speakingScoreId2)==null || localStorage.getItem(speakingScoreId3)==null || localStorage.getItem(speakingScoreId4)==null || localStorage.getItem(speakingScoreId5)==null || localStorage.getItem(speakingScoreId6)==null || localStorage.getItem(speakingScoreId7)==null || localStorage.getItem(speakingScoreId8)==null || localStorage.getItem(speakingScoreId9)==null || localStorage.getItem(speakingScoreId10)==null) 
-					{ storeNilaiPerItem(noKD,'speaking','hasil_speaking_peritem');	
+					{ 
+				      storeNilaiPerItem(noKD,'speaking','hasil_speaking_peritem');	
 				      speakingScore1=parseInt(localStorage.getItem(speakingScoreId1));
 				      speakingScore2=parseInt(localStorage.getItem(speakingScoreId2));
 				      speakingScore3=parseInt(localStorage.getItem(speakingScoreId3));

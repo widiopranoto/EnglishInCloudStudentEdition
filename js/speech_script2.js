@@ -99,8 +99,8 @@ noteTextarea.on('input', function() {
   noteContent = $(this).val();
 })
 
-function saveRecord(noKD){
-  var noKD=noKD;
+function saveRecord(){
+  var noKD=localStorage.getItem('speakingKDDefault');
   recognition.stop();
     var speakingScore1='speakingScoreKD'+noKD+'_'+1; 
     var speakingScore2='speakingScoreKD'+noKD+'_'+2; 
