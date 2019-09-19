@@ -1152,7 +1152,25 @@ function CheckAnswers(){
   xhttp.send();
 //simpan TotalScore ke offline
   storeItem('listening_kd1',TotalScore);
+  listeningCupModal(TotalScore,1);
+  playAudio('score');
 }
+function listeningCupModal(noKD){
+	var listeningScoreTotalKDId='listeningScoreTotalKD'+noKD;
+	var listeningScoreTotalKDDefault=parseInt(localStorage.getItem(listeningScoreTotalKDId));
+	//cek apakah eksis
+    if(listeningScoreTotalKDDefault>79)
+	{
+		  var listeningCupKDId='listeningCupKD'+noKD;
+		  var listeningCupKDId_='listeningCupKD'+noKD+'_';		  
+		  var listeningCupWrite="<img src='image/cup.png' width='100'></img>";
+		  document.getElementById(listeningCupKDId).innerHTML=listeningCupWrite;
+		  document.getElementById(listeningCupKDId_).innerHTML=listeningCupWrite;
+		  //tampilkan modal
+		  modalkan('listeningModalCup');
+		  playAudio('yeah');
+	  }
+}	
 
 function retrieveItem(varRetrieved){
     var a=localStorage.getItem(varRetrieved);
