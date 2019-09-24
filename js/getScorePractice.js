@@ -237,12 +237,18 @@ function showNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,elShown
   xhttp.send();
 }
 
-function storeScoreKD1(){
-	storeNilaiSkillKD('hasil_listening','listening',1);
-	storeNilaiSkillKD('hasil_speaking','speaking',1);
-	storeNilaiSkillKD('hasil_reading','reading',1);
-	storeNilaiSkillKD('hasil_writing','writing',1);
-    storeNilaiPerItem(1,'speaking','hasil_speaking_peritem');	
+function getAndStoreScoreKD(noKD){
+	localStorage.setItem('theoryKDDefault',noKD);
+	localStorage.setItem('listeningKDDefault',noKD);
+	localStorage.setItem('speakingKDDefault',noKD);
+	localStorage.setItem('readingKDDefault',noKD);
+	localStorage.setItem('writingKDDefault',noKD);
+	getAndStoreNilaiSkillKD('hasil_theory','theory',noKD);
+	getAndStoreNilaiSkillKD('hasil_listening','listening',noKD);
+	getAndStoreNilaiSkillKD('hasil_speaking','speaking',noKD);
+    getAndStoreNilaiPerItem('hasil_speaking_peritem','speaking',noKD);	
+	getAndStoreNilaiSkillKD('hasil_reading','reading',noKD);
+	getAndStoreNilaiSkillKD('hasil_writing','writing',noKD);
 }
 function storeScoreKD2(){
 	storeNilaiSkillKD('hasil_listening','listening',2);
@@ -467,4 +473,8 @@ function storeScoreKD37(){
 	storeNilaiSkillKD('hasil_reading','reading',37);
 	storeNilaiSkillKD('hasil_writing','writing',37);
     storeNilaiPerItem(37,'speaking','hasil_speaking_peritem');	
+}
+function getAndStoreScoreUNKD(noKD){
+	localStorage.setItem('unKDDefault',noKD);
+	getAndStoreNilaiSkillKD('hasil_un','un');
 }

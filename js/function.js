@@ -1,222 +1,46 @@
 function hideAll(){
-  w3.hide('#welcome');	
-  w3.hide('#home');	
-  w3.hide('#home_asli');	
-  w3.hide('#login');
-  w3.hide('#learn');
-  w3.hide('#learn_x');
-  w3.hide('#learn_xi');  
-  w3.hide('#learn_xii');
-  w3.hide('#learn_xiii');  
-  w3.hide('#learn_kd1');
-  w3.hide('#learn_kd2');
-  w3.hide('#learn_kd3');
-  w3.hide('#learn_kd4');
-  w3.hide('#learn_kd5');
-  w3.hide('#learn_kd6');
-  w3.hide('#learn_kd7');
-  w3.hide('#learn_kd8');
-  w3.hide('#learn_kd9');
-  w3.hide('#learn_kd10');
-  w3.hide('#learn_kd11');  
-  w3.hide('#learn_kd12');
-  w3.hide('#learn_kd13');
-  w3.hide('#learn_kd14');
-  w3.hide('#learn_kd15');
-  w3.hide('#learn_kd16');
-  w3.hide('#learn_kd17');
-  w3.hide('#learn_kd18');
-  w3.hide('#learn_kd19');
-  w3.hide('#learn_kd20'); 
-  w3.hide('#learn_kd21');  
-  w3.hide('#learn_kd22');
-  w3.hide('#learn_kd23');
-  w3.hide('#learn_kd24');
-  w3.hide('#learn_kd25');
-  w3.hide('#learn_kd26');
-  w3.hide('#learn_kd27');
-  w3.hide('#learn_kd28');
-  w3.hide('#learn_kd29');
-  w3.hide('#learn_kd30');   
-  w3.hide('#learn_kd31');  
-  w3.hide('#learn_kd32');
-  w3.hide('#learn_kd33');
-  w3.hide('#learn_kd34');
-  w3.hide('#learn_kd35');
-  w3.hide('#learn_kd36');
-  w3.hide('#learn_kd37');  
-  
-  w3.hide('#practice');
-  w3.hide('#listening');
-  w3.hide('#listening_kd1');
-  w3.hide('#listening_kd2');
-  w3.hide('#listening_kd3');
-  w3.hide('#listening_kd4');
-  w3.hide('#listening_kd5');
-  w3.hide('#listening_kd6');
-  w3.hide('#listening_kd7');
-  w3.hide('#listening_kd8');
-  w3.hide('#listening_kd9');
-  w3.hide('#listening_kd10');
-  w3.hide('#listening_kd11');  
-  w3.hide('#listening_kd12');
-  w3.hide('#listening_kd13');
-  w3.hide('#listening_kd14');
-  w3.hide('#listening_kd15');
-  w3.hide('#listening_kd16');
-  w3.hide('#listening_kd17');
-  w3.hide('#listening_kd18');
-  w3.hide('#listening_kd19');
-  w3.hide('#listening_kd20'); 
-  w3.hide('#listening_kd21');  
-  w3.hide('#listening_kd22');
-  w3.hide('#listening_kd23');
-  w3.hide('#listening_kd24');
-  w3.hide('#listening_kd25');
-  w3.hide('#listening_kd26');
-  w3.hide('#listening_kd27');
-  w3.hide('#listening_kd28');
-  w3.hide('#listening_kd29');
-  w3.hide('#listening_kd30');   
-  w3.hide('#listening_kd31');  
-  w3.hide('#listening_kd32');
-  w3.hide('#listening_kd33');
-  w3.hide('#listening_kd34');
-  w3.hide('#listening_kd35');
-  w3.hide('#listening_kd36');
-  w3.hide('#listening_kd37');  
-  
-  w3.hide('#game');
-
-  w3.hide('#speaking'); 
-  w3.hide('#speaking_kd1');
-  w3.hide('#speaking_kd2');
-  w3.hide('#speaking_kd3');
-  w3.hide('#speaking_kd4');
-  w3.hide('#speaking_kd5');
-  w3.hide('#speaking_kd6');
-  w3.hide('#speaking_kd7');
-  w3.hide('#speaking_kd8');
-  w3.hide('#speaking_kd9');
-  w3.hide('#speaking_kd10');
-  w3.hide('#speaking_kd11');  
-  w3.hide('#speaking_kd12');
-  w3.hide('#speaking_kd13');
-  w3.hide('#speaking_kd14');
-  w3.hide('#speaking_kd15');
-  w3.hide('#speaking_kd16');
-  w3.hide('#speaking_kd17');
-  w3.hide('#speaking_kd18');
-  w3.hide('#speaking_kd19');
-  w3.hide('#speaking_kd20'); 
-  w3.hide('#speaking_kd21');  
-  w3.hide('#speaking_kd22');
-  w3.hide('#speaking_kd23');
-  w3.hide('#speaking_kd24');
-  w3.hide('#speaking_kd25');
-  w3.hide('#speaking_kd26');
-  w3.hide('#speaking_kd27');
-  w3.hide('#speaking_kd28');
-  w3.hide('#speaking_kd29');
-  w3.hide('#speaking_kd30');   
-  w3.hide('#speaking_kd31');  
-  w3.hide('#speaking_kd32');
-  w3.hide('#speaking_kd33');
-  w3.hide('#speaking_kd34');
-  w3.hide('#speaking_kd35');
-  w3.hide('#speaking_kd36');
-  w3.hide('#speaking_kd37');  
-
-  w3.hide('#reading');  
-  w3.hide('#reading_kd1');
-  w3.hide('#reading_kd2');
-  w3.hide('#reading_kd3');
-  w3.hide('#reading_kd4');
-  w3.hide('#reading_kd5');
-  w3.hide('#reading_kd6');
-  w3.hide('#reading_kd7');
-  w3.hide('#reading_kd8');
-  w3.hide('#reading_kd9');
-  w3.hide('#reading_kd10');
-  w3.hide('#reading_kd11');  
-  w3.hide('#reading_kd12');
-  w3.hide('#reading_kd13');
-  w3.hide('#reading_kd14');
-  w3.hide('#reading_kd15');
-  w3.hide('#reading_kd16');
-  w3.hide('#reading_kd17');
-  w3.hide('#reading_kd18');
-  w3.hide('#reading_kd19');
-  w3.hide('#reading_kd20'); 
-  w3.hide('#reading_kd21');  
-  w3.hide('#reading_kd22');
-  w3.hide('#reading_kd23');
-  w3.hide('#reading_kd24');
-  w3.hide('#reading_kd25');
-  w3.hide('#reading_kd26');
-  w3.hide('#reading_kd27');
-  w3.hide('#reading_kd28');
-  w3.hide('#reading_kd29');
-  w3.hide('#reading_kd30');   
-  w3.hide('#reading_kd31');  
-  w3.hide('#reading_kd32');
-  w3.hide('#reading_kd33');
-  w3.hide('#reading_kd34');
-  w3.hide('#reading_kd35');
-  w3.hide('#reading_kd36');
-  w3.hide('#reading_kd37');  
-
-  w3.hide('#writing');
-  w3.hide('#writing_kd1');
-  w3.hide('#writing_kd2');
-  w3.hide('#writing_kd3');
-  w3.hide('#writing_kd4');
-  w3.hide('#writing_kd5');
-  w3.hide('#writing_kd6');
-  w3.hide('#writing_kd7');
-  w3.hide('#writing_kd8');
-  w3.hide('#writing_kd9');
-  w3.hide('#writing_kd10');
-  w3.hide('#writing_kd11');  
-  w3.hide('#writing_kd12');
-  w3.hide('#writing_kd13');
-  w3.hide('#writing_kd14');
-  w3.hide('#writing_kd15');
-  w3.hide('#writing_kd16');
-  w3.hide('#writing_kd17');
-  w3.hide('#writing_kd18');
-  w3.hide('#writing_kd19');
-  w3.hide('#writing_kd20'); 
-  w3.hide('#writing_kd21');  
-  w3.hide('#writing_kd22');
-  w3.hide('#writing_kd23');
-  w3.hide('#writing_kd24');
-  w3.hide('#writing_kd25');
-  w3.hide('#writing_kd26');
-  w3.hide('#writing_kd27');
-  w3.hide('#writing_kd28');
-  w3.hide('#writing_kd29');
-  w3.hide('#writing_kd30');   
-  w3.hide('#writing_kd31');  
-  w3.hide('#writing_kd32');
-  w3.hide('#writing_kd33');
-  w3.hide('#writing_kd34');
-  w3.hide('#writing_kd35');
-  w3.hide('#writing_kd36');
-  w3.hide('#writing_kd37');  
- 
-  w3.hide('#un');
-  w3.hide('#un_2010'); 
-  w3.hide('#un_2011'); 
-  w3.hide('#un_2012'); 
-  w3.hide('#un_2013');  
-  w3.hide('#un_2014');  
-  w3.hide('#un_2015');   
-  w3.hide('#un_2016');   
-  
-  w3.hide('#score');  
-  
-  w3.hide('#howto');  
+w3.hide('#welcome');w3.hide('#home');w3.hide('#home_asli');w3.hide('#login');w3.hide('#learn');w3.hide('#learn_x');w3.hide('#learn_xi');  
+w3.hide('#learn_xii');w3.hide('#learn_xiii');  w3.hide('#learn_kd1');w3.hide('#learn_kd2');w3.hide('#learn_kd3');w3.hide('#learn_kd4');
+w3.hide('#learn_kd5');w3.hide('#learn_kd6');w3.hide('#learn_kd7');w3.hide('#learn_kd8');w3.hide('#learn_kd9');w3.hide('#learn_kd10');
+w3.hide('#learn_kd11');  w3.hide('#learn_kd12');w3.hide('#learn_kd13');w3.hide('#learn_kd14');w3.hide('#learn_kd15');w3.hide('#learn_kd16');
+w3.hide('#learn_kd17');w3.hide('#learn_kd18');w3.hide('#learn_kd19');w3.hide('#learn_kd20'); w3.hide('#learn_kd21');  w3.hide('#learn_kd22');
+w3.hide('#learn_kd23');w3.hide('#learn_kd24');w3.hide('#learn_kd25');w3.hide('#learn_kd26');w3.hide('#learn_kd27');w3.hide('#learn_kd28');
+w3.hide('#learn_kd29');w3.hide('#learn_kd30');   w3.hide('#learn_kd31');  w3.hide('#learn_kd32');w3.hide('#learn_kd33');w3.hide('#learn_kd34');
+w3.hide('#learn_kd35');w3.hide('#learn_kd36');w3.hide('#learn_kd37');    w3.hide('#theory_kd1');w3.hide('#theory_kd2');w3.hide('#theory_kd3');
+w3.hide('#theory_kd4');w3.hide('#theory_kd5');w3.hide('#theory_kd6');w3.hide('#theory_kd7');w3.hide('#theory_kd8');w3.hide('#theory_kd9');
+w3.hide('#theory_kd10');w3.hide('#theory_kd11');  w3.hide('#theory_kd12');w3.hide('#theory_kd13');w3.hide('#theory_kd14');w3.hide('#theory_kd15');
+w3.hide('#theory_kd16');w3.hide('#theory_kd17');w3.hide('#theory_kd18');w3.hide('#theory_kd19');w3.hide('#theory_kd20'); w3.hide('#theory_kd21');  
+w3.hide('#theory_kd22');w3.hide('#theory_kd23');w3.hide('#theory_kd24');w3.hide('#theory_kd25');w3.hide('#theory_kd26');w3.hide('#theory_kd27');
+w3.hide('#theory_kd28');w3.hide('#theory_kd29');w3.hide('#theory_kd30');   w3.hide('#theory_kd31');  w3.hide('#theory_kd32');w3.hide('#theory_kd33');
+w3.hide('#theory_kd34');w3.hide('#theory_kd35');w3.hide('#theory_kd36');w3.hide('#theory_kd37');  w3.hide('#practice');w3.hide('#listening');
+w3.hide('#listening_kd1');w3.hide('#listening_kd2');w3.hide('#listening_kd3');w3.hide('#listening_kd4');w3.hide('#listening_kd5');w3.hide('#listening_kd6');
+w3.hide('#listening_kd7');w3.hide('#listening_kd8');w3.hide('#listening_kd9');w3.hide('#listening_kd10');w3.hide('#listening_kd11');  
+w3.hide('#listening_kd12');w3.hide('#listening_kd13');w3.hide('#listening_kd14');w3.hide('#listening_kd15');w3.hide('#listening_kd16');
+w3.hide('#listening_kd17');w3.hide('#listening_kd18');w3.hide('#listening_kd19');w3.hide('#listening_kd20'); w3.hide('#listening_kd21');  
+w3.hide('#listening_kd22');w3.hide('#listening_kd23');w3.hide('#listening_kd24');w3.hide('#listening_kd25');w3.hide('#listening_kd26');
+w3.hide('#listening_kd27');w3.hide('#listening_kd28');w3.hide('#listening_kd29');w3.hide('#listening_kd30');   w3.hide('#listening_kd31');  
+w3.hide('#listening_kd32');w3.hide('#listening_kd33');w3.hide('#listening_kd34');w3.hide('#listening_kd35');w3.hide('#listening_kd36');
+w3.hide('#listening_kd37');  w3.hide('#game');w3.hide('#speaking'); w3.hide('#speaking_kd1');w3.hide('#speaking_kd2');w3.hide('#speaking_kd3');
+w3.hide('#speaking_kd4');w3.hide('#speaking_kd5');w3.hide('#speaking_kd6');w3.hide('#speaking_kd7');w3.hide('#speaking_kd8');w3.hide('#speaking_kd9');
+w3.hide('#speaking_kd10');w3.hide('#speaking_kd11');  w3.hide('#speaking_kd12');w3.hide('#speaking_kd13');w3.hide('#speaking_kd14');w3.hide('#speaking_kd15');
+w3.hide('#speaking_kd16');w3.hide('#speaking_kd17');w3.hide('#speaking_kd18');w3.hide('#speaking_kd19');w3.hide('#speaking_kd20'); w3.hide('#speaking_kd21');  
+w3.hide('#speaking_kd22');w3.hide('#speaking_kd23');w3.hide('#speaking_kd24');w3.hide('#speaking_kd25');w3.hide('#speaking_kd26');w3.hide('#speaking_kd27');
+w3.hide('#speaking_kd28');w3.hide('#speaking_kd29');w3.hide('#speaking_kd30');   w3.hide('#speaking_kd31');  w3.hide('#speaking_kd32');w3.hide('#speaking_kd33');
+w3.hide('#speaking_kd34');w3.hide('#speaking_kd35');w3.hide('#speaking_kd36');w3.hide('#speaking_kd37');  w3.hide('#reading');  w3.hide('#reading_kd1');
+w3.hide('#reading_kd2');w3.hide('#reading_kd3');w3.hide('#reading_kd4');w3.hide('#reading_kd5');w3.hide('#reading_kd6');w3.hide('#reading_kd7');
+w3.hide('#reading_kd8');w3.hide('#reading_kd9');w3.hide('#reading_kd10');w3.hide('#reading_kd11');  w3.hide('#reading_kd12');w3.hide('#reading_kd13');
+w3.hide('#reading_kd14');w3.hide('#reading_kd15');w3.hide('#reading_kd16');w3.hide('#reading_kd17');w3.hide('#reading_kd18');w3.hide('#reading_kd19');
+w3.hide('#reading_kd20'); w3.hide('#reading_kd21');  w3.hide('#reading_kd22');w3.hide('#reading_kd23');w3.hide('#reading_kd24');w3.hide('#reading_kd25');
+w3.hide('#reading_kd26');w3.hide('#reading_kd27');w3.hide('#reading_kd28');w3.hide('#reading_kd29');w3.hide('#reading_kd30');   w3.hide('#reading_kd31');  
+w3.hide('#reading_kd32');w3.hide('#reading_kd33');w3.hide('#reading_kd34');w3.hide('#reading_kd35');w3.hide('#reading_kd36');w3.hide('#reading_kd37');  
+w3.hide('#writing');w3.hide('#writing_kd1');w3.hide('#writing_kd2');w3.hide('#writing_kd3');w3.hide('#writing_kd4');w3.hide('#writing_kd5');
+w3.hide('#writing_kd6');w3.hide('#writing_kd7');w3.hide('#writing_kd8');w3.hide('#writing_kd9');w3.hide('#writing_kd10');w3.hide('#writing_kd11');  
+w3.hide('#writing_kd12');w3.hide('#writing_kd13');w3.hide('#writing_kd14');w3.hide('#writing_kd15');w3.hide('#writing_kd16');w3.hide('#writing_kd17');
+w3.hide('#writing_kd18');w3.hide('#writing_kd19');w3.hide('#writing_kd20'); w3.hide('#writing_kd21');  w3.hide('#writing_kd22');w3.hide('#writing_kd23');
+w3.hide('#writing_kd24');w3.hide('#writing_kd25');w3.hide('#writing_kd26');w3.hide('#writing_kd27');w3.hide('#writing_kd28');w3.hide('#writing_kd29');
+w3.hide('#writing_kd30');   w3.hide('#writing_kd31');  w3.hide('#writing_kd32');w3.hide('#writing_kd33');w3.hide('#writing_kd34');w3.hide('#writing_kd35');
+w3.hide('#writing_kd36');w3.hide('#writing_kd37');  w3.hide('#un');w3.hide('#un_kd1'); w3.hide('#un_kd2'); w3.hide('#un_kd3'); w3.hide('#un_kd4');  
+w3.hide('#un_kd5');  w3.hide('#un_kd6');   w3.hide('#un_kd7');   w3.hide('#score');  w3.hide('#howto');  
 }
 function show(idContainer){
   hideAll();
@@ -234,6 +58,22 @@ function playAudio(idAudio) {
   var x = document.getElementById(idAudio); 
   x.play(); 
 } 
+
+function createCORSRequest(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    // XHR for Chrome/Firefox/Opera/Safari.
+    xhr.open(method, url, true);
+  } else if (typeof XDomainRequest != "undefined") {
+    // XDomainRequest for IE.
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+  } else {
+    // CORS not supported.
+    xhr = null;
+  }
+  return xhr;
+}
 
 function getNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom){
   var xhttp = new XMLHttpRequest();
@@ -255,21 +95,6 @@ function showStorage(idStorage,elShown){
     document.getElementById(elShown).innerHTML = item;
 }
 
-function storeNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,varStored){
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-	  var obj=JSON.parse(this.responseText).resultNilai;	
-      //document.getElementById('coba').innerHTML=obj;
-	  localStorage.setItem(varStored,obj);
-    }
-  };
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
-            inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&nis=" +
-            nis + "&noKolom=" + noKolom;
-  xhttp.open("GET", req, true);
-  xhttp.send();
-}
 function showStorage(idStorage,elShown){
 	var item= localStorage.getItem(idStorage);
     document.getElementById(elShown).innerHTML = item;
@@ -381,7 +206,7 @@ function loginOnline(usernameStored,passwordStored,elShown){
 	  passwordOnline(usernameStored,passwordStored);
 	  if(toString(obj)==toString(usernameStored) && parseInt(localStorage.getItem('passwordOnline'))==1)
 	  { localStorage.setItem('loginOnline',1);
-        document.getElementById(elShown).innerHTML='Your username (online): '+obj; 
+        document.getElementById(elShown).innerHTML='Your username (online): '+localStorage.getItem('usernameStored'); 
 	  }
     }
 	else {localStorage.setItem('loginOnline',0);}
@@ -501,7 +326,7 @@ function removeLSPref(pref, newName) {
         }
     }
 }
-	function sendItem(inputUrlSpreadSheet,inputNamaSheet,action,username,item,noKolom){
+function sendItem(inputUrlSpreadSheet,inputNamaSheet,action,username,item,noKolom){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -528,27 +353,107 @@ function showNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,elShown
   xhttp.send();
 }
 
-function storeNilaiSkillKD(inputNamaSheet,inputNamaSkill,noKD){
+function getAndStoreItem(inputUrlSpreadSheet,inputNamaSheet,username,noKolom,varStored,valStored){
+    var action='getItem';
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).hasil;	
+	  localStorage.setItem(varStored,valStored);
+    }
+    };
+    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+valStored+"&noKolom="+noKolom;
+    xhttp.open("GET", req, true);
+    xhttp.send();
+}
+
+function postItem(inputUrlSpreadSheet,inputNamaSheet,username,item,noKolom){
+    var action='postItem';
+	var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).hasil;	
+    }
+    };
+    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+item+"&noKolom="+noKolom;
+    xhttp.open("POST", req, true);
+    xhttp.send();
+}
+
+function postAndStoreItem(inputUrlSpreadSheet,inputNamaSheet,username,noKolom,varStored,valStored){
+    var action='postItem';
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).hasil;	
+	  localStorage.setItem(varStored,valStored);
+    }
+    };
+    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+valStored+"&noKolom="+noKolom;
+    xhttp.open("POST", req, true);
+    xhttp.send();
+}
+
+function postNilaiSkillKD(inputNamaSheet,inputNamaSkill){
 	var usernameStored=localStorage.getItem('usernameStored');
 	var loginOnline=parseInt(localStorage.getItem('loginOnline'));
+	var skillKDDefault=localStorage.getItem(inputNamaSkill+KDDefault);
+	var noKD=parseInt(skillKDDefault);
 	var varStored=inputNamaSkill+'ScoreTotalKD'+noKD;
-	var noKD=parseInt(noKD);
 	var noKolom=parseInt(noKD)+1;
 	var valStored=localStorage.getItem(varStored);
-	if(valStored==undefined || valStored==null)
-	{
+	//if(valStored==undefined || valStored==null)
+	//{
 	if(loginOnline==1)
-	  { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noKolom,varStored);
+	  { 
+       postAndStoreItem("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,usernameStored,noKolom,varStored,valStored);  
+       //storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noKolom,varStored);
         var skillPassKDId=inputNamaSkill+'PassKD'+noKD;
 		var skillScoreTotalKDId=inputNamaSkill+'ScoreTotalKD'+noKD;
 		var skillScoreTotalKDDefault=localStorage.getItem(skillScoreTotalKDId);
 		if(parseInt(skillScoreTotalKDDefault)>79){var skillPassKDDefault=1;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
 		if(parseInt(skillScoreTotalKDDefault)<80){var skillPassKDDefault=0;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
 	  }	
-	}
+	//}
 }
 
-function storeNilaiPerItem(noKD,inputNamaSkill,inputNamaSheet){
+function getAndStoreNilaiSkillKD(inputNamaSheet,inputNamaSkill,noKD){
+	var noKD=parseInt(noKD);
+	var usernameStored=localStorage.getItem('usernameStored');
+	var loginOnline=parseInt(localStorage.getItem('loginOnline'));
+	var varStored=inputNamaSkill+'ScoreTotalKD'+noKD;
+	var noKolom=parseInt(noKD)+1;
+	var valStored=localStorage.getItem(varStored);
+	//if(valStored==undefined || valStored==null)
+	//{
+	if(loginOnline==1)
+	  { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noKolom,varStored);
+        var skillPassKDId=inputNamaSkill+'PassKD'+noKD;
+		var skillScoreTotalKDId=inputNamaSkill+'ScoreTotalKD'+noKD;
+		var skillScoreTotalKDDefault=localStorage.getItem(skillScoreTotalKDId);
+		if(parseInt(skillScoreTotalKDDefault)>79){var skillPassKDDefault=1;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
+		if(parseInt(skillScoreTotalKDDefault)<80){var skillPassKDDefault=0;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
+	  }	
+	//}
+}
+
+function getAndStoreNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,varStored){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).resultNilai;	
+      //document.getElementById('coba').innerHTML=obj;
+	  localStorage.setItem(varStored,obj);
+    }
+  };
+  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+            inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&nis=" +
+            nis + "&noKolom=" + noKolom;
+  xhttp.open("GET", req, true);
+  xhttp.send();
+}
+
+function getAndStoreNilaiPerItem(inputNamaSheet,inputNamaSkill,noKD){
 	var usernameStored=localStorage.getItem('usernameStored');
 	var loginOnline=parseInt(localStorage.getItem('loginOnline'));
 	var varStored=inputNamaSkill+'ScoreTotalKD'+noKD;
@@ -694,41 +599,74 @@ function storeNilaiPerItem(noKD,inputNamaSkill,inputNamaSheet){
 	if(loginOnline==1)
 	  {	
         if(valStored1==undefined || valStored1==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal1,varStored1);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal1,varStored1);
 		}
         if(valStored2==undefined || valStored2==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal2,varStored2);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal2,varStored2);
 	    }
         if(valStored3==undefined || valStored3==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal3,varStored3);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal3,varStored3);
 	    }
         if(valStored4==undefined || valStored4==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal4,varStored4);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal4,varStored4);
 	    }
         if(valStored5==undefined || valStored5==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal5,varStored5);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal5,varStored5);
 	    }
         if(valStored6==undefined || valStored6==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal6,varStored6);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal6,varStored6);
 	    }
         if(valStored7==undefined || valStored7==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal7,varStored7);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal7,varStored7);
 	    }
         if(valStored8==undefined || valStored8==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal8,varStored8);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal8,varStored8);
 	    }
         if(valStored9==undefined || valStored9==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal9,varStored9);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal9,varStored9);
 	    }		
         if(valStored10==undefined || valStored10==null)
-	    { storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal10,varStored10);
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal10,varStored10);
 	    }			
       }
 }
-function refresh(idRefresh){
-    var container = document.getElementById(idRefresh);
-    var content = container.innerHTML;
-    container.innerHTML= content; 
-   //this line is to watch the result in console , you can remove it later	
-    console.log("Refreshed"); 	
+
+function getKompetensi(){
+if(parseInt(localStorage.getItem('writingKDDefault'))==1){var noKD=1;var theoryTopic="Present Simple Tense";var listeningTopic="Introducing Yourself";var speakingTopic="Introducing Yourself";var readingTopic="Personal and Objective Pronoun";var writingTopic="Possessive Adjective and Possessive Pronoun";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==2){var noKD=2;var theoryTopic="Present Continuous Tense";var listeningTopic="Congratulating Somenone";var speakingTopic="Congratulating Someone";var readingTopic="Reflexive, Reciprocal, and Demonstrative Pronoun";var writingTopic="Question Tags and Wh-Questions";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==3){var noKD=3;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==4){var noKD=4;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==5){var noKD=5;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==6){var noKD=6;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==7){var noKD=7;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==8){var noKD=8;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==9){var noKD=9;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==10){var noKD=10;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==11){var noKD=11;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==12){var noKD=12;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==13){var noKD=13;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==14){var noKD=14;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==15){var noKD=15;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==16){var noKD=16;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==17){var noKD=17;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==18){var noKD=18;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==19){var noKD=19;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==20){var noKD=20;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==21){var noKD=21;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==22){var noKD=22;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==23){var noKD=23;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==24){var noKD=24;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==25){var noKD=25;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==26){var noKD=26;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==27){var noKD=27;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==28){var noKD=28;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==29){var noKD=29;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==30){var noKD=30;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==31){var noKD=31;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==32){var noKD=32;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==33){var noKD=33;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==34){var noKD=34;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==35){var noKD=35;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==36){var noKD=36;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==37){var noKD=37;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
 }

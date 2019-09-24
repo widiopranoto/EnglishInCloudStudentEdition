@@ -1,4 +1,29 @@
-function writeListening(noKD,idListening,title,idYoutube,idSoal){
+function modalkan(id){
+	document.getElementById(id).style.display='block';	
+}
+
+function showScoreListening(noKD){
+  var elToShow='listeningScoreKD'+noKD;	
+  var valToShow='listeningScoreTotalKD'+noKD;
+  if(parseInt(localStorage.getItem('loginOnline'))==1)
+  {  getAndStoreNilaiSkillKD('hasil_listening','listening',noKD);
+     var nilai=parseInt(localStorage.getItem(valToShow));
+  }
+  else if(parseInt(localStorage.getItem('loginOnline'))!=1)
+  {  var nilai=parseInt(localStorage.getItem(valToShow));  }
+  document.getElementById(elToShow).innerHTML=nilai;
+  listeningCupModal(nilai,noKD);
+}	
+
+function writeListeningKD(noKD){
+//back
+var back='#learn_kd'+noKD;	
+var modalkan='listeningModalScoreKD'+noKD;
+var idListening='listening_kd'+noKD;
+var title='Practice Listening KD '+noKD;
+var idYoutube='listening_youtube_kd'+noKD;
+var idSoal='listening_soal_kd'+noKD;
+//var listeningScoreTotalKDId='listeningScoreTotalKD'+noKD;
 document.getElementById(idListening).innerHTML=
 (	
 "  <h2 class'w3-animate-left'>"+title+"</h2>"+
@@ -22,9 +47,9 @@ document.getElementById(idListening).innerHTML=
 "            </div>"+
 "	    </div>"+
 "  </div>"+
-	
 "   <div class='w3-center'>"+
-"        <button class='w3-button w3-yellow' onclick=showAndSound('#learn','squeak')>Back<i class='w3-margin-left fa fa-angle-double-left'></i></button>"+
+"        <button class='w3-bar-item w3-yellow' id='' title='Go back to previous page' onclick=showAndSound('"+back+"','squeak')><i class='w3-margin-right fa fa-angle-double-left'></i>Back</button>"+
+"        <button class='w3-bar-item w3-yellow' id='' title='Show records, scores, and badges' onclick=showScoreListening('"+noKD+"');modalkan('"+modalkan+"')>Show My Records<i class='w3-margin-left fa fa-bars'></i></button>"+
 "   </div>"
 //"</div>"
 )
@@ -41,7 +66,8 @@ var noKolomSoal=noKD;
 	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','listening','getOneItem',noBarisSoal,noKolomSoal,idSoal);
 	   var b=retrieveItem(idSoal);
        document.getElementById(idSoal).innerHTML="<iframe width='100%' height='400' src="+b+"></iframe>";
-					//cek jika lolos KD
+	   //cek cup
+	   listeningCekCup(noKD);
 }	  
 function listeningCekCup(noKD){
 					var listeningCupKDId='listeningCupKD'+noKD;					
@@ -49,20 +75,15 @@ function listeningCekCup(noKD){
 					var listeningPassKDDefault=localStorage.getItem(listeningPassKDId);
 					var listeningScoreTotalKDId='listeningScoreTotalKD'+noKD;	
 					var listeningScoreTotalKDDefault=localStorage.getItem(listeningScoreTotalKDId);
-                    if(listeningPassKDDefault==null || listeningPassKDDefault==undefined || listeningScoreTotalKDDefault==null || listeningScoreTotalKDDefault==undefined)
-                    {
-					  storeNilaiSkillKD('hasil_listening','listening',noKD)
+					if(parseInt(localStorage.getItem('loginOnline'))==1)
+					{
+					  getAndStoreNilaiSkillKD('hasil_listening','listening',noKD);
                       var listeningScoreTotalKDDefault=localStorage.getItem(listeningScoreTotalKDId);
 					  if(parseInt(listeningScoreTotalKDDefault)>79){localStorage.setItem('listeningPassKD'+noKD,1);}
 					  if(parseInt(listeningScoreTotalKDDefault)<80){localStorage.setItem('listeningPassKD'+noKD,0);}
-                    }						
-                    if(listeningPassKDDefault!==null || listeningPassKDDefault!=undefined || listeningScoreTotalKDDefault!=null || listeningScoreTotalKDDefault!=undefined)
-                    {
-					  if(parseInt(listeningScoreTotalKDDefault)>79){localStorage.setItem('listeningPassKD'+noKD,1);}
-					  if(parseInt(listeningScoreTotalKDDefault)<80){localStorage.setItem('listeningPassKD'+noKD,0);}
 					}
-					  listeningPassKDDefault=localStorage.getItem(listeningPassKDId);
-					  if(listeningPassKDDefault==1){
+    				listeningPassKDDefault=localStorage.getItem(listeningPassKDId);
+					if(listeningPassKDDefault==1){
 		                var listeningCupWrite="<img src='image/cup.png' width='100'></img>";						
 						document.getElementById(listeningCupKDId).innerHTML=listeningCupWrite;
 					  }			   
@@ -83,4 +104,41 @@ function listeningCupModal(TotalScore,noKD){
 		  modalkan('listeningModalCup');
 		  playAudio('yeah');
 	  }
+	 if(TotalScore<80)
+	{
+		  var listeningFistKDId='listeningFistKD'+noKD;
+		  var listeningFistKDId_='listeningFistKD'+noKD+'_';		  
+		  var listeningFistWrite="<img src='image/fist.png' width='100'></img>";
+		  //document.getElementById(listeningCupKDId).innerHTML=listeningFistWrite;
+		  document.getElementById(listeningFistKDId_).innerHTML=listeningFistWrite;
+		  //tampilkan modal
+		  modalkan('listeningModalFist');
+		  playAudio('fail');
+	  }  
+}
+function writeListeningModalKD(noKD)
+{
+var listeningModalScoreKDId='listeningModalScoreKD'+noKD;	
+var listeningScoreKDId='listeningScoreKD'+noKD;
+var span="document.getElementById('"+listeningModalScoreKDId+"').style.display='none'";
+var spasi=" class=";
+var w3_button="w3-button w3-xlarge w3-display-topright";
+document.getElementById(listeningModalScoreKDId).innerHTML= 
+"	<div class='w3-modal-content w3-card-4'>"+
+"      <header class='w3-container w3-red '>"+ 
+"        <span onclick="+span+spasi+w3_button+
+">&times;</span>"+
+"        <h3>My Record (KD "+noKD+")</h3>"+
+"      </header>"+
+"      <div class='w3-container'>"+
+"  <table class='w3-table-all'>"+
+"    <tr>"+
+"      <th>Score</th>"+
+"    </tr>"+
+"    <tr>"+
+"      <td id='"+listeningScoreKDId+"'>"+
+"	</tr>"+  
+"  </table>"+		
+"       </div>"+
+"    </div>"
 }	  

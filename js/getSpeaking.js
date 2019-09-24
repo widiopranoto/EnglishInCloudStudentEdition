@@ -1,15 +1,15 @@
 function getSpeaking(noKD){
 var rnd=getRndInteger(1,20).toString();
-var speakingNo1=storeItem('speakingNo1',getRndInteger(1,20).toString());
-var speakingNo2=storeItem('speakingNo2',getRndInteger(1,20).toString());
-var speakingNo3=storeItem('speakingNo3',getRndInteger(1,20).toString());
-var speakingNo4=storeItem('speakingNo4',getRndInteger(1,20).toString());
-var speakingNo5=storeItem('speakingNo5',getRndInteger(1,20).toString());
-var speakingNo6=storeItem('speakingNo6',getRndInteger(1,20).toString());
-var speakingNo7=storeItem('speakingNo7',getRndInteger(1,20).toString());
-var speakingNo8=storeItem('speakingNo8',getRndInteger(1,20).toString());
-var speakingNo9=storeItem('speakingNo9',getRndInteger(1,20).toString());
-var speakingNo10=storeItem('speakingNo10',getRndInteger(1,20).toString());
+var speakingNo1=storeItem('speakingNo1',getRndInteger(1,2).toString());
+var speakingNo2=storeItem('speakingNo2',getRndInteger(3,4).toString());
+var speakingNo3=storeItem('speakingNo3',getRndInteger(5,6).toString());
+var speakingNo4=storeItem('speakingNo4',getRndInteger(7,8).toString());
+var speakingNo5=storeItem('speakingNo5',getRndInteger(9,10).toString());
+var speakingNo6=storeItem('speakingNo6',getRndInteger(11,12).toString());
+var speakingNo7=storeItem('speakingNo7',getRndInteger(13,14).toString());
+var speakingNo8=storeItem('speakingNo8',getRndInteger(15,16).toString());
+var speakingNo9=storeItem('speakingNo9',getRndInteger(17,18).toString());
+var speakingNo10=storeItem('speakingNo10',getRndInteger(19,20).toString());
 var speakingItem1='speakingItemKD'+noKD+'_'+'1';
 var speakingItem2='speakingItemKD'+noKD+'_'+'2';
 var speakingItem3='speakingItemKD'+noKD+'_'+'3';
@@ -121,7 +121,6 @@ function a(noKD){
                     //jika speakingScore kosong
 					if(localStorage.getItem(speakingScoreId1)==null || localStorage.getItem(speakingScoreId2)==null || localStorage.getItem(speakingScoreId3)==null || localStorage.getItem(speakingScoreId4)==null || localStorage.getItem(speakingScoreId5)==null || localStorage.getItem(speakingScoreId6)==null || localStorage.getItem(speakingScoreId7)==null || localStorage.getItem(speakingScoreId8)==null || localStorage.getItem(speakingScoreId9)==null || localStorage.getItem(speakingScoreId10)==null) 
 					{ 
-				      storeNilaiPerItem(noKD,'speaking','hasil_speaking_peritem');	
 				      speakingScore1=parseInt(localStorage.getItem(speakingScoreId1));
 				      speakingScore2=parseInt(localStorage.getItem(speakingScoreId2));
 				      speakingScore3=parseInt(localStorage.getItem(speakingScoreId3));
