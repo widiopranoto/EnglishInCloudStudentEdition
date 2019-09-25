@@ -494,12 +494,14 @@ function writingCekCup(){
 		//var writingKDNo=localStorage.getItem('writingKDDefault');  
 		var writingScoreTotalKDDefault='writingScoreTotalKD'+noKD;
 		//cek apakah eksis
-	    if(localStorage.getItem(writingScoreTotalKDDefault)===null || localStorage.getItem(writingScoreTotalKDDefault)===undefined)
-		{
-		localStorage.setItem(writingScoreTotalKDDefault,writingScoreTotalKD);
-		}	
+	    if(localStorage.getItem(writingScoreTotalKDDefault)==null || localStorage.getItem(writingScoreTotalKDDefault)==undefined)
+		{ localStorage.setItem(writingScoreTotalKDDefault,0); }
+	    //if(parseInt(localStorage.getItem(writingScoreTotalKDDefault))==0)
+		//{ 
+	      localStorage.setItem(writingScoreTotalKDDefault,writingScoreTotalKD); 
+		//}
 		//jika sudah nilai total KD writing > KKM
-		if(parseInt(writingScoreTotalKD)>79)
+		if(writingScoreTotalKD>79)
 		  {   //simpan writingPass
           var writingScoreTotalKD=localStorage.getItem(writingScoreTotalKDDefault);          
 		  var writingPassKDDefault='writingPassKD'+noKD;
@@ -514,7 +516,7 @@ function writingCekCup(){
 		  writingModalkan('writingModalCup');
 		  playAudio('yeah');
 		  }
-		  
+	  
 }
 }
 function get_correct_answers() {

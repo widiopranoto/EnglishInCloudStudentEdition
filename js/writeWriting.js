@@ -72,7 +72,7 @@ function writingIframeBack(){
 	var writingNoDefault=localStorage.getItem('writingNoDefault');
 	var back;
 	if(parseInt(writingNoDefault)<1){writingNoDefault=1;back=1;}
-	else { next=parseInt(writingNoDefault)-1;}
+	else { back=parseInt(writingNoDefault)-1;}
 	localStorage.setItem('writingNoDefault',back);
 	var writingSoalIframeHTML='writingSoalNo'+localStorage.getItem('writingNoDefault')+'.html';
 	var writingIframeBack="<iframe src="+writingSoalIframeHTML+"></iframe>";
@@ -138,6 +138,77 @@ function writingPerlihatkan(id){
 function writingSembunyikan(id){
 	document.getElementById(id).style.display='none';	
 }   
+
+function writeWritingScoreContent(){
+	var writingKDDefault=localStorage.getItem('writingKDDefault');
+	var writingScoreKDDefaultId_1='writingScoreKD'+writingKDDefault+'_'+1;
+	var writingScoreKDDefaultId_2='writingScoreKD'+writingKDDefault+'_'+2;
+	var writingScoreKDDefaultId_3='writingScoreKD'+writingKDDefault+'_'+3;
+	var writingScoreKDDefaultId_4='writingScoreKD'+writingKDDefault+'_'+4;
+	var writingScoreKDDefaultId_5='writingScoreKD'+writingKDDefault+'_'+5;
+	var writingScoreKDDefaultId_6='writingScoreKD'+writingKDDefault+'_'+6;
+	var writingScoreKDDefaultId_7='writingScoreKD'+writingKDDefault+'_'+7;
+	var writingScoreKDDefaultId_8='writingScoreKD'+writingKDDefault+'_'+8;
+	var writingScoreKDDefaultId_9='writingScoreKD'+writingKDDefault+'_'+9;
+	var writingScoreKDDefaultId_10='writingScoreKD'+writingKDDefault+'_'+10;	
+	var writingScoreKDDefault_1=localStorage.getItem(writingScoreKDDefaultId_1);
+	var writingScoreKDDefault_2=localStorage.getItem(writingScoreKDDefaultId_2);
+	var writingScoreKDDefault_3=localStorage.getItem(writingScoreKDDefaultId_3);
+	var writingScoreKDDefault_4=localStorage.getItem(writingScoreKDDefaultId_4);
+	var writingScoreKDDefault_5=localStorage.getItem(writingScoreKDDefaultId_5);
+	var writingScoreKDDefault_6=localStorage.getItem(writingScoreKDDefaultId_6);
+	var writingScoreKDDefault_7=localStorage.getItem(writingScoreKDDefaultId_7);
+	var writingScoreKDDefault_8=localStorage.getItem(writingScoreKDDefaultId_8);
+	var writingScoreKDDefault_9=localStorage.getItem(writingScoreKDDefaultId_9);
+	var writingScoreKDDefault_10=localStorage.getItem(writingScoreKDDefaultId_10);
+	document.getElementById(writingScoreKDDefaultId_1).innerHTML=writingScoreKDDefault_1;
+	document.getElementById(writingScoreKDDefaultId_2).innerHTML=writingScoreKDDefault_2;
+	document.getElementById(writingScoreKDDefaultId_3).innerHTML=writingScoreKDDefault_3;
+	document.getElementById(writingScoreKDDefaultId_4).innerHTML=writingScoreKDDefault_4;
+	document.getElementById(writingScoreKDDefaultId_5).innerHTML=writingScoreKDDefault_5;
+	document.getElementById(writingScoreKDDefaultId_6).innerHTML=writingScoreKDDefault_6;
+	document.getElementById(writingScoreKDDefaultId_7).innerHTML=writingScoreKDDefault_7;
+	document.getElementById(writingScoreKDDefaultId_8).innerHTML=writingScoreKDDefault_8;
+	document.getElementById(writingScoreKDDefaultId_9).innerHTML=writingScoreKDDefault_9;
+	document.getElementById(writingScoreKDDefaultId_10).innerHTML=writingScoreKDDefault_10;
+}
+
+function writeWritingBadgeContent(){
+	var writingKDDefault=localStorage.getItem('writingKDDefault');
+	var writingScoreKDDefaultId_1='writingScoreKD'+writingKDDefault+'_'+1;
+	var writingScoreKDDefaultId_2='writingScoreKD'+writingKDDefault+'_'+2;
+	var writingScoreKDDefaultId_3='writingScoreKD'+writingKDDefault+'_'+3;
+	var writingScoreKDDefaultId_4='writingScoreKD'+writingKDDefault+'_'+4;
+	var writingScoreKDDefaultId_5='writingScoreKD'+writingKDDefault+'_'+5;
+	var writingScoreKDDefaultId_6='writingScoreKD'+writingKDDefault+'_'+6;
+	var writingScoreKDDefaultId_7='writingScoreKD'+writingKDDefault+'_'+7;
+	var writingScoreKDDefaultId_8='writingScoreKD'+writingKDDefault+'_'+8;
+	var writingScoreKDDefaultId_9='writingScoreKD'+writingKDDefault+'_'+9;
+	var writingScoreKDDefaultId_10='writingScoreKD'+writingKDDefault+'_'+10;	
+	var writingScoreKDDefault_1=localStorage.getItem(writingScoreKDDefaultId_1);
+	var writingScoreKDDefault_2=localStorage.getItem(writingScoreKDDefaultId_2);
+	var writingScoreKDDefault_3=localStorage.getItem(writingScoreKDDefaultId_3);
+	var writingScoreKDDefault_4=localStorage.getItem(writingScoreKDDefaultId_4);
+	var writingScoreKDDefault_5=localStorage.getItem(writingScoreKDDefaultId_5);
+	var writingScoreKDDefault_6=localStorage.getItem(writingScoreKDDefaultId_6);
+	var writingScoreKDDefault_7=localStorage.getItem(writingScoreKDDefaultId_7);
+	var writingScoreKDDefault_8=localStorage.getItem(writingScoreKDDefaultId_8);
+	var writingScoreKDDefault_9=localStorage.getItem(writingScoreKDDefaultId_9);
+	var writingScoreKDDefault_10=localStorage.getItem(writingScoreKDDefaultId_10);
+	var writeBadge="<img src='image/badge.png' width='50px'></img>";
+
+	if(parseInt(writingScoreKDDefault_1)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+1+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_2)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+2+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_3)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+3+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_4)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+4+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_5)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+5+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_6)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+6+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_7)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+7+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_8)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+8+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_9)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+9+'_').innerHTML=writeBadge;}
+	if(parseInt(writingScoreKDDefault_10)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+10+'_').innerHTML=writeBadge;}
+}
+
 
 function writeWriting(writingNoSoal,writingNoSoalId,writingTopic,writingTopicId,writingInstructionA,writingInstructionAId,writingInstructionB,writingInstructionBId,noKD){
 var writingInstructionA="Drag the words onto the yellow bar in the right order!";
