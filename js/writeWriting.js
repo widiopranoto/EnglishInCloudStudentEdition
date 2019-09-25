@@ -139,6 +139,14 @@ function writingSembunyikan(id){
 	document.getElementById(id).style.display='none';	
 }   
 
+function writeWritingTitle(){
+  //tulis judul
+  var writingTitleId='writingTitle';
+  var writingKDDefault=localStorage.getItem('writingKDDefault');
+  var writingTitle='Practice Writing KD '+writingKDDefault;
+  document.getElementById(writingTitleId).innerHTML=writingTitle;
+}
+
 function writeWritingScoreContent(){
 	var writingKDDefault=localStorage.getItem('writingKDDefault');
 	var writingScoreKDDefaultId_1='writingScoreKD'+writingKDDefault+'_'+1;

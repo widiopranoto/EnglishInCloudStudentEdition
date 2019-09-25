@@ -27,24 +27,12 @@ document.getElementById(idUN).innerHTML=
 "  <td id="+"'unCupKD"+noKD+"'"+" title='You have passed it!'></td>"+
 "  </tr>"+
 "  </table>"+
-"  <div class='w3-row-padding w3-theme'>"+
-"        <div class='w3-section'>"+
-"            <div class='w3-card-2'>"+
-"                <img src='image/un.png'>"+
-"                <div class='w3-container w3-light-gray'>"+
-"                  <div class=''>"+
 "				    <p>Practice of National Examination</p>"+
 "					<div id="+idSoal+"></div>"+
-"		          </div>"+
-"              </div>"+
-"            </div>"+
-"	    </div>"+
-"  </div>"+
 "   <div class='w3-center'>"+
 "        <button class='w3-bar-item w3-yellow' id='' title='Go back to previous page' onclick=showAndSound('"+back+"','squeak')><i class='w3-margin-right fa fa-angle-double-left'></i>Back</button>"+
 "        <button class='w3-bar-item w3-yellow' id='' title='Show records, scores, and badges' onclick=showScoreUN('"+noKD+"');modalkan('"+modalkan+"')>Show My Records<i class='w3-margin-left fa fa-bars'></i></button>"+
 "   </div>"
-//"</div>"
 )
 var noBarisYT=1;
 var noKolomYT=noKD;
@@ -72,9 +60,9 @@ function unCekCup(noKD){
 					  if(parseInt(unScoreTotalKDDefault)<80){localStorage.setItem('unPassKD'+noKD,0);}
 					}
     				unPassKDDefault=localStorage.getItem(unPassKDId);
-					if(listeningPassKDDefault==1){
+					if(unPassKDDefault==1){
 		                var unCupWrite="<img src='image/cup.png' width='100'></img>";						
-						document.getElementById(ungCupKDId).innerHTML=unCupWrite;
+						document.getElementById(unCupKDId).innerHTML=unCupWrite;
 					  }			   
 } 
 

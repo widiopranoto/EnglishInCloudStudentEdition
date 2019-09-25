@@ -400,7 +400,7 @@ if(parseInt(localStorage.getItem('writingKDDefault'))==26){var noKD=26;var theor
 if(parseInt(localStorage.getItem('writingKDDefault'))==27){var noKD=27;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
 if(parseInt(localStorage.getItem('writingKDDefault'))==28){var noKD=28;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
 if(parseInt(localStorage.getItem('writingKDDefault'))==29){var noKD=29;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
-if(parseInt(localStorage.getItem('writingKDDefault'))==30){var noKD=30;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+if(parseInt(localStorage.getItem('writingKDDefault'))==30){var noKD=30;var theoryTopic="Obligation and Necessity";var listeningTopic="Obligation and Necessity";var speakingTopic="Obligation and Necessity";var readingTopic="Obligation and Necessity";var writingTopic="Obligation and Causative";}
 if(parseInt(localStorage.getItem('writingKDDefault'))==31){var noKD=31;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
 if(parseInt(localStorage.getItem('writingKDDefault'))==32){var noKD=32;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
 if(parseInt(localStorage.getItem('writingKDDefault'))==33){var noKD=33;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
@@ -412,6 +412,7 @@ if(parseInt(localStorage.getItem('writingKDDefault'))==37){var noKD=37;var theor
 writeWriting(noSoal,'writingNoSoalId',writingTopic,'writingTopicId','Drag the words onto the yellow bar in the right order!','writingInstructionAId','Rearrange the sentence into Present Simple Tense','writingInstructionBId',noKD);
 writingCekBadge_();
 writingCekCup_();
+writeWritingTitle();
 
 var speakingModalMustAnswer = document.getElementById('speakingModalMustAnswer');window.onclick = function(event) {if (event.target == speakingModalMustAnswer) {modal.style.display = "none";}}
 var loginModal = document.getElementById('loginModal');window.onclick = function(event) {if (event.target == loginModal) { modal.style.display = "none";}}

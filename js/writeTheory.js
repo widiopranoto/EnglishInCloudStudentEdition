@@ -16,8 +16,10 @@ var back='#learn_kd'+noKD;
 var modalkan='theoryModalScoreKD'+noKD;
 var idTheory='theory_kd'+noKD;
 var title='Theory KD '+noKD;
-var idYoutube='theory_youtube_kd'+noKD;
-var idSoal='theory_soal_kd'+noKD;
+var idYoutube1='theoryYoutubeKD'+noKD+'_1';
+var idSoal1='theorySoalKD'+noKD+'_1';
+var idYoutube2='theoryYoutubeKD'+noKD+'_2';
+var idSoal2='theorySoalKD'+noKD+'_2';
 //var theoryScoreTotalKDId='theoryScoreTotalKD'+noKD;
 document.getElementById(idTheory).innerHTML=
 (	
@@ -27,40 +29,46 @@ document.getElementById(idTheory).innerHTML=
 "  <td id="+"'theoryCupKD"+noKD+"'"+" title='You have passed it!'></td>"+
 "  </tr>"+
 "  </table>"+
-"  <div class='w3-row-padding w3-theme'>"+
-"        <div class='w3-section'>"+
-"            <div class='w3-card-2'>"+
-"                <img src='image/theory.png'>"+
-"                <div class='w3-container w3-light-gray'>"+
-"                  <div class=''>"+
-"				    <h3>Watch this video and fill in the gaps:</h3>"+
-"					<div id="+idYoutube+"></div>"+
-"				    <p>Questions:</p>"+
-"					<div id="+idSoal+"></div>"+
-"		          </div>"+
-"              </div>"+
-"            </div>"+
-"	    </div>"+
-"  </div>"+
+"                   <h2>Theory #1 (Skill) - Teori Aspek Keterampilan</h2>"+
+"				    <h3>Observe this video/document:</h3>"+
+"					<div id="+idYoutube1+"></div>"+
+"				    <p>After observing the video/reading the document, answer these questions to check your understanding:</p>"+
+"					<div id="+idSoal1+"></div>"+
+"                   <h2>Theory #2 (Knowledge) - Teori Aspek Pengetahuan</h2>"+
+"				    <h3>Observe this video/document:</h3>"+
+"					<div id="+idYoutube2+"></div>"+
+"				    <p>After observing the video/reading the document, answer these questions to check your understanding:</p>"+
+"					<div id="+idSoal2+"></div>"+
 "   <div class='w3-center'>"+
 "        <button class='w3-bar-item w3-yellow' id='' title='Go back to previous page' onclick=showAndSound('"+back+"','squeak')><i class='w3-margin-right fa fa-angle-double-left'></i>Back</button>"+
 "        <button class='w3-bar-item w3-yellow' id='' title='Show records, scores, and badges' onclick=showScoreTheory('"+noKD+"');modalkan('"+modalkan+"')>Show My Records<i class='w3-margin-left fa fa-bars'></i></button>"+
 "   </div>"
 //"</div>"
 )
-var noBarisYT=1;
-var noKolomYT=noKD;
-var noBarisSoal=2;
-var noKolomSoal=noKD;
-       
+var noBarisYT1=1;
+var noKolomYT1=noKD;
+var noBarisSoal1=2;
+var noKolomSoal1=noKD;
+var noBarisYT2=3;
+var noKolomYT2=noKD;
+var noBarisSoal2=4;
+var noKolomSoal2=noKD;       
 	   //kasih link youtube
-	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','theory','getOneItem',noBarisYT,noKolomYT,idYoutube);
-	   var a=retrieveItem(idYoutube);
-       document.getElementById(idYoutube).innerHTML="<iframe width='100%' height='100%' src="+a+" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";	   
+	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','theory','getOneItem',noBarisYT1,noKolomYT1,idYoutube1);
+	   var a=retrieveItem(idYoutube1);
+       document.getElementById(idYoutube1).innerHTML="<iframe src="+a+"></iframe>";	   
 	   //kasih link soal
-	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','theory','getOneItem',noBarisSoal,noKolomSoal,idSoal);
-	   var b=retrieveItem(idSoal);
-       document.getElementById(idSoal).innerHTML="<iframe width='100%' height='100%' src="+b+"></iframe>";
+	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','theory','getOneItem',noBarisSoal1,noKolomSoal1,idSoal1);
+	   var b=retrieveItem(idSoal1);
+       document.getElementById(idSoal1).innerHTML="<iframe src="+b+"></iframe>";
+	   //kasih link youtube
+	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','theory','getOneItem',noBarisYT2,noKolomYT2,idYoutube2);
+	   var c=retrieveItem(idYoutube2);
+       document.getElementById(idYoutube2).innerHTML="<iframe src="+c+"></iframe>";	   
+	   //kasih link soal
+	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','theory','getOneItem',noBarisSoal2,noKolomSoal2,idSoal2);
+	   var d=retrieveItem(idSoal2);
+       document.getElementById(idSoal2).innerHTML="<iframe src="+d+"></iframe>";
 	   theoryCekCup(noKD);
 }	  
 function theoryCekCup(noKD){
