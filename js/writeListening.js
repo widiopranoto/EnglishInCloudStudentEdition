@@ -34,7 +34,7 @@ document.getElementById(idListening).innerHTML=
 "  </tr>"+
 "  </table>"+
 "                <img src='image/listening.png'>"+
-"				    <p>Questions:</p>"+
+"				    <p>Listen to the dialog and fill in the gaps:</p>"+
 "					<div id="+idSoal+"></div>"+
 "   <div class='w3-center'>"+
 "        <button class='w3-bar-item w3-yellow' id='' title='Go back to previous page' onclick=showAndSound('"+back+"','squeak')><i class='w3-margin-right fa fa-angle-double-left'></i>Back</button>"+

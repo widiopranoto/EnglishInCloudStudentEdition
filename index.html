@@ -192,7 +192,7 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
         </div>  
 	
          <div class="w3-quarter w3-section">
-          <h2 class="w3-animate-left">Learning English for XII Graders</h2>  
+          <h2 class="w3-animate-left">Learning English for XIII Graders</h2>  
             <div class="w3-card-2">
 				<img src="image/learn_xiii.png"></img>
                 <div class="w3-container w3-light-gray">
@@ -516,8 +516,7 @@ span.psw {
 				<img src="image/reading.png"></img>
                 <div class="w3-light-gray">
                    <div class="w3-center"><div class="w3-bar">
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="localStorage.setItem('readingNoDefault',1);readingPerlihatkan('#readingDiv1');showAndSound('#reading_kd30','begin')">Reading KD 30<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-				   </div></div>
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeReadingModalKD(30);writeReadingKD(30,0);showAndSound('#reading_kd30','begin');readingCekCup(30)">Reading KD 30<i class="w3-margin-left fa fa-angle-double-right"></i></button>
                 </div>
             </div>
         </div>		
@@ -541,6 +540,8 @@ span.psw {
         <button class="w3-button w3-yellow" id="" title="" onclick="showAndSound('#home','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>  
     </div>
   </div>
+</div>
+</div>
 </div>
 
 <div id="theoryModalCup" class="w3-animate-zoom w3-modal">
@@ -7091,6 +7092,183 @@ span.psw {
             </div>
 	    </div>
 </div>
+
+<div id="readingModalCup" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('readingModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+	</header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="readingCupKD1_"></p>
+  <p class="w3-center" id="readingCupKD2_"></p>
+  <p class="w3-center" id="readingCupKD3_"></p>
+  <p class="w3-center" id="readingCupKD4_"></p>
+  <p class="w3-center" id="readingCupKD5_"></p>
+  <p class="w3-center" id="readingCupKD6_"></p>
+  <p class="w3-center" id="readingCupKD7_"></p>
+  <p class="w3-center" id="readingCupKD8_"></p>
+  <p class="w3-center" id="readingCupKD9_"></p>
+  <p class="w3-center" id="readingCupKD10_"></p>
+  <p class="w3-center" id="readingCupKD11_"></p>
+  <p class="w3-center" id="readingCupKD12_"></p>
+  <p class="w3-center" id="readingCupKD13_"></p>
+  <p class="w3-center" id="readingCupKD14_"></p>
+  <p class="w3-center" id="readingCupKD15_"></p>
+  <p class="w3-center" id="readingCupKD16_"></p>
+  <p class="w3-center" id="readingCupKD17_"></p>
+  <p class="w3-center" id="readingCupKD18_"></p>
+  <p class="w3-center" id="readingCupKD19_"></p>
+  <p class="w3-center" id="readingCupKD20_"></p>
+  <p class="w3-center" id="readingCupKD21_"></p>
+  <p class="w3-center" id="readingCupKD22_"></p>
+  <p class="w3-center" id="readingCupKD23_"></p>
+  <p class="w3-center" id="readingCupKD24_"></p>
+  <p class="w3-center" id="readingCupKD25_"></p>
+  <p class="w3-center" id="readingCupKD26_"></p>
+  <p class="w3-center" id="readingCupKD27_"></p>
+  <p class="w3-center" id="readingCupKD28_"></p>
+  <p class="w3-center" id="readingCupKD29_"></p>
+  <p class="w3-center" id="readingCupKD30_"></p>  
+  <p class="w3-center" id="readingCupKD31_"></p>
+  <p class="w3-center" id="readingCupKD32_"></p>
+  <p class="w3-center" id="readingCupKD33_"></p>
+  <p class="w3-center" id="readingCupKD34_"></p>
+  <p class="w3-center" id="readingCupKD35_"></p>
+  <p class="w3-center" id="readingCupKD36_"></p>
+  <p class="w3-center" id="readingCupKD37_"></p>
+
+</div>
+	</div>
+</div>	
+
+<div id="readingModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('readingModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="readingFistKD1_"></p>
+  <p class="w3-center" id="readingFistKD2_"></p>
+  <p class="w3-center" id="readingFistKD3_"></p>
+  <p class="w3-center" id="readingFistKD4_"></p>
+  <p class="w3-center" id="readingFistKD5_"></p>
+  <p class="w3-center" id="readingFistKD6_"></p>
+  <p class="w3-center" id="readingFistKD7_"></p>
+  <p class="w3-center" id="readingFistKD8_"></p>
+  <p class="w3-center" id="readingFistKD9_"></p>
+  <p class="w3-center" id="readingFistKD10_"></p>
+  <p class="w3-center" id="readingFistKD11_"></p>
+  <p class="w3-center" id="readingFistKD12_"></p>
+  <p class="w3-center" id="readingFistKD13_"></p>
+  <p class="w3-center" id="readingFistKD14_"></p>
+  <p class="w3-center" id="readingFistKD15_"></p>
+  <p class="w3-center" id="readingFistKD16_"></p>
+  <p class="w3-center" id="readingFistKD17_"></p>
+  <p class="w3-center" id="readingFistKD18_"></p>
+  <p class="w3-center" id="readingFistKD19_"></p>
+  <p class="w3-center" id="readingFistKD20_"></p>
+  <p class="w3-center" id="readingFistKD21_"></p>
+  <p class="w3-center" id="readingFistKD22_"></p>
+  <p class="w3-center" id="readingFistKD23_"></p>
+  <p class="w3-center" id="readingFistKD24_"></p>
+  <p class="w3-center" id="readingFistKD25_"></p>
+  <p class="w3-center" id="readingFistKD26_"></p>
+  <p class="w3-center" id="readingFistKD27_"></p>
+  <p class="w3-center" id="readingFistKD28_"></p>
+  <p class="w3-center" id="readingFistKD29_"></p>
+  <p class="w3-center" id="readingFistKD30_"></p>  
+  <p class="w3-center" id="readingFistKD31_"></p>
+  <p class="w3-center" id="readingFistKD32_"></p>
+  <p class="w3-center" id="readingFistKD33_"></p>
+  <p class="w3-center" id="readingFistKD34_"></p>
+  <p class="w3-center" id="readingFistKD35_"></p>
+  <p class="w3-center" id="readingFistKD36_"></p>
+  <p class="w3-center" id="readingFistKD37_"></p>
+</div>
+	</div>
+</div>
+
+<div id="readingModalScoreKD1" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD2" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD3" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD4" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD5" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD6" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD7" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD8" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD9" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD10" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD11" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD12" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD13" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD14" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD15" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD16" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD17" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD18" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD19" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD20" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD21" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD22" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD23" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD24" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD25" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD26" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD27" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD28" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD29" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD30" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD31" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD32" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD33" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD34" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD35" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD36" class="w3-animate-zoom w3-modal"></div>
+<div id="readingModalScoreKD37" class="w3-animate-zoom w3-modal"></div>
+
+<div id="reading_kd1" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd2" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd3" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd4" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd5" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd6" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd7" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd8" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd9" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd10" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd11" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd12" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd13" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd14" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd15" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd16" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd17" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd18" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd19" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd20" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd21" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd22" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd23" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd24" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd25" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd26" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd27" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd28" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd29" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd30" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd31" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd32" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd33" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd34" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd35" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd36" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="reading_kd37" class='w3-container w3-animate-left' style="padding-left:85px"></div>
 
 <div id='reading_kd1' class="w3-container w3-animate-left" style="padding-left:85px">
   <h2 class='w3-animate-left'>Practice Reading KD 1</h2>
