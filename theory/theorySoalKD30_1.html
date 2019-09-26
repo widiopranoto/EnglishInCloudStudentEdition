@@ -1560,7 +1560,7 @@ function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
     }
   };
   var noKolom=parseInt(noKD)+2;
-  var inputNamaSheet='hasil_'+skill';
+  var inputNamaSheet='hasil_'+skill;
   var nis=localStorage.getItem('usernameStored');
   var item=skilScoreTotalKDDefault;
   var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing&inputNamaSheet="+inputNamaSheet+"&action=sendItem&nis="+nis+"&item="+item+"&noKolom="+noKolom;
