@@ -15,15 +15,45 @@ function showScoreListening(noKD){
   listeningCupModal(nilai,noKD);
 }	
 
-function writeListeningKD(noKD){
+function writeListeningKD(noKD,jumlahYoutube){
 //back
 var back='#learn_kd'+noKD;	
 var modalkan='listeningModalScoreKD'+noKD;
 var idListening='listening_kd'+noKD;
 var title='Practice Listening KD '+noKD;
-var idYoutube='listening_youtube_kd'+noKD;
-var idSoal='listening_soal_kd'+noKD;
+var idYoutube='listeningYoutubeKD'+noKD;
+var idSoal='listeningSoalKD'+noKD;
 //var listeningScoreTotalKDId='listeningScoreTotalKD'+noKD;
+if(parseInt(jumlahYoutube)<1){
+document.getElementById(idListening).innerHTML=
+(	
+"  <h2 class'w3-animate-left'>"+title+"</h2>"+
+"  <table border='0'>"+
+"  <tr>"+
+"  <td id="+"'listeningCupKD"+noKD+"'"+" title='You have passed it!'></td>"+
+"  </tr>"+
+"  </table>"+
+"                <img src='image/listening.png'>"+
+"				    <p>Questions:</p>"+
+"					<div id="+idSoal+"></div>"+
+"   <div class='w3-center'>"+
+"        <button class='w3-bar-item w3-yellow' id='' title='Go back to previous page' onclick=showAndSound('"+back+"','squeak')><i class='w3-margin-right fa fa-angle-double-left'></i>Back</button>"+
+"        <button class='w3-bar-item w3-yellow' id='' title='Show records, scores, and badges' onclick=showScoreListening('"+noKD+"');modalkan('"+modalkan+"')>Show My Records<i class='w3-margin-left fa fa-bars'></i></button>"+
+"   </div>"
+)
+var noBarisYT=1;
+var noKolomYT=noKD;
+var noBarisSoal=2;
+var noKolomSoal=noKD;
+	   //kasih link soal
+	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','listening','getOneItem',noBarisSoal,noKolomSoal,idSoal);
+	   var b=retrieveItem(idSoal);
+       document.getElementById(idSoal).innerHTML="<iframe src="+b+"></iframe>";
+	   //cek cup
+	   listeningCekCup(noKD);
+}
+else if (parseInt(jumlahYoutube)>0)
+{
 document.getElementById(idListening).innerHTML=
 (	
 "  <h2 class'w3-animate-left'>"+title+"</h2>"+
@@ -51,23 +81,23 @@ document.getElementById(idListening).innerHTML=
 "        <button class='w3-bar-item w3-yellow' id='' title='Go back to previous page' onclick=showAndSound('"+back+"','squeak')><i class='w3-margin-right fa fa-angle-double-left'></i>Back</button>"+
 "        <button class='w3-bar-item w3-yellow' id='' title='Show records, scores, and badges' onclick=showScoreListening('"+noKD+"');modalkan('"+modalkan+"')>Show My Records<i class='w3-margin-left fa fa-bars'></i></button>"+
 "   </div>"
-//"</div>"
 )
+
 var noBarisYT=1;
 var noKolomYT=noKD;
 var noBarisSoal=2;
 var noKolomSoal=noKD;
-       
 	   //kasih link youtube
 	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','listening','getOneItem',noBarisYT,noKolomYT,idYoutube);
 	   var a=retrieveItem(idYoutube);
-       document.getElementById(idYoutube).innerHTML="<iframe width='100%' height='400' src="+a+" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";	   
+       document.getElementById(idYoutube).innerHTML="<iframe src="+a+" frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";	   
 	   //kasih link soal
 	   storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','listening','getOneItem',noBarisSoal,noKolomSoal,idSoal);
 	   var b=retrieveItem(idSoal);
-       document.getElementById(idSoal).innerHTML="<iframe width='100%' height='400' src="+b+"></iframe>";
+       document.getElementById(idSoal).innerHTML="<iframe src="+b+"></iframe>";
 	   //cek cup
 	   listeningCekCup(noKD);
+}	   
 }	  
 function listeningCekCup(noKD){
 					var listeningCupKDId='listeningCupKD'+noKD;					

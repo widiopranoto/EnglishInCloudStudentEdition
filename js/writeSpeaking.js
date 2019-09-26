@@ -677,7 +677,13 @@ function speakingPerlihatkan(id) {
   speakingSembunyikanSemua();
   w3.show(id);
 }
-function modalkan(id){
-	document.getElementById(id).style.display='block';	
+function speakingModalkan(id){
+	document.getElementById(id).style.display='block';
+	var speakingKDDefault=localStorage.getItem('speakingKDDefault');
+    var speakingScoreTotalKD=parseInt(localStorage.getItem('speakingScoreTotalKD'+speakingKDDefault));
+	if(speakingScoreTotalKD>79)
+    {playAudio('yeah');}
+    else if(speakingScoreTotalKD<80)
+    {playAudio('fail');}
 }
 
