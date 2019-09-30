@@ -63,9 +63,10 @@ function writingIframeNext(){
 	if(parseInt(writingNoDefault)==9 || parseInt(writingNoDefault)>9){writingNoDefault=10;next=10;}
 	else { next=parseInt(writingNoDefault)+1;}
 	localStorage.setItem('writingNoDefault',next);
-	var writingSoalIframeHTML='writingSoalNo'+localStorage.getItem('writingNoDefault')+'.html';
+	var writingSoalIframeHTML='writingSoalNo'+next+'.html';
 	var writingIframeNext="<iframe src="+writingSoalIframeHTML+"></iframe>";
-	document.getElementById('writingSoalIframeId').innerHTML=writingIframeNext;
+	var writingKDDefault=localStorage.getItem('writingKDDefault');
+	document.getElementById('writingSoalIframeId'+'_'+writingKDDefault).innerHTML=writingIframeNext;
 	}
 function writingIframeBack(){
 	var writingNoDefault=localStorage.getItem('writingNoDefault');
@@ -73,9 +74,10 @@ function writingIframeBack(){
 	if(parseInt(writingNoDefault)==1 || parseInt(writingNoDefault)<1){writingNoDefault=1;back=1;}
 	else { back=parseInt(writingNoDefault)-1;}
 	localStorage.setItem('writingNoDefault',back);
-	var writingSoalIframeHTML='writingSoalNo'+localStorage.getItem('writingNoDefault')+'.html';
+	var writingSoalIframeHTML='writingSoalNo'+back+'.html';
 	var writingIframeBack="<iframe src="+writingSoalIframeHTML+"></iframe>";
-	document.getElementById('writingSoalIframeId').innerHTML=writingIframeBack;
+	var writingKDDefault=localStorage.getItem('writingKDDefault');
+	document.getElementById('writingSoalIframeId'+'_'+writingKDDefault).innerHTML=writingIframeBack;
 	}	
 function writingNext(){
 	var writingNoDefault=localStorage.getItem('writingNoDefault');
@@ -216,7 +218,7 @@ function writeWritingBadgeContent(){
 	if(parseInt(writingScoreKDDefault_10)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+10+'_').innerHTML=writeBadge;}
 }
 
-function writeWriting(noSoal,writingNoSoalId,writingTopic,writingTopicId,writingInstructionA,writingInstructionAId,writingInstructionB,writingInstructionBId,noKD)
+function writeWriting(writingNoSoal,writingNoSoalId,writingTopic,writingTopicId,writingInstructionA,writingInstructionAId,writingInstructionB,writingInstructionBId,noKD)
 {
 var writingInstructionA="Drag the words onto the yellow bar in the right order!";
 var writingInstructionB="Rearrange the sentence into "+writingTopic+"!";
@@ -303,6 +305,7 @@ var writingItem9=retrieveItem(writingItemId9);
 var writingItem10=retrieveItem(writingItemId10);	
 
 var writingSoal;
+var noSoal=localStorage.getItem('writingNoDefault');
 if(parseInt(noSoal)==1){writingSoal=writingItem1;}
 if(parseInt(noSoal)==2){writingSoal=writingItem2;}
 if(parseInt(noSoal)==3){writingSoal=writingItem3;}
@@ -680,3 +683,20 @@ function writingReload7(reload){window.location.hash = '#writingDiv7';window.loc
 function writingReload8(reload){window.location.hash = '#writingDiv8';window.location.reload(true);}
 function writingReload9(reload){window.location.hash = '#writingDiv9';window.location.reload(true);}
 function writingReload10(reload){window.location.hash = '#writingDiv10';window.location.reload(true);}
+
+function writingSembunyikanSemua(){
+  w3.hide('#writingDiv1');	
+  w3.hide('#writingDiv2');	
+  w3.hide('#writingDiv3');	
+  w3.hide('#writingDiv4');	
+  w3.hide('#writingDiv5');	
+  w3.hide('#writingDiv6');	
+  w3.hide('#writingDiv7');	
+  w3.hide('#writingDiv8');	
+  w3.hide('#writingDiv9');	
+  w3.hide('#writingDiv10');	
+}
+function writingPerlihatkan(id) {
+  //writingSembunyikanSemua();
+  w3.show(id);
+}
