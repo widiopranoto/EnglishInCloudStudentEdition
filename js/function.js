@@ -161,7 +161,7 @@ function showOneItem(inputUrlSpreadSheet,inputNamaSheet,action,noBaris,noKolom,e
         }
 }
 
-function retrieveOneItem(inputUrlSpreadSheet,inputNamaSheet,action,noBaris,noKolom,elShown){
+function t(inputUrlSpreadSheet,inputNamaSheet,action,noBaris,noKolom,elShown){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -669,4 +669,148 @@ if(parseInt(localStorage.getItem('writingKDDefault'))==34){var noKD=34;var theor
 if(parseInt(localStorage.getItem('writingKDDefault'))==35){var noKD=35;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
 if(parseInt(localStorage.getItem('writingKDDefault'))==36){var noKD=36;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
 if(parseInt(localStorage.getItem('writingKDDefault'))==37){var noKD=37;var theoryTopic="";var listeningTopic="";var speakingTopic="";var readingTopic="";var writingTopic="";}
+}
+function stringifyItem(varStored,valStored){
+var valStored = JSON.stringify(valStored);
+localStorage.setItem(varStored, valStored);	
+}
+function parseItem(varStored,kataKunci){
+var text = localStorage.getItem(varStored);
+var obj = JSON.parse(text);
+	return obj.kataKunci;
+}
+function parseItemArray(varStored,noArray){
+var text=localStorage.getItem(varStored);
+var obj=JSON.parse(text);
+return obj[noArray];
+}
+function writeStorageKDEmpty(noKD){
+	localStorage.setItem('theoryDocument'+'KD'+noKD+'_1','');
+	localStorage.setItem('theorySoal'+'KD'+noKD+'_1','');
+	localStorage.setItem('theoryDocument'+'KD'+noKD+'_2','');
+	localStorage.setItem('theorySoal'+'KD'+noKD+'_2','');
+	localStorage.setItem('listeningDocument'+'KD'+noKD+'_1','');
+	localStorage.setItem('listeningSoal'+'KD'+noKD+'_1','');
+	localStorage.setItem('listeningDocument'+'KD'+noKD+'_2','');
+	localStorage.setItem('listeningSoal'+'KD'+noKD+'_2','');
+	localStorage.setItem('speakingDocument'+'KD'+noKD+'_1','');
+	localStorage.setItem('speakingSoal'+'KD'+noKD+'_1','');
+	localStorage.setItem('speakingDocument'+'KD'+noKD+'_2','');
+	localStorage.setItem('speakingSoal'+'KD'+noKD+'_2','');
+	localStorage.setItem('readingDocument'+'KD'+noKD+'_1','');
+	localStorage.setItem('readingSoal'+'KD'+noKD+'_1','');
+	localStorage.setItem('readingDocument'+'KD'+noKD+'_2','');
+	localStorage.setItem('readingSoal'+'KD'+noKD+'_2','');
+	localStorage.setItem('writingDocument'+'KD'+noKD+'_1','');
+	localStorage.setItem('writingSoal'+'KD'+noKD+'_1','');
+	localStorage.setItem('writingDocument'+'KD'+noKD+'_2','');
+	localStorage.setItem('writingSoal'+'KD'+noKD+'_2','');
+}
+function updateStorageKD(noKD){
+	var theoryDocumentKD_1=getAndStoreDocumentSoalKD('theory','theory','Document',noKD,1);
+	var theorySoalKD_1=getAndStoreDocumentSoalKD('theory','theory','Soal',noKD,1);
+	var theoryDocumentKD_2=getAndStoreDocumentSoalKD('theory','theory','Document',noKD,2);
+	var theorySoalKD_2=getAndStoreDocumentSoalKD('theory','theory','Soal',noKD,2);
+	var listeningDocumentKD_1=getAndStoreDocumentSoalKD('listening','theory','Document',noKD,1);
+	var listeningSoalKD_1=getAndStoreDocumentSoalKD('listening','listening','Soal',noKD,1);
+	var listeningDocumentKD_2=getAndStoreDocumentSoalKD('listening','listening','Document',noKD,2);
+	var listeningSoalKD_2=getAndStoreDocumentSoalKD('listening','listening','Soal',noKD,2);
+	var speakingDocumentKD_1=getAndStoreDocumentSoalKD('theory','theory','Document',noKD,1);
+	var speakingSoalKD_1=getAndStoreDocumentSoalKD('speaking','speaking','Soal',noKD,1);
+	var speakingDocumentKD_2=getAndStoreDocumentSoalKD('speaking','speaking','Document',noKD,2);
+	var speakingSoalKD_2=getAndStoreDocumentSoalKD('speaking','speaking','Soal',noKD,2);
+	var readingDocumentKD_1=getAndStoreDocumentSoalKD('reading','reading','Document',noKD,1);
+	var readingSoalKD_1=getAndStoreDocumentSoalKD('reading','reading','Soal',noKD,1);
+	var readingDocumentKD_2=getAndStoreDocumentSoalKD('reading','reading','Document',noKD,2);
+	var readingSoalKD_2=getAndStoreDocumentSoalKD('reading','reading','Soal',noKD,2);
+	var writingDocumentKD_1=getAndStoreDocumentSoalKD('writing','writing','Document',noKD,1);
+	var writingSoalKD_1=getAndStoreDocumentSoalKD('writing','writing','Soal',noKD,1);
+	var writingDocumentKD_2=getAndStoreDocumentSoalKD('writing','writing','Document',noKD,2);
+	var writingSoalKD_2=getAndStoreDocumentSoalKD('writing','writing','Soal',noKD,2);
+	
+	localStorage.setItem('theoryDocument'+'KD'+noKD+'_1',theoryDocumentKD_1);
+	localStorage.setItem('theorySoal'+'KD'+noKD+'_1',theorySoalKD_1);
+	localStorage.setItem('theoryDocument'+'KD'+noKD+'_2',theoryDocumentKD_2);
+	localStorage.setItem('theorySoal'+'KD'+noKD+'_2',theorySoalKD_2);
+	localStorage.setItem('listeningDocument'+'KD'+noKD+'_1',listeningDocumentKD_1);
+	localStorage.setItem('listeningSoal'+'KD'+noKD+'_1',listeningSoalKD_1);
+	localStorage.setItem('listeningDocument'+'KD'+noKD+'_2',listeningDocumentKD_2);
+	localStorage.setItem('listeningSoal'+'KD'+noKD+'_2',listeningSoalKD_2);
+	localStorage.setItem('speakingDocument'+'KD'+noKD+'_1',speakingDocumentKD_1);
+	localStorage.setItem('speakingSoal'+'KD'+noKD+'_1',speakingSoalKD_1);
+	localStorage.setItem('speakingDocument'+'KD'+noKD+'_2',speakingDocumentKD_2);
+	localStorage.setItem('speakingSoal'+'KD'+noKD+'_2',speakingSoalKD_2);
+	localStorage.setItem('readingDocument'+'KD'+noKD+'_1',readingDocumentKD_1);
+	localStorage.setItem('readingSoal'+'KD'+noKD+'_1',readingSoalKD_1);
+	localStorage.setItem('readingDocument'+'KD'+noKD+'_2',readingDocumentKD_2);
+	localStorage.setItem('readingSoal'+'KD'+noKD+'_2',readingSoalKD_2);
+	localStorage.setItem('writingDocument'+'KD'+noKD+'_1',writingDocumentKD_1);
+	localStorage.setItem('writingSoal'+'KD'+noKD+'_1',writingSoalKD_1);
+	localStorage.setItem('writingDocument'+'KD'+noKD+'_2',writingDocumentKD_2);
+	localStorage.setItem('writingSoal'+'KD'+noKD+'_2',writingSoalKD_2);
+}
+function getAndStoreDocumentSoalKD(inputNamaSheet,skill,documentOrSoal,noKD,noLatihan){
+	var inputUrlSpreadSheet="https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing";
+	var inputNamaSheet=inputNamaSheet;
+	var action='getItem';
+	var nis=skill+'kd'+'default'+'_'+noLatihan;
+	var noKolom=noKD;
+    var xhttp = new XMLHttpRequest();
+	var varStored=skill+documentOrSoal+noKD+'_'+noLatihan;
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).resultItem;	
+      //document.getElementById('coba').innerHTML=obj;
+	  localStorage.setItem(varStored,obj);
+    }
+    };
+    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+            inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&nis=" +
+            nis + "&noKolom=" + noKolom;
+    xhttp.open("GET", req, true);
+    xhttp.send();	
+}
+function storeKD27JSON(){
+	stringifyItem('theoryDocument'+'KD'+'27'+'_1',theoryDocumentKD27_1);
+	stringifyItem('theorySoal'+'KD'+'27'+'_1',theorySoalKD27_1);
+	stringifyItem('theoryDocument'+'KD'+'27'+'_2',theoryDocumentKD27_2);
+	stringifyItem('theorySoal'+'KD'+'27'+'_2',theorySoalKD27_2);
+	stringifyItem('listeningDocument'+'KD'+'27'+'_1',listeningDocumentKD27_1);
+	stringifyItem('listeningSoal'+'KD'+'27'+'_1',listeningSoalKD27_1);
+	stringifyItem('listeningDocument'+'KD'+'27'+'_2',listeningDocumentKD27_2);
+	stringifyItem('listeningSoal'+'KD'+'27'+'_2',listeningSoalKD27_2);
+	stringifyItem('speakingDocument'+'KD'+'27'+'_1',speakingDocumentKD27_1);
+	stringifyItem('speakingSoal'+'KD'+'27'+'_1',speakingSoalKD27_1);
+	stringifyItem('speakingDocument'+'KD'+'27'+'_2',speakingDocumentKD27_2);
+	stringifyItem('speakingSoal'+'KD'+'27'+'_2',speakingSoalKD27_2);
+	stringifyItem('readingDocument'+'KD'+'27'+'_1',readingDocumentKD27_1);
+	stringifyItem('readingSoal'+'KD'+'27'+'_1',readingSoalKD27_1);
+	stringifyItem('readingDocument'+'KD'+'27'+'_2',readingDocumentKD27_2);
+	stringifyItem('readingSoal'+'KD'+'27'+'_2',readingSoalKD27_2);
+	stringifyItem('writingDocument'+'KD'+'27'+'_1',writingDocumentKD27_1);
+	stringifyItem('writingSoal'+'KD'+'27'+'_1',writingSoalKD27_1);
+	stringifyItem('writingDocument'+'KD'+'27'+'_2',writingDocumentKD27_2);
+	stringifyItem('writingSoal'+'KD'+'27'+'_2',writingSoalKD27_2);
+}
+function storeKD30JSON(){
+	stringifyItem('theoryDocument'+'KD'+'30'+'_1',theoryDocumentKD30_1);
+	stringifyItem('theorySoal'+'KD'+'30'+'_1',theorySoalKD30_1);
+	stringifyItem('theoryDocument'+'KD'+'30'+'_2',theoryDocumentKD30_2);
+	stringifyItem('theorySoal'+'KD'+'30'+'_2',theorySoalKD30_2);
+	stringifyItem('listeningDocument'+'KD'+'30'+'_1',listeningDocumentKD30_1);
+	stringifyItem('listeningSoal'+'KD'+'30'+'_1',listeningSoalKD30_1);
+	stringifyItem('listeningDocument'+'KD'+'30'+'_2',listeningDocumentKD30_2);
+	stringifyItem('listeningSoal'+'KD'+'30'+'_2',listeningSoalKD30_2);
+	stringifyItem('speakingDocument'+'KD'+'30'+'_1',speakingDocumentKD30_1);
+	stringifyItem('speakingSoal'+'KD'+'30'+'_1',speakingSoalKD30_1);
+	stringifyItem('speakingDocument'+'KD'+'30'+'_2',speakingDocumentKD30_2);
+	stringifyItem('speakingSoal'+'KD'+'30'+'_2',speakingSoalKD30_2);
+	stringifyItem('readingDocument'+'KD'+'30'+'_1',readingDocumentKD30_1);
+	stringifyItem('readingSoal'+'KD'+'30'+'_1',readingSoalKD30_1);
+	stringifyItem('readingDocument'+'KD'+'30'+'_2',readingDocumentKD30_2);
+	stringifyItem('readingSoal'+'KD'+'30'+'_2',readingSoalKD30_2);
+	stringifyItem('writingDocument'+'KD'+'30'+'_1',writingDocumentKD30_1);
+	stringifyItem('writingSoal'+'KD'+'30'+'_1',writingSoalKD30_1);
+	stringifyItem('writingDocument'+'KD'+'30'+'_2',writingDocumentKD30_2);
+	stringifyItem('writingSoal'+'KD'+'30'+'_2',writingSoalKD30_2);
 }

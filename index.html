@@ -20,6 +20,12 @@
 <script src="esl-games/scripts/jquery-1.7.2.min.js"></script>
 <script src="esl-games/scripts/jquery-ui-1.8.21.min.js"></script>
 <script src="esl-games/scripts/jquery.ui.touch-punch.js"></script>
+<script src="json/kd27JSON.json"></script>
+<script src="json/kd28JSON.json"></script>
+<script src="json/kd29JSON.json"></script>
+<script src="json/kd30JSON.json"></script>
+<script src="json/kd31JSON.json"></script>
+<script src="json/kd32JSON.json"></script>
 
 <style>
 html,body,h1 {font-family: "Cooper Black" , serif;}
@@ -31,7 +37,7 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
 <div class="w3-top w3-dark-gray" style="padding-left:80px">
 <h2>English in Cloud</h2>
 </div>
-
+<div>
 <audio id="begin">
   <source src="sound/begin.wav" type="audio/wav">
   Your browser does not support the audio element.
@@ -96,7 +102,8 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
   <source src="sound/clap.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
-<div style="padding-top:65px">
+</div>
+<div id='sidebar' style="padding-top:65px">
 
 <div class="w3-sidebar w3-bar-block w3-green w3-xxlarge" style="width:80px">
   <a href="#home" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#home')"><img src="image/home.png" style="width:65px"></img></a> 
@@ -178,12 +185,12 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
                 <div class="w3-container w3-light-gray">
                    <div class="w3-center">
                      <div class="w3-bar">			
-                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(27);showAndSound('#learn_kd27','begin')">Learn KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(28);showAndSound('#learn_kd28','begin')">Learn KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(29);showAndSound('#learn_kd29','begin')">Learn KD 29<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(30);showAndSound('#learn_kd30','begin')">Learn KD 30<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(31);showAndSound('#learn_kd31','begin')">Learn KD 31<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(32);showAndSound('#learn_kd32','begin')">Learn KD 32<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(27);storeKD27JSON();showAndSound('#learn_kd27','begin')">Learn KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(28);storeKD28JSON();showAndSound('#learn_kd28','begin')">Learn KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(29);storeKD29JSON();showAndSound('#learn_kd29','begin')">Learn KD 29<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(30);storeKD30JSON();showAndSound('#learn_kd30','begin')">Learn KD 30<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(31);storeKD31JSON();showAndSound('#learn_kd31','begin')">Learn KD 31<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(32);storeKD32JSON();showAndSound('#learn_kd32','begin')">Learn KD 32<i class="w3-margin-left fa fa-angle-double-right"></i></button>
 				     </div>
 				   </div>
 				
@@ -238,7 +245,7 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
 </audio>
 
 </div>
-</div>
+<div id='loginDiv'>
 <div id="loginModal" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-green"> 
@@ -356,36 +363,8 @@ span.psw {
     </div>
   </div>
 </div>
-
-<div id='un' class="w3-container w3-animate-left" style="padding-left:85px">
-  <div class="w3-row-padding w3-theme">
-        <div class="w3-section">
-		    <h2 class="w3-animate-left">Practice National Examination (Ujian Nasional)</h2>  
-            <div class="w3-card-2">
-				<img src="image/un.png"></img>
-                <div class="w3-container w3-light-gray">
-                   <div class="w3-center">
-                     <div class="w3-bar>">			
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(1);writeUNModalKD(1);writeUNKD(1);showAndSound('#un_kd1','begin');unCekCup(1)">Practice UN 1<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(2);writeUNModalKD(2);writeUNKD(2);showAndSound('#un_kd2','begin');unCekCup(2)">Practice UN 2<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(3);writeUNModalKD(3);writeUNKD(3);showAndSound('#un_kd3','begin');unCekCup(3)">Practice UN 3<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(4);writeUNModalKD(4);writeUNKD(4);showAndSound('#un_kd4','begin');unCekCup(4)">Practice UN 4<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(5);writeUNModalKD(5);writeUNKD(5);showAndSound('#un_kd5','begin');unCekCup(5)">Practice UN 5<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(6);writeUNModalKD(6);writeUNKD(6);showAndSound('#un_kd6','begin');unCekCup(6)">Practice UN 6<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(7);writeUNModalKD(7);writeUNKD(7);showAndSound('#un_kd7','begin');unCekCup(7)">Practice UN 7<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-					 </div>
-				   </div>
-                </div>
-            </div>
-        </div>
-   <div class="w3-center">
-     <div class="w3-bar>">
-        <button class="w3-button w3-yellow" id="" title="" onclick="showAndSound('#home','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>  
-    </div>
-  </div>
 </div>
-</div>
-
+<div id='howtoDiv'>
 <div id='howto' class="w3-container w3-animate-left" style="padding-left:85px">
   <h2 class="w3-animate-left">How To</h2>
           <div class="w3-third w3-section">
@@ -400,7 +379,8 @@ span.psw {
             </div>
         </div>
 </div>
-
+</div>
+<div id='learnDiv'>
 <div id='learn_kd1' class="w3-container w3-animate-left" style="padding-left:85px">
   <h2 class="w3-animate-left">Learning English KD 1</h2>
    <div class="w3-row-padding w3-theme">  
@@ -472,6 +452,74 @@ span.psw {
   </div>
 </div>
 
+<div id='learn_kd27' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class="w3-animate-left">Learning English KD 27</h2>
+   <div class="w3-row-padding w3-theme">  
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Theory KD 27</h2>  
+            <div class="w3-card-2">
+				<img src="image/theory.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeTheoryModalKD(27);writeTheoryKD(27,2);showAndSound('#theory_kd27','begin');theoryCekCup(2)">Theory KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Listening KD 27</h2>  
+            <div class="w3-card-2">
+				<img src="image/listening.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeListeningModalKD(27);writeListeningKD(27,1);showAndSound('#listening_kd27','begin');listeningCekCup(27)">Listening KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>		
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Speaking KD 27</h2>  
+            <div class="w3-card-2">
+				<img src="image/speaking.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="a(27);showAndSound('#speaking_kd27','begin')">Speaking KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>			
+   </div>  
+    <div class="w3-row-padding w3-theme">
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Reading KD 27</h2>  
+            <div class="w3-card-2">
+				<img src="image/reading.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeReadingModalKD(27);writeReadingKD(27,0);showAndSound('#reading_kd27','begin');readingCekCup(27)">Reading KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                </div></div></div>
+            </div>	
+        </div>			
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Writing KD 27</h2>  
+            <div class="w3-card-2">
+				<img src="image/writing.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="localStorage.setItem('writingNoDefault',1);showAndSound('#writing_kd27','begin')">Writing KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>			
+    </div>
+
+   <div class="w3-center">
+     <div class="w3-bar>">
+        <button class="w3-button w3-yellow" id="" title="" onclick="showAndSound('#home','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>  
+    </div>
+  </div>
+</div>
+
 <div id='learn_kd30' class="w3-container w3-animate-left" style="padding-left:85px">
   <h2 class="w3-animate-left">Learning English KD 30</h2>
    <div class="w3-row-padding w3-theme">  
@@ -517,9 +565,9 @@ span.psw {
                 <div class="w3-light-gray">
                    <div class="w3-center"><div class="w3-bar">
                      <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeReadingModalKD(30);writeReadingKD(30,0);showAndSound('#reading_kd30','begin');readingCekCup(30)">Reading KD 30<i class="w3-margin-left fa fa-angle-double-right"></i></button>
-                </div>
-            </div>
-        </div>		
+                </div></div></div>
+            </div>	
+        </div>			
         <div class="w3-third w3-section">
 		    <h2 class="w3-animate-left">Practice Writing KD 30</h2>  
             <div class="w3-card-2">
@@ -531,19 +579,17 @@ span.psw {
                 </div>
             </div>
         </div>			
-   </div>
+    </div>
 
-   
-   
    <div class="w3-center">
      <div class="w3-bar>">
         <button class="w3-button w3-yellow" id="" title="" onclick="showAndSound('#home','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>  
     </div>
   </div>
 </div>
-</div>
-</div>
 
+</div>
+<div id='theoryDiv'>
 <div id="theoryModalCup" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-green"> 
@@ -721,62 +767,8 @@ span.psw {
 <div id="theory_kd36" class='w3-container w3-animate-left' style="padding-left:85px"></div>
 <div id="theory_kd37" class='w3-container w3-animate-left' style="padding-left:85px"></div>
 
-<div id="unModalCup" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('unModalCup').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>Congratulations!</h2>
-		<p><h3>You have passed this!</h3></p>
-	</header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="unCupKD1_"></p>
-  <p class="w3-center" id="unCupKD2_"></p>
-  <p class="w3-center" id="unCupKD3_"></p>
-  <p class="w3-center" id="unCupKD4_"></p>
-  <p class="w3-center" id="unCupKD5_"></p>
-  <p class="w3-center" id="unCupKD6_"></p>
-  <p class="w3-center" id="unCupKD7_"></p>
-
 </div>
-	</div>
-</div>	
-
-<div id="unModalFist" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('unModalFist').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>You have not passed this!</h2>
-		<p><h3>Try again!</h3></p>
-      </header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="unFistKD1_"></p>
-  <p class="w3-center" id="unFistKD2_"></p>
-  <p class="w3-center" id="unFistKD3_"></p>
-  <p class="w3-center" id="unFistKD4_"></p>
-  <p class="w3-center" id="unFistKD5_"></p>
-  <p class="w3-center" id="unFistKD6_"></p>
-  <p class="w3-center" id="unFistKD7_"></p>
-</div>
-	</div>
-</div>
-
-<div id="unModalScoreKD1" class="w3-animate-zoom w3-modal"></div>
-<div id="unModalScoreKD2" class="w3-animate-zoom w3-modal"></div>
-<div id="unModalScoreKD3" class="w3-animate-zoom w3-modal"></div>
-<div id="unModalScoreKD4" class="w3-animate-zoom w3-modal"></div>
-<div id="unModalScoreKD5" class="w3-animate-zoom w3-modal"></div>
-<div id="unModalScoreKD6" class="w3-animate-zoom w3-modal"></div>
-<div id="unModalScoreKD7" class="w3-animate-zoom w3-modal"></div>
-
-<div id="un_kd1" class='w3-container w3-animate-left' style="padding-left:85px"></div>
-<div id="un_kd2" class='w3-container w3-animate-left' style="padding-left:85px"></div>
-<div id="un_kd3" class='w3-container w3-animate-left' style="padding-left:85px"></div>
-<div id="un_kd4" class='w3-container w3-animate-left' style="padding-left:85px"></div>
-<div id="un_kd5" class='w3-container w3-animate-left' style="padding-left:85px"></div>
-<div id="un_kd6" class='w3-container w3-animate-left' style="padding-left:85px"></div>
-<div id="un_kd7" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id='listeningDiv'>
 
 <div id="listeningModalCup" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
@@ -1056,6 +1048,8 @@ span.psw {
    </div>	
 </div>
 
+</div>
+<div id='speakingDiv'>
 <div id="speakingModalScoreKD1" class="w3-animate-zoom w3-modal">
     <div class='w3-modal-content w3-card-4'>
       <header class='w3-container w3-red'> 
@@ -7092,7 +7086,9 @@ span.psw {
             </div>
 	    </div>
 </div>
+</div>
 
+<div id='readingDiv'>
 <div id="readingModalCup" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-green"> 
@@ -7143,7 +7139,6 @@ span.psw {
 </div>
 	</div>
 </div>	
-
 <div id="readingModalFist" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-green"> 
@@ -7405,6 +7400,9 @@ span.psw {
 </script>	
 </div>
 
+</div>
+<div id='writingDiv'>
+
 <div id="writingModalCup" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-green"> 
@@ -7456,6 +7454,108 @@ span.psw {
 	</div>
 </div>	
 
+<div id="writingModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('writingModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="writingFistKD1_"></p>
+  <p class="w3-center" id="writingFistKD2_"></p>
+  <p class="w3-center" id="writingFistKD3_"></p>
+  <p class="w3-center" id="writingFistKD4_"></p>
+  <p class="w3-center" id="writingFistKD5_"></p>
+  <p class="w3-center" id="writingFistKD6_"></p>
+  <p class="w3-center" id="writingFistKD7_"></p>
+  <p class="w3-center" id="writingFistKD8_"></p>
+  <p class="w3-center" id="writingFistKD9_"></p>
+  <p class="w3-center" id="writingFistKD10_"></p>
+  <p class="w3-center" id="writingFistKD11_"></p>
+  <p class="w3-center" id="writingFistKD12_"></p>
+  <p class="w3-center" id="writingFistKD13_"></p>
+  <p class="w3-center" id="writingFistKD14_"></p>
+  <p class="w3-center" id="writingFistKD15_"></p>
+  <p class="w3-center" id="writingFistKD16_"></p>
+  <p class="w3-center" id="writingFistKD17_"></p>
+  <p class="w3-center" id="writingFistKD18_"></p>
+  <p class="w3-center" id="writingFistKD19_"></p>
+  <p class="w3-center" id="writingFistKD20_"></p>
+  <p class="w3-center" id="writingFistKD21_"></p>
+  <p class="w3-center" id="writingFistKD22_"></p>
+  <p class="w3-center" id="writingFistKD23_"></p>
+  <p class="w3-center" id="writingFistKD24_"></p>
+  <p class="w3-center" id="writingFistKD25_"></p>
+  <p class="w3-center" id="writingFistKD26_"></p>
+  <p class="w3-center" id="writingFistKD27_"></p>
+  <p class="w3-center" id="writingFistKD28_"></p>
+  <p class="w3-center" id="writingFistKD29_"></p>
+  <p class="w3-center" id="writingFistKD30_"></p>  
+  <p class="w3-center" id="writingFistKD31_"></p>
+  <p class="w3-center" id="writingFistKD32_"></p>
+  <p class="w3-center" id="writingFistKD33_"></p>
+  <p class="w3-center" id="writingFistKD34_"></p>
+  <p class="w3-center" id="writingFistKD35_"></p>
+  <p class="w3-center" id="writingFistKD36_"></p>
+  <p class="w3-center" id="writingFistKD37_"></p>
+</div>
+	</div>
+</div>
+
+
+<div id="writingModalCup" class="w3-animate-zoom w3-modal">
+
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('writingModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+	</header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="writingCupKD1_"></p>
+  <p class="w3-center" id="writingCupKD2_"></p>
+  <p class="w3-center" id="writingCupKD3_"></p>
+  <p class="w3-center" id="writingCupKD4_"></p>
+  <p class="w3-center" id="writingCupKD5_"></p>
+  <p class="w3-center" id="writingCupKD6_"></p>
+  <p class="w3-center" id="writingCupKD7_"></p>
+  <p class="w3-center" id="writingCupKD8_"></p>
+  <p class="w3-center" id="writingCupKD9_"></p>
+  <p class="w3-center" id="writingCupKD10_"></p>
+  <p class="w3-center" id="writingCupKD11_"></p>
+  <p class="w3-center" id="writingCupKD12_"></p>
+  <p class="w3-center" id="writingCupKD13_"></p>
+  <p class="w3-center" id="writingCupKD14_"></p>
+  <p class="w3-center" id="writingCupKD15_"></p>
+  <p class="w3-center" id="writingCupKD16_"></p>
+  <p class="w3-center" id="writingCupKD17_"></p>
+  <p class="w3-center" id="writingCupKD18_"></p>
+  <p class="w3-center" id="writingCupKD19_"></p>
+  <p class="w3-center" id="writingCupKD20_"></p>
+  <p class="w3-center" id="writingCupKD21_"></p>
+  <p class="w3-center" id="writingCupKD22_"></p>
+  <p class="w3-center" id="writingCupKD23_"></p>
+  <p class="w3-center" id="writingCupKD24_"></p>
+  <p class="w3-center" id="writingCupKD25_"></p>
+  <p class="w3-center" id="writingCupKD26_"></p>
+  <p class="w3-center" id="writingCupKD27_"></p>
+  <p class="w3-center" id="writingCupKD28_"></p>
+  <p class="w3-center" id="writingCupKD29_"></p>
+  <p class="w3-center" id="writingCupKD30_"></p>  
+  <p class="w3-center" id="writingCupKD31_"></p>
+  <p class="w3-center" id="writingCupKD32_"></p>
+  <p class="w3-center" id="writingCupKD33_"></p>
+  <p class="w3-center" id="writingCupKD34_"></p>
+  <p class="w3-center" id="writingCupKD35_"></p>
+  <p class="w3-center" id="writingCupKD36_"></p>
+  <p class="w3-center" id="writingCupKD37_"></p>
+
+</div>
+</div>
+</div>
 <div id="writingModalFist" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-green"> 
@@ -10396,107 +10496,6 @@ span.psw {
     </div>
 </div>
 
-<div id="writingModalCup" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('writingModalCup').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>Congratulations!</h2>
-		<p><h3>You have passed this!</h3></p>
-	</header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="writingCupKD1_"></p>
-  <p class="w3-center" id="writingCupKD2_"></p>
-  <p class="w3-center" id="writingCupKD3_"></p>
-  <p class="w3-center" id="writingCupKD4_"></p>
-  <p class="w3-center" id="writingCupKD5_"></p>
-  <p class="w3-center" id="writingCupKD6_"></p>
-  <p class="w3-center" id="writingCupKD7_"></p>
-  <p class="w3-center" id="writingCupKD8_"></p>
-  <p class="w3-center" id="writingCupKD9_"></p>
-  <p class="w3-center" id="writingCupKD10_"></p>
-  <p class="w3-center" id="writingCupKD11_"></p>
-  <p class="w3-center" id="writingCupKD12_"></p>
-  <p class="w3-center" id="writingCupKD13_"></p>
-  <p class="w3-center" id="writingCupKD14_"></p>
-  <p class="w3-center" id="writingCupKD15_"></p>
-  <p class="w3-center" id="writingCupKD16_"></p>
-  <p class="w3-center" id="writingCupKD17_"></p>
-  <p class="w3-center" id="writingCupKD18_"></p>
-  <p class="w3-center" id="writingCupKD19_"></p>
-  <p class="w3-center" id="writingCupKD20_"></p>
-  <p class="w3-center" id="writingCupKD21_"></p>
-  <p class="w3-center" id="writingCupKD22_"></p>
-  <p class="w3-center" id="writingCupKD23_"></p>
-  <p class="w3-center" id="writingCupKD24_"></p>
-  <p class="w3-center" id="writingCupKD25_"></p>
-  <p class="w3-center" id="writingCupKD26_"></p>
-  <p class="w3-center" id="writingCupKD27_"></p>
-  <p class="w3-center" id="writingCupKD28_"></p>
-  <p class="w3-center" id="writingCupKD29_"></p>
-  <p class="w3-center" id="writingCupKD30_"></p>  
-  <p class="w3-center" id="writingCupKD31_"></p>
-  <p class="w3-center" id="writingCupKD32_"></p>
-  <p class="w3-center" id="writingCupKD33_"></p>
-  <p class="w3-center" id="writingCupKD34_"></p>
-  <p class="w3-center" id="writingCupKD35_"></p>
-  <p class="w3-center" id="writingCupKD36_"></p>
-  <p class="w3-center" id="writingCupKD37_"></p>
-
-</div>
-	</div>
-</div>	
-
-<div id="writingModalFist" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('writingModalFist').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>You have not passed this!</h2>
-		<p><h3>Try again!</h3></p>
-      </header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="writingFistKD1_"></p>
-  <p class="w3-center" id="writingFistKD2_"></p>
-  <p class="w3-center" id="writingFistKD3_"></p>
-  <p class="w3-center" id="writingFistKD4_"></p>
-  <p class="w3-center" id="writingFistKD5_"></p>
-  <p class="w3-center" id="writingFistKD6_"></p>
-  <p class="w3-center" id="writingFistKD7_"></p>
-  <p class="w3-center" id="writingFistKD8_"></p>
-  <p class="w3-center" id="writingFistKD9_"></p>
-  <p class="w3-center" id="writingFistKD10_"></p>
-  <p class="w3-center" id="writingFistKD11_"></p>
-  <p class="w3-center" id="writingFistKD12_"></p>
-  <p class="w3-center" id="writingFistKD13_"></p>
-  <p class="w3-center" id="writingFistKD14_"></p>
-  <p class="w3-center" id="writingFistKD15_"></p>
-  <p class="w3-center" id="writingFistKD16_"></p>
-  <p class="w3-center" id="writingFistKD17_"></p>
-  <p class="w3-center" id="writingFistKD18_"></p>
-  <p class="w3-center" id="writingFistKD19_"></p>
-  <p class="w3-center" id="writingFistKD20_"></p>
-  <p class="w3-center" id="writingFistKD21_"></p>
-  <p class="w3-center" id="writingFistKD22_"></p>
-  <p class="w3-center" id="writingFistKD23_"></p>
-  <p class="w3-center" id="writingFistKD24_"></p>
-  <p class="w3-center" id="writingFistKD25_"></p>
-  <p class="w3-center" id="writingFistKD26_"></p>
-  <p class="w3-center" id="writingFistKD27_"></p>
-  <p class="w3-center" id="writingFistKD28_"></p>
-  <p class="w3-center" id="writingFistKD29_"></p>
-  <p class="w3-center" id="writingFistKD30_"></p>  
-  <p class="w3-center" id="writingFistKD31_"></p>
-  <p class="w3-center" id="writingFistKD32_"></p>
-  <p class="w3-center" id="writingFistKD33_"></p>
-  <p class="w3-center" id="writingFistKD34_"></p>
-  <p class="w3-center" id="writingFistKD35_"></p>
-  <p class="w3-center" id="writingFistKD36_"></p>
-  <p class="w3-center" id="writingFistKD37_"></p>
-</div>
-	</div>
-</div>
-
 <div id="writingModalMustAnswer" class="w3-animate-zoom w3-modal" >
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-red"> 
@@ -10593,8 +10592,125 @@ span.psw {
      </div>
 </div>
 
+<div id='writing_kd27' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD27_1'></td>
+  <td id='writingBadgeKD27_2'></td>
+  <td id='writingBadgeKD27_3'></td>
+  <td id='writingBadgeKD27_4'></td>
+  <td id='writingBadgeKD27_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD27_6'></td>
+  <td id='writingBadgeKD27_7'></td>
+  <td id='writingBadgeKD27_8'></td>
+  <td id='writingBadgeKD27_9'></td>
+  <td id='writingBadgeKD27_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD27' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd27','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD27')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd28' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD28_1'></td>
+  <td id='writingBadgeKD28_2'></td>
+  <td id='writingBadgeKD28_3'></td>
+  <td id='writingBadgeKD28_4'></td>
+  <td id='writingBadgeKD28_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD28_6'></td>
+  <td id='writingBadgeKD28_7'></td>
+  <td id='writingBadgeKD28_8'></td>
+  <td id='writingBadgeKD28_9'></td>
+  <td id='writingBadgeKD28_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD28' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd28','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD28')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd29' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD29_1'></td>
+  <td id='writingBadgeKD29_2'></td>
+  <td id='writingBadgeKD29_3'></td>
+  <td id='writingBadgeKD29_4'></td>
+  <td id='writingBadgeKD29_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD29_6'></td>
+  <td id='writingBadgeKD29_7'></td>
+  <td id='writingBadgeKD29_8'></td>
+  <td id='writingBadgeKD29_9'></td>
+  <td id='writingBadgeKD29_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD29' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd29','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD29')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
 <div id='writing_kd30' class="w3-container w3-animate-left" style="padding-left:85px">
-  <h2 class='w3-animate-left' id='writingTitle'></h2>
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
   <script>writeWritingTitle();</script>
   <table border='0'>
   <tr>
@@ -10632,6 +10748,174 @@ span.psw {
 			</div>
 </div>
 
+<div id='writing_kd31' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD31_1'></td>
+  <td id='writingBadgeKD31_2'></td>
+  <td id='writingBadgeKD31_3'></td>
+  <td id='writingBadgeKD31_4'></td>
+  <td id='writingBadgeKD31_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD31_6'></td>
+  <td id='writingBadgeKD31_7'></td>
+  <td id='writingBadgeKD31_8'></td>
+  <td id='writingBadgeKD31_9'></td>
+  <td id='writingBadgeKD31_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD31' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd31','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD31')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd32' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD32_1'></td>
+  <td id='writingBadgeKD32_2'></td>
+  <td id='writingBadgeKD32_3'></td>
+  <td id='writingBadgeKD32_4'></td>
+  <td id='writingBadgeKD32_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD32_6'></td>
+  <td id='writingBadgeKD32_7'></td>
+  <td id='writingBadgeKD32_8'></td>
+  <td id='writingBadgeKD32_9'></td>
+  <td id='writingBadgeKD32_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD32' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd32','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD32')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+</div>
+<div id='unDiv'>
+<div id="unModalCup" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('unModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+	</header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="unCupKD1_"></p>
+  <p class="w3-center" id="unCupKD2_"></p>
+  <p class="w3-center" id="unCupKD3_"></p>
+  <p class="w3-center" id="unCupKD4_"></p>
+  <p class="w3-center" id="unCupKD5_"></p>
+  <p class="w3-center" id="unCupKD6_"></p>
+  <p class="w3-center" id="unCupKD7_"></p>
+
+</div>
+	</div>
+</div>	
+
+<div id="unModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('unModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="unFistKD1_"></p>
+  <p class="w3-center" id="unFistKD2_"></p>
+  <p class="w3-center" id="unFistKD3_"></p>
+  <p class="w3-center" id="unFistKD4_"></p>
+  <p class="w3-center" id="unFistKD5_"></p>
+  <p class="w3-center" id="unFistKD6_"></p>
+  <p class="w3-center" id="unFistKD7_"></p>
+</div>
+	</div>
+</div>
+
+<div id="unModalScoreKD1" class="w3-animate-zoom w3-modal"></div>
+<div id="unModalScoreKD2" class="w3-animate-zoom w3-modal"></div>
+<div id="unModalScoreKD3" class="w3-animate-zoom w3-modal"></div>
+<div id="unModalScoreKD4" class="w3-animate-zoom w3-modal"></div>
+<div id="unModalScoreKD5" class="w3-animate-zoom w3-modal"></div>
+<div id="unModalScoreKD6" class="w3-animate-zoom w3-modal"></div>
+<div id="unModalScoreKD7" class="w3-animate-zoom w3-modal"></div>
+
+<div id="un_kd1" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="un_kd2" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="un_kd3" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="un_kd4" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="un_kd5" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="un_kd6" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="un_kd7" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+
+<div id='un' class="w3-container w3-animate-left" style="padding-left:85px">
+  <div class="w3-row-padding w3-theme">
+        <div class="w3-section">
+		    <h2 class="w3-animate-left">Practice National Examination (Ujian Nasional)</h2>  
+            <div class="w3-card-2">
+				<img src="image/un.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar>">			
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(1);writeUNModalKD(1);writeUNKD(1);showAndSound('#un_kd1','begin');unCekCup(1)">Practice UN 1<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(2);writeUNModalKD(2);writeUNKD(2);showAndSound('#un_kd2','begin');unCekCup(2)">Practice UN 2<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(3);writeUNModalKD(3);writeUNKD(3);showAndSound('#un_kd3','begin');unCekCup(3)">Practice UN 3<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(4);writeUNModalKD(4);writeUNKD(4);showAndSound('#un_kd4','begin');unCekCup(4)">Practice UN 4<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(5);writeUNModalKD(5);writeUNKD(5);showAndSound('#un_kd5','begin');unCekCup(5)">Practice UN 5<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(6);writeUNModalKD(6);writeUNKD(6);showAndSound('#un_kd6','begin');unCekCup(6)">Practice UN 6<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="getAndStoreScoreUNKD(7);writeUNModalKD(7);writeUNKD(7);showAndSound('#un_kd7','begin');unCekCup(7)">Practice UN 7<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+					 </div>
+				   </div>
+                </div>
+            </div>
+        </div>
+   <div class="w3-center">
+     <div class="w3-bar>">
+        <button class="w3-button w3-yellow" id="" title="" onclick="showAndSound('#home','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>  
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<div id='scoreDiv'>
 <div id='score' class="w3-container w3-animate-left" style="padding-left:85px">
   <h2 class="w3-animate-left">Score</h2>
 
@@ -10859,209 +11143,9 @@ span.psw {
 </div>
 
 </div>
-
-<div id="readingModalCup" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('readingModalCup').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>Congratulations!</h2>
-		<p><h3>You have passed this!</h3></p>
-	</header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="readingCupKD1_"></p>
-  <p class="w3-center" id="readingCupKD2_"></p>
-  <p class="w3-center" id="readingCupKD3_"></p>
-  <p class="w3-center" id="readingCupKD4_"></p>
-  <p class="w3-center" id="readingCupKD5_"></p>
-  <p class="w3-center" id="readingCupKD6_"></p>
-  <p class="w3-center" id="readingCupKD7_"></p>
-  <p class="w3-center" id="readingCupKD8_"></p>
-  <p class="w3-center" id="readingCupKD9_"></p>
-  <p class="w3-center" id="readingCupKD10_"></p>
-  <p class="w3-center" id="readingCupKD11_"></p>
-  <p class="w3-center" id="readingCupKD12_"></p>
-  <p class="w3-center" id="readingCupKD13_"></p>
-  <p class="w3-center" id="readingCupKD14_"></p>
-  <p class="w3-center" id="readingCupKD15_"></p>
-  <p class="w3-center" id="readingCupKD16_"></p>
-  <p class="w3-center" id="readingCupKD17_"></p>
-  <p class="w3-center" id="readingCupKD18_"></p>
-  <p class="w3-center" id="readingCupKD19_"></p>
-  <p class="w3-center" id="readingCupKD20_"></p>
-  <p class="w3-center" id="readingCupKD21_"></p>
-  <p class="w3-center" id="readingCupKD22_"></p>
-  <p class="w3-center" id="readingCupKD23_"></p>
-  <p class="w3-center" id="readingCupKD24_"></p>
-  <p class="w3-center" id="readingCupKD25_"></p>
-  <p class="w3-center" id="readingCupKD26_"></p>
-  <p class="w3-center" id="readingCupKD27_"></p>
-  <p class="w3-center" id="readingCupKD28_"></p>
-  <p class="w3-center" id="readingCupKD29_"></p>
-  <p class="w3-center" id="readingCupKD30_"></p>  
-  <p class="w3-center" id="readingCupKD31_"></p>
-  <p class="w3-center" id="readingCupKD32_"></p>
-  <p class="w3-center" id="readingCupKD33_"></p>
-  <p class="w3-center" id="readingCupKD34_"></p>
-  <p class="w3-center" id="readingCupKD35_"></p>
-  <p class="w3-center" id="readingCupKD36_"></p>
-  <p class="w3-center" id="readingCupKD37_"></p>
-
 </div>
-	</div>
-</div>	
-
-<div id="readingModalFist" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('readingModalFist').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>You have not passed this!</h2>
-		<p><h3>Try again!</h3></p>
-      </header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="readingFistKD1_"></p>
-  <p class="w3-center" id="readingFistKD2_"></p>
-  <p class="w3-center" id="readingFistKD3_"></p>
-  <p class="w3-center" id="readingFistKD4_"></p>
-  <p class="w3-center" id="readingFistKD5_"></p>
-  <p class="w3-center" id="readingFistKD6_"></p>
-  <p class="w3-center" id="readingFistKD7_"></p>
-  <p class="w3-center" id="readingFistKD8_"></p>
-  <p class="w3-center" id="readingFistKD9_"></p>
-  <p class="w3-center" id="readingFistKD10_"></p>
-  <p class="w3-center" id="readingFistKD11_"></p>
-  <p class="w3-center" id="readingFistKD12_"></p>
-  <p class="w3-center" id="readingFistKD13_"></p>
-  <p class="w3-center" id="readingFistKD14_"></p>
-  <p class="w3-center" id="readingFistKD15_"></p>
-  <p class="w3-center" id="readingFistKD16_"></p>
-  <p class="w3-center" id="readingFistKD17_"></p>
-  <p class="w3-center" id="readingFistKD18_"></p>
-  <p class="w3-center" id="readingFistKD19_"></p>
-  <p class="w3-center" id="readingFistKD20_"></p>
-  <p class="w3-center" id="readingFistKD21_"></p>
-  <p class="w3-center" id="readingFistKD22_"></p>
-  <p class="w3-center" id="readingFistKD23_"></p>
-  <p class="w3-center" id="readingFistKD24_"></p>
-  <p class="w3-center" id="readingFistKD25_"></p>
-  <p class="w3-center" id="readingFistKD26_"></p>
-  <p class="w3-center" id="readingFistKD27_"></p>
-  <p class="w3-center" id="readingFistKD28_"></p>
-  <p class="w3-center" id="readingFistKD29_"></p>
-  <p class="w3-center" id="readingFistKD30_"></p>  
-  <p class="w3-center" id="readingFistKD31_"></p>
-  <p class="w3-center" id="readingFistKD32_"></p>
-  <p class="w3-center" id="readingFistKD33_"></p>
-  <p class="w3-center" id="readingFistKD34_"></p>
-  <p class="w3-center" id="readingFistKD35_"></p>
-  <p class="w3-center" id="readingFistKD36_"></p>
-  <p class="w3-center" id="readingFistKD37_"></p>
 </div>
-	</div>
-</div>
-
-<div id="writingModalCup" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('writingModalCup').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>Congratulations!</h2>
-		<p><h3>You have passed this!</h3></p>
-	</header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="writingCupKD1_"></p>
-  <p class="w3-center" id="writingCupKD2_"></p>
-  <p class="w3-center" id="writingCupKD3_"></p>
-  <p class="w3-center" id="writingCupKD4_"></p>
-  <p class="w3-center" id="writingCupKD5_"></p>
-  <p class="w3-center" id="writingCupKD6_"></p>
-  <p class="w3-center" id="writingCupKD7_"></p>
-  <p class="w3-center" id="writingCupKD8_"></p>
-  <p class="w3-center" id="writingCupKD9_"></p>
-  <p class="w3-center" id="writingCupKD10_"></p>
-  <p class="w3-center" id="writingCupKD11_"></p>
-  <p class="w3-center" id="writingCupKD12_"></p>
-  <p class="w3-center" id="writingCupKD13_"></p>
-  <p class="w3-center" id="writingCupKD14_"></p>
-  <p class="w3-center" id="writingCupKD15_"></p>
-  <p class="w3-center" id="writingCupKD16_"></p>
-  <p class="w3-center" id="writingCupKD17_"></p>
-  <p class="w3-center" id="writingCupKD18_"></p>
-  <p class="w3-center" id="writingCupKD19_"></p>
-  <p class="w3-center" id="writingCupKD20_"></p>
-  <p class="w3-center" id="writingCupKD21_"></p>
-  <p class="w3-center" id="writingCupKD22_"></p>
-  <p class="w3-center" id="writingCupKD23_"></p>
-  <p class="w3-center" id="writingCupKD24_"></p>
-  <p class="w3-center" id="writingCupKD25_"></p>
-  <p class="w3-center" id="writingCupKD26_"></p>
-  <p class="w3-center" id="writingCupKD27_"></p>
-  <p class="w3-center" id="writingCupKD28_"></p>
-  <p class="w3-center" id="writingCupKD29_"></p>
-  <p class="w3-center" id="writingCupKD30_"></p>  
-  <p class="w3-center" id="writingCupKD31_"></p>
-  <p class="w3-center" id="writingCupKD32_"></p>
-  <p class="w3-center" id="writingCupKD33_"></p>
-  <p class="w3-center" id="writingCupKD34_"></p>
-  <p class="w3-center" id="writingCupKD35_"></p>
-  <p class="w3-center" id="writingCupKD36_"></p>
-  <p class="w3-center" id="writingCupKD37_"></p>
-
-</div>
-	</div>
-</div>	
-
-<div id="writingModalFist" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('writingModalFist').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h2>You have not passed this!</h2>
-		<p><h3>Try again!</h3></p>
-      </header>
-	  <div class="w3-panel" id="">
-  <p class="w3-center" id="writingFistKD1_"></p>
-  <p class="w3-center" id="writingFistKD2_"></p>
-  <p class="w3-center" id="writingFistKD3_"></p>
-  <p class="w3-center" id="writingFistKD4_"></p>
-  <p class="w3-center" id="writingFistKD5_"></p>
-  <p class="w3-center" id="writingFistKD6_"></p>
-  <p class="w3-center" id="writingFistKD7_"></p>
-  <p class="w3-center" id="writingFistKD8_"></p>
-  <p class="w3-center" id="writingFistKD9_"></p>
-  <p class="w3-center" id="writingFistKD10_"></p>
-  <p class="w3-center" id="writingFistKD11_"></p>
-  <p class="w3-center" id="writingFistKD12_"></p>
-  <p class="w3-center" id="writingFistKD13_"></p>
-  <p class="w3-center" id="writingFistKD14_"></p>
-  <p class="w3-center" id="writingFistKD15_"></p>
-  <p class="w3-center" id="writingFistKD16_"></p>
-  <p class="w3-center" id="writingFistKD17_"></p>
-  <p class="w3-center" id="writingFistKD18_"></p>
-  <p class="w3-center" id="writingFistKD19_"></p>
-  <p class="w3-center" id="writingFistKD20_"></p>
-  <p class="w3-center" id="writingFistKD21_"></p>
-  <p class="w3-center" id="writingFistKD22_"></p>
-  <p class="w3-center" id="writingFistKD23_"></p>
-  <p class="w3-center" id="writingFistKD24_"></p>
-  <p class="w3-center" id="writingFistKD25_"></p>
-  <p class="w3-center" id="writingFistKD26_"></p>
-  <p class="w3-center" id="writingFistKD27_"></p>
-  <p class="w3-center" id="writingFistKD28_"></p>
-  <p class="w3-center" id="writingFistKD29_"></p>
-  <p class="w3-center" id="writingFistKD30_"></p>  
-  <p class="w3-center" id="writingFistKD31_"></p>
-  <p class="w3-center" id="writingFistKD32_"></p>
-  <p class="w3-center" id="writingFistKD33_"></p>
-  <p class="w3-center" id="writingFistKD34_"></p>
-  <p class="w3-center" id="writingFistKD35_"></p>
-  <p class="w3-center" id="writingFistKD36_"></p>
-  <p class="w3-center" id="writingFistKD37_"></p>
-</div>
-	</div>
-</div>
-
+<div id='scriptDiv'>
 <script> 
 //cek login
 loginOnline(localStorage.getItem('usernameStored'),localStorage.getItem('passwordStored'),'loginOnline');
@@ -11269,5 +11353,6 @@ var writingModalScoreKD36 = document.getElementById('writingModalScoreKD36'); wi
 <script src="js/writeWriting.js"></script>
 <script src="js/writingScriptJumble.js"></script>
 <script src="js/speakingScript.js"></script>
+</div>
 </body>
 </html>

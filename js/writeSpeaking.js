@@ -2,7 +2,8 @@ function writeSpeaking(elSpeaking,title,noKD){
 writeSpeaking_(elSpeaking,title,noKD);
 					var noKD=noKD;
 					speakingPerlihatkan('#speakingItem'+noKD);
-					getSpeaking(noKD);  					
+					//getSpeaking(noKD); 
+                    getOfflineSpeaking(noKD); 					
                     localStorage.setItem('speakingNoDefault',noKD);					
 					var speakingNoDefault=retrieveItem('speakingNoDefault');
 					var speakingId='speakingItem'+speakingNoDefault;	
@@ -376,6 +377,87 @@ document.getElementById(elSpeaking).innerHTML=(
 "        </div>"+
 "    </div>"
 )	
+}
+
+function getSpeakingItem()
+{
+var speakingNoDefault=retrieveItem('speakingNoDefault');
+var speakingId='speakingItem'+speakingNoDefault;
+var speakingItemDefault=localStorage.getItem(speakingId);
+document.getElementById(speakingId).innerHTML=speakingItemDefault;
+readOutLoud(speakingItemDefault);
+}
+
+function getOfflineSpeaking(noKD){
+var rnd=getRndInteger(1,20).toString();
+var speakingNo1=storeItem('speakingNo1',getRndInteger(1,2).toString());
+var speakingNo2=storeItem('speakingNo2',getRndInteger(3,4).toString());
+var speakingNo3=storeItem('speakingNo3',getRndInteger(5,6).toString());
+var speakingNo4=storeItem('speakingNo4',getRndInteger(7,8).toString());
+var speakingNo5=storeItem('speakingNo5',getRndInteger(9,10).toString());
+var speakingNo6=storeItem('speakingNo6',getRndInteger(11,12).toString());
+var speakingNo7=storeItem('speakingNo7',getRndInteger(13,14).toString());
+var speakingNo8=storeItem('speakingNo8',getRndInteger(15,16).toString());
+var speakingNo9=storeItem('speakingNo9',getRndInteger(17,18).toString());
+var speakingNo10=storeItem('speakingNo10',getRndInteger(19,20).toString());
+var speakingItem1='speakingItemKD'+noKD+'_'+'1';
+var speakingItem2='speakingItemKD'+noKD+'_'+'2';
+var speakingItem3='speakingItemKD'+noKD+'_'+'3';
+var speakingItem4='speakingItemKD'+noKD+'_'+'4';
+var speakingItem5='speakingItemKD'+noKD+'_'+'5';
+var speakingItem6='speakingItemKD'+noKD+'_'+'6';
+var speakingItem7='speakingItemKD'+noKD+'_'+'7';
+var speakingItem8='speakingItemKD'+noKD+'_'+'8';
+var speakingItem9='speakingItemKD'+noKD+'_'+'9';
+var speakingItem10='speakingItemKD'+noKD+'_'+'10';
+
+var speakingContent1=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo1)-1));
+var speakingContent2=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo2)-1));
+var speakingContent3=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo3)-1));
+var speakingContent4=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo4)-1));
+var speakingContent5=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo5)-1));
+var speakingContent6=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo6)-1));
+var speakingContent7=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo7)-1));
+var speakingContent8=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo8)-1));
+var speakingContent9=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo9)-1));
+var speakingContent10=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo10)-1));
+
+localStorage.setItem(speakingItem1,speakingContent1);
+localStorage.setItem(speakingItem2,speakingContent2);
+localStorage.setItem(speakingItem3,speakingContent3);
+localStorage.setItem(speakingItem4,speakingContent4);
+localStorage.setItem(speakingItem5,speakingContent5);
+localStorage.setItem(speakingItem6,speakingContent6);
+localStorage.setItem(speakingItem7,speakingContent7);
+localStorage.setItem(speakingItem8,speakingContent8);
+localStorage.setItem(speakingItem9,speakingContent9);
+localStorage.setItem(speakingItem10,speakingContent10);
+
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo1'),noKD,speakingItem1);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo2'),noKD,speakingItem2);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo3'),noKD,speakingItem3);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo4'),noKD,speakingItem4);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo5'),noKD,speakingItem5);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo6'),noKD,speakingItem6);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo7'),noKD,speakingItem7);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo8'),noKD,speakingItem8);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo9'),noKD,speakingItem9);
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',retrieveItem('speakingNo10'),noKD,speakingItem10);
+var speakingItem1=retrieveItem(speakingItem1);	
+var speakingItem2=retrieveItem(speakingItem2);	
+var speakingItem3=retrieveItem(speakingItem3);	
+var speakingItem4=retrieveItem(speakingItem4);	
+var speakingItem5=retrieveItem(speakingItem5);	
+var speakingItem6=retrieveItem(speakingItem6);	
+var speakingItem7=retrieveItem(speakingItem7);	
+var speakingItem8=retrieveItem(speakingItem8);	
+var speakingItem9=retrieveItem(speakingItem9);	
+var speakingItem10=retrieveItem(speakingItem10);	
+				
+//storeItem('noSpeaking',rnd);
+//var noSpeaking=retrieveItem('noSpeaking');
+//storeOneItem('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','speaking','getOneItem',noSpeaking,1,'itemSpeaking');
+//var itemSpeaking=retrieveItem('itemSpeaking');
 }
 
 function getSpeakingItem()

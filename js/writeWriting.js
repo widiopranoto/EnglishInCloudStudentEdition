@@ -39,7 +39,6 @@ var writingItem7=retrieveItem(writingItemId7);
 var writingItem8=retrieveItem(writingItemId8);	
 var writingItem9=retrieveItem(writingItemId9);	
 var writingItem10=retrieveItem(writingItemId10);	
-
 }
 
 function writingSembunyikanSemua(){
@@ -61,7 +60,7 @@ function writingPerlihatkan(id) {
 function writingIframeNext(){
 	var writingNoDefault=localStorage.getItem('writingNoDefault');
 	var next;
-	if(parseInt(writingNoDefault)>9){writingNoDefault=10;next=10;}
+	if(parseInt(writingNoDefault)==9 || parseInt(writingNoDefault)>9){writingNoDefault=10;next=10;}
 	else { next=parseInt(writingNoDefault)+1;}
 	localStorage.setItem('writingNoDefault',next);
 	var writingSoalIframeHTML='writingSoalNo'+localStorage.getItem('writingNoDefault')+'.html';
@@ -71,7 +70,7 @@ function writingIframeNext(){
 function writingIframeBack(){
 	var writingNoDefault=localStorage.getItem('writingNoDefault');
 	var back;
-	if(parseInt(writingNoDefault)<1){writingNoDefault=1;back=1;}
+	if(parseInt(writingNoDefault)==1 || parseInt(writingNoDefault)<1){writingNoDefault=1;back=1;}
 	else { back=parseInt(writingNoDefault)-1;}
 	localStorage.setItem('writingNoDefault',back);
 	var writingSoalIframeHTML='writingSoalNo'+localStorage.getItem('writingNoDefault')+'.html';
@@ -141,10 +140,10 @@ function writingSembunyikan(id){
 
 function writeWritingTitle(){
   //tulis judul
-  var writingTitleId='writingTitle';
+  //var writingTitleId='writingTitle';
   var writingKDDefault=localStorage.getItem('writingKDDefault');
   var writingTitle='Practice Writing KD '+writingKDDefault;
-  document.getElementById(writingTitleId).innerHTML=writingTitle;
+  document.getElementById('writingTopicId').innerHTML=writingTitle;
 }
 
 function writeWritingScoreContent(){
@@ -217,8 +216,115 @@ function writeWritingBadgeContent(){
 	if(parseInt(writingScoreKDDefault_10)>0){document.getElementById('writingBadgeKD'+writingKDDefault+'_'+10+'_').innerHTML=writeBadge;}
 }
 
+function writeWriting(noSoal,writingNoSoalId,writingTopic,writingTopicId,writingInstructionA,writingInstructionAId,writingInstructionB,writingInstructionBId,noKD)
+{
+var writingInstructionA="Drag the words onto the yellow bar in the right order!";
+var writingInstructionB="Rearrange the sentence into "+writingTopic+"!";
+var writingNoDefault=localStorage.getItem('writingNoDefault');
+var writingTopicDefault=writingTopic;
+localStorage.setItem('writingTopicDefault',writingTopicDefault);
+if(parseInt(writingNoDefault)==1){
+var writingNo1=storeItem('writingNo1',getRndInteger(1,2).toString());
+var writingNo2=storeItem('writingNo2',getRndInteger(3,4).toString());
+var writingNo3=storeItem('writingNo3',getRndInteger(5,6).toString());
+var writingNo4=storeItem('writingNo4',getRndInteger(7,8).toString());
+var writingNo5=storeItem('writingNo5',getRndInteger(9,10).toString());
+var writingNo6=storeItem('writingNo6',getRndInteger(11,12).toString());
+var writingNo7=storeItem('writingNo7',getRndInteger(13,14).toString());
+var writingNo8=storeItem('writingNo8',getRndInteger(15,16).toString());
+var writingNo9=storeItem('writingNo9',getRndInteger(17,18).toString());
+var writingNo10=storeItem('writingNo10',getRndInteger(19,20).toString());
+var writingItem1='writingItemKD'+noKD+'_'+'1';
+var writingItem2='writingItemKD'+noKD+'_'+'2';
+var writingItem3='writingItemKD'+noKD+'_'+'3';
+var writingItem4='writingItemKD'+noKD+'_'+'4';
+var writingItem5='writingItemKD'+noKD+'_'+'5';
+var writingItem6='writingItemKD'+noKD+'_'+'6';
+var writingItem7='writingItemKD'+noKD+'_'+'7';
+var writingItem8='writingItemKD'+noKD+'_'+'8';
+var writingItem9='writingItemKD'+noKD+'_'+'9';
+var writingItem10='writingItemKD'+noKD+'_'+'10';
 
-function writeWriting(writingNoSoal,writingNoSoalId,writingTopic,writingTopicId,writingInstructionA,writingInstructionAId,writingInstructionB,writingInstructionBId,noKD){
+var writingNo1=parseInt(localStorage.getItem('writingNo1'))-1;
+var writingNo2=parseInt(localStorage.getItem('writingNo2'))-1;
+var writingNo3=parseInt(localStorage.getItem('writingNo3'))-1;
+var writingNo4=parseInt(localStorage.getItem('writingNo4'))-1;
+var writingNo5=parseInt(localStorage.getItem('writingNo5'))-1;
+var writingNo6=parseInt(localStorage.getItem('writingNo6'))-1;
+var writingNo7=parseInt(localStorage.getItem('writingNo7'))-1;
+var writingNo8=parseInt(localStorage.getItem('writingNo8'))-1;
+var writingNo9=parseInt(localStorage.getItem('writingNo9'))-1;
+var writingNo10=parseInt(localStorage.getItem('writingNo10'))-1;
+
+var writingSoalKDDefaultId_1='writingSoalKD'+noKD+'_1';
+
+var writingContent1=parseItemArray(writingSoalKDDefaultId_1,writingNo1);
+var writingContent2=parseItemArray(writingSoalKDDefaultId_1,writingNo2);
+var writingContent3=parseItemArray(writingSoalKDDefaultId_1,writingNo3);
+var writingContent4=parseItemArray(writingSoalKDDefaultId_1,writingNo4);
+var writingContent5=parseItemArray(writingSoalKDDefaultId_1,writingNo5);
+var writingContent6=parseItemArray(writingSoalKDDefaultId_1,writingNo6);
+var writingContent7=parseItemArray(writingSoalKDDefaultId_1,writingNo7);
+var writingContent8=parseItemArray(writingSoalKDDefaultId_1,writingNo8);
+var writingContent9=parseItemArray(writingSoalKDDefaultId_1,writingNo9);
+var writingContent10=parseItemArray(writingSoalKDDefaultId_1,writingNo10);
+
+localStorage.setItem(writingItem1,writingContent1);
+localStorage.setItem(writingItem2,writingContent2);
+localStorage.setItem(writingItem3,writingContent3);
+localStorage.setItem(writingItem4,writingContent4);
+localStorage.setItem(writingItem5,writingContent5);
+localStorage.setItem(writingItem6,writingContent6);
+localStorage.setItem(writingItem7,writingContent7);
+localStorage.setItem(writingItem8,writingContent8);
+localStorage.setItem(writingItem9,writingContent9);
+localStorage.setItem(writingItem10,writingContent10);
+}
+var writingItemId1='writingItemKD'+noKD+'_'+'1';
+var writingItemId2='writingItemKD'+noKD+'_'+'2';
+var writingItemId3='writingItemKD'+noKD+'_'+'3';
+var writingItemId4='writingItemKD'+noKD+'_'+'4';
+var writingItemId5='writingItemKD'+noKD+'_'+'5';
+var writingItemId6='writingItemKD'+noKD+'_'+'6';
+var writingItemId7='writingItemKD'+noKD+'_'+'7';
+var writingItemId8='writingItemKD'+noKD+'_'+'8';
+var writingItemId9='writingItemKD'+noKD+'_'+'9';
+var writingItemId10='writingItemKD'+noKD+'_'+'10';
+
+var writingItem1=retrieveItem(writingItemId1);	
+var writingItem2=retrieveItem(writingItemId2);	
+var writingItem3=retrieveItem(writingItemId3);	
+var writingItem4=retrieveItem(writingItemId4);	
+var writingItem5=retrieveItem(writingItemId5);	
+var writingItem6=retrieveItem(writingItemId6);	
+var writingItem7=retrieveItem(writingItemId7);	
+var writingItem8=retrieveItem(writingItemId8);	
+var writingItem9=retrieveItem(writingItemId9);	
+var writingItem10=retrieveItem(writingItemId10);	
+
+var writingSoal;
+if(parseInt(noSoal)==1){writingSoal=writingItem1;}
+if(parseInt(noSoal)==2){writingSoal=writingItem2;}
+if(parseInt(noSoal)==3){writingSoal=writingItem3;}
+if(parseInt(noSoal)==4){writingSoal=writingItem4;}
+if(parseInt(noSoal)==5){writingSoal=writingItem5;}
+if(parseInt(noSoal)==6){writingSoal=writingItem6;}
+if(parseInt(noSoal)==7){writingSoal=writingItem7;}
+if(parseInt(noSoal)==8){writingSoal=writingItem8;}
+if(parseInt(noSoal)==9){writingSoal=writingItem9;}
+if(parseInt(noSoal)==10){writingSoal=writingItem10;}
+
+//var toWrite= ;				
+document.getElementById(writingNoSoalId).innerHTML= noSoal;
+document.getElementById(writingTopicId).innerHTML= writingTopic;
+document.getElementById(writingInstructionAId).innerHTML= writingInstructionA;
+document.getElementById(writingInstructionBId).innerHTML= writingInstructionB;
+document.getElementById('hfData_').innerHTML= "<input type='hidden' id='hfData' value='"+writingSoal+"'></input>";
+}
+
+
+function writeWritingOnline(writingNoSoal,writingNoSoalId,writingTopic,writingTopicId,writingInstructionA,writingInstructionAId,writingInstructionB,writingInstructionBId,noKD)
+{
 var writingInstructionA="Drag the words onto the yellow bar in the right order!";
 var writingInstructionB="Rearrange the sentence into "+writingTopic+"!";
 var writingNoDefault=localStorage.getItem('writingNoDefault');
