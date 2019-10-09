@@ -9,7 +9,7 @@
 <link rel="icon" href="image/eic_green_16x16.png" type="image/png" sizes="16x16">
 <script src="w3schools/lib/w3.js"></script>
 <script src="js/function.js"></script>
-<script src="js/getScorePractice.js"></script>
+<script src="js/data.js"></script>
 <script src="js/writeTheory.js"></script>
 <script src="js/writeListening.js"></script>
 <script src="js/writeSpeaking.js"></script>
@@ -4564,6 +4564,252 @@ span.psw {
 				    <div class='w3-bar'>
 					<button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd3','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
 					<button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="modalkan('speakingModalScoreKD3')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+					</div>
+				  </div>
+              </div>
+            </div>
+	    </div>
+</div>
+<div id='speaking_kd1' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left'>Practice Speaking KD 1</h2>
+  <table border='0'>
+  <tr>
+  <td id='speakingBadgeKD1_1'></td>
+  <td id='speakingBadgeKD1_2'></td>
+  <td id='speakingBadgeKD1_3'></td>
+  <td id='speakingBadgeKD1_4'></td>
+  <td id='speakingBadgeKD1_5'></td>
+  </tr>
+  <tr>
+  <td id='speakingBadgeKD1_6'></td>
+  <td id='speakingBadgeKD1_7'></td>
+  <td id='speakingBadgeKD1_8'></td>
+  <td id='speakingBadgeKD1_9'></td>
+  <td id='speakingBadgeKD1_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='speakingCupKD1' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+  <div class="w3-row-padding w3-theme">
+        <div class="w3-section">
+            <div class="w3-card-2">
+                <img src="image/speaking.png">
+                <div class="w3-container w3-light-gray">
+                  <div class="app">
+				    <p>Speak this word/sentence:</p>
+					<div id='coba'></div>
+					<div class='' id='speakingDiv1'><p id=''><h2>1</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_1"></label></div>
+					<div class='' id='speakingDiv2'><p id=''><h2>2</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_2"></label></div>
+					<div class='' id='speakingDiv3'><p id=''><h2>3</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_3"></label></div>
+					<div class='' id='speakingDiv4'><p id=''><h2>4</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_4"></label></div>
+					<div class='' id='speakingDiv5'><p id=''><h2>5</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_5"></label></div>
+					<div class='' id='speakingDiv6'><p id=''><h2>6</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_6"></label></div>
+					<div class='' id='speakingDiv7'><p id=''><h2>7</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_7"></label></div>
+					<div class='' id='speakingDiv8'><p id=''><h2>8</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_8"></label></div>
+					<div class='' id='speakingDiv9'><p id=''><h2>9</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_9"></label></div>
+					<div class='' id='speakingDiv10'><p id=''><h2>10</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD1_10"></label></div>
+
+					<script>
+                    function getSpeakingItem(noKD)
+                    {
+	                var speakingNoDefault=localStorage.getItem('speakingNoDefault');
+	                var speakingId='speakingItemKD'+noKD+'_'+speakingNoDefault;
+	                var speakingItemDefault=localStorage.getItem(speakingId);
+                    document.getElementById(speakingId).innerHTML=speakingItemDefault;
+                    readOutLoud(speakingItemDefault);
+                    }					
+					</script>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="How to speak it" onclick="getSpeakingItem(1)"><i class="fa fa-volume-up fa-2x"></i></button>
+                    <button class="w3-bar-item w3-green" id="start-record-btn" title="Start recording" onclick="startRecord()"><i class="fa fa-microphone fa-2x"></i></button>
+                    <button class="w3-bar-item w3-red" id="pause-record-btn" title="Pause recording" onclick="pauseRecord()"><i class="fa fa-pause fa-2x"></i></button>
+                    <button class="w3-bar-item w3-blue" id="" title="Save record" onclick="saveRecord()"><i class="fa fa-save fa-2x"></i></button>
+					</div></div>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="c(1)"><i class="fa fa-angle-left fa-2x"></i></button>
+					<button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="b(1)"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>
+				    <p>You speak:</p>
+                    <input class="w3-input w3-border" type="password" id="note-textarea1" onclick="noteRecord()"></input>
+					 <p>Tap speaker button to listen to how the word/sentence is spoken</p>
+                     <p id="recording-instructions">Tap microphone button and allow access, and speak the word/sentence</p>
+					 <p>Tap pause button to stop recording</p>
+					 <p>Tap save button to save your recording</p>
+
+				  </div>
+		          </div>
+				  <div class='w3-center'>
+				    <div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd1','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+					<button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="speakingModalkan('speakingModalScoreKD1')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+					</div>
+				  </div>
+              </div>
+            </div>
+	    </div>
+</div>
+<div id='speaking_kd2' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left'>Practice Speaking KD 2</h2>
+  <table border='0'>
+  <tr>
+  <td id='speakingBadgeKD2_1'></td>
+  <td id='speakingBadgeKD2_2'></td>
+  <td id='speakingBadgeKD2_3'></td>
+  <td id='speakingBadgeKD2_4'></td>
+  <td id='speakingBadgeKD2_5'></td>
+  </tr>
+  <tr>
+  <td id='speakingBadgeKD2_6'></td>
+  <td id='speakingBadgeKD2_7'></td>
+  <td id='speakingBadgeKD2_8'></td>
+  <td id='speakingBadgeKD2_9'></td>
+  <td id='speakingBadgeKD2_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='speakingCupKD2' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+  <div class="w3-row-padding w3-theme">
+        <div class="w3-section">
+            <div class="w3-card-2">
+                <img src="image/speaking.png">
+                <div class="w3-container w3-light-gray">
+                  <div class="app">
+				    <p>Speak this word/sentence:</p>
+					<div id='coba'></div>
+					<div class='' id='speakingDiv1'><p id=''><h2>1</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_1"></label></div>
+					<div class='' id='speakingDiv2'><p id=''><h2>2</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_2"></label></div>
+					<div class='' id='speakingDiv3'><p id=''><h2>3</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_3"></label></div>
+					<div class='' id='speakingDiv4'><p id=''><h2>4</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_4"></label></div>
+					<div class='' id='speakingDiv5'><p id=''><h2>5</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_5"></label></div>
+					<div class='' id='speakingDiv6'><p id=''><h2>6</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_6"></label></div>
+					<div class='' id='speakingDiv7'><p id=''><h2>7</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_7"></label></div>
+					<div class='' id='speakingDiv8'><p id=''><h2>8</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_8"></label></div>
+					<div class='' id='speakingDiv9'><p id=''><h2>9</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_9"></label></div>
+					<div class='' id='speakingDiv10'><p id=''><h2>10</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD2_10"></label></div>
+
+					<script>
+                    function getSpeakingItem(noKD)
+                    {
+	                var speakingNoDefault=localStorage.getItem('speakingNoDefault');
+	                var speakingId='speakingItemKD'+noKD+'_'+speakingNoDefault;
+	                var speakingItemDefault=localStorage.getItem(speakingId);
+                    document.getElementById(speakingId).innerHTML=speakingItemDefault;
+                    readOutLoud(speakingItemDefault);
+                    }					
+					</script>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="How to speak it" onclick="getSpeakingItem(2)"><i class="fa fa-volume-up fa-2x"></i></button>
+                    <button class="w3-bar-item w3-green" id="start-record-btn" title="Start recording" onclick="startRecord()"><i class="fa fa-microphone fa-2x"></i></button>
+                    <button class="w3-bar-item w3-red" id="pause-record-btn" title="Pause recording" onclick="pauseRecord()"><i class="fa fa-pause fa-2x"></i></button>
+                    <button class="w3-bar-item w3-blue" id="" title="Save record" onclick="saveRecord()"><i class="fa fa-save fa-2x"></i></button>
+					</div></div>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="c(2)"><i class="fa fa-angle-left fa-2x"></i></button>
+					<button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="b(2)"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>
+				    <p>You speak:</p>
+                    <input class="w3-input w3-border" type="password" id="note-textarea2" onclick="noteRecord()"></input>
+					 <p>Tap speaker button to listen to how the word/sentence is spoken</p>
+                     <p id="recording-instructions">Tap microphone button and allow access, and speak the word/sentence</p>
+					 <p>Tap pause button to stop recording</p>
+					 <p>Tap save button to save your recording</p>
+
+				  </div>
+		          </div>
+				  <div class='w3-center'>
+				    <div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd2','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+					<button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="speakingModalkan('speakingModalScoreKD2')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+					</div>
+				  </div>
+              </div>
+            </div>
+	    </div>
+</div>
+<div id='speaking_kd3' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left'>Practice Speaking KD 3</h2>
+  <table border='0'>
+  <tr>
+  <td id='speakingBadgeKD3_1'></td>
+  <td id='speakingBadgeKD3_2'></td>
+  <td id='speakingBadgeKD3_3'></td>
+  <td id='speakingBadgeKD3_4'></td>
+  <td id='speakingBadgeKD3_5'></td>
+  </tr>
+  <tr>
+  <td id='speakingBadgeKD3_6'></td>
+  <td id='speakingBadgeKD3_7'></td>
+  <td id='speakingBadgeKD3_8'></td>
+  <td id='speakingBadgeKD3_9'></td>
+  <td id='speakingBadgeKD3_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='speakingCupKD3' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+  <div class="w3-row-padding w3-theme">
+        <div class="w3-section">
+            <div class="w3-card-2">
+                <img src="image/speaking.png">
+                <div class="w3-container w3-light-gray">
+                  <div class="app">
+				    <p>Speak this word/sentence:</p>
+					<div id='coba'></div>
+					<div class='' id='speakingDiv1'><p id=''><h2>1</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_1"></label></div>
+					<div class='' id='speakingDiv2'><p id=''><h2>2</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_2"></label></div>
+					<div class='' id='speakingDiv3'><p id=''><h2>3</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_3"></label></div>
+					<div class='' id='speakingDiv4'><p id=''><h2>4</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_4"></label></div>
+					<div class='' id='speakingDiv5'><p id=''><h2>5</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_5"></label></div>
+					<div class='' id='speakingDiv6'><p id=''><h2>6</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_6"></label></div>
+					<div class='' id='speakingDiv7'><p id=''><h2>7</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_7"></label></div>
+					<div class='' id='speakingDiv8'><p id=''><h2>8</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_8"></label></div>
+					<div class='' id='speakingDiv9'><p id=''><h2>9</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_9"></label></div>
+					<div class='' id='speakingDiv10'><p id=''><h2>10</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD3_10"></label></div>
+
+					<script>
+                    function getSpeakingItem(noKD)
+                    {
+	                var speakingNoDefault=localStorage.getItem('speakingNoDefault');
+	                var speakingId='speakingItemKD'+noKD+'_'+speakingNoDefault;
+	                var speakingItemDefault=localStorage.getItem(speakingId);
+                    document.getElementById(speakingId).innerHTML=speakingItemDefault;
+                    readOutLoud(speakingItemDefault);
+                    }					
+					</script>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="How to speak it" onclick="getSpeakingItem(3)"><i class="fa fa-volume-up fa-2x"></i></button>
+                    <button class="w3-bar-item w3-green" id="start-record-btn" title="Start recording" onclick="startRecord()"><i class="fa fa-microphone fa-2x"></i></button>
+                    <button class="w3-bar-item w3-red" id="pause-record-btn" title="Pause recording" onclick="pauseRecord()"><i class="fa fa-pause fa-2x"></i></button>
+                    <button class="w3-bar-item w3-blue" id="" title="Save record" onclick="saveRecord()"><i class="fa fa-save fa-2x"></i></button>
+					</div></div>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="c(3)"><i class="fa fa-angle-left fa-2x"></i></button>
+					<button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="b(3)"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>
+				    <p>You speak:</p>
+                    <input class="w3-input w3-border" type="password" id="note-textarea3" onclick="noteRecord()"></input>
+					 <p>Tap speaker button to listen to how the word/sentence is spoken</p>
+                     <p id="recording-instructions">Tap microphone button and allow access, and speak the word/sentence</p>
+					 <p>Tap pause button to stop recording</p>
+					 <p>Tap save button to save your recording</p>
+
+				  </div>
+		          </div>
+				  <div class='w3-center'>
+				    <div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd3','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+					<button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="speakingModalkan('speakingModalScoreKD3')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
 					</div>
 				  </div>
               </div>
@@ -10782,7 +11028,8 @@ span.psw {
 </div>
 
 <div id='writing_kd1' class="w3-container w3-animate-left" style="padding-left:85px">
-  <h2 class='w3-animate-left'>Practice Writing KD 1</h2>
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
   <table border='0'>
   <tr>
   <td id='writingBadgeKD1_1'></td>
@@ -10805,63 +11052,993 @@ span.psw {
   </tr>
   </table> 
 
-  <div class="w3-row-padding w3-theme">
-        <div class="w3-section">
-            <div class="w3-card-2">
-                <img src="image/writing.png">
-                <div class="w3-container w3-light-gray">	
-                    <div id='writingDiv1'></div>
-					<div id='writingDiv2'></div>
-					<div id='writingDiv3'></div>
-					<div id='writingDiv4'></div>
-					<div id='writingDiv5'></div>
-					<div id='writingDiv6'></div>
-					<div id='writingDiv7'></div>
-					<div id='writingDiv8'></div>
-					<div id='writingDiv9'></div>
-					<div id='writingDiv10'></div>
-					
-                    <script> 
-                    //writeWritingA('Present Simple Tense','writingDiv1',1,1);
-					//writeWriting(1,'writingNoSoal1','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA1','Rearrange the sentence into Present Simple Tense','writingInstructionB1',1);			
-                    //writeWriting(2,'writingNoSoal2','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA2','Rearrange the sentence into Present Simple Tense','writingInstructionB2',1);			
-                    //writeWriting(3,'writingNoSoal3','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA3','Rearrange the sentence into Present Simple Tense','writingInstructionB3',1);			
-                    //writeWriting(4,'writingNoSoal4','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA4','Rearrange the sentence into Present Simple Tense','writingInstructionB4',1);			
-                    //writeWriting(4,'writingNoSoal4','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA4','Rearrange the sentence into Present Simple Tense','writingInstructionB4',1);			
-                    //writeWriting(6,'writingNoSoal6','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA6','Rearrange the sentence into Present Simple Tense','writingInstructionB6',1);			
-                    //writeWriting(7,'writingNoSoal7','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA7','Rearrange the sentence into Present Simple Tense','writingInstructionB7',1);			
-                    //writeWriting(8,'writingNoSoal8','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA8','Rearrange the sentence into Present Simple Tense','writingInstructionB8',1);			
-                    //writeWriting(9,'writingNoSoal9','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA9','Rearrange the sentence into Present Simple Tense','writingInstructionB9',1);			
-                    //writeWriting(9,'writingNoSoal9','Present Simple Tense','Drag the words onto the yellow bar in the right order!','writingInstructionA10','Rearrange the sentence into Present Simple Tense','writingInstructionB10',1);			
-                   
-					/*
-					writeWritingA('Present Simple Tense','writingDiv1',1,1);
-                    writeWritingA('Present Simple Tense','writingDiv2',1,2);
-                    writeWritingA('Present Simple Tense','writingDiv3',1,3);
-                    writeWritingA('Present Simple Tense','writingDiv4',1,4);
-                    writeWritingA('Present Simple Tense','writingDiv5',1,5);
-                    writeWritingA('Present Simple Tense','writingDiv6',1,6);
-                    writeWritingA('Present Simple Tense','writingDiv7',1,7);
-                    writeWritingA('Present Simple Tense','writingDiv8',1,8);
-                    writeWritingA('Present Simple Tense','writingDiv9',1,9);
-                    writeWritingA('Present Simple Tense','writingDiv10',1,10);
-					*/
-					</script>
+                <div id='writingSoalIframeId_1'><iframe src="writingSoalNo1.html"></iframe></div>
 					<div class='w3-center'><div class='w3-bar'>
-					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingBack1();writingBack2()"><i class="fa fa-angle-left fa-2x"></i></button>
-					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingNext1();writeWritingB();writingNext2()"><i class="fa fa-angle-right fa-2x"></i></button>
-					</div></div>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
 
-				</div>
-		    </div>
 		    <div class='w3-center'>
 			  <div class='w3-bar'>
 			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd1','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
-			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writingModalkan('writingModalScoreKD1')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD1')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
 			  </div>
 			</div>
-        </div>
-     </div>
+</div>
+
+<div id='writing_kd2' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD2_1'></td>
+  <td id='writingBadgeKD2_2'></td>
+  <td id='writingBadgeKD2_3'></td>
+  <td id='writingBadgeKD2_4'></td>
+  <td id='writingBadgeKD2_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD2_6'></td>
+  <td id='writingBadgeKD2_7'></td>
+  <td id='writingBadgeKD2_8'></td>
+  <td id='writingBadgeKD2_9'></td>
+  <td id='writingBadgeKD2_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD2' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_2'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd2','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD2')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd3' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD3_1'></td>
+  <td id='writingBadgeKD3_2'></td>
+  <td id='writingBadgeKD3_3'></td>
+  <td id='writingBadgeKD3_4'></td>
+  <td id='writingBadgeKD3_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD3_6'></td>
+  <td id='writingBadgeKD3_7'></td>
+  <td id='writingBadgeKD3_8'></td>
+  <td id='writingBadgeKD3_9'></td>
+  <td id='writingBadgeKD3_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD3' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_3'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd3','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD3')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd4' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD4_1'></td>
+  <td id='writingBadgeKD4_2'></td>
+  <td id='writingBadgeKD4_3'></td>
+  <td id='writingBadgeKD4_4'></td>
+  <td id='writingBadgeKD4_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD4_6'></td>
+  <td id='writingBadgeKD4_7'></td>
+  <td id='writingBadgeKD4_8'></td>
+  <td id='writingBadgeKD4_9'></td>
+  <td id='writingBadgeKD4_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD4' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_4'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd4','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD4')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd5' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD5_1'></td>
+  <td id='writingBadgeKD5_2'></td>
+  <td id='writingBadgeKD5_3'></td>
+  <td id='writingBadgeKD5_4'></td>
+  <td id='writingBadgeKD5_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD5_6'></td>
+  <td id='writingBadgeKD5_7'></td>
+  <td id='writingBadgeKD5_8'></td>
+  <td id='writingBadgeKD5_9'></td>
+  <td id='writingBadgeKD5_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD5' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_5'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd5','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD5')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd6' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD6_1'></td>
+  <td id='writingBadgeKD6_2'></td>
+  <td id='writingBadgeKD6_3'></td>
+  <td id='writingBadgeKD6_4'></td>
+  <td id='writingBadgeKD6_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD6_6'></td>
+  <td id='writingBadgeKD6_7'></td>
+  <td id='writingBadgeKD6_8'></td>
+  <td id='writingBadgeKD6_9'></td>
+  <td id='writingBadgeKD6_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD6' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_6'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd6','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD6')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd7' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD7_1'></td>
+  <td id='writingBadgeKD7_2'></td>
+  <td id='writingBadgeKD7_3'></td>
+  <td id='writingBadgeKD7_4'></td>
+  <td id='writingBadgeKD7_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD7_6'></td>
+  <td id='writingBadgeKD7_7'></td>
+  <td id='writingBadgeKD7_8'></td>
+  <td id='writingBadgeKD7_9'></td>
+  <td id='writingBadgeKD7_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD7' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_7'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd7','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD7')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd8' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD8_1'></td>
+  <td id='writingBadgeKD8_2'></td>
+  <td id='writingBadgeKD8_3'></td>
+  <td id='writingBadgeKD8_4'></td>
+  <td id='writingBadgeKD8_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD8_6'></td>
+  <td id='writingBadgeKD8_7'></td>
+  <td id='writingBadgeKD8_8'></td>
+  <td id='writingBadgeKD8_9'></td>
+  <td id='writingBadgeKD8_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD8' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_8'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd8','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD8')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd9' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD9_1'></td>
+  <td id='writingBadgeKD9_2'></td>
+  <td id='writingBadgeKD9_3'></td>
+  <td id='writingBadgeKD9_4'></td>
+  <td id='writingBadgeKD9_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD9_6'></td>
+  <td id='writingBadgeKD9_7'></td>
+  <td id='writingBadgeKD9_8'></td>
+  <td id='writingBadgeKD9_9'></td>
+  <td id='writingBadgeKD9_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD9' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_9'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd9','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD9')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd10' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD10_1'></td>
+  <td id='writingBadgeKD10_2'></td>
+  <td id='writingBadgeKD10_3'></td>
+  <td id='writingBadgeKD10_4'></td>
+  <td id='writingBadgeKD10_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD10_6'></td>
+  <td id='writingBadgeKD10_7'></td>
+  <td id='writingBadgeKD10_8'></td>
+  <td id='writingBadgeKD10_9'></td>
+  <td id='writingBadgeKD10_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD10' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_10'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd10','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD10')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd11' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD11_1'></td>
+  <td id='writingBadgeKD11_2'></td>
+  <td id='writingBadgeKD11_3'></td>
+  <td id='writingBadgeKD11_4'></td>
+  <td id='writingBadgeKD11_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD11_6'></td>
+  <td id='writingBadgeKD11_7'></td>
+  <td id='writingBadgeKD11_8'></td>
+  <td id='writingBadgeKD11_9'></td>
+  <td id='writingBadgeKD11_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD11' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_11'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd11','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD11')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd12' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD12_1'></td>
+  <td id='writingBadgeKD12_2'></td>
+  <td id='writingBadgeKD12_3'></td>
+  <td id='writingBadgeKD12_4'></td>
+  <td id='writingBadgeKD12_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD12_6'></td>
+  <td id='writingBadgeKD12_7'></td>
+  <td id='writingBadgeKD12_8'></td>
+  <td id='writingBadgeKD12_9'></td>
+  <td id='writingBadgeKD12_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD12' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_12'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd12','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD12')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd13' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD13_1'></td>
+  <td id='writingBadgeKD13_2'></td>
+  <td id='writingBadgeKD13_3'></td>
+  <td id='writingBadgeKD13_4'></td>
+  <td id='writingBadgeKD13_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD13_6'></td>
+  <td id='writingBadgeKD13_7'></td>
+  <td id='writingBadgeKD13_8'></td>
+  <td id='writingBadgeKD13_9'></td>
+  <td id='writingBadgeKD13_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD13' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_13'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd13','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD13')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd14' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD14_1'></td>
+  <td id='writingBadgeKD14_2'></td>
+  <td id='writingBadgeKD14_3'></td>
+  <td id='writingBadgeKD14_4'></td>
+  <td id='writingBadgeKD14_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD14_6'></td>
+  <td id='writingBadgeKD14_7'></td>
+  <td id='writingBadgeKD14_8'></td>
+  <td id='writingBadgeKD14_9'></td>
+  <td id='writingBadgeKD14_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD14' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_14'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd14','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD14')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd15' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD15_1'></td>
+  <td id='writingBadgeKD15_2'></td>
+  <td id='writingBadgeKD15_3'></td>
+  <td id='writingBadgeKD15_4'></td>
+  <td id='writingBadgeKD15_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD15_6'></td>
+  <td id='writingBadgeKD15_7'></td>
+  <td id='writingBadgeKD15_8'></td>
+  <td id='writingBadgeKD15_9'></td>
+  <td id='writingBadgeKD15_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD15' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_15'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd15','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD15')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd16' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD16_1'></td>
+  <td id='writingBadgeKD16_2'></td>
+  <td id='writingBadgeKD16_3'></td>
+  <td id='writingBadgeKD16_4'></td>
+  <td id='writingBadgeKD16_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD16_6'></td>
+  <td id='writingBadgeKD16_7'></td>
+  <td id='writingBadgeKD16_8'></td>
+  <td id='writingBadgeKD16_9'></td>
+  <td id='writingBadgeKD16_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD16' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_16'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd16','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD16')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd17' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD17_1'></td>
+  <td id='writingBadgeKD17_2'></td>
+  <td id='writingBadgeKD17_3'></td>
+  <td id='writingBadgeKD17_4'></td>
+  <td id='writingBadgeKD17_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD17_6'></td>
+  <td id='writingBadgeKD17_7'></td>
+  <td id='writingBadgeKD17_8'></td>
+  <td id='writingBadgeKD17_9'></td>
+  <td id='writingBadgeKD17_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD17' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_17'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd17','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD17')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd18' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD18_1'></td>
+  <td id='writingBadgeKD18_2'></td>
+  <td id='writingBadgeKD18_3'></td>
+  <td id='writingBadgeKD18_4'></td>
+  <td id='writingBadgeKD18_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD18_6'></td>
+  <td id='writingBadgeKD18_7'></td>
+  <td id='writingBadgeKD18_8'></td>
+  <td id='writingBadgeKD18_9'></td>
+  <td id='writingBadgeKD18_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD18' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_18'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd18','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD18')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd19' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD19_1'></td>
+  <td id='writingBadgeKD19_2'></td>
+  <td id='writingBadgeKD19_3'></td>
+  <td id='writingBadgeKD19_4'></td>
+  <td id='writingBadgeKD19_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD19_6'></td>
+  <td id='writingBadgeKD19_7'></td>
+  <td id='writingBadgeKD19_8'></td>
+  <td id='writingBadgeKD19_9'></td>
+  <td id='writingBadgeKD19_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD19' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_19'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd19','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD19')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd20' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD20_1'></td>
+  <td id='writingBadgeKD20_2'></td>
+  <td id='writingBadgeKD20_3'></td>
+  <td id='writingBadgeKD20_4'></td>
+  <td id='writingBadgeKD20_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD20_6'></td>
+  <td id='writingBadgeKD20_7'></td>
+  <td id='writingBadgeKD20_8'></td>
+  <td id='writingBadgeKD20_9'></td>
+  <td id='writingBadgeKD20_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD20' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_20'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd20','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD20')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd21' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD21_1'></td>
+  <td id='writingBadgeKD21_2'></td>
+  <td id='writingBadgeKD21_3'></td>
+  <td id='writingBadgeKD21_4'></td>
+  <td id='writingBadgeKD21_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD21_6'></td>
+  <td id='writingBadgeKD21_7'></td>
+  <td id='writingBadgeKD21_8'></td>
+  <td id='writingBadgeKD21_9'></td>
+  <td id='writingBadgeKD21_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD21' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_21'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd21','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD21')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd22' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD22_1'></td>
+  <td id='writingBadgeKD22_2'></td>
+  <td id='writingBadgeKD22_3'></td>
+  <td id='writingBadgeKD22_4'></td>
+  <td id='writingBadgeKD22_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD22_6'></td>
+  <td id='writingBadgeKD22_7'></td>
+  <td id='writingBadgeKD22_8'></td>
+  <td id='writingBadgeKD22_9'></td>
+  <td id='writingBadgeKD22_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD22' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_22'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd22','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD22')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd23' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD23_1'></td>
+  <td id='writingBadgeKD23_2'></td>
+  <td id='writingBadgeKD23_3'></td>
+  <td id='writingBadgeKD23_4'></td>
+  <td id='writingBadgeKD23_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD23_6'></td>
+  <td id='writingBadgeKD23_7'></td>
+  <td id='writingBadgeKD23_8'></td>
+  <td id='writingBadgeKD23_9'></td>
+  <td id='writingBadgeKD23_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD23' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_23'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd23','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD23')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd24' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD24_1'></td>
+  <td id='writingBadgeKD24_2'></td>
+  <td id='writingBadgeKD24_3'></td>
+  <td id='writingBadgeKD24_4'></td>
+  <td id='writingBadgeKD24_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD24_6'></td>
+  <td id='writingBadgeKD24_7'></td>
+  <td id='writingBadgeKD24_8'></td>
+  <td id='writingBadgeKD24_9'></td>
+  <td id='writingBadgeKD24_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD24' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_24'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd24','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD24')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd25' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD25_1'></td>
+  <td id='writingBadgeKD25_2'></td>
+  <td id='writingBadgeKD25_3'></td>
+  <td id='writingBadgeKD25_4'></td>
+  <td id='writingBadgeKD25_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD25_6'></td>
+  <td id='writingBadgeKD25_7'></td>
+  <td id='writingBadgeKD25_8'></td>
+  <td id='writingBadgeKD25_9'></td>
+  <td id='writingBadgeKD25_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD25' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_25'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd25','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD25')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd26' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD26_1'></td>
+  <td id='writingBadgeKD26_2'></td>
+  <td id='writingBadgeKD26_3'></td>
+  <td id='writingBadgeKD26_4'></td>
+  <td id='writingBadgeKD26_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD26_6'></td>
+  <td id='writingBadgeKD26_7'></td>
+  <td id='writingBadgeKD26_8'></td>
+  <td id='writingBadgeKD26_9'></td>
+  <td id='writingBadgeKD26_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD26' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_26'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd26','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD26')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
 </div>
 
 <div id='writing_kd27' class="w3-container w3-animate-left" style="padding-left:85px">
@@ -11098,6 +12275,200 @@ span.psw {
 			</div>
 </div>
 
+<div id='writing_kd33' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD33_1'></td>
+  <td id='writingBadgeKD33_2'></td>
+  <td id='writingBadgeKD33_3'></td>
+  <td id='writingBadgeKD33_4'></td>
+  <td id='writingBadgeKD33_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD33_6'></td>
+  <td id='writingBadgeKD33_7'></td>
+  <td id='writingBadgeKD33_8'></td>
+  <td id='writingBadgeKD33_9'></td>
+  <td id='writingBadgeKD33_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD33' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_33'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd33','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD33')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd34' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD34_1'></td>
+  <td id='writingBadgeKD34_2'></td>
+  <td id='writingBadgeKD34_3'></td>
+  <td id='writingBadgeKD34_4'></td>
+  <td id='writingBadgeKD34_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD34_6'></td>
+  <td id='writingBadgeKD34_7'></td>
+  <td id='writingBadgeKD34_8'></td>
+  <td id='writingBadgeKD34_9'></td>
+  <td id='writingBadgeKD34_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD34' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_34'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd34','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD34')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd35' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD35_1'></td>
+  <td id='writingBadgeKD35_2'></td>
+  <td id='writingBadgeKD35_3'></td>
+  <td id='writingBadgeKD35_4'></td>
+  <td id='writingBadgeKD35_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD35_6'></td>
+  <td id='writingBadgeKD35_7'></td>
+  <td id='writingBadgeKD35_8'></td>
+  <td id='writingBadgeKD35_9'></td>
+  <td id='writingBadgeKD35_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD35' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_35'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd35','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD35')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd36' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD36_1'></td>
+  <td id='writingBadgeKD36_2'></td>
+  <td id='writingBadgeKD36_3'></td>
+  <td id='writingBadgeKD36_4'></td>
+  <td id='writingBadgeKD36_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD36_6'></td>
+  <td id='writingBadgeKD36_7'></td>
+  <td id='writingBadgeKD36_8'></td>
+  <td id='writingBadgeKD36_9'></td>
+  <td id='writingBadgeKD36_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD36' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_36'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd36','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD36')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+<div id='writing_kd37' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD37_1'></td>
+  <td id='writingBadgeKD37_2'></td>
+  <td id='writingBadgeKD37_3'></td>
+  <td id='writingBadgeKD37_4'></td>
+  <td id='writingBadgeKD37_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD37_6'></td>
+  <td id='writingBadgeKD37_7'></td>
+  <td id='writingBadgeKD37_8'></td>
+  <td id='writingBadgeKD37_9'></td>
+  <td id='writingBadgeKD37_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD37' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_37'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd37','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD37')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
 </div>
 <div id='unDiv'>
 <div id="unModalCup" class="w3-animate-zoom w3-modal">
