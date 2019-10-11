@@ -32,8 +32,8 @@
 <next-correct-letter>The next correct letter has been added to the answer.</next-correct-letter>
 <include-hint>1</include-hint>
 <case-sensitive>0</case-sensitive>
-<include-word-list>0</include-word-list>
-<use-drop-down-list>0</use-drop-down-list>
+<include-word-list>1</include-word-list>
+<use-drop-down-list>1</use-drop-down-list>
 <minimum-gap-size>6</minimum-gap-size>
 <next-ex-url>nextpage.htm</next-ex-url>
 <send-email>0</send-email>
