@@ -253,12 +253,53 @@ showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuA
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_writing','getNilai',retrieveItem('usernameStored'),'37','score_writing_kd36');
 }
 function getScorePracticeKD37(){
-showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_theory','getNilai',retrieveItem('usernameStored'),'33','score_theory_kd37');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_theory','getNilai',retrieveItem('usernameStored'),'38','score_theory_kd37');
 showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_listening','getNilai',retrieveItem('usernameStored'),'38','score_listening_kd37');
-showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_speaking','getNilai',retrieveItem('usernameStored'),'39','score_speaking_kd37');
-showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_reading','getNilai',retrieveItem('usernameStored'),'39','score_reading_kd37');
-showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_writing','getNilai',retrieveItem('usernameStored'),'39','score_writing_kd37');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_speaking','getNilai',retrieveItem('usernameStored'),'38','score_speaking_kd37');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_reading','getNilai',retrieveItem('usernameStored'),'38','score_reading_kd37');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_writing','getNilai',retrieveItem('usernameStored'),'38','score_writing_kd37');
 }
+
+function getRankUser(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_rekap','getNilai',retrieveItem('usernameStored'),'46','rank_user');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_rekap','getNilai',retrieveItem('usernameStored'),'1','name_user');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_rekap','getNilai',retrieveItem('usernameStored'),'48','challengesum_user');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_rekap','getNilai',retrieveItem('usernameStored'),'49','totalscore_user');
+}
+
+function getLeaderboard(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','1','1','name_1');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','1','2','challengesum_1');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','1','3','totalscore_1');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','2','1','name_2');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','2','2','challengesum_2');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','2','3','totalscore_2');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','3','1','name_3');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','3','2','challengesum_3');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','3','3','totalscore_3');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','4','1','name_4');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','4','2','challengesum_4');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','4','3','totalscore_4');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','5','1','name_5');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','5','2','challengesum_5');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','5','3','totalscore_5');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','6','1','name_6');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','6','2','challengesum_6');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','6','3','totalscore_6');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','7','1','name_7');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','7','2','challengesum_7');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','7','3','totalscore_7');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','8','1','name_8');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','8','2','challengesum_8');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','8','3','totalscore_8');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','9','1','name_9');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','9','2','challengesum_9');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','9','3','totalscore_9');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','10','1','name_10');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','10','2','challengesum_10');
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','leaderboard','getNilai','10','3','totalscore_10');
+}
+
 function showNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,elShown){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -514,4 +555,25 @@ function storeScoreKD37(){
 function getAndStoreScoreUNKD(noKD){
 	localStorage.setItem('unKDDefault',noKD);
 	getAndStoreNilaiSkillKD('hasil_un','un');
+}
+function getScoreUN1(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_un','getNilai',retrieveItem('usernameStored'),'2','score_un1');
+}
+function getScoreUN2(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_un','getNilai',retrieveItem('usernameStored'),'3','score_un2');
+}
+function getScoreUN3(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_un','getNilai',retrieveItem('usernameStored'),'4','score_un3');
+}
+function getScoreUN4(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_un','getNilai',retrieveItem('usernameStored'),'5','score_un4');
+}
+function getScoreUN5(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_un','getNilai',retrieveItem('usernameStored'),'6','score_un5');
+}
+function getScoreUN6(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_un','getNilai',retrieveItem('usernameStored'),'7','score_un6');
+}
+function getScoreUN7(){
+showNilai('https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing','hasil_un','getNilai',retrieveItem('usernameStored'),'8','score_un7');
 }
