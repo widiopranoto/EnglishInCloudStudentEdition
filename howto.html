@@ -120,6 +120,7 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
 
 <div id='loginDiv'>
 <div id="loginModal" class="w3-animate-zoom w3-modal">
+<div class="w3-half w3-section">
     <div class="w3-modal-content w3-card-4">
       <header class="w3-container w3-green"> 
         <span onclick="document.getElementById('loginModal').style.display='none'"
@@ -132,6 +133,7 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
    <p class="w3-center" id="loginOnlineStatus_"></p> 
 </div>
 	</div>
+</div>	
 </div>	
 <div id="loginModalLogout" class="w3-animate-zoom w3-modal">
     <div class="w3-modal-content w3-card-4">
@@ -240,7 +242,7 @@ span.psw {
 <div id='howtoDiv'>
 <div id='howto' class="w3-container w3-animate-left" style="padding-left:85px">
   <h2 class="w3-animate-left">How To</h2>
-          <div class="w3-third w3-section">
+          <div class="w3-section">
             <div class="w3-card-2">
                 <a href="#howto_sub" class="w3-bar-item w3-button" onclick="show('#howto_sub')">			
                 <img src="image/howto.png">
@@ -250,6 +252,102 @@ span.psw {
                     <p></p>
                 </div>
             </div>
+            <div class="w3-card-2">
+                <div class="w3-container">
+                    <h2>Fitur:</h2>
+<ol>
+<li>Aplikasi berisi 37 KD sesuai silabus.</li>
+<li>Tiap KD berisi latihan teori, listening, speaking, reading, dan writing.</li>
+<li>Berisi latihan Ujian Nasional 7 paket beserta pembahasan.</li>
+<li>Latihan UN termasuk latihan listening.</li>
+<li>Tiap bagian teori berisi teori keterampilan (berupa file atau video Youtube) dan latihan, serta teori pengetahuan dan latihan.</li>
+<li>Tiap latihan listening berisi file audio dan 10 soal latihan dan dikoreksi otomatis oleh aplikasi.</li>
+<li>Tiap latihan speaking berisi 10 soal speaking yang dikoreksi otomatis oleh aplikasi.</li>
+<li>Tiap latihan reading berisi 10 soal yang dikoreksi otomatis oleh aplikasi</li>
+<li>Tiap latihan writing berisi 10 soal yang dikoreksi otomatis oleh aplikasi</li>
+<li>Nilai tersimpan dan update otomatis ke Google Spreadsheet guru.</li>
+<li>Peserta didik dapat memeriksa nilai di aplikasi.</li>
+<li>Ada poin untuk tiap soal yang dijawab dengan benar.</li>
+<li>Ada <em>sound effect game</em> untuk tiap soal yang dijawab dengan benar.</li>
+<li>Ada badge untuk tiap latihan yang tuntas (nilai &gt;79).</li>
+<li>Ada penguncian challenge/KD berikutnya jika belum tuntas challenge/KD sebelumnya.</li>
+<li>Ada <em>leaderboard</em> yang bisa diakses peserta didik untuk memotivasi mereka mendapatkan poin sebanyak-banyaknya.</li>
+</ol>
+<h2>Cara Pemakaian</h2>
+<ol start="1">
+<li>Masuk ke website https://widiopranoto.github.io/englishincloudstudentedition atau menggunakan aplikasi.</li>
+<li>Login dengan username dan password yang diberikan guru. Untuk demo bisa pakai username 12345 dan password 12345.</li>
+<li>Masuk ke salah satu KD. Mengerjakan theory, listening, speaking, reading, dan writing.</li>
+<li>Khusus untuk teori:
+<ol style="list-style-type: lower-alpha;">
+<li>Untuk aspek keterampilan, tonton video tutorial dari Youtube dan kerjakan latihan.</li>
+<li>Untuk aspek pengetahuan, tonton video tutorial dari Youtube atau baca dokumen materi, dan kerjakan latihan.</li>
+<li>Isi kedua latihan dan setelah selesai, klik 'Check'.</li>
+<li>Jika semua latihan berhasil dikerjakan, peserta didik akan mendapatkan 1 (satu) buah piala.</li>
+<li>Untuk mengecek skor latihan, silakan tekan tombol 'Show My Score'.</li>
+<li>Secara otomatis, skor akan disimpan di server.</li>
+<li>Skor/nilai di server dapat dicek di bagian 'Score' pada bagian kiri halaman.</li>
+</ol>
+</li>
+<li>Khusus untuk listening:
+<ol style="list-style-type: lower-alpha;">
+<li>Dengarkan dialog dari Youtube atau file media.</li>
+<li>Isi latihan dan setelah selesai, klik 'Check'.</li>
+<li>Jika semua latihan listening berhasil dikerjakan, peserta didik akan mendapatkan 1 (satu) buah piala.</li>
+<li>Untuk mengecek skor latihan, silakan tekan tombol 'Show My Score'.</li>
+<li>Secara otomatis, skor akan disimpan di server.</li>
+<li>Skor/nilai di server dapat dicek di bagian 'Score' pada bagian kiri halaman.</li>
+</ol>
+</li>
+<li>Khusus untuk speaking:
+<ol style="list-style-type: lower-alpha;">
+<li>Dengarkan contoh kalimat dengan tombol speaker.</li>
+<li>Untuk mengucapkan dan merekam kalimat, tekan tombol microphone.</li>
+<li>Untuk berhenti merekam, tekan tombol pause.</li>
+<li>Untuk memeriksa hasil, tekan tombol disket.</li>
+<li>Jika benar, peserta didik akan mendapatkan 1 (satu) buah medali, jika salah, peserta didik harus mengulang.</li>
+<li>Jika semua latihan speaking berhasil dikerjakan, peserta didik akan mendapatkan 1 (satu) buah piala.</li>
+<li>Untuk mengecek skor latihan, silakan tekan tombol 'Show My Score'.</li>
+<li>Secara otomatis, skor akan disimpan di server.</li>
+<li>Skor/nilai di server dapat dicek di bagian 'Score' pada bagian kiri halaman.</li>
+</ol>
+</li>
+<li>Khusus untuk reading:
+<ol style="list-style-type: lower-alpha;">
+<li>Baca dan isi latihan reading.</li>
+<li>Isi latihan dan setelah selesai, klik 'Check'.</li>
+<li>Jika semua latihan reading berhasil dikerjakan, peserta didik akan mendapatkan 1 (satu) buah piala.</li>
+<li>Untuk mengecek skor latihan, silakan tekan tombol 'Show My Score'.</li>
+<li>Secara otomatis, skor akan disimpan di server.</li>
+<li>Skor/nilai di server dapat dicek di bagian 'Score' pada bagian kiri halaman.</li>
+</ol>
+</li>
+<li>Khusus untuk writing:
+<ol style="list-style-type: lower-alpha;">
+<li>Susunlah kalimat acak menjadi kalimat yang benar dengan menggeser tiap kata ke kotak.</li>
+<li>Untuk memeriksa benar/tidak susunan kalimat, tekan tombol 'Check'.</li>
+<li>Jika butuh bantuan, tekan tombol 'Hint'.</li>
+<li>Untuk menuju nomor berikut, tekan tombol panah kanan.</li>
+<li>Untuk menuju nomor sebelumnya, tekan tombol panah kiri.</li>
+<li>Jika benar, peserta didik akan mendapatkan 1 (satu) buah medali, jika salah, peserta didik harus mengulang.</li>
+<li>Jika semua latihan writing berhasil dikerjakan, peserta didik akan mendapatkan 1 (satu) buah piala.</li>
+<li>Untuk mengecek skor latihan, silakan tekan tombol 'Show My Score'.</li>
+<li>Secara otomatis, skor akan disimpan di server.</li>
+<li>Skor/nilai di server dapat dicek di bagian 'Score' pada bagian kiri halaman.</li>
+</ol>
+</li>
+<li>Khusus untuk latihan UN:
+<ol style="list-style-type: lower-alpha;">
+<li>Klik salah satu latihan UN.</li>
+<li>Kerjakan soal 1-50.</li>
+<li>Maksimal pengerjaan adalah 2 jam.</li>
+<li>Setelah selesai, klik 'Submit All'.</li>
+<li>Untuk melihat pembahasan, klik tombol pembahasan di akhir latihan.</li>
+</ol>
+</li>
+</ol>					
+                </div>
+            </div>			
         </div>
 </div>
 </div>
