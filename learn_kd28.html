@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html>
+<title>English in Cloud</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<link rel="stylesheet" href="esl-games/scripts/game-jumbled2.css" />
+<link rel="stylesheet" href="w3schools/w3css/4/w3.css">
+<link rel="stylesheet" href="ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="image/eic_green_16x16.png" type="image/png" sizes="16x16">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<script src="w3schools/lib/w3.js"></script>
+<script src="js/function.js"></script>
+<script src="js/data.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/writeTheory.js"></script>
+<script src="js/writeListening.js"></script>
+<script src="js/writeReading.js"></script>
+<script src="js/writeWriting.js"></script>
+<script src="js/writeUN.js"></script>
+<script src="js/speakingScript.js"></script>
+<script src="js/getScorePractice.js"></script>
+<script src="esl-games/scripts/jquery-1.7.2.min.js"></script>
+<script src="esl-games/scripts/jquery-ui-1.8.21.min.js"></script>
+<script src="esl-games/scripts/jquery.ui.touch-punch.js"></script>
+<script src="json/kd27JSON.json"></script>
+<script src="json/kd28JSON.json"></script>
+<script src="json/kd29JSON.json"></script>
+<script src="json/kd30JSON.json"></script>
+<script src="json/kd31JSON.json"></script>
+<script src="json/kd32JSON.json"></script>
+<script src="js/writeSpeaking.js"></script>
+<style>
+html,body,h1 {font-family: "Cooper Black" , serif;}
+html,body,h2,h3,h4,h5,h6{font-family: 'Indie Flower', cursive, serif;}
+iframe {width: 100%;height: 600px;border: 2px w3-grey;}
+</style>
+</head>
+<body onload="getAndStoreScoreKD(28);showAndSound('#learn_kd28','begin')">
+<div class="w3-top w3-dark-gray" style="padding-left:80px">
+<h2>English in Cloud</h2>
+</div>
+<div id='audio'>
+<audio id="begin">
+  <source src="sound/begin.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="bonus">
+  <source src="sound/bonus.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="coin">
+  <source src="sound/coin.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="end">
+  <source src="sound/end.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="fail">
+  <source src="sound/fail.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="gameover">
+  <source src="sound/gameover.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="jump">
+  <source src="sound/jump.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="levelup">
+  <source src="sound/levelup.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="timeup">
+  <source src="sound/timeup.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="whistle">
+  <source src="sound/whistle.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="woo">
+  <source src="sound/woo.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="yeah">
+  <source src="sound/yeah.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="fail2">
+  <source src="sound/fail2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="score">
+  <source src="sound/score.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="squeak">
+  <source src="sound/jump.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<audio id="clap">
+  <source src="sound/clap.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+</div>
+<div id='sidebar' style="padding-top:65px">
+<div class="w3-sidebar w3-bar-block w3-green w3-xxlarge" style="width:80px">
+  <a href="home.html" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#home')"><img src="image/home.png" style="width:65px"></img></a> 
+  <a href="login.html" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#login')"><img src="image/login.png" style="width:65px"></img></a> 
+  <!--<a href="#practice" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#practice')"><img src="image/practice.png" style="width:60px"></img></a>--> 
+  <!--<a href="#learn" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#learn')"><img src="image/learn.png" style="width:60px"></img></a>-->
+  <a href="un.html" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#un')"><img src="image/un.png" style="width:65px"></img></a> 
+  <a href="score.html" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#score')"><img src="image/score.png" style="width:65px"></img></a> 
+  <a href="leaderboard.html" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#leaderboard')"><img src="image/leaderboard.png" style="width:65px"></img></i></a> 
+  <a href="howto.html" class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#howto')"><img src="image/howto.png" style="width:65px"></img></i></a> 
+</div>
+</div>
+<div id='home' class="w3-container w3-animate-left" style="padding-left:85px">
+  <div class="w3-row-padding w3-theme">
+
+        <div class="w3-quarter w3-section">
+		    <h2 class="w3-animate-left">Learning English for X Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/learn_x.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">			
+                     <a href='learn_kd1.html' class="w3-bar-item w3-btn w3-green" id="" title="">Learn KD 1<i class="w3-margin-left fa fa-angle-double-right"></i></a>				 
+					 <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(1);showAndSound('#learn_kd1','begin')" disabled>Learn KD 1<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(2);showAndSound('#learn_kd2','begin')" disabled>Learn KD 2<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(3);showAndSound('#learn_kd3','begin')" disabled>Learn KD 3<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(4);showAndSound('#learn_kd4','begin')" disabled>Learn KD 4<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(5);showAndSound('#learn_kd5','begin')" disabled>Learn KD 5<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(6);showAndSound('#learn_kd6','begin')" disabled>Learn KD 6<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(7);showAndSound('#learn_kd7','begin')" disabled>Learn KD 7<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(8);showAndSound('#learn_kd8','begin')" disabled>Learn KD 8<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(9);showAndSound('#learn_kd9','begin')" disabled>Learn KD 9<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(10);showAndSound('#learn_kd10','begin')" disabled>Learn KD 10<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(11);showAndSound('#learn_kd11','begin')" disabled>Learn KD 11<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(12);showAndSound('#learn_kd12','begin')" disabled>Learn KD 12<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(13);showAndSound('#learn_kd13','begin')" disabled>Learn KD 13<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     
+					 </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>
+        <div class="w3-quarter w3-section">
+          <h2 class="w3-animate-left">Learning English for XI Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/learn_xi.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(14);showAndSound('#learn_kd14','begin')" disabled>Learn KD 14<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(15);showAndSound('#learn_kd15','begin')" disabled>Learn KD 15<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(16);showAndSound('#learn_kd16','begin')" disabled>Learn KD 16<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(17);showAndSound('#learn_kd17','begin')" disabled>Learn KD 17<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(18);showAndSound('#learn_kd18','begin')" disabled>Learn KD 18<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(19);showAndSound('#learn_kd19','begin')" disabled>Learn KD 19<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(20);showAndSound('#learn_kd20','begin')" disabled>Learn KD 20<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(21);showAndSound('#learn_kd21','begin')" disabled>Learn KD 21<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(22);showAndSound('#learn_kd22','begin')" disabled>Learn KD 22<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(23);showAndSound('#learn_kd23','begin')" disabled>Learn KD 23<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(24);showAndSound('#learn_kd24','begin')" disabled>Learn KD 24<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(25);showAndSound('#learn_kd25','begin')" disabled>Learn KD 25<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(26);showAndSound('#learn_kd26','begin')" disabled>Learn KD 26<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     
+					 </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>
+
+         <div class="w3-quarter w3-section">
+          <h2 class="w3-animate-left">Learning English for XII Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/learn_xii.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">			
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(27);storeKD27JSON();showAndSound('#learn_kd27','begin')">Learn KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(28);storeKD28JSON();showAndSound('#learn_kd28','begin')">Learn KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(29);storeKD29JSON();showAndSound('#learn_kd29','begin')">Learn KD 29<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(30);storeKD30JSON();showAndSound('#learn_kd30','begin')">Learn KD 30<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(31);storeKD31JSON();showAndSound('#learn_kd31','begin')">Learn KD 31<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(32);storeKD32JSON();showAndSound('#learn_kd32','begin')">Learn KD 32<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>  
+	
+         <div class="w3-quarter w3-section">
+          <h2 class="w3-animate-left">Learning English for XIII Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/learn_xiii.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">			
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(33);showAndSound('#learn_kd33','begin')" disabled>Learn KD 33<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(34);showAndSound('#learn_kd34','begin')" disabled>Learn KD 34<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(35);showAndSound('#learn_kd35','begin')" disabled>Learn KD 35<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(36);showAndSound('#learn_kd36','begin')" disabled>Learn KD 36<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="getAndStoreScoreKD(37);showAndSound('#learn_kd37','begin')" disabled>Learn KD 37<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>    
+	</div>	
+  <div class="w3-row-padding w3-theme">
+
+        <div class="w3-half w3-section">
+		    <h2 class="w3-animate-left">Practice National Examinations</h2>  
+            <div class="w3-card-2">
+				<img src="image/un.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">	
+                     <a href='un.html' class="w3-bar-item w3-btn w3-green" id="" title="">Practice National Examinations<i class="w3-margin-left fa fa-angle-double-right"></i></a>
+					 </div>
+				   </div>
+                </div>
+            </div>
+        </div>
+	</div>
+<audio autoplay>
+  <source src="sound/levelup.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+</div>
+<div id='learnDiv'>
+
+<div id='learn_kd28' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class="w3-animate-left">Learning English KD 28</h2>
+   <div class="w3-row-padding w3-theme">  
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Theory KD 28</h2>  
+            <div class="w3-card-2">
+				<img src="image/theory.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeTheoryModalKD(28);writeTheoryKD(28,2);showAndSound('#theory_kd28','begin');theoryCekCup(28)">Theory KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Listening KD 28</h2>  
+            <div class="w3-card-2">
+				<img src="image/listening.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeListeningModalKD(28);writeListeningKD(28,0);showAndSound('#listening_kd28','begin');listeningCekCup(28)">Listening KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>		
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Speaking KD 28</h2>  
+            <div class="w3-card-2">
+				<img src="image/speaking.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="a(28);showAndSound('#speaking_kd28','begin')">Speaking KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>			
+   </div>  
+    <div class="w3-row-padding w3-theme">
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Reading KD 28</h2>  
+            <div class="w3-card-2">
+				<img src="image/reading.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="writeReadingModalKD(28);writeReadingKD(28,0);showAndSound('#reading_kd28','begin');readingCekCup(32)">Reading KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                </div></div></div>
+            </div>	
+        </div>			
+        <div class="w3-third w3-section">
+		    <h2 class="w3-animate-left">Practice Writing KD 28</h2>  
+            <div class="w3-card-2">
+				<img src="image/writing.png"></img>
+                <div class="w3-light-gray">
+                   <div class="w3-center"><div class="w3-bar">
+                     <button class="w3-bar-item w3-btn w3-green" id="" title="" onclick="localStorage.setItem('writingNoDefault',28);showAndSound('#writing_kd28','begin')">Writing KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				   </div></div>
+                </div>
+            </div>
+        </div>			
+    </div>
+
+   <div class="w3-center">
+     <div class="w3-bar>">
+        <button class="w3-button w3-yellow" id="" title="" onclick="showAndSound('#home','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>  
+    </div>
+  </div>
+</div>
+
+</div>
+<div id='theoryDiv'>
+<div id="theoryModalCup" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('theoryModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+	</header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="theoryCupKD1_"></p>
+  <p class="w3-center" id="theoryCupKD2_"></p>
+  <p class="w3-center" id="theoryCupKD3_"></p>
+  <p class="w3-center" id="theoryCupKD4_"></p>
+  <p class="w3-center" id="theoryCupKD5_"></p>
+  <p class="w3-center" id="theoryCupKD6_"></p>
+  <p class="w3-center" id="theoryCupKD7_"></p>
+  <p class="w3-center" id="theoryCupKD8_"></p>
+  <p class="w3-center" id="theoryCupKD9_"></p>
+  <p class="w3-center" id="theoryCupKD10_"></p>
+  <p class="w3-center" id="theoryCupKD11_"></p>
+  <p class="w3-center" id="theoryCupKD12_"></p>
+  <p class="w3-center" id="theoryCupKD13_"></p>
+  <p class="w3-center" id="theoryCupKD14_"></p>
+  <p class="w3-center" id="theoryCupKD15_"></p>
+  <p class="w3-center" id="theoryCupKD16_"></p>
+  <p class="w3-center" id="theoryCupKD17_"></p>
+  <p class="w3-center" id="theoryCupKD18_"></p>
+  <p class="w3-center" id="theoryCupKD19_"></p>
+  <p class="w3-center" id="theoryCupKD20_"></p>
+  <p class="w3-center" id="theoryCupKD21_"></p>
+  <p class="w3-center" id="theoryCupKD22_"></p>
+  <p class="w3-center" id="theoryCupKD23_"></p>
+  <p class="w3-center" id="theoryCupKD24_"></p>
+  <p class="w3-center" id="theoryCupKD25_"></p>
+  <p class="w3-center" id="theoryCupKD26_"></p>
+  <p class="w3-center" id="theoryCupKD27_"></p>
+  <p class="w3-center" id="theoryCupKD28_"></p>
+  <p class="w3-center" id="theoryCupKD29_"></p>
+  <p class="w3-center" id="theoryCupKD30_"></p>  
+  <p class="w3-center" id="theoryCupKD31_"></p>
+  <p class="w3-center" id="theoryCupKD32_"></p>
+  <p class="w3-center" id="theoryCupKD33_"></p>
+  <p class="w3-center" id="theoryCupKD34_"></p>
+  <p class="w3-center" id="theoryCupKD35_"></p>
+  <p class="w3-center" id="theoryCupKD36_"></p>
+  <p class="w3-center" id="theoryCupKD37_"></p>
+
+</div>
+	</div>
+</div>	
+
+<div id="theoryModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('theoryModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="theoryFistKD1_"></p>
+  <p class="w3-center" id="theoryFistKD2_"></p>
+  <p class="w3-center" id="theoryFistKD3_"></p>
+  <p class="w3-center" id="theoryFistKD4_"></p>
+  <p class="w3-center" id="theoryFistKD5_"></p>
+  <p class="w3-center" id="theoryFistKD6_"></p>
+  <p class="w3-center" id="theoryFistKD7_"></p>
+  <p class="w3-center" id="theoryFistKD8_"></p>
+  <p class="w3-center" id="theoryFistKD9_"></p>
+  <p class="w3-center" id="theoryFistKD10_"></p>
+  <p class="w3-center" id="theoryFistKD11_"></p>
+  <p class="w3-center" id="theoryFistKD12_"></p>
+  <p class="w3-center" id="theoryFistKD13_"></p>
+  <p class="w3-center" id="theoryFistKD14_"></p>
+  <p class="w3-center" id="theoryFistKD15_"></p>
+  <p class="w3-center" id="theoryFistKD16_"></p>
+  <p class="w3-center" id="theoryFistKD17_"></p>
+  <p class="w3-center" id="theoryFistKD18_"></p>
+  <p class="w3-center" id="theoryFistKD19_"></p>
+  <p class="w3-center" id="theoryFistKD20_"></p>
+  <p class="w3-center" id="theoryFistKD21_"></p>
+  <p class="w3-center" id="theoryFistKD22_"></p>
+  <p class="w3-center" id="theoryFistKD23_"></p>
+  <p class="w3-center" id="theoryFistKD24_"></p>
+  <p class="w3-center" id="theoryFistKD25_"></p>
+  <p class="w3-center" id="theoryFistKD26_"></p>
+  <p class="w3-center" id="theoryFistKD27_"></p>
+  <p class="w3-center" id="theoryFistKD28_"></p>
+  <p class="w3-center" id="theoryFistKD29_"></p>
+  <p class="w3-center" id="theoryFistKD30_"></p>  
+  <p class="w3-center" id="theoryFistKD31_"></p>
+  <p class="w3-center" id="theoryFistKD32_"></p>
+  <p class="w3-center" id="theoryFistKD33_"></p>
+  <p class="w3-center" id="theoryFistKD34_"></p>
+  <p class="w3-center" id="theoryFistKD35_"></p>
+  <p class="w3-center" id="theoryFistKD36_"></p>
+  <p class="w3-center" id="theoryFistKD37_"></p>
+</div>
+	</div>
+</div>
+
+<div id="theoryModalScoreKD1" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD2" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD3" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD4" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD5" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD6" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD7" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD8" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD9" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD10" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD11" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD12" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD13" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD14" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD15" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD16" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD17" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD18" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD19" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD20" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD21" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD22" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD23" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD24" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD25" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD26" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD27" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD28" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD29" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD30" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD31" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD32" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD33" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD34" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD35" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD36" class="w3-animate-zoom w3-modal"></div>
+<div id="theoryModalScoreKD37" class="w3-animate-zoom w3-modal"></div>
+
+<div id="theory_kd1" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd2" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd3" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd4" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd5" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd6" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd7" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd8" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd9" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd10" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd11" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd12" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd13" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd14" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd15" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd16" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd17" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd18" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd19" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd20" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd21" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd22" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd23" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd24" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd25" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd26" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd27" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd28" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd29" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd30" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd31" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="theory_kd32" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+
+
+</div>
+<div id='listeningDiv'>
+
+<div id="listeningModalCup" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('listeningModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="listeningCupKD1_"></p>
+  <p class="w3-center" id="listeningCupKD2_"></p>
+  <p class="w3-center" id="listeningCupKD3_"></p>
+  <p class="w3-center" id="listeningCupKD4_"></p>
+  <p class="w3-center" id="listeningCupKD5_"></p>
+  <p class="w3-center" id="listeningCupKD6_"></p>
+  <p class="w3-center" id="listeningCupKD7_"></p>
+  <p class="w3-center" id="listeningCupKD8_"></p>
+  <p class="w3-center" id="listeningCupKD9_"></p>
+  <p class="w3-center" id="listeningCupKD10_"></p>
+  <p class="w3-center" id="listeningCupKD11_"></p>
+  <p class="w3-center" id="listeningCupKD12_"></p>
+  <p class="w3-center" id="listeningCupKD13_"></p>
+  <p class="w3-center" id="listeningCupKD14_"></p>
+  <p class="w3-center" id="listeningCupKD15_"></p>
+  <p class="w3-center" id="listeningCupKD16_"></p>
+  <p class="w3-center" id="listeningCupKD17_"></p>
+  <p class="w3-center" id="listeningCupKD18_"></p>
+  <p class="w3-center" id="listeningCupKD19_"></p>
+  <p class="w3-center" id="listeningCupKD20_"></p>
+  <p class="w3-center" id="listeningCupKD21_"></p>
+  <p class="w3-center" id="listeningCupKD22_"></p>
+  <p class="w3-center" id="listeningCupKD23_"></p>
+  <p class="w3-center" id="listeningCupKD24_"></p>
+  <p class="w3-center" id="listeningCupKD25_"></p>
+  <p class="w3-center" id="listeningCupKD26_"></p>
+  <p class="w3-center" id="listeningCupKD27_"></p>
+  <p class="w3-center" id="listeningCupKD28_"></p>
+  <p class="w3-center" id="listeningCupKD29_"></p>
+  <p class="w3-center" id="listeningCupKD30_"></p>  
+  <p class="w3-center" id="listeningCupKD31_"></p>
+  <p class="w3-center" id="listeningCupKD32_"></p>
+  <p class="w3-center" id="listeningCupKD33_"></p>
+  <p class="w3-center" id="listeningCupKD34_"></p>
+  <p class="w3-center" id="listeningCupKD35_"></p>
+  <p class="w3-center" id="listeningCupKD36_"></p>
+  <p class="w3-center" id="listeningCupKD37_"></p>
+</div>
+	</div>
+</div>
+
+<div id="listeningModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('listeningModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="listeningFistKD1_"></p>
+  <p class="w3-center" id="listeningFistKD2_"></p>
+  <p class="w3-center" id="listeningFistKD3_"></p>
+  <p class="w3-center" id="listeningFistKD4_"></p>
+  <p class="w3-center" id="listeningFistKD5_"></p>
+  <p class="w3-center" id="listeningFistKD6_"></p>
+  <p class="w3-center" id="listeningFistKD7_"></p>
+  <p class="w3-center" id="listeningFistKD8_"></p>
+  <p class="w3-center" id="listeningFistKD9_"></p>
+  <p class="w3-center" id="listeningFistKD10_"></p>
+  <p class="w3-center" id="listeningFistKD11_"></p>
+  <p class="w3-center" id="listeningFistKD12_"></p>
+  <p class="w3-center" id="listeningFistKD13_"></p>
+  <p class="w3-center" id="listeningFistKD14_"></p>
+  <p class="w3-center" id="listeningFistKD15_"></p>
+  <p class="w3-center" id="listeningFistKD16_"></p>
+  <p class="w3-center" id="listeningFistKD17_"></p>
+  <p class="w3-center" id="listeningFistKD18_"></p>
+  <p class="w3-center" id="listeningFistKD19_"></p>
+  <p class="w3-center" id="listeningFistKD20_"></p>
+  <p class="w3-center" id="listeningFistKD21_"></p>
+  <p class="w3-center" id="listeningFistKD22_"></p>
+  <p class="w3-center" id="listeningFistKD23_"></p>
+  <p class="w3-center" id="listeningFistKD24_"></p>
+  <p class="w3-center" id="listeningFistKD25_"></p>
+  <p class="w3-center" id="listeningFistKD26_"></p>
+  <p class="w3-center" id="listeningFistKD27_"></p>
+  <p class="w3-center" id="listeningFistKD28_"></p>
+  <p class="w3-center" id="listeningFistKD29_"></p>
+  <p class="w3-center" id="listeningFistKD30_"></p>  
+  <p class="w3-center" id="listeningFistKD31_"></p>
+  <p class="w3-center" id="listeningFistKD32_"></p>
+  <p class="w3-center" id="listeningFistKD33_"></p>
+  <p class="w3-center" id="listeningFistKD34_"></p>
+  <p class="w3-center" id="listeningFistKD35_"></p>
+  <p class="w3-center" id="listeningFistKD36_"></p>
+  <p class="w3-center" id="listeningFistKD37_"></p>
+</div>
+	</div>
+</div>
+
+<div id="listeningModalScoreKD1" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD2" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD3" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD4" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD5" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD6" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD7" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD8" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD9" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD10" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD11" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD12" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD13" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD14" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD15" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD16" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD17" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD18" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD19" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD20" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD21" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD22" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD23" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD24" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD25" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD26" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD27" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD28" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD29" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD30" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD31" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD32" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD33" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD34" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD35" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD36" class="w3-animate-zoom w3-modal"></div>
+<div id="listeningModalScoreKD37" class="w3-animate-zoom w3-modal"></div>
+
+<div id="listening_kd1" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd2" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd3" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd4" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd5" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd6" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd7" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd8" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd9" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd10" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd11" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd12" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd13" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd14" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd15" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd16" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd17" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd18" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd19" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd20" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd21" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd22" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd23" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd24" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd25" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd26" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd27" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd28" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd29" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd30" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd31" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd32" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd33" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd34" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd35" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd36" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+<div id="listening_kd37" class='w3-container w3-animate-left' style="padding-left:85px"></div>
+
+<div id='listening' class="w3-container w3-animate-left" style="padding-left:85px">
+  <div class="w3-row-padding w3-theme">
+
+        <div class="w3-quarter w3-section">
+		    <h2 class="w3-animate-left">Practice Listening for X Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/listening.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">			
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(1,'listening_kd1','Practice Listening KD 1','listening_youtube_kd1','listening_soal_kd1');showAndSound('#listening_kd1','begin')">KD 1<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(2,'listening_kd2','Practice Listening KD 2','listening_youtube_kd2','listening_soal_kd2');showAndSound('#listening_kd2','begin')">KD 2<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(3,'listening_kd3','Practice Listening KD 3','listening_youtube_kd3','listening_soal_kd3');showAndSound('#listening_kd3','begin')">KD 3<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(4,'listening_kd4','Practice Listening KD 4','listening_youtube_kd4','listening_soal_kd4');showAndSound('#listening_kd4','begin')">KD 4<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(5,'listening_kd5','Practice Listening KD 5','listening_youtube_kd5','listening_soal_kd5');showAndSound('#listening_kd5','begin')">KD 5<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(6,'listening_kd6','Practice Listening KD 6','listening_youtube_kd6','listening_soal_kd6');showAndSound('#listening_kd6','begin')">KD 6<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(7,'listening_kd7','Practice Listening KD 7','listening_youtube_kd7','listening_soal_kd7');showAndSound('#listening_kd7','begin')">KD 7<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(8,'listening_kd8','Practice Listening KD 8','listening_youtube_kd8','listening_soal_kd8');showAndSound('#listening_kd8','begin')">KD 8<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(9,'listening_kd9','Practice Listening KD 9','listening_youtube_kd9','listening_soal_kd9');showAndSound('#listening_kd9','begin')">KD 9<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(10,'listening_kd10','Practice Listening KD 10','listening_youtube_kd10','listening_soal_kd10');showAndSound('#listening_kd10','begin')">KD 10<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(11,'listening_kd11','Practice Listening KD 11','listening_youtube_kd11','listening_soal_kd11');showAndSound('#listening_kd11','begin')">KD 11<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(12,'listening_kd12','Practice Listening KD 12','listening_youtube_kd12','listening_soal_kd12');showAndSound('#listening_kd12','begin')">KD 12<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(13,'listening_kd13','Practice Listening KD 13','listening_youtube_kd13','listening_soal_kd13');showAndSound('#listening_kd13','begin')">KD 13<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>
+        <div class="w3-quarter w3-section">
+          <h2 class="w3-animate-left">Practice Listening for XI Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/listening.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">			
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(14,'listening_kd14','Practice Listening KD 14','listening_youtube_kd14','listening_soal_kd14');showAndSound('#listening_kd14','begin')">KD 14<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(15,'listening_kd15','Practice Listening KD 15','listening_youtube_kd15','listening_soal_kd15');showAndSound('#listening_kd15','begin')">KD 15<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(16,'listening_kd16','Practice Listening KD 16','listening_youtube_kd16','listening_soal_kd16');showAndSound('#listening_kd16','begin')">KD 16<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(17,'listening_kd17','Practice Listening KD 17','listening_youtube_kd17','listening_soal_kd17');showAndSound('#listening_kd17','begin')">KD 17<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(18,'listening_kd18','Practice Listening KD 18','listening_youtube_kd18','listening_soal_kd18');showAndSound('#listening_kd18','begin')">KD 18<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(19,'listening_kd19','Practice Listening KD 19','listening_youtube_kd19','listening_soal_kd19');showAndSound('#listening_kd19','begin')">KD 19<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(20,'listening_kd20','Practice Listening KD 20','listening_youtube_kd20','listening_soal_kd20');showAndSound('#listening_kd20','begin')">KD 20<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(21,'listening_kd21','Practice Listening KD 21','listening_youtube_kd21','listening_soal_kd21');showAndSound('#listening_kd21','begin')">KD 21<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(22,'listening_kd22','Practice Listening KD 22','listening_youtube_kd22','listening_soal_kd22');showAndSound('#listening_kd22','begin')">KD 22<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(23,'listening_kd23','Practice Listening KD 23','listening_youtube_kd23','listening_soal_kd23');showAndSound('#listening_kd23','begin')">KD 23<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(24,'listening_kd24','Practice Listening KD 24','listening_youtube_kd24','listening_soal_kd24');showAndSound('#listening_kd24','begin')">KD 24<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(25,'listening_kd25','Practice Listening KD 25','listening_youtube_kd25','listening_soal_kd25');showAndSound('#listening_kd25','begin')">KD 25<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(26,'listening_kd26','Practice Listening KD 26','listening_youtube_kd26','listening_soal_kd26');showAndSound('#listening_kd26','begin')">KD 26<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>
+
+         <div class="w3-quarter w3-section">
+          <h2 class="w3-animate-left">Practice Listening for XII Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/listening.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">			
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(27,'listening_kd27','Practice Listening KD 27','listening_youtube_kd27','listening_soal_kd27');		showAndSound('#listening_kd27','begin')">KD 27<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(28,'listening_kd28','Practice Listening KD 28','listening_youtube_kd28','listening_soal_kd28');showAndSound('#listening_kd28','begin')">KD 28<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(29,'listening_kd29','Practice Listening KD 29','listening_youtube_kd29','listening_soal_kd29');showAndSound('#listening_kd29','begin')">KD 29<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(30,'listening_kd30','Practice Listening KD 30','listening_youtube_kd30','listening_soal_kd30');showAndSound('#listening_kd30','begin')">KD 30<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(31,'listening_kd31','Practice Listening KD 31','listening_youtube_kd31','listening_soal_kd31');showAndSound('#listening_kd31','begin')">KD 31<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(32,'listening_kd32','Practice Listening KD 32','listening_youtube_kd32','listening_soal_kd32');   showAndSound('#listening_kd32','begin')">KD 32<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>  
+	
+         <div class="w3-quarter w3-section">
+          <h2 class="w3-animate-left">Practice Listening for XIII Graders</h2>  
+            <div class="w3-card-2">
+				<img src="image/listening.png"></img>
+                <div class="w3-container w3-light-gray">
+                   <div class="w3-center">
+                     <div class="w3-bar">			
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(33,'listening_kd33','Practice Listening KD 33',1,33,2,33,'listening_youtube_kd33','listening_soal_kd33');showAndSound('#listening_kd33','begin')">KD 33<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(34,'listening_kd34','Practice Listening KD 34',1,34,2,34,'listening_youtube_kd34','listening_soal_kd34');showAndSound('#listening_kd34','begin')">KD 34<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(35,'listening_kd35','Practice Listening KD 35',1,35,2,35,'listening_youtube_kd35','listening_soal_kd35');showAndSound('#listening_kd35','begin')">KD 35<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(36,'listening_kd36','Practice Listening KD 36',1,36,2,36,'listening_youtube_kd36','listening_soal_kd36');showAndSound('#listening_kd36','begin')">KD 36<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+                     <button class="w3-button w3-green" id="" title="" onclick="writeListening(37,'listening_kd37','Practice Listening KD 37',1,37,2,37,'listening_youtube_kd37','listening_soal_kd37');	showAndSound('#listening_kd37','begin')">KD 37<i class="w3-margin-left fa fa-angle-double-right"></i></button>
+				     </div>
+				   </div>
+				
+                </div>
+            </div>
+        </div>    
+	</div>	
+   <div class="w3-center">
+     <div class="w3-bar>">			
+        <button class="w3-button w3-yellow" id="" title="" onclick="showAndSound('#practice','squeak')">Back<i class="w3-margin-left fa fa-angle-double-left"></i></button>  
+    </div>
+   </div>	
+</div>
+
+</div>
+
+
+<div id='speakingDiv'>
+<div id="speakingModalScoreKD28" class="w3-animate-zoom w3-modal">
+    <div class='w3-modal-content w3-card-4'>
+      <header class='w3-container w3-red'> 
+        <span onclick="document.getElementById('speakingModalScoreKD28').style.display='none'" class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h3>My Record (KD 28)</h3>
+      </header>
+      <div class='w3-container'>
+  <table class='w3-table-all'>
+    <tr>
+      <th>No</th>
+      <th>Record</th>
+      <th>Score</th>
+      <th>Badge</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td id='speakingNoteKD28_1'></td>
+      <td id='speakingScoreKD28_1'></td>
+      <td id='speakingBadgeKD28_1_'></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td id='speakingNoteKD28_2'></td>
+      <td id='speakingScoreKD28_2'></td>
+      <td id='speakingBadgeKD28_2_'></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td id='speakingNoteKD28_3'></td>
+      <td id='speakingScoreKD28_3'></td>
+      <td id='speakingBadgeKD28_3_'></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td id='speakingNoteKD28_4'></td>
+      <td id='speakingScoreKD28_4'></td>
+      <td id='speakingBadgeKD28_4_'></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td id='speakingNoteKD28_5'></td>
+      <td id='speakingScoreKD28_5'></td>
+      <td id='speakingBadgeKD28_5_'></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td id='speakingNoteKD28_6'></td>
+      <td id='speakingScoreKD28_6'></td>
+      <td id='speakingBadgeKD28_6_'></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td id='speakingNoteKD28_7'></td>
+      <td id='speakingScoreKD28_7'></td>
+      <td id='speakingBadgeKD28_7_'></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td id='speakingNoteKD28_8'></td>
+      <td id='speakingScoreKD28_8'></td>
+      <td id='speakingBadgeKD28_8_'></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td id='speakingNoteKD28_9'></td>
+      <td id='speakingScoreKD28_9'></td>
+      <td id='speakingBadgeKD28_9_'></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td id='speakingNoteKD28_10'></td>
+      <td id='speakingScoreKD28_10'></td>
+      <td id='speakingBadgeKD28_10_'></td>
+    </tr>
+  </table>		
+       </div>
+    </div>
+</div>
+<div id="speakingModalCup" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('speakingModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+	</header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="speakingCupKD1_"></p>
+  <p class="w3-center" id="speakingCupKD2_"></p>
+  <p class="w3-center" id="speakingCupKD3_"></p>
+  <p class="w3-center" id="speakingCupKD4_"></p>
+  <p class="w3-center" id="speakingCupKD5_"></p>
+  <p class="w3-center" id="speakingCupKD6_"></p>
+  <p class="w3-center" id="speakingCupKD7_"></p>
+  <p class="w3-center" id="speakingCupKD8_"></p>
+  <p class="w3-center" id="speakingCupKD9_"></p>
+  <p class="w3-center" id="speakingCupKD10_"></p>
+  <p class="w3-center" id="speakingCupKD11_"></p>
+  <p class="w3-center" id="speakingCupKD12_"></p>
+  <p class="w3-center" id="speakingCupKD13_"></p>
+  <p class="w3-center" id="speakingCupKD14_"></p>
+  <p class="w3-center" id="speakingCupKD15_"></p>
+  <p class="w3-center" id="speakingCupKD16_"></p>
+  <p class="w3-center" id="speakingCupKD17_"></p>
+  <p class="w3-center" id="speakingCupKD18_"></p>
+  <p class="w3-center" id="speakingCupKD19_"></p>
+  <p class="w3-center" id="speakingCupKD20_"></p>
+  <p class="w3-center" id="speakingCupKD21_"></p>
+  <p class="w3-center" id="speakingCupKD22_"></p>
+  <p class="w3-center" id="speakingCupKD23_"></p>
+  <p class="w3-center" id="speakingCupKD24_"></p>
+  <p class="w3-center" id="speakingCupKD25_"></p>
+  <p class="w3-center" id="speakingCupKD26_"></p>
+  <p class="w3-center" id="speakingCupKD27_"></p>
+  <p class="w3-center" id="speakingCupKD28_"></p>
+  <p class="w3-center" id="speakingCupKD29_"></p>
+  <p class="w3-center" id="speakingCupKD30_"></p>  
+  <p class="w3-center" id="speakingCupKD31_"></p>
+  <p class="w3-center" id="speakingCupKD28_"></p>
+  <p class="w3-center" id="speakingCupKD33_"></p>
+  <p class="w3-center" id="speakingCupKD34_"></p>
+  <p class="w3-center" id="speakingCupKD35_"></p>
+  <p class="w3-center" id="speakingCupKD36_"></p>
+  <p class="w3-center" id="speakingCupKD37_"></p>
+
+</div>
+	</div>
+</div>	
+
+<div id="speakingModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('speakingModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="speakingFistKD1_"></p>
+  <p class="w3-center" id="speakingFistKD2_"></p>
+  <p class="w3-center" id="speakingFistKD3_"></p>
+  <p class="w3-center" id="speakingFistKD4_"></p>
+  <p class="w3-center" id="speakingFistKD5_"></p>
+  <p class="w3-center" id="speakingFistKD6_"></p>
+  <p class="w3-center" id="speakingFistKD7_"></p>
+  <p class="w3-center" id="speakingFistKD8_"></p>
+  <p class="w3-center" id="speakingFistKD9_"></p>
+  <p class="w3-center" id="speakingFistKD10_"></p>
+  <p class="w3-center" id="speakingFistKD11_"></p>
+  <p class="w3-center" id="speakingFistKD12_"></p>
+  <p class="w3-center" id="speakingFistKD13_"></p>
+  <p class="w3-center" id="speakingFistKD14_"></p>
+  <p class="w3-center" id="speakingFistKD15_"></p>
+  <p class="w3-center" id="speakingFistKD16_"></p>
+  <p class="w3-center" id="speakingFistKD17_"></p>
+  <p class="w3-center" id="speakingFistKD18_"></p>
+  <p class="w3-center" id="speakingFistKD19_"></p>
+  <p class="w3-center" id="speakingFistKD20_"></p>
+  <p class="w3-center" id="speakingFistKD21_"></p>
+  <p class="w3-center" id="speakingFistKD22_"></p>
+  <p class="w3-center" id="speakingFistKD23_"></p>
+  <p class="w3-center" id="speakingFistKD24_"></p>
+  <p class="w3-center" id="speakingFistKD25_"></p>
+  <p class="w3-center" id="speakingFistKD26_"></p>
+  <p class="w3-center" id="speakingFistKD27_"></p>
+  <p class="w3-center" id="speakingFistKD28_"></p>
+  <p class="w3-center" id="speakingFistKD29_"></p>
+  <p class="w3-center" id="speakingFistKD30_"></p>  
+  <p class="w3-center" id="speakingFistKD31_"></p>
+  <p class="w3-center" id="speakingFistKD28_"></p>
+  <p class="w3-center" id="speakingFistKD33_"></p>
+  <p class="w3-center" id="speakingFistKD34_"></p>
+  <p class="w3-center" id="speakingFistKD35_"></p>
+  <p class="w3-center" id="speakingFistKD36_"></p>
+  <p class="w3-center" id="speakingFistKD37_"></p>
+</div>
+	</div>
+</div>
+
+<div id="speakingModalMustAnswer" class="w3-animate-zoom w3-modal" >
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-red"> 
+        <span onclick="document.getElementById('speakingModalMustAnswer').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Alert!</h2>
+      </header>
+      <div class="w3-container">
+        <p>You have to answer the question!</p>
+       </div>
+    </div>
+</div>
+
+<div id='speaking_kd28' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left'>Practice Speaking KD 28</h2>
+  <table border='0'>
+  <tr>
+  <td id='speakingBadgeKD28_1'></td>
+  <td id='speakingBadgeKD28_2'></td>
+  <td id='speakingBadgeKD28_3'></td>
+  <td id='speakingBadgeKD28_4'></td>
+  <td id='speakingBadgeKD28_5'></td>
+  </tr>
+  <tr>
+  <td id='speakingBadgeKD28_6'></td>
+  <td id='speakingBadgeKD28_7'></td>
+  <td id='speakingBadgeKD28_8'></td>
+  <td id='speakingBadgeKD28_9'></td>
+  <td id='speakingBadgeKD28_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='speakingCupKD28' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+  <div class="w3-row-padding w3-theme">
+        <div class="w3-section">
+            <div class="w3-card-2">
+                <img src="image/speaking.png">
+                <div class="w3-container w3-light-gray">
+                  <div class="app">
+				    <p>Speak this word/sentence:</p>
+					<div id='coba'></div>
+					<div class='' id='speakingDiv1'><p id=''><h2>1</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_1"></label></div>
+					<div class='' id='speakingDiv2'><p id=''><h2>2</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_2"></label></div>
+					<div class='' id='speakingDiv3'><p id=''><h2>3</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_3"></label></div>
+					<div class='' id='speakingDiv4'><p id=''><h2>4</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_4"></label></div>
+					<div class='' id='speakingDiv5'><p id=''><h2>5</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_5"></label></div>
+					<div class='' id='speakingDiv6'><p id=''><h2>6</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_6"></label></div>
+					<div class='' id='speakingDiv7'><p id=''><h2>7</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_7"></label></div>
+					<div class='' id='speakingDiv8'><p id=''><h2>8</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_8"></label></div>
+					<div class='' id='speakingDiv9'><p id=''><h2>9</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_9"></label></div>
+					<div class='' id='speakingDiv10'><p id=''><h2>10</h2></p><label class='w3-input w3-border w3-white' type='text' id="speakingItemKD28_10"></label></div>
+
+					<script>
+                    function getSpeakingItem(noKD)
+                    {
+	                var speakingNoDefault=localStorage.getItem('speakingNoDefault');
+	                var speakingId='speakingItemKD'+noKD+'_'+speakingNoDefault;
+	                var speakingItemDefault=localStorage.getItem(speakingId);
+                    document.getElementById(speakingId).innerHTML=speakingItemDefault;
+                    readOutLoud(speakingItemDefault);
+                    }					
+					</script>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="How to speak it" onclick="getSpeakingItem(28)"><i class="fa fa-volume-up fa-2x"></i></button>
+                    <button class="w3-bar-item w3-green" id="start-record-btn" title="Start recording" onclick="startRecord()"><i class="fa fa-microphone fa-2x"></i></button>
+                    <button class="w3-bar-item w3-red" id="pause-record-btn" title="Pause recording" onclick="pauseRecord()"><i class="fa fa-pause fa-2x"></i></button>
+                    <button class="w3-bar-item w3-blue" id="" title="Save record" onclick="saveRecord()"><i class="fa fa-save fa-2x"></i></button>
+					</div></div>
+					<div class='w3-center'><div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="c(28)"><i class="fa fa-angle-left fa-2x"></i></button>
+					<button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="b(28)"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>
+				    <p>You speak:</p>
+                    <input class="w3-input w3-border" type="password" id="note-textarea28" onclick="noteRecord()"></input>
+					 <p>Tap speaker button to listen to how the word/sentence is spoken</p>
+                     <p id="recording-instructions">Tap microphone button and allow access, and speak the word/sentence</p>
+					 <p>Tap pause button to stop recording</p>
+					 <p>Tap save button to save your recording</p>
+
+				  </div>
+		          </div>
+				  <div class='w3-center'>
+				    <div class='w3-bar'>
+					<button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd28','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+					<button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="modalkan('speakingModalScoreKD28')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+					</div>
+				  </div>
+              </div>
+            </div>
+	    </div>
+</div>
+
+</div>
+<div id='writingDiv'>
+
+<div id="writingModalCup" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('writingModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+	</header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="writingCupKD1_"></p>
+  <p class="w3-center" id="writingCupKD2_"></p>
+  <p class="w3-center" id="writingCupKD3_"></p>
+  <p class="w3-center" id="writingCupKD4_"></p>
+  <p class="w3-center" id="writingCupKD5_"></p>
+  <p class="w3-center" id="writingCupKD6_"></p>
+  <p class="w3-center" id="writingCupKD7_"></p>
+  <p class="w3-center" id="writingCupKD8_"></p>
+  <p class="w3-center" id="writingCupKD9_"></p>
+  <p class="w3-center" id="writingCupKD10_"></p>
+  <p class="w3-center" id="writingCupKD11_"></p>
+  <p class="w3-center" id="writingCupKD12_"></p>
+  <p class="w3-center" id="writingCupKD13_"></p>
+  <p class="w3-center" id="writingCupKD14_"></p>
+  <p class="w3-center" id="writingCupKD15_"></p>
+  <p class="w3-center" id="writingCupKD16_"></p>
+  <p class="w3-center" id="writingCupKD17_"></p>
+  <p class="w3-center" id="writingCupKD18_"></p>
+  <p class="w3-center" id="writingCupKD19_"></p>
+  <p class="w3-center" id="writingCupKD20_"></p>
+  <p class="w3-center" id="writingCupKD21_"></p>
+  <p class="w3-center" id="writingCupKD22_"></p>
+  <p class="w3-center" id="writingCupKD23_"></p>
+  <p class="w3-center" id="writingCupKD24_"></p>
+  <p class="w3-center" id="writingCupKD25_"></p>
+  <p class="w3-center" id="writingCupKD26_"></p>
+  <p class="w3-center" id="writingCupKD27_"></p>
+  <p class="w3-center" id="writingCupKD28_"></p>
+  <p class="w3-center" id="writingCupKD29_"></p>
+  <p class="w3-center" id="writingCupKD30_"></p>  
+  <p class="w3-center" id="writingCupKD31_"></p>
+  <p class="w3-center" id="writingCupKD28_"></p>
+  <p class="w3-center" id="writingCupKD33_"></p>
+  <p class="w3-center" id="writingCupKD34_"></p>
+  <p class="w3-center" id="writingCupKD35_"></p>
+  <p class="w3-center" id="writingCupKD36_"></p>
+  <p class="w3-center" id="writingCupKD37_"></p>
+
+</div>
+	</div>
+</div>	
+
+<div id="writingModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('writingModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="writingFistKD1_"></p>
+  <p class="w3-center" id="writingFistKD2_"></p>
+  <p class="w3-center" id="writingFistKD3_"></p>
+  <p class="w3-center" id="writingFistKD4_"></p>
+  <p class="w3-center" id="writingFistKD5_"></p>
+  <p class="w3-center" id="writingFistKD6_"></p>
+  <p class="w3-center" id="writingFistKD7_"></p>
+  <p class="w3-center" id="writingFistKD8_"></p>
+  <p class="w3-center" id="writingFistKD9_"></p>
+  <p class="w3-center" id="writingFistKD10_"></p>
+  <p class="w3-center" id="writingFistKD11_"></p>
+  <p class="w3-center" id="writingFistKD12_"></p>
+  <p class="w3-center" id="writingFistKD13_"></p>
+  <p class="w3-center" id="writingFistKD14_"></p>
+  <p class="w3-center" id="writingFistKD15_"></p>
+  <p class="w3-center" id="writingFistKD16_"></p>
+  <p class="w3-center" id="writingFistKD17_"></p>
+  <p class="w3-center" id="writingFistKD18_"></p>
+  <p class="w3-center" id="writingFistKD19_"></p>
+  <p class="w3-center" id="writingFistKD20_"></p>
+  <p class="w3-center" id="writingFistKD21_"></p>
+  <p class="w3-center" id="writingFistKD22_"></p>
+  <p class="w3-center" id="writingFistKD23_"></p>
+  <p class="w3-center" id="writingFistKD24_"></p>
+  <p class="w3-center" id="writingFistKD25_"></p>
+  <p class="w3-center" id="writingFistKD26_"></p>
+  <p class="w3-center" id="writingFistKD27_"></p>
+  <p class="w3-center" id="writingFistKD28_"></p>
+  <p class="w3-center" id="writingFistKD29_"></p>
+  <p class="w3-center" id="writingFistKD30_"></p>  
+  <p class="w3-center" id="writingFistKD31_"></p>
+  <p class="w3-center" id="writingFistKD28_"></p>
+  <p class="w3-center" id="writingFistKD33_"></p>
+  <p class="w3-center" id="writingFistKD34_"></p>
+  <p class="w3-center" id="writingFistKD35_"></p>
+  <p class="w3-center" id="writingFistKD36_"></p>
+  <p class="w3-center" id="writingFistKD37_"></p>
+</div>
+	</div>
+</div>
+
+
+<div id="writingModalCup" class="w3-animate-zoom w3-modal">
+
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('writingModalCup').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Congratulations!</h2>
+		<p><h3>You have passed this!</h3></p>
+	</header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="writingCupKD1_"></p>
+  <p class="w3-center" id="writingCupKD2_"></p>
+  <p class="w3-center" id="writingCupKD3_"></p>
+  <p class="w3-center" id="writingCupKD4_"></p>
+  <p class="w3-center" id="writingCupKD5_"></p>
+  <p class="w3-center" id="writingCupKD6_"></p>
+  <p class="w3-center" id="writingCupKD7_"></p>
+  <p class="w3-center" id="writingCupKD8_"></p>
+  <p class="w3-center" id="writingCupKD9_"></p>
+  <p class="w3-center" id="writingCupKD10_"></p>
+  <p class="w3-center" id="writingCupKD11_"></p>
+  <p class="w3-center" id="writingCupKD12_"></p>
+  <p class="w3-center" id="writingCupKD13_"></p>
+  <p class="w3-center" id="writingCupKD14_"></p>
+  <p class="w3-center" id="writingCupKD15_"></p>
+  <p class="w3-center" id="writingCupKD16_"></p>
+  <p class="w3-center" id="writingCupKD17_"></p>
+  <p class="w3-center" id="writingCupKD18_"></p>
+  <p class="w3-center" id="writingCupKD19_"></p>
+  <p class="w3-center" id="writingCupKD20_"></p>
+  <p class="w3-center" id="writingCupKD21_"></p>
+  <p class="w3-center" id="writingCupKD22_"></p>
+  <p class="w3-center" id="writingCupKD23_"></p>
+  <p class="w3-center" id="writingCupKD24_"></p>
+  <p class="w3-center" id="writingCupKD25_"></p>
+  <p class="w3-center" id="writingCupKD26_"></p>
+  <p class="w3-center" id="writingCupKD27_"></p>
+  <p class="w3-center" id="writingCupKD28_"></p>
+  <p class="w3-center" id="writingCupKD29_"></p>
+  <p class="w3-center" id="writingCupKD30_"></p>  
+  <p class="w3-center" id="writingCupKD31_"></p>
+  <p class="w3-center" id="writingCupKD28_"></p>
+  <p class="w3-center" id="writingCupKD33_"></p>
+  <p class="w3-center" id="writingCupKD34_"></p>
+  <p class="w3-center" id="writingCupKD35_"></p>
+  <p class="w3-center" id="writingCupKD36_"></p>
+  <p class="w3-center" id="writingCupKD37_"></p>
+
+</div>
+</div>
+</div>
+<div id="writingModalFist" class="w3-animate-zoom w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-green"> 
+        <span onclick="document.getElementById('writingModalFist').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>You have not passed this!</h2>
+		<p><h3>Try again!</h3></p>
+      </header>
+	  <div class="w3-panel" id="">
+  <p class="w3-center" id="writingFistKD1_"></p>
+  <p class="w3-center" id="writingFistKD2_"></p>
+  <p class="w3-center" id="writingFistKD3_"></p>
+  <p class="w3-center" id="writingFistKD4_"></p>
+  <p class="w3-center" id="writingFistKD5_"></p>
+  <p class="w3-center" id="writingFistKD6_"></p>
+  <p class="w3-center" id="writingFistKD7_"></p>
+  <p class="w3-center" id="writingFistKD8_"></p>
+  <p class="w3-center" id="writingFistKD9_"></p>
+  <p class="w3-center" id="writingFistKD10_"></p>
+  <p class="w3-center" id="writingFistKD11_"></p>
+  <p class="w3-center" id="writingFistKD12_"></p>
+  <p class="w3-center" id="writingFistKD13_"></p>
+  <p class="w3-center" id="writingFistKD14_"></p>
+  <p class="w3-center" id="writingFistKD15_"></p>
+  <p class="w3-center" id="writingFistKD16_"></p>
+  <p class="w3-center" id="writingFistKD17_"></p>
+  <p class="w3-center" id="writingFistKD18_"></p>
+  <p class="w3-center" id="writingFistKD19_"></p>
+  <p class="w3-center" id="writingFistKD20_"></p>
+  <p class="w3-center" id="writingFistKD21_"></p>
+  <p class="w3-center" id="writingFistKD22_"></p>
+  <p class="w3-center" id="writingFistKD23_"></p>
+  <p class="w3-center" id="writingFistKD24_"></p>
+  <p class="w3-center" id="writingFistKD25_"></p>
+  <p class="w3-center" id="writingFistKD26_"></p>
+  <p class="w3-center" id="writingFistKD27_"></p>
+  <p class="w3-center" id="writingFistKD28_"></p>
+  <p class="w3-center" id="writingFistKD29_"></p>
+  <p class="w3-center" id="writingFistKD30_"></p>  
+  <p class="w3-center" id="writingFistKD31_"></p>
+  <p class="w3-center" id="writingFistKD28_"></p>
+  <p class="w3-center" id="writingFistKD33_"></p>
+  <p class="w3-center" id="writingFistKD34_"></p>
+  <p class="w3-center" id="writingFistKD35_"></p>
+  <p class="w3-center" id="writingFistKD36_"></p>
+  <p class="w3-center" id="writingFistKD37_"></p>
+</div>
+	</div>
+</div>
+
+<div id="writingModalScoreKD28" class="w3-animate-zoom w3-modal">
+    <div class='w3-modal-content w3-card-4'>
+      <header class='w3-container w3-red'> 
+        <span onclick="document.getElementById('writingModalScoreKD28').style.display='none'" class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h3>My Record (KD 28)</h3>
+      </header>
+      <div class='w3-container'>
+  <table class='w3-table-all'>
+    <tr>
+      <th>No</th>
+      <th>Record</th>
+      <th>Score</th>
+      <th>Badge</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td id='writingNoteKD28_1'></td>
+      <td id='writingScoreKD28_1'></td>
+      <td id='writingBadgeKD28_1_'></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td id='writingNoteKD28_2'></td>
+      <td id='writingScoreKD28_2'></td>
+      <td id='writingBadgeKD28_2_'></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td id='writingNoteKD28_3'></td>
+      <td id='writingScoreKD28_3'></td>
+      <td id='writingBadgeKD28_3_'></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td id='writingNoteKD28_4'></td>
+      <td id='writingScoreKD28_4'></td>
+      <td id='writingBadgeKD28_4_'></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td id='writingNoteKD28_5'></td>
+      <td id='writingScoreKD28_5'></td>
+      <td id='writingBadgeKD28_5_'></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td id='writingNoteKD28_6'></td>
+      <td id='writingScoreKD28_6'></td>
+      <td id='writingBadgeKD28_6_'></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td id='writingNoteKD28_7'></td>
+      <td id='writingScoreKD28_7'></td>
+      <td id='writingBadgeKD28_7_'></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td id='writingNoteKD28_8'></td>
+      <td id='writingScoreKD28_8'></td>
+      <td id='writingBadgeKD28_8_'></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td id='writingNoteKD28_9'></td>
+      <td id='writingScoreKD28_9'></td>
+      <td id='writingBadgeKD28_9_'></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td id='writingNoteKD28_10'></td>
+      <td id='writingScoreKD28_10'></td>
+      <td id='writingBadgeKD28_10_'></td>
+    </tr>
+  </table>		
+       </div>
+    </div>
+</div>
+
+<div id="writingModalMustAnswer" class="w3-animate-zoom w3-modal" >
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-red"> 
+        <span onclick="document.getElementById('writingModalMustAnswer').style.display='none'"
+        class="w3-button w3-xlarge w3-display-topright">&times;</span>
+        <h2>Alert!</h2>
+      </header>
+      <div class="w3-container">
+        <p>You have to answer the question!</p>
+       </div>
+    </div>
+</div>
+
+<div id='writing_kd28' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class='w3-animate-left' id='writingTopicId'></h2>
+  <script>writeWritingTitle();</script>
+  <table border='0'>
+  <tr>
+  <td id='writingBadgeKD28_1'></td>
+  <td id='writingBadgeKD28_2'></td>
+  <td id='writingBadgeKD28_3'></td>
+  <td id='writingBadgeKD28_4'></td>
+  <td id='writingBadgeKD28_5'></td>
+  </tr>
+  <tr>
+  <td id='writingBadgeKD28_6'></td>
+  <td id='writingBadgeKD28_7'></td>
+  <td id='writingBadgeKD28_8'></td>
+  <td id='writingBadgeKD28_9'></td>
+  <td id='writingBadgeKD28_10'></td>
+  </tr>
+  </table>
+  <table border='0'>
+  <tr>
+  <td id='writingCupKD28' title='You have passed it!'></td>
+  </tr>
+  </table> 
+
+                <div id='writingSoalIframeId_28'><iframe src="writingSoalNo1.html"></iframe></div>
+					<div class='w3-center'><div class='w3-bar'>
+					  <button class="w3-bar-item w3-yellow" id="back" title="Back" onclick="writingIframeBack()"><i class="fa fa-angle-left fa-2x"></i></button>
+					  <button class="w3-bar-item w3-yellow" id="next" title="Next question" onclick="writingIframeNext()"><i class="fa fa-angle-right fa-2x"></i></button>
+					</div></div>					
+
+		    <div class='w3-center'>
+			  <div class='w3-bar'>
+			  <button class="w3-bar-item w3-yellow" id="" title="Go back to previous page" onclick="showAndSound('#learn_kd28','squeak')"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>
+			  <button class="w3-bar-item w3-yellow" id="" title="Show records, scores, and badges" onclick="writeWritingScoreContent();writeWritingBadgeContent();writingModalkan('writingModalScoreKD28')">Show My Records<i class="w3-margin-left fa fa-bars"></i></button>
+			  </div>
+			</div>
+</div>
+
+</div>
+
+
+
+<div id='scriptDiv'>
+<script> 
+//cek login
+loginOnline(localStorage.getItem('usernameStored'),localStorage.getItem('passwordStored'),'loginOnline');
+loginOnlineStatus(localStorage.getItem('usernameStored'),localStorage.getItem('passwordStored'),'loginOnlineStatus');
+hideAll();
+
+var speakingModalMustAnswer = document.getElementById('speakingModalMustAnswer');window.onclick = function(event) {if (event.target == speakingModalMustAnswer) {modal.style.display = "none";}}
+var loginModal = document.getElementById('loginModal');window.onclick = function(event) {if (event.target == loginModal) { modal.style.display = "none";}}
+var loginModalLogout = document.getElementById('loginModalLogout');window.onclick = function(event) {if (event.target == loginModalLogout) {modal.style.display = "none";}}
+var theoryModalCup = document.getElementById('theoryModalCup');window.onclick = function(event) {if (event.target == theoryModalCup) {modal.style.display = "none";}}
+var listeningModalCup = document.getElementById('listeningModalCup');window.onclick = function(event) {if (event.target == listeningModalCup) {modal.style.display = "none";}}
+var listeningModalCup = document.getElementById('listeningModalCup');window.onclick = function(event) {if (event.target == listeningModalCup) {modal.style.display = "none";}}
+var speakingModalCup = document.getElementById('speakingModalCup');window.onclick = function(event) {if (event.target == speakingModalCup) {modal.style.display = "none";}}
+var readingModalCup = document.getElementById('readingModalCup');window.onclick = function(event) {if (event.target == readingModalCup) {modal.style.display = "none";}}
+var writingModalCup = document.getElementById('writingModalCup');window.onclick = function(event) {if (event.target == writingModalCup) {modal.style.display = "none";}}
+var listeningModalFist = document.getElementById('listeningModalFist');window.onclick = function(event) {if (event.target == listeningModalFist) {modal.style.display = "none";}}
+var listeningModalFist = document.getElementById('listeningModalFist');window.onclick = function(event) {if (event.target == listeningModalFist) {modal.style.display = "none";}}
+var speakingModalFist = document.getElementById('speakingModalFist');window.onclick = function(event) {if (event.target == speakingModalFist) {modal.style.display = "none";}}
+var readingModalFist = document.getElementById('readingModalFist');window.onclick = function(event) {if (event.target == readingModalFist) {modal.style.display = "none";}}
+var writingModalFist = document.getElementById('writingModalFist');window.onclick = function(event) {if (event.target == writingModalFist) {modal.style.display = "none";}}
+var theoryModalScoreKD1 = document.getElementById('theoryModalScoreKD1'); window.onclick = function(event) {if (event.target == theoryModalScoreKD1) {modal.style.display = "none";}}
+var theoryModalScoreKD2 = document.getElementById('theoryModalScoreKD2'); window.onclick = function(event) {if (event.target == theoryModalScoreKD2) {modal.style.display = "none";}}
+var theoryModalScoreKD3 = document.getElementById('theoryModalScoreKD3'); window.onclick = function(event) {if (event.target == theoryModalScoreKD3) {modal.style.display = "none";}}
+var theoryModalScoreKD4 = document.getElementById('theoryModalScoreKD4'); window.onclick = function(event) {if (event.target == theoryModalScoreKD4) {modal.style.display = "none";}}
+var theoryModalScoreKD5 = document.getElementById('theoryModalScoreKD5'); window.onclick = function(event) {if (event.target == theoryModalScoreKD5) {modal.style.display = "none";}}
+var theoryModalScoreKD6 = document.getElementById('theoryModalScoreKD6'); window.onclick = function(event) {if (event.target == theoryModalScoreKD6) {modal.style.display = "none";}}
+var theoryModalScoreKD7 = document.getElementById('theoryModalScoreKD7'); window.onclick = function(event) {if (event.target == theoryModalScoreKD7) {modal.style.display = "none";}}
+var theoryModalScoreKD8 = document.getElementById('theoryModalScoreKD8'); window.onclick = function(event) {if (event.target == theoryModalScoreKD8) {modal.style.display = "none";}}
+var theoryModalScoreKD9 = document.getElementById('theoryModalScoreKD9'); window.onclick = function(event) {if (event.target == theoryModalScoreKD9) {modal.style.display = "none";}}
+var theoryModalScoreKD10 = document.getElementById('theoryModalScoreKD10'); window.onclick = function(event) {if (event.target == theoryModalScoreKD10) {modal.style.display = "none";}}
+var theoryModalScoreKD11 = document.getElementById('theoryModalScoreKD11'); window.onclick = function(event) {if (event.target == theoryModalScoreKD11) {modal.style.display = "none";}}
+var theoryModalScoreKD12 = document.getElementById('theoryModalScoreKD12'); window.onclick = function(event) {if (event.target == theoryModalScoreKD12) {modal.style.display = "none";}}
+var theoryModalScoreKD13 = document.getElementById('theoryModalScoreKD13'); window.onclick = function(event) {if (event.target == theoryModalScoreKD13) {modal.style.display = "none";}}
+var theoryModalScoreKD14 = document.getElementById('theoryModalScoreKD14'); window.onclick = function(event) {if (event.target == theoryModalScoreKD14) {modal.style.display = "none";}}
+var theoryModalScoreKD15 = document.getElementById('theoryModalScoreKD15'); window.onclick = function(event) {if (event.target == theoryModalScoreKD15) {modal.style.display = "none";}}
+var theoryModalScoreKD16 = document.getElementById('theoryModalScoreKD16'); window.onclick = function(event) {if (event.target == theoryModalScoreKD16) {modal.style.display = "none";}}
+var theoryModalScoreKD17 = document.getElementById('theoryModalScoreKD17'); window.onclick = function(event) {if (event.target == theoryModalScoreKD17) {modal.style.display = "none";}}
+var theoryModalScoreKD18 = document.getElementById('theoryModalScoreKD18'); window.onclick = function(event) {if (event.target == theoryModalScoreKD18) {modal.style.display = "none";}}
+var theoryModalScoreKD19 = document.getElementById('theoryModalScoreKD19'); window.onclick = function(event) {if (event.target == theoryModalScoreKD19) {modal.style.display = "none";}}
+var theoryModalScoreKD20 = document.getElementById('theoryModalScoreKD20'); window.onclick = function(event) {if (event.target == theoryModalScoreKD20) {modal.style.display = "none";}}
+var theoryModalScoreKD21 = document.getElementById('theoryModalScoreKD21'); window.onclick = function(event) {if (event.target == theoryModalScoreKD21) {modal.style.display = "none";}}
+var theoryModalScoreKD22 = document.getElementById('theoryModalScoreKD22'); window.onclick = function(event) {if (event.target == theoryModalScoreKD22) {modal.style.display = "none";}}
+var theoryModalScoreKD23 = document.getElementById('theoryModalScoreKD23'); window.onclick = function(event) {if (event.target == theoryModalScoreKD23) {modal.style.display = "none";}}
+var theoryModalScoreKD24 = document.getElementById('theoryModalScoreKD24'); window.onclick = function(event) {if (event.target == theoryModalScoreKD24) {modal.style.display = "none";}}
+var theoryModalScoreKD25 = document.getElementById('theoryModalScoreKD25'); window.onclick = function(event) {if (event.target == theoryModalScoreKD25) {modal.style.display = "none";}}
+var theoryModalScoreKD26 = document.getElementById('theoryModalScoreKD26'); window.onclick = function(event) {if (event.target == theoryModalScoreKD26) {modal.style.display = "none";}}
+var theoryModalScoreKD27 = document.getElementById('theoryModalScoreKD27'); window.onclick = function(event) {if (event.target == theoryModalScoreKD27) {modal.style.display = "none";}}
+var theoryModalScoreKD28 = document.getElementById('theoryModalScoreKD28'); window.onclick = function(event) {if (event.target == theoryModalScoreKD28) {modal.style.display = "none";}}
+var theoryModalScoreKD29 = document.getElementById('theoryModalScoreKD29'); window.onclick = function(event) {if (event.target == theoryModalScoreKD29) {modal.style.display = "none";}}
+var theoryModalScoreKD30 = document.getElementById('theoryModalScoreKD30'); window.onclick = function(event) {if (event.target == theoryModalScoreKD30) {modal.style.display = "none";}}
+var theoryModalScoreKD31 = document.getElementById('theoryModalScoreKD31'); window.onclick = function(event) {if (event.target == theoryModalScoreKD31) {modal.style.display = "none";}}
+var theoryModalScoreKD32 = document.getElementById('theoryModalScoreKD32'); window.onclick = function(event) {if (event.target == theoryModalScoreKD32) {modal.style.display = "none";}}
+var theoryModalScoreKD33 = document.getElementById('theoryModalScoreKD33'); window.onclick = function(event) {if (event.target == theoryModalScoreKD33) {modal.style.display = "none";}}
+var theoryModalScoreKD34 = document.getElementById('theoryModalScoreKD34'); window.onclick = function(event) {if (event.target == theoryModalScoreKD34) {modal.style.display = "none";}}
+var theoryModalScoreKD35 = document.getElementById('theoryModalScoreKD35'); window.onclick = function(event) {if (event.target == theoryModalScoreKD35) {modal.style.display = "none";}}
+var theoryModalScoreKD36 = document.getElementById('theoryModalScoreKD36'); window.onclick = function(event) {if (event.target == theoryModalScoreKD36) {modal.style.display = "none";}}
+var listeningModalScoreKD1 = document.getElementById('listeningModalScoreKD1'); window.onclick = function(event) {if (event.target == listeningModalScoreKD1) {modal.style.display = "none";}}
+var listeningModalScoreKD2 = document.getElementById('listeningModalScoreKD2'); window.onclick = function(event) {if (event.target == listeningModalScoreKD2) {modal.style.display = "none";}}
+var listeningModalScoreKD3 = document.getElementById('listeningModalScoreKD3'); window.onclick = function(event) {if (event.target == listeningModalScoreKD3) {modal.style.display = "none";}}
+var listeningModalScoreKD4 = document.getElementById('listeningModalScoreKD4'); window.onclick = function(event) {if (event.target == listeningModalScoreKD4) {modal.style.display = "none";}}
+var listeningModalScoreKD5 = document.getElementById('listeningModalScoreKD5'); window.onclick = function(event) {if (event.target == listeningModalScoreKD5) {modal.style.display = "none";}}
+var listeningModalScoreKD6 = document.getElementById('listeningModalScoreKD6'); window.onclick = function(event) {if (event.target == listeningModalScoreKD6) {modal.style.display = "none";}}
+var listeningModalScoreKD7 = document.getElementById('listeningModalScoreKD7'); window.onclick = function(event) {if (event.target == listeningModalScoreKD7) {modal.style.display = "none";}}
+var listeningModalScoreKD8 = document.getElementById('listeningModalScoreKD8'); window.onclick = function(event) {if (event.target == listeningModalScoreKD8) {modal.style.display = "none";}}
+var listeningModalScoreKD9 = document.getElementById('listeningModalScoreKD9'); window.onclick = function(event) {if (event.target == listeningModalScoreKD9) {modal.style.display = "none";}}
+var listeningModalScoreKD10 = document.getElementById('listeningModalScoreKD10'); window.onclick = function(event) {if (event.target == listeningModalScoreKD10) {modal.style.display = "none";}}
+var listeningModalScoreKD11 = document.getElementById('listeningModalScoreKD11'); window.onclick = function(event) {if (event.target == listeningModalScoreKD11) {modal.style.display = "none";}}
+var listeningModalScoreKD12 = document.getElementById('listeningModalScoreKD12'); window.onclick = function(event) {if (event.target == listeningModalScoreKD12) {modal.style.display = "none";}}
+var listeningModalScoreKD13 = document.getElementById('listeningModalScoreKD13'); window.onclick = function(event) {if (event.target == listeningModalScoreKD13) {modal.style.display = "none";}}
+var listeningModalScoreKD14 = document.getElementById('listeningModalScoreKD14'); window.onclick = function(event) {if (event.target == listeningModalScoreKD14) {modal.style.display = "none";}}
+var listeningModalScoreKD15 = document.getElementById('listeningModalScoreKD15'); window.onclick = function(event) {if (event.target == listeningModalScoreKD15) {modal.style.display = "none";}}
+var listeningModalScoreKD16 = document.getElementById('listeningModalScoreKD16'); window.onclick = function(event) {if (event.target == listeningModalScoreKD16) {modal.style.display = "none";}}
+var listeningModalScoreKD17 = document.getElementById('listeningModalScoreKD17'); window.onclick = function(event) {if (event.target == listeningModalScoreKD17) {modal.style.display = "none";}}
+var listeningModalScoreKD18 = document.getElementById('listeningModalScoreKD18'); window.onclick = function(event) {if (event.target == listeningModalScoreKD18) {modal.style.display = "none";}}
+var listeningModalScoreKD19 = document.getElementById('listeningModalScoreKD19'); window.onclick = function(event) {if (event.target == listeningModalScoreKD19) {modal.style.display = "none";}}
+var listeningModalScoreKD20 = document.getElementById('listeningModalScoreKD20'); window.onclick = function(event) {if (event.target == listeningModalScoreKD20) {modal.style.display = "none";}}
+var listeningModalScoreKD21 = document.getElementById('listeningModalScoreKD21'); window.onclick = function(event) {if (event.target == listeningModalScoreKD21) {modal.style.display = "none";}}
+var listeningModalScoreKD22 = document.getElementById('listeningModalScoreKD22'); window.onclick = function(event) {if (event.target == listeningModalScoreKD22) {modal.style.display = "none";}}
+var listeningModalScoreKD23 = document.getElementById('listeningModalScoreKD23'); window.onclick = function(event) {if (event.target == listeningModalScoreKD23) {modal.style.display = "none";}}
+var listeningModalScoreKD24 = document.getElementById('listeningModalScoreKD24'); window.onclick = function(event) {if (event.target == listeningModalScoreKD24) {modal.style.display = "none";}}
+var listeningModalScoreKD25 = document.getElementById('listeningModalScoreKD25'); window.onclick = function(event) {if (event.target == listeningModalScoreKD25) {modal.style.display = "none";}}
+var listeningModalScoreKD26 = document.getElementById('listeningModalScoreKD26'); window.onclick = function(event) {if (event.target == listeningModalScoreKD26) {modal.style.display = "none";}}
+var listeningModalScoreKD27 = document.getElementById('listeningModalScoreKD27'); window.onclick = function(event) {if (event.target == listeningModalScoreKD27) {modal.style.display = "none";}}
+var listeningModalScoreKD28 = document.getElementById('listeningModalScoreKD28'); window.onclick = function(event) {if (event.target == listeningModalScoreKD28) {modal.style.display = "none";}}
+var listeningModalScoreKD29 = document.getElementById('listeningModalScoreKD29'); window.onclick = function(event) {if (event.target == listeningModalScoreKD29) {modal.style.display = "none";}}
+var listeningModalScoreKD30 = document.getElementById('listeningModalScoreKD30'); window.onclick = function(event) {if (event.target == listeningModalScoreKD30) {modal.style.display = "none";}}
+var listeningModalScoreKD31 = document.getElementById('listeningModalScoreKD31'); window.onclick = function(event) {if (event.target == listeningModalScoreKD31) {modal.style.display = "none";}}
+var listeningModalScoreKD32 = document.getElementById('listeningModalScoreKD32'); window.onclick = function(event) {if (event.target == listeningModalScoreKD32) {modal.style.display = "none";}}
+var listeningModalScoreKD33 = document.getElementById('listeningModalScoreKD33'); window.onclick = function(event) {if (event.target == listeningModalScoreKD33) {modal.style.display = "none";}}
+var listeningModalScoreKD34 = document.getElementById('listeningModalScoreKD34'); window.onclick = function(event) {if (event.target == listeningModalScoreKD34) {modal.style.display = "none";}}
+var listeningModalScoreKD35 = document.getElementById('listeningModalScoreKD35'); window.onclick = function(event) {if (event.target == listeningModalScoreKD35) {modal.style.display = "none";}}
+var listeningModalScoreKD36 = document.getElementById('listeningModalScoreKD36'); window.onclick = function(event) {if (event.target == listeningModalScoreKD36) {modal.style.display = "none";}}
+var listeningModalScoreKD37 = document.getElementById('listeningModalScoreKD37'); window.onclick = function(event) {if (event.target == listeningModalScoreKD37) {modal.style.display = "none";}}
+var speakingModalScoreKD1 = document.getElementById('speakingModalScoreKD1'); window.onclick = function(event) {if (event.target == speakingModalScoreKD1) {modal.style.display = "none";}}
+var speakingModalScoreKD2 = document.getElementById('speakingModalScoreKD2'); window.onclick = function(event) {if (event.target == speakingModalScoreKD2) {modal.style.display = "none";}}
+var speakingModalScoreKD3 = document.getElementById('speakingModalScoreKD3'); window.onclick = function(event) {if (event.target == speakingModalScoreKD3) {modal.style.display = "none";}}
+var speakingModalScoreKD4 = document.getElementById('speakingModalScoreKD4'); window.onclick = function(event) {if (event.target == speakingModalScoreKD4) {modal.style.display = "none";}}
+var speakingModalScoreKD5 = document.getElementById('speakingModalScoreKD5'); window.onclick = function(event) {if (event.target == speakingModalScoreKD5) {modal.style.display = "none";}}
+var speakingModalScoreKD6 = document.getElementById('speakingModalScoreKD6'); window.onclick = function(event) {if (event.target == speakingModalScoreKD6) {modal.style.display = "none";}}
+var speakingModalScoreKD7 = document.getElementById('speakingModalScoreKD7'); window.onclick = function(event) {if (event.target == speakingModalScoreKD7) {modal.style.display = "none";}}
+var speakingModalScoreKD8 = document.getElementById('speakingModalScoreKD8'); window.onclick = function(event) {if (event.target == speakingModalScoreKD8) {modal.style.display = "none";}}
+var speakingModalScoreKD9 = document.getElementById('speakingModalScoreKD9'); window.onclick = function(event) {if (event.target == speakingModalScoreKD9) {modal.style.display = "none";}}
+var speakingModalScoreKD10 = document.getElementById('speakingModalScoreKD10'); window.onclick = function(event) {if (event.target == speakingModalScoreKD10) {modal.style.display = "none";}}
+var speakingModalScoreKD11 = document.getElementById('speakingModalScoreKD11'); window.onclick = function(event) {if (event.target == speakingModalScoreKD11) {modal.style.display = "none";}}
+var speakingModalScoreKD12 = document.getElementById('speakingModalScoreKD12'); window.onclick = function(event) {if (event.target == speakingModalScoreKD12) {modal.style.display = "none";}}
+var speakingModalScoreKD13 = document.getElementById('speakingModalScoreKD13'); window.onclick = function(event) {if (event.target == speakingModalScoreKD13) {modal.style.display = "none";}}
+var speakingModalScoreKD14 = document.getElementById('speakingModalScoreKD14'); window.onclick = function(event) {if (event.target == speakingModalScoreKD14) {modal.style.display = "none";}}
+var speakingModalScoreKD15 = document.getElementById('speakingModalScoreKD15'); window.onclick = function(event) {if (event.target == speakingModalScoreKD15) {modal.style.display = "none";}}
+var speakingModalScoreKD16 = document.getElementById('speakingModalScoreKD16'); window.onclick = function(event) {if (event.target == speakingModalScoreKD16) {modal.style.display = "none";}}
+var speakingModalScoreKD17 = document.getElementById('speakingModalScoreKD17'); window.onclick = function(event) {if (event.target == speakingModalScoreKD17) {modal.style.display = "none";}}
+var speakingModalScoreKD18 = document.getElementById('speakingModalScoreKD18'); window.onclick = function(event) {if (event.target == speakingModalScoreKD18) {modal.style.display = "none";}}
+var speakingModalScoreKD19 = document.getElementById('speakingModalScoreKD19'); window.onclick = function(event) {if (event.target == speakingModalScoreKD19) {modal.style.display = "none";}}
+var speakingModalScoreKD20 = document.getElementById('speakingModalScoreKD20'); window.onclick = function(event) {if (event.target == speakingModalScoreKD20) {modal.style.display = "none";}}
+var speakingModalScoreKD21 = document.getElementById('speakingModalScoreKD21'); window.onclick = function(event) {if (event.target == speakingModalScoreKD21) {modal.style.display = "none";}}
+var speakingModalScoreKD22 = document.getElementById('speakingModalScoreKD22'); window.onclick = function(event) {if (event.target == speakingModalScoreKD22) {modal.style.display = "none";}}
+var speakingModalScoreKD23 = document.getElementById('speakingModalScoreKD23'); window.onclick = function(event) {if (event.target == speakingModalScoreKD23) {modal.style.display = "none";}}
+var speakingModalScoreKD24 = document.getElementById('speakingModalScoreKD24'); window.onclick = function(event) {if (event.target == speakingModalScoreKD24) {modal.style.display = "none";}}
+var speakingModalScoreKD25 = document.getElementById('speakingModalScoreKD25'); window.onclick = function(event) {if (event.target == speakingModalScoreKD25) {modal.style.display = "none";}}
+var speakingModalScoreKD26 = document.getElementById('speakingModalScoreKD26'); window.onclick = function(event) {if (event.target == speakingModalScoreKD26) {modal.style.display = "none";}}
+var speakingModalScoreKD27 = document.getElementById('speakingModalScoreKD27'); window.onclick = function(event) {if (event.target == speakingModalScoreKD27) {modal.style.display = "none";}}
+var speakingModalScoreKD28 = document.getElementById('speakingModalScoreKD28'); window.onclick = function(event) {if (event.target == speakingModalScoreKD28) {modal.style.display = "none";}}
+var speakingModalScoreKD29 = document.getElementById('speakingModalScoreKD29'); window.onclick = function(event) {if (event.target == speakingModalScoreKD29) {modal.style.display = "none";}}
+var speakingModalScoreKD30 = document.getElementById('speakingModalScoreKD30'); window.onclick = function(event) {if (event.target == speakingModalScoreKD30) {modal.style.display = "none";}}
+var speakingModalScoreKD31 = document.getElementById('speakingModalScoreKD31'); window.onclick = function(event) {if (event.target == speakingModalScoreKD31) {modal.style.display = "none";}}
+var speakingModalScoreKD32 = document.getElementById('speakingModalScoreKD32'); window.onclick = function(event) {if (event.target == speakingModalScoreKD32) {modal.style.display = "none";}}
+var speakingModalScoreKD33 = document.getElementById('speakingModalScoreKD33'); window.onclick = function(event) {if (event.target == speakingModalScoreKD33) {modal.style.display = "none";}}
+var speakingModalScoreKD34 = document.getElementById('speakingModalScoreKD34'); window.onclick = function(event) {if (event.target == speakingModalScoreKD34) {modal.style.display = "none";}}
+var speakingModalScoreKD35 = document.getElementById('speakingModalScoreKD35'); window.onclick = function(event) {if (event.target == speakingModalScoreKD35) {modal.style.display = "none";}}
+var speakingModalScoreKD36 = document.getElementById('speakingModalScoreKD36'); window.onclick = function(event) {if (event.target == speakingModalScoreKD36) {modal.style.display = "none";}}
+var speakingModalScoreKD37 = document.getElementById('speakingModalScoreKD37'); window.onclick = function(event) {if (event.target == speakingModalScoreKD37) {modal.style.display = "none";}}
+var readingModalScoreKD1 = document.getElementById('readingModalScoreKD1'); window.onclick = function(event) {if (event.target == readingModalScoreKD1) {modal.style.display = "none";}}
+var readingModalScoreKD2 = document.getElementById('readingModalScoreKD2'); window.onclick = function(event) {if (event.target == readingModalScoreKD2) {modal.style.display = "none";}}
+var readingModalScoreKD3 = document.getElementById('readingModalScoreKD3'); window.onclick = function(event) {if (event.target == readingModalScoreKD3) {modal.style.display = "none";}}
+var readingModalScoreKD4 = document.getElementById('readingModalScoreKD4'); window.onclick = function(event) {if (event.target == readingModalScoreKD4) {modal.style.display = "none";}}
+var readingModalScoreKD5 = document.getElementById('readingModalScoreKD5'); window.onclick = function(event) {if (event.target == readingModalScoreKD5) {modal.style.display = "none";}}
+var readingModalScoreKD6 = document.getElementById('readingModalScoreKD6'); window.onclick = function(event) {if (event.target == readingModalScoreKD6) {modal.style.display = "none";}}
+var readingModalScoreKD7 = document.getElementById('readingModalScoreKD7'); window.onclick = function(event) {if (event.target == readingModalScoreKD7) {modal.style.display = "none";}}
+var readingModalScoreKD8 = document.getElementById('readingModalScoreKD8'); window.onclick = function(event) {if (event.target == readingModalScoreKD8) {modal.style.display = "none";}}
+var readingModalScoreKD9 = document.getElementById('readingModalScoreKD9'); window.onclick = function(event) {if (event.target == readingModalScoreKD9) {modal.style.display = "none";}}
+var readingModalScoreKD10 = document.getElementById('readingModalScoreKD10'); window.onclick = function(event) {if (event.target == readingModalScoreKD10) {modal.style.display = "none";}}
+var readingModalScoreKD11 = document.getElementById('readingModalScoreKD11'); window.onclick = function(event) {if (event.target == readingModalScoreKD11) {modal.style.display = "none";}}
+var readingModalScoreKD12 = document.getElementById('readingModalScoreKD12'); window.onclick = function(event) {if (event.target == readingModalScoreKD12) {modal.style.display = "none";}}
+var readingModalScoreKD13 = document.getElementById('readingModalScoreKD13'); window.onclick = function(event) {if (event.target == readingModalScoreKD13) {modal.style.display = "none";}}
+var readingModalScoreKD14 = document.getElementById('readingModalScoreKD14'); window.onclick = function(event) {if (event.target == readingModalScoreKD14) {modal.style.display = "none";}}
+var readingModalScoreKD15 = document.getElementById('readingModalScoreKD15'); window.onclick = function(event) {if (event.target == readingModalScoreKD15) {modal.style.display = "none";}}
+var readingModalScoreKD16 = document.getElementById('readingModalScoreKD16'); window.onclick = function(event) {if (event.target == readingModalScoreKD16) {modal.style.display = "none";}}
+var readingModalScoreKD17 = document.getElementById('readingModalScoreKD17'); window.onclick = function(event) {if (event.target == readingModalScoreKD17) {modal.style.display = "none";}}
+var readingModalScoreKD18 = document.getElementById('readingModalScoreKD18'); window.onclick = function(event) {if (event.target == readingModalScoreKD18) {modal.style.display = "none";}}
+var readingModalScoreKD19 = document.getElementById('readingModalScoreKD19'); window.onclick = function(event) {if (event.target == readingModalScoreKD19) {modal.style.display = "none";}}
+var readingModalScoreKD20 = document.getElementById('readingModalScoreKD20'); window.onclick = function(event) {if (event.target == readingModalScoreKD20) {modal.style.display = "none";}}
+var readingModalScoreKD21 = document.getElementById('readingModalScoreKD21'); window.onclick = function(event) {if (event.target == readingModalScoreKD21) {modal.style.display = "none";}}
+var readingModalScoreKD22 = document.getElementById('readingModalScoreKD22'); window.onclick = function(event) {if (event.target == readingModalScoreKD22) {modal.style.display = "none";}}
+var readingModalScoreKD23 = document.getElementById('readingModalScoreKD23'); window.onclick = function(event) {if (event.target == readingModalScoreKD23) {modal.style.display = "none";}}
+var readingModalScoreKD24 = document.getElementById('readingModalScoreKD24'); window.onclick = function(event) {if (event.target == readingModalScoreKD24) {modal.style.display = "none";}}
+var readingModalScoreKD25 = document.getElementById('readingModalScoreKD25'); window.onclick = function(event) {if (event.target == readingModalScoreKD25) {modal.style.display = "none";}}
+var readingModalScoreKD26 = document.getElementById('readingModalScoreKD26'); window.onclick = function(event) {if (event.target == readingModalScoreKD26) {modal.style.display = "none";}}
+var readingModalScoreKD27 = document.getElementById('readingModalScoreKD27'); window.onclick = function(event) {if (event.target == readingModalScoreKD27) {modal.style.display = "none";}}
+var readingModalScoreKD28 = document.getElementById('readingModalScoreKD28'); window.onclick = function(event) {if (event.target == readingModalScoreKD28) {modal.style.display = "none";}}
+var readingModalScoreKD29 = document.getElementById('readingModalScoreKD29'); window.onclick = function(event) {if (event.target == readingModalScoreKD29) {modal.style.display = "none";}}
+var readingModalScoreKD30 = document.getElementById('readingModalScoreKD30'); window.onclick = function(event) {if (event.target == readingModalScoreKD30) {modal.style.display = "none";}}
+var readingModalScoreKD31 = document.getElementById('readingModalScoreKD31'); window.onclick = function(event) {if (event.target == readingModalScoreKD31) {modal.style.display = "none";}}
+var readingModalScoreKD32 = document.getElementById('readingModalScoreKD32'); window.onclick = function(event) {if (event.target == readingModalScoreKD32) {modal.style.display = "none";}}
+var readingModalScoreKD33 = document.getElementById('readingModalScoreKD33'); window.onclick = function(event) {if (event.target == readingModalScoreKD33) {modal.style.display = "none";}}
+var readingModalScoreKD34 = document.getElementById('readingModalScoreKD34'); window.onclick = function(event) {if (event.target == readingModalScoreKD34) {modal.style.display = "none";}}
+var readingModalScoreKD35 = document.getElementById('readingModalScoreKD35'); window.onclick = function(event) {if (event.target == readingModalScoreKD35) {modal.style.display = "none";}}
+var readingModalScoreKD36 = document.getElementById('readingModalScoreKD36'); window.onclick = function(event) {if (event.target == readingModalScoreKD36) {modal.style.display = "none";}}
+var writingModalScoreKD1 = document.getElementById('writingModalScoreKD1'); window.onclick = function(event) {if (event.target == writingModalScoreKD1) {modal.style.display = "none";}}
+var writingModalScoreKD2 = document.getElementById('writingModalScoreKD2'); window.onclick = function(event) {if (event.target == writingModalScoreKD2) {modal.style.display = "none";}}
+var writingModalScoreKD3 = document.getElementById('writingModalScoreKD3'); window.onclick = function(event) {if (event.target == writingModalScoreKD3) {modal.style.display = "none";}}
+var writingModalScoreKD4 = document.getElementById('writingModalScoreKD4'); window.onclick = function(event) {if (event.target == writingModalScoreKD4) {modal.style.display = "none";}}
+var writingModalScoreKD5 = document.getElementById('writingModalScoreKD5'); window.onclick = function(event) {if (event.target == writingModalScoreKD5) {modal.style.display = "none";}}
+var writingModalScoreKD6 = document.getElementById('writingModalScoreKD6'); window.onclick = function(event) {if (event.target == writingModalScoreKD6) {modal.style.display = "none";}}
+var writingModalScoreKD7 = document.getElementById('writingModalScoreKD7'); window.onclick = function(event) {if (event.target == writingModalScoreKD7) {modal.style.display = "none";}}
+var writingModalScoreKD8 = document.getElementById('writingModalScoreKD8'); window.onclick = function(event) {if (event.target == writingModalScoreKD8) {modal.style.display = "none";}}
+var writingModalScoreKD9 = document.getElementById('writingModalScoreKD9'); window.onclick = function(event) {if (event.target == writingModalScoreKD9) {modal.style.display = "none";}}
+var writingModalScoreKD10 = document.getElementById('writingModalScoreKD10'); window.onclick = function(event) {if (event.target == writingModalScoreKD10) {modal.style.display = "none";}}
+var writingModalScoreKD11 = document.getElementById('writingModalScoreKD11'); window.onclick = function(event) {if (event.target == writingModalScoreKD11) {modal.style.display = "none";}}
+var writingModalScoreKD12 = document.getElementById('writingModalScoreKD12'); window.onclick = function(event) {if (event.target == writingModalScoreKD12) {modal.style.display = "none";}}
+var writingModalScoreKD13 = document.getElementById('writingModalScoreKD13'); window.onclick = function(event) {if (event.target == writingModalScoreKD13) {modal.style.display = "none";}}
+var writingModalScoreKD14 = document.getElementById('writingModalScoreKD14'); window.onclick = function(event) {if (event.target == writingModalScoreKD14) {modal.style.display = "none";}}
+var writingModalScoreKD15 = document.getElementById('writingModalScoreKD15'); window.onclick = function(event) {if (event.target == writingModalScoreKD15) {modal.style.display = "none";}}
+var writingModalScoreKD16 = document.getElementById('writingModalScoreKD16'); window.onclick = function(event) {if (event.target == writingModalScoreKD16) {modal.style.display = "none";}}
+var writingModalScoreKD17 = document.getElementById('writingModalScoreKD17'); window.onclick = function(event) {if (event.target == writingModalScoreKD17) {modal.style.display = "none";}}
+var writingModalScoreKD18 = document.getElementById('writingModalScoreKD18'); window.onclick = function(event) {if (event.target == writingModalScoreKD18) {modal.style.display = "none";}}
+var writingModalScoreKD19 = document.getElementById('writingModalScoreKD19'); window.onclick = function(event) {if (event.target == writingModalScoreKD19) {modal.style.display = "none";}}
+var writingModalScoreKD20 = document.getElementById('writingModalScoreKD20'); window.onclick = function(event) {if (event.target == writingModalScoreKD20) {modal.style.display = "none";}}
+var writingModalScoreKD21 = document.getElementById('writingModalScoreKD21'); window.onclick = function(event) {if (event.target == writingModalScoreKD21) {modal.style.display = "none";}}
+var writingModalScoreKD22 = document.getElementById('writingModalScoreKD22'); window.onclick = function(event) {if (event.target == writingModalScoreKD22) {modal.style.display = "none";}}
+var writingModalScoreKD23 = document.getElementById('writingModalScoreKD23'); window.onclick = function(event) {if (event.target == writingModalScoreKD23) {modal.style.display = "none";}}
+var writingModalScoreKD24 = document.getElementById('writingModalScoreKD24'); window.onclick = function(event) {if (event.target == writingModalScoreKD24) {modal.style.display = "none";}}
+var writingModalScoreKD25 = document.getElementById('writingModalScoreKD25'); window.onclick = function(event) {if (event.target == writingModalScoreKD25) {modal.style.display = "none";}}
+var writingModalScoreKD26 = document.getElementById('writingModalScoreKD26'); window.onclick = function(event) {if (event.target == writingModalScoreKD26) {modal.style.display = "none";}}
+var writingModalScoreKD27 = document.getElementById('writingModalScoreKD27'); window.onclick = function(event) {if (event.target == writingModalScoreKD27) {modal.style.display = "none";}}
+var writingModalScoreKD28 = document.getElementById('writingModalScoreKD28'); window.onclick = function(event) {if (event.target == writingModalScoreKD28) {modal.style.display = "none";}}
+var writingModalScoreKD29 = document.getElementById('writingModalScoreKD29'); window.onclick = function(event) {if (event.target == writingModalScoreKD29) {modal.style.display = "none";}}
+var writingModalScoreKD30 = document.getElementById('writingModalScoreKD30'); window.onclick = function(event) {if (event.target == writingModalScoreKD30) {modal.style.display = "none";}}
+var writingModalScoreKD31 = document.getElementById('writingModalScoreKD31'); window.onclick = function(event) {if (event.target == writingModalScoreKD31) {modal.style.display = "none";}}
+var writingModalScoreKD32 = document.getElementById('writingModalScoreKD32'); window.onclick = function(event) {if (event.target == writingModalScoreKD32) {modal.style.display = "none";}}
+var writingModalScoreKD33 = document.getElementById('writingModalScoreKD33'); window.onclick = function(event) {if (event.target == writingModalScoreKD33) {modal.style.display = "none";}}
+var writingModalScoreKD34 = document.getElementById('writingModalScoreKD34'); window.onclick = function(event) {if (event.target == writingModalScoreKD34) {modal.style.display = "none";}}
+var writingModalScoreKD35 = document.getElementById('writingModalScoreKD35'); window.onclick = function(event) {if (event.target == writingModalScoreKD35) {modal.style.display = "none";}}
+var writingModalScoreKD36 = document.getElementById('writingModalScoreKD36'); window.onclick = function(event) {if (event.target == writingModalScoreKD36) {modal.style.display = "none";}}
+</script>
+<script src="js/writeTheory.js"></script>
+<script src="js/writeListening.js"></script>
+<script src="js/writeReading.js"></script>
+<script src="js/writeWriting.js"></script>
+<script src="js/writeUN.js"></script>
+
+<script src="js/speakingScript.js"></script>
+<script src="js/getScorePractice.js"></script>
+</div>
+</body>
+</html>
