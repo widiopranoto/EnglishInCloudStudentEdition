@@ -1,0 +1,389 @@
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<title>Reading KD 27 (Offering Service)</title>
+<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script language="JavaScript" type="text/javascript">
+
+var RightChar = ':-)';
+var WrongChar = 'X';
+var YourScoreIs = 'Your score is:';
+var DefaultPrompt = 'Which is the next part of the story?';
+var StorySoFar = '';
+
+var CurrentAnswer = '';
+var GuessesSoFar = 0;
+var CurrentNumber = 0;
+var CurrentCorrect = 0;
+var Points = 0;
+var TotalSegments = 0;
+var LastThree = '';
+var SwitchFlag = 'WholeText';
+
+var IndexButton = '<form method=post><INPUT TYPE=\"Button\" NAME=\"Index\" VALUE=\"Go back to contents\" onClick="parent.location=\'index.htm\'"></FORM>';
+//'<BR><FORM><INPUT TYPE=\"Button\" VALUE=\"[Index]\" onClick=\"parent.location=\'index.htm\'\"></FORM>';
+
+Segments = new Array();
+
+WinSegments = new Array();
+
+WinSegments[1] = 'The way your customers feel towards you is important.';
+WinSegments[2] = 'The more you show you care about them, the more they’ll likely want to continue working with you.';
+WinSegments[3] = 'With that in mind, providing good customer service to your clients should naturally be a major priority.';
+WinSegments[4] = 'This article lists tips and suggestions for ensuring that you’re treating your clients well.';
+WinSegments[5] = '1) Respond to Clients as Soon as Possible.';
+WinSegments[6] = 'Speed is everything, especially when a client is requesting something that’s time-sensitive.';
+WinSegments[7] = '2) Keep Clients Updated.';
+WinSegments[8] = 'If you’re experiencing trouble with something, let them know right away.';
+WinSegments[9] = '3) Go the Extra Mile.';
+WinSegments[10] = 'If a client asks for you to do something that truly won’t cost you a lot in time and income, you have the option of going the extra mile and doing it for them.';
+WinSegments[11] = '4) Fix Your Mistakes.';
+WinSegments[12] = 'If you did something that didn’t end up working, you should repair it.';
+WinSegments[13] = '5) Listen to Your Clients.';
+WinSegments[14] = 'Listen to what their needs are, and then offer your suggestion on the best way to go about fulfilling their needs.';
+WinSegments[15] = '6) Keep Your Promises.';
+WinSegments[16] = 'If you say you’re going to do something, make sure you do it. It’s part of being a professional.';
+WinSegments[17] = '7) Don’t Confuse Clients with Jargon.';
+WinSegments[18] = 'Try to explain whatever the problem is as best as you can without making the client feel stupid.';
+WinSegments[19] = '8) Be Patient.';
+WinSegments[20] = 'If you feel like the client is overstepping their boundaries, let them know in a cordial and professional manner.';
+WinSegments[21] = '9) Know Everything You Need to Know.';
+WinSegments[22] = 'You need to keep yourself up-to-date with the profession and always be ready to answer questions your client needs to know.';
+
+MacSegments = new Array();
+
+MacSegments[1] = 'One day Nasreddin borrowed a pot ';
+MacSegments[2] = 'from his neighbour Ali. The next day ';
+MacSegments[3] = 'he brought it back ';
+MacSegments[4] = 'with another little pot inside. ';
+MacSegments[5] = '"That\'s not mine," said Ali. ';
+MacSegments[6] = '"Yes, it is," said Nasreddin. ';
+MacSegments[7] = '"While your pot was staying with me, ';
+MacSegments[8] = 'it had a baby." ';
+MacSegments[9] = 'Some time later Nasreddin asked Ali ';
+MacSegments[10] = 'to lend him a pot again. ';
+MacSegments[11] = 'Ali agreed, hoping that he would ';
+MacSegments[12] = 'once again receive two pots in return. ';
+MacSegments[13] = 'However, days passed ';
+MacSegments[14] = 'and Nasreddin had still not returned the pot. ';
+MacSegments[15] = 'Finally Ali lost patience ';
+MacSegments[16] = 'and went to demand his property. ';
+MacSegments[17] = '"I am sorry," said Nasreddin. ';
+MacSegments[18] = '"I can\'t give you back your pot, ';
+MacSegments[19] = 'since it has died." ';
+MacSegments[20] = '"Died!" screamed Ali,  "how can a pot die?" ';
+MacSegments[21] = '"Well," said Nasreddin,  "you believed me ';
+MacSegments[22] = 'when I told you that your pot had had a baby." ';
+
+var platform = 'win';
+
+function Initialize(){
+
+	if (navigator.appVersion.indexOf('Mac') != -1) {
+		platform = 'mac';
+	}
+
+	if (platform == 'win'){
+		for (i = 1; i < WinSegments.length; i++){
+			Segments[i] = unescape(WinSegments[i]);
+		}
+	}
+	else {
+		for (i = 1; i < MacSegments.length; i++){
+			Segments[i] = unescape(MacSegments[i]);
+		}
+	}
+
+	TotalSegments = Segments.length - 1;
+
+	CurrentNumber = 1;
+	ShowQuestion();
+	Points = 0;
+	ThisQScore = 2;
+	document.StoryForm.Story.value = '';
+	StorySoFar = '';
+	document.QuizForm.Result1.value = '';
+	document.QuizForm.Result2.value = '';
+	document.QuizForm.Result3.value = '';
+}
+
+function ShowQuestion(){
+
+//Deal with the new paragraph thing
+
+	if (Segments[CurrentNumber] == '[NewPara]'){
+		StorySoFar += unescape('%0D%0A%0D%0A');
+		Segments[CurrentNumber] = unescape('%0D%0A%0D%0A');
+		Points += 2;
+		CurrentNumber++;
+	}
+
+//Deal with the last two segment situation
+	if (CurrentNumber == TotalSegments - 1){
+
+		var Temp = 1 + Math.floor(2 * Math.random());
+		document.QuizForm.Guess1.value = Segments[TotalSegments];
+		document.QuizForm.Guess2.value = Segments[TotalSegments];
+		document.QuizForm.Guess3.value = '';
+
+		document.QuizForm.elements[(Temp*Temp)].value = Segments[CurrentNumber];
+		CurrentCorrect = Temp;
+		CurrentAnswer = Segments[CurrentNumber];
+		ThisQScore = 1;
+		return;
+	}
+	
+
+	var FirstDistractor = 0;
+	var SecondDistractor = 0;
+	var Range = TotalSegments - CurrentNumber;
+
+
+	FirstDistractor = (CurrentNumber + 1) + Math.floor(Range  *  Math.random());
+	while (Segments[FirstDistractor] == '[NewPara]'){
+		FirstDistractor = (CurrentNumber + 1) + Math.floor(Range  *  Math.random());
+	}
+
+	SecondDistractor = FirstDistractor;
+	while ((SecondDistractor == FirstDistractor)||(Segments[SecondDistractor] == '[NewPara]')){
+		SecondDistractor = (CurrentNumber + 1) + Math.floor(Range  *  Math.random());
+	}
+
+	ThreeSegments = new Array(3);
+	ThreeSegments[1] = Segments[CurrentNumber];
+	ThreeSegments[2] = Segments[FirstDistractor];
+	ThreeSegments[3] = Segments[SecondDistractor];
+
+	CurrentAnswer = Segments[CurrentNumber];
+
+	MixedSegments = new Array(3);
+
+	var j = 3;
+	var i = 1;
+	var Temp = 0;
+	for (i = 1; i < 4; i++)  {
+
+		Temp = 1 + Math.floor(j  *  Math.random());
+		MixedSegments[i] = ThreeSegments[Temp];
+
+		for (k=Temp; k < j; k++) {
+			ThreeSegments[k] = ThreeSegments[k+1];
+		}
+		j = j - 1;
+	}
+
+	for (i=1; i<4; i++){
+		if (MixedSegments[i] == CurrentAnswer){
+			CurrentCorrect = i;
+		}
+	}
+
+	document.QuizForm.Guess1.value = MixedSegments[1];
+	document.QuizForm.Guess2.value = MixedSegments[2];
+	document.QuizForm.Guess3.value = MixedSegments[3];
+	document.QuizForm.Result1.value = '';
+	document.QuizForm.Result2.value = '';
+	document.QuizForm.Result3.value = '';
+
+	ThisQScore = 2;
+
+}
+
+function CheckAnswer(Chosen){
+
+	if (CurrentNumber == TotalSegments){
+		return;
+	}
+
+	if (CurrentCorrect == Chosen){
+		StorySoFar += CurrentAnswer;
+
+		if (CurrentNumber == 1){
+			LastThree = Segments[1];
+		}
+
+		if (CurrentNumber == 2){
+			LastThree = Segments[1] + Segments[2];
+		}
+
+		if (CurrentNumber > 2){
+				LastThree = Segments[CurrentNumber - 2] + Segments[CurrentNumber - 1] + Segments[CurrentNumber];
+		}
+
+
+		if (CurrentNumber == TotalSegments - 1){
+			StorySoFar += Segments[TotalSegments];
+			LastThree += Segments[TotalSegments];
+		}
+
+		if (SwitchFlag == 'WholeText'){
+			document.StoryForm.Story.value = StorySoFar;
+		}
+		else{
+			document.StoryForm.Story.value = LastThree;
+		}
+	
+		CurrentNumber++;
+		Points += ThisQScore;
+		
+		if (CurrentNumber < TotalSegments){
+			var CurrentScore = Math.floor(100*Points/(2*(CurrentNumber-1)));
+			document.QuizForm.ScoreBox.value = CurrentScore + '%';
+			ShowQuestion();
+		}
+		else{
+			document.QuizForm.Guess1.value = 'WELL DONE!';
+			document.QuizForm.Guess2.value = 'YOU HAVE COMPLETED';
+			document.QuizForm.Guess3.value = 'THE STORY!';
+			var FinalScore = Math.floor(100*Points/((2*TotalSegments) - 3));
+			document.QuizForm.ScoreBox.value = FinalScore + '%';
+
+            kirimServer(FinalScore,reading,1,1,27);			
+			
+		}	
+	}
+	else{
+		document.QuizForm.elements[(Chosen*3)-1].value = WrongChar;
+		document.QuizForm.ScoreBox.value = '';
+		if (ThisQScore > 0){
+			ThisQScore--;
+		}
+	}
+}
+
+function SwitchStuff(WhichButton){
+	SwitchFlag = WhichButton;
+	if (SwitchFlag == 'WholeText'){
+		document.StoryForm.Story.value = StorySoFar;
+	}
+	else{
+		document.StoryForm.Story.value = LastThree;
+	}
+}
+
+function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
+{
+  
+//hitung total score masing2 latihan dan simpan di offline  
+  var skilScoreKDDefault_1Id=skill+'ScoreKD'+noKD+'_1';
+  if(localStorage.getItem(skilScoreKDDefault_1Id)==undefined || localStorage.getItem(skilScoreKDDefault_1Id)==null){localStorage.setItem(skilScoreKDDefault_1Id,0);}
+  var skilScoreKDDefault_2Id=skill+'ScoreKD'+noKD+'_2';
+  if(localStorage.getItem(skilScoreKDDefault_2Id)==undefined || localStorage.getItem(skilScoreKDDefault_2Id)==null){localStorage.setItem(skilScoreKDDefault_2Id,0);}
+  var skilScoreKDDefault_3Id=skill+'ScoreKD'+noKD+'_3';
+  if(localStorage.getItem(skilScoreKDDefault_3Id)==undefined || localStorage.getItem(skilScoreKDDefault_3Id)==null){localStorage.setItem(skilScoreKDDefault_3Id,0);}
+  var skilScoreKDDefault_4Id=skill+'ScoreKD'+noKD+'_4';
+  if(localStorage.getItem(skilScoreKDDefault_4Id)==undefined || localStorage.getItem(skilScoreKDDefault_4Id)==null){localStorage.setItem(skilScoreKDDefault_4Id,0);}
+  var skilScoreKDDefault_5Id=skill+'ScoreKD'+noKD+'_5';
+  if(localStorage.getItem(skilScoreKDDefault_5Id)==undefined || localStorage.getItem(skilScoreKDDefault_5Id)==null){localStorage.setItem(skilScoreKDDefault_5Id,0);}
+  
+//update hasil nilai latihan default terbaru di offline  
+  var skillKDDefaultId=skill+'KDDefault';
+  var skilScoreKDDefault_NoDefault=skill+'ScoreKD'+noKD+'_'+noLatihan;
+  localStorage.setItem(skilScoreKDDefault_NoDefault,Score); 
+//update nilai total offline  
+  var skillScoreTotalKDDefaultId=skill+'ScoreTotalKD'+noKD;
+  var skillScoreTotalKDDefault_1=parseInt(localStorage.getItem(skilScoreKDDefault_1Id));
+  var skillScoreTotalKDDefault_2=parseInt(localStorage.getItem(skilScoreKDDefault_2Id));
+  var skillScoreTotalKDDefault_3=parseInt(localStorage.getItem(skilScoreKDDefault_3Id));
+  var skillScoreTotalKDDefault_4=parseInt(localStorage.getItem(skilScoreKDDefault_4Id));
+  var skillScoreTotalKDDefault_5=parseInt(localStorage.getItem(skilScoreKDDefault_5Id));
+  
+  var skilScoreTotalKDDefault=skillScoreTotalKDDefault_1+skillScoreTotalKDDefault_2+skillScoreTotalKDDefault_3+skillScoreTotalKDDefault_4+skillScoreTotalKDDefault_5;
+  skilScoreTotalKDDefault=skilScoreTotalKDDefault/jumlahLatihan;  
+  localStorage.setItem(skillScoreTotalKDDefaultId,skilScoreTotalKDDefault);
+//kirim ke server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).resultItem;	
+      //storeItem(varStored,obj);
+    }
+  };
+  var noKolom=parseInt(noKD)+2;
+  var inputNamaSheet='hasil_'+skill;
+  var nis=localStorage.getItem('usernameStored');
+  var item=skilScoreTotalKDDefault;
+  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing&inputNamaSheet="+inputNamaSheet+"&action=sendItem&nis="+nis+"&item="+item+"&noKolom="+noKolom;
+  xhttp.open("POST", req, true);
+  xhttp.send();  
+//cek cup dan modal  
+  var skillCupKDId=skill+'CupKD';
+  var skillModalCupId=skill+'ModalCup';
+  var skillScoreTotalKDId=skill+'ScoreTotalKD'+noKD;
+  skillCupModal(30,skillScoreTotalKDId,skillCupKDId,skillModalCupId);
+  //playAudio('score');
+}
+function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
+	var skillScoreTotalKDDefault=parseInt(localStorage.getItem(skillScoreTotalKDId));
+	//cek apakah eksis
+	if(skillScoreTotalKDDefault>79)
+	{
+		  var skillCupWrite="<img src='image/cup.png' width='100'></img>";
+		  var skillCupKDId_=skillCupKDId+'_';
+		  document.getElementById(skillCupKDId).innerHTML=skillCupWrite;
+		  document.getElementById(skillCupKDId_).innerHTML=skillCupWrite;
+		  //tampilkan modal
+		  modalkan(skillModalCupId);
+		  //playAudio('yeah');
+	  }
+}
+</script>
+<link rel="stylesheet" type="text/css" href="../../css/sz-simple.css">
+<link rel="stylesheet" type="text/css" href="../../css/sz-print.css" media="print">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28427007-1']);
+  _gaq.push (['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<style type="text/css" data-asas-style="">body, div, a, p, span{ user-select: text !important; }p, h1, h2, h3, h4, h5, h6{ cursor: auto; user-select: text !important; }::selection{ background-color: #338FFF !important; color: #fff !important; }</style></head>
+
+<body onload="Initialize()">
+<div id="container">
+  <div id="content">
+    <h2 align="center">Providing Great Customer Service to Your Clients </h2>
+    <p>Recreate the order of article. Use the <strong>A</strong>, <strong>B</strong>, or <strong>C</strong> buttons. If your choice is correct, the sentence will be added to the story.</p>
+    <form name="QuizForm" id="QuizForm" onsubmit="return false">
+      <table border="0">
+        <tbody><tr>
+          <td><input type="button" name="Check1" value="   A   " onclick="CheckAnswer(1)"></td>
+          <td><input type="EDIT" name="Guess1" size="50" maxlength="60" onfocus="CheckAnswer(1); blur()"></td>
+          <td><input type="EDIT" name="Result1" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="Check2" value="   B   " onclick="CheckAnswer(2)"></td>
+          <td><input type="EDIT" name="Guess2" size="50" maxlength="60" onfocus="CheckAnswer(2); blur()"></td>
+          <td><input type="EDIT" name="Result2" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="Check3" value="   C   " onclick="CheckAnswer(3)"></td>
+          <td><input type="EDIT" name="Guess3" size="50" maxlength="60" onfocus="CheckAnswer(3); blur()"></td>
+          <td><input type="EDIT" name="Result3" size="3" maxlength="3"></td>
+        </tr>
+      </tbody></table>
+      <p>Score
+        <input type="text" name="ScoreBox" size="5" maxlength="5">
+      </p>
+    </form>
+    <form name="StoryForm" id="StoryForm">
+      <textarea style="width:80%" name="Story" rows="14" cols="100" wrap="virtual"></textarea>
+      <p>
+        <input type="button" name="ReStart" value="Restart" onclick="Initialize()">
+      </p>
+      <p>&nbsp;</p>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
