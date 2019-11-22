@@ -197,9 +197,53 @@ span.psw {
 <div class="w3-panel w3-yellow" id="login_panel"style="background-color:#f1f1f1">
   <p class="w3-center" id="loginOffline"></p>
   <script>
+   function loginOffline(usernameStored,elShown){
+   document.getElementById(elShown).innerHTML='Your username (saved): '+usernameStored;
+   }	
+  
   var usernameStored=localStorage.getItem('usernameStored');
   var passwordStored=localStorage.getItem('passwordStored');
   loginOffline(usernameStored,'loginOffline');
+  
+  function loginOnline(usernameStored,passwordStored,elShown){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).result;	
+	  passwordOnline(usernameStored,passwordStored);
+	  if(toString(obj)==toString(usernameStored) && parseInt(localStorage.getItem('passwordOnline'))==1)
+	  { localStorage.setItem('loginOnline',1);
+        document.getElementById(elShown).innerHTML='Your username (online): '+localStorage.getItem('usernameStored'); 
+	  }
+    }
+	else {localStorage.setItem('loginOnline',0);}
+  };
+  var inputUrlSpreadSheet='https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
+  var inputNamaSheet='login';
+  var action='getItem';
+  var nis=usernameStored;
+  var noKolom=0;
+  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+            inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+usernameStored+"+&noKolom="+noKolom;
+  xhttp.open("GET", req, true);
+  xhttp.send();
+  }  
+  function loginOnlineStatus(usernameStored,passwordStored,elShown){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).result;	
+      document.getElementById(elShown).innerHTML=obj;
+    }
+  };
+  var inputUrlSpreadSheet='https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
+  var inputNamaSheet='login';
+  var action='loginOnlineStatus';
+  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&username="+usernameStored+"&password="+passwordStored;
+  xhttp.open("GET", req, true);
+  xhttp.send();
+  }
+  
   </script>
   <p class="w3-center" id='loginOnline'></p>
    <p class="w3-center" id="loginOnlineStatus"></p> 

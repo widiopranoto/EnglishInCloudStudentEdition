@@ -177,7 +177,7 @@ function t(inputUrlSpreadSheet,inputNamaSheet,action,noBaris,noKolom,elShown){
 }
 
 function loginOffline(usernameStored,elShown){
-document.getElementById(elShown).innerHTML='Your username (offline): '+usernameStored;
+document.getElementById(elShown).innerHTML='Your username (saved): '+usernameStored;
 }	
 
 function passwordOnline(usernameStored,passwordStored){
