@@ -306,7 +306,7 @@ congrats();
 }
 
 function postAndStoreItem(inputUrlSpreadSheet,inputNamaSheet,username,noKolom,varStored,valStored){
-    var action='postItem';
+    var action='sendItem';
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -319,28 +319,57 @@ function postAndStoreItem(inputUrlSpreadSheet,inputNamaSheet,username,noKolom,va
     xhttp.send();
 }
 
-function postNilaiSkillKD(inputNamaSheet,inputNamaSkill){
-	var usernameStored=localStorage.getItem('usernameStored');
+function kirimUNServer(Score,skill)
+{
+  	var usernameStored=localStorage.getItem('usernameStored');
 	var loginOnline=parseInt(localStorage.getItem('loginOnline'));
-	var skillKDDefault=localStorage.getItem(inputNamaSkill+KDDefault);
-	var noKD=parseInt(skillKDDefault);
-	var varStored=inputNamaSkill+'ScoreTotalKD'+noKD;
-	var noKolom=parseInt(noKD)+1;
-	var valStored=localStorage.getItem(varStored);
-	//if(valStored==undefined || valStored==null)
-	//{
-	if(loginOnline==1)
-	  { 
-       postAndStoreItem("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,usernameStored,noKolom,varStored,valStored);  
-       //storeNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noKolom,varStored);
-        var skillPassKDId=inputNamaSkill+'PassKD'+noKD;
-		var skillScoreTotalKDId=inputNamaSkill+'ScoreTotalKD'+noKD;
-		var skillScoreTotalKDDefault=localStorage.getItem(skillScoreTotalKDId);
-		if(parseInt(skillScoreTotalKDDefault)>79){var skillPassKDDefault=1;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
-		if(parseInt(skillScoreTotalKDDefault)<80){var skillPassKDDefault=0;localStorage.setItem(skillPassKDId,skillPassKDDefault);}
-	  }	
-	//}
+	var KDDefault=localStorage.getItem('unKDDefault');
+	var inputNamaSkill='un';
+	var skillKDDefault=localStorage.getItem('unKDDefault');
+	var noKD=skillKDDefault;
+
+//hitung total score masing2 latihan dan simpan di offline  
+  var skillScoreTotalKDDefault=Score;
+//update nilai total offline  
+  var skillScoreTotalKDDefaultId=skill+'ScoreTotalKD'+noKD;
+  localStorage.setItem(skillScoreTotalKDDefaultId,skillScoreTotalKDDefault);
+//kirim ke server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).resultItem;	
+      //storeItem(varStored,obj);
+    }
+  };
+  var noKolom=parseInt(noKD)+1;
+  var inputNamaSheet='hasil_'+skill;
+  var nis=localStorage.getItem('usernameStored');
+  var item=skillScoreTotalKDDefault;
+  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing&inputNamaSheet="+inputNamaSheet+"&action=postItem&nis="+nis+"&item="+item+"&noKolom="+noKolom;
+  xhttp.open("POST", req, true);
+  xhttp.send();  
+//cek cup dan modal  
+  var skillCupKDId=skill+'CupKD';
+  var skillModalCupId=skill+'ModalCup';
+  var skillScoreTotalKDId=skill+'ScoreTotalKD'+noKD;
+  skillCupModal(30,skillScoreTotalKDId,skillCupKDId,skillModalCupId);
+  //playAudio('score');
 }
+function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
+	var skillScoreTotalKDDefault=parseInt(localStorage.getItem(skillScoreTotalKDId));
+	//cek apakah eksis
+	if(skillScoreTotalKDDefault>79)
+	{
+		  var skillCupWrite="<img src='image/cup.png' width='100'></img>";
+		  var skillCupKDId_=skillCupKDId+'_';
+		  document.getElementById(skillCupKDId).innerHTML=skillCupWrite;
+		  document.getElementById(skillCupKDId_).innerHTML=skillCupWrite;
+		  //tampilkan modal
+		  modalkan(skillModalCupId);
+		  //playAudio('yeah');
+	  }
+}
+
 
 function submitAll(){
 storeAllScores();
@@ -350,7 +379,8 @@ storeAllScores();
   var unScoreTotalDefault=retrieveTotalScores();
   localStorage.setItem(unScoreTotalKDId,parseInt(unScoreTotalDefault));
   //kirim TotalScore ke server  
-  postNilaiSkillKD('hasil_un','un',1);
+  kirimUNServer(unScoreTotalDefault,'un');
+  //postNilaiSkillKD('hasil_un','un');
   //tampilkan skor
   //showScoreUN(unScoreTotalKDId);
   //tampilkan modal
