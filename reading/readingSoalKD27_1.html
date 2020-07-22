@@ -1130,7 +1130,6 @@ function CheckAnswers(){
 	
 	Score = TotalScore;
 	CompileGuesses();
-	
 	if ((AllCorrect == true)||(Finished == true)){
 	
 
@@ -1139,7 +1138,8 @@ function CheckAnswers(){
 		Locked = true;
 		Finished = true;
 	}
-function kirimServer(TotalScore,'reading',1,1,27);
+	
+	kirimServer(Score,'reading',1,1,27);
 }
 
 function TrackFocus(BoxNumber){
@@ -1306,7 +1306,6 @@ function TypeChars(Chars){
 		selObj.setSelText(Chars);
 	}
 }
-
 function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
 {
   
@@ -1356,7 +1355,7 @@ function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
   var skillCupKDId=skill+'CupKD';
   var skillModalCupId=skill+'ModalCup';
   var skillScoreTotalKDId=skill+'ScoreTotalKD'+noKD;
-  skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId);
+  skillCupModal(30,skillScoreTotalKDId,skillCupKDId,skillModalCupId);
   //playAudio('score');
 }
 function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
@@ -1374,6 +1373,16 @@ function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
 	  }
 }
 
+
+
+
+
+
+
+
+//-->
+
+//]]>
 
 </script>
 
