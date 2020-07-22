@@ -14,7 +14,7 @@ html,body,h2,h3,h4,h5,h6{font-family: 'Indie Flower', cursive, serif;}
 iframe {width: 100%;height: 600px;border: 2px w3-grey;}
 </style>
 </head>
-<body onload="show('#login')">
+<body onload="show('#attendance')">
 <div class="w3-top w3-dark-gray" style="padding-left:80px">
 <h2>English in Cloud</h2>
 </div>
@@ -96,167 +96,23 @@ iframe {width: 100%;height: 600px;border: 2px w3-grey;}
   <a href='https://api.whatsapp.com/send?phone=+6288238883369' target='_blank' class="w3-bar-item w3-button w3-hover-aqua" onclick="show('#support')"><i class="fa fa-whatsapp"></i></a> 
 </div>
 </div>
-<div id='loginDiv'>
-<div id="loginModal" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-green"> 
-        <span onclick="document.getElementById('loginModal').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h3>Login Status</h3>
-      </header>
-	  <div class="w3-panel" id="login_panel">
-  <p class="w3-center" id="loginOffline_"></p>
-  <p class="w3-center" id="loginOnline_"></p>
-   <p class="w3-center" id="loginOnlineStatus_"></p> 
-</div>
-	</div>
-</div>	
-<div id="loginModalLogout" class="w3-animate-zoom w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-red"> 
-        <span onclick="document.getElementById('loginModalLogout').style.display='none'"
-        class="w3-button w3-xlarge w3-display-topright">&times;</span>
-        <h3>Login Status</h3>
-      </header>
-	  <div class="w3-panel" id="login_panel">
-      <p>You are logged out!</p>
-</div>
-	</div>
-</div>	
-<div id='login' class="w3-container w3-animate-left" style="padding-left:85px">
-  <h2 class="w3-animate-left">Login</h2>
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 25%;
-}
-button:hover {
-  opacity: 0.8;
-}
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-img.avatar {
-  width: 150px;
-  border-radius: 50%;
-}
-.container {
-  padding: 16px;
-}
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
-<form class="w3-form" action="">
-  <div class="imgcontainer">
-    <img src="image/img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="w3-container">
-    <label class="w3-label" for="username"><b>Username</b></label>
-    <input class="w3-input" type="text" placeholder="Enter Username" name="username" id="username" required>
-
-    <label class="w3-label" for="password"><b>Password</b></label>
-    <input class="w3-input" type="password" placeholder="Enter Password" name="password" id="password" required>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <span class="password">Contact your teacher if you forget your username and/or password</span>
-  </div>
-</form>
-<div class="w3-panel w3-yellow" id="login_panel"style="background-color:#f1f1f1">
-  <p class="w3-center" id="loginOffline"></p>
-  <script>
-   function loginOffline(usernameStored,elShown){
-   document.getElementById(elShown).innerHTML='Your username (saved): '+usernameStored;
-   }	
-  
-  var usernameStored=localStorage.getItem('usernameStored');
-  var passwordStored=localStorage.getItem('passwordStored');
-  loginOffline(usernameStored,'loginOffline');
-  
-  function loginOnline(usernameStored,passwordStored,elShown){
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-	  var obj=JSON.parse(this.responseText).result;	
-	  passwordOnline(usernameStored,passwordStored);
-	  if(toString(obj)==toString(usernameStored) && parseInt(localStorage.getItem('passwordOnline'))==1)
-	  { localStorage.setItem('loginOnline',1);
-        document.getElementById(elShown).innerHTML='Your username (online): '+localStorage.getItem('usernameStored'); 
-	  }
-    }
-	else {localStorage.setItem('loginOnline',0);}
-  };
-  var inputUrlSpreadSheet='https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
-  var inputNamaSheet='login';
-  var action='getItem';
-  var nis=usernameStored;
-  var noKolom=0;
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
-            inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+usernameStored+"+&noKolom="+noKolom;
-  xhttp.open("GET", req, true);
-  xhttp.send();
-  }  
-  function loginOnlineStatus(usernameStored,passwordStored,elShown){
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-	  var obj=JSON.parse(this.responseText).result;	
-      document.getElementById(elShown).innerHTML=obj;
-    }
-  };
-  var inputUrlSpreadSheet='https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
-  var inputNamaSheet='login';
-  var action='loginOnlineStatus';
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&username="+usernameStored+"&password="+passwordStored;
-  xhttp.open("GET", req, true);
-  xhttp.send();
-  }
-  
-  </script>
-  <p class="w3-center" id='loginOnline'></p>
-   <p class="w3-center" id="loginOnlineStatus"></p> 
-</div>
-  <div class="w3-center">  
-    <div class="w3-bar">
-      <button class="w3-bar-item w3-btn w3-yellow" id="" title="" onclick="showAndSound('#home','squeak');window.location.href='home.html'"><i class="w3-margin-right fa fa-angle-double-left"></i>Back</button>  
-      <button class="w3-bar-item w3-btn w3-green" type="submit" onclick="loginStore('username','usernameStored','password','passwordStored');">Login<i class="w3-margin-left fa fa-sign-in"></i></button>
-      <button class="w3-bar-item w3-btn w3-red" onclick="loginRemove('usernameStored','passwordStored')">Logout<i class="w3-margin-left fa fa-sign-out"></i></button>
-    </div>
-  </div>
+<div id='attendanceDiv'>
+<div id='attendance' class="w3-container w3-animate-left" style="padding-left:85px">
+  <h2 class="w3-animate-left">Attendance List (Daftar Hadir) </h2>
+          <div class="w3-section">
+            <div class="w3-card-2">
+                <a href="" class="w3-bar-item w3-button"">			
+                <img src="image/attendance.png">
+				</a>
+                <div class="w3-container w3-blue">
+                    <h2>Fill in attendance list!</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="w3-card-2">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEee4m_aV5ebzLT-XWLhHmkd21hE2heFQFdEgtm7J6GAMroQ/viewform"></iframe>            
+			</div>
+        </div>
 </div>
 </div>
 
