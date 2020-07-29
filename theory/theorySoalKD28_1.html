@@ -1164,9 +1164,9 @@ I[4]=new Array();I[4][0]=100;
 I[4][1]='';
 I[4][2]='0';
 I[4][3]=new Array();
-I[4][3][0]=new Array('the employer','',0,0,1);
+I[4][3][0]=new Array('the employer','',1,100,1);
 I[4][3][1]=new Array('the employee','',0,0,1);
-I[4][3][2]=new Array('the applicant','',1,100,1);
+I[4][3][2]=new Array('the applicant','',0,0,1);
 I[4][3][3]=new Array('the teacher','',0,0,1);
 I[5]=new Array();I[5][0]=100;
 I[5][1]='';
@@ -1359,7 +1359,6 @@ function CheckMCAnswer(QNum, ANum, Btn){
 			if ((ContinuousScoring == true)||(Finished == true)){
 				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
 				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
-				kirimServer(Score,'theory',1,2,27);
 			}
 			else{
 				WriteToInstructions(QsDone);
@@ -1398,6 +1397,7 @@ function CheckMCAnswer(QNum, ANum, Btn){
 	
 //Check whether all questions are now done
 	CheckFinished();
+	kirimServer(Score,'theory',1,2,27);
 }
 
 function CalculateMCQuestionScore(QNum){
@@ -1559,6 +1559,7 @@ function CheckFinished(){
 	}
 
 }
+
 function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
 {
   
@@ -1626,6 +1627,7 @@ function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
 	  }
 }
 
+
 </script>
 
 
@@ -1685,7 +1687,7 @@ function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
 <li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">Introductory paragrah has a function to ...</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the position that is applied</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the position of the employer</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the position of the employee</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the position of your job</li></ol></li>
 <li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">Highlighting paragrah has a function to ...</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the capacity and skills of the applicant</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the capacity and skills of the employer</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the capacity and skills of the employee</li><li id="Q_6_3"><button class="FuncButton" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the capacity and skills of the job</li></ol></li>
 <li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Final paragraph and closing have a function to ...</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the follow up and how to contact the applicant</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the follow up and how to contact the employer</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the follow up and how to contact the employee</li><li id="Q_7_3"><button class="FuncButton" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;explain the follow up and how to contact the contractor</li></ol></li>
-<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Resume atau CV adalah curriculum vitae merupakan riwayat atau daftar riwayat hidup pencari kerja, yang berisi...</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;riwayat pendidikan dan riwayat kerja</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;riwayat penderitaan</li><li id="Q_8_2"><button class="FuncButton" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;skill atau keterampilan</li><li id="Q_8_3"><button class="FuncButton" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;portofolio dan prestasi</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Resume atau CV adalah curriculum vitae merupakan riwayat atau daftar riwayat hidup pencari kerja, yang berisi hal berikut, KECUALI...</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;riwayat pendidikan dan riwayat kerja</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;riwayat penderitaan</li><li id="Q_8_2"><button class="FuncButton" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;skill atau keterampilan</li><li id="Q_8_3"><button class="FuncButton" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;portofolio dan prestasi</li></ol></li>
 <li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">Sebuah CV sebaiknya disertai dengan ...</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;foto yang sopan tapi menarik</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;foto paling santai</li><li id="Q_9_2"><button class="FuncButton" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;foto paling tegang</li><li id="Q_9_3"><button class="FuncButton" id="Q_9_3_Btn" onclick="CheckMCAnswer(9,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;foto keluarga</li></ol></li></ol>
 
 
