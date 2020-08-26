@@ -1397,7 +1397,7 @@ function CheckMCAnswer(QNum, ANum, Btn){
 	
 //Check whether all questions are now done
 	CheckFinished();
-	kirimServer(Score,'theory',1,2,27);
+kirimServer(Score,'theory',1,2,28);
 }
 
 function CalculateMCQuestionScore(QNum){
@@ -1557,7 +1557,6 @@ function CheckFinished(){
 		}
 		Detail += '</fields></hpnetresult>';
 	}
-
 }
 
 function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
@@ -1626,8 +1625,6 @@ function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
 		  //playAudio('yeah');
 	  }
 }
-
-
 </script>
 
 

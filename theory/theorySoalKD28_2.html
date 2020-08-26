@@ -1319,7 +1319,6 @@ function CheckMCAnswer(QNum, ANum, Btn){
 			if ((ContinuousScoring == true)||(Finished == true)){
 				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
 				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
-				kirimServer(Score,'theory',2,2,27);
 			}
 			else{
 				WriteToInstructions(QsDone);
@@ -1358,7 +1357,7 @@ function CheckMCAnswer(QNum, ANum, Btn){
 	
 //Check whether all questions are now done
 	CheckFinished();
-	kirimServer(Score,'theory',2,2,27);
+	kirimServer(Score,'theory',2,2,28);
 }
 
 function CalculateMCQuestionScore(QNum){
