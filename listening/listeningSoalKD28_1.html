@@ -668,8 +668,6 @@ function ShowMessage(Feedback){
 	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
 	
 //
-//	RefreshImages();
-//
 }
 
 function ShowElements(Show, TagName, ContainerToReverse){
@@ -824,29 +822,9 @@ function Shuffle(InArray){
 function WriteToInstructions(Feedback) {
 	document.getElementById('InstructionsDiv').innerHTML = Feedback;
 
-	RefreshImages();
-
 }
 
 
-
-Imgs = new Array();
-
-function PreloadImages(){
-	var a = PreloadImages.arguments;
-	for (var i=0; i<a.length; i++){
-		Imgs[i] = new Image();
-		Imgs[i].src = a[i];
-	}
-}
-
-function RefreshImages(){
-	for (var i=0; i<document.images.length; i++){
-		if (document.images[i].name.substring(0,6) != 'NavBar'){
-			document.images[i].src = document.images[i].src;
-		}
-	}
-}
 
 
 function EscapeDoubleQuotes(InString){
@@ -1237,8 +1215,6 @@ function StartUp(){
 
 	
 
-	PreloadImages('https://drive.google.com/file/d/1C5cclN1bmw959seu9EcmFBwYdtYPghTD/view?usp=sharing');
-
 	
 	CompleteEmptyFeedback();
 
@@ -1411,6 +1387,7 @@ function CheckMCAnswer(QNum, ANum, Btn){
 	
 //Check whether all questions are now done
 	CheckFinished();
+	kirimServer(Score,'listening',1,1,28);
 }
 
 function CalculateMCQuestionScore(QNum){
@@ -1570,21 +1547,73 @@ function CheckFinished(){
 		}
 		Detail += '</fields></hpnetresult>';
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-//-->
-
-//]]>
+function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
+{
+  
+//hitung total score masing2 latihan dan simpan di offline  
+  var skilScoreKDDefault_1Id=skill+'ScoreKD'+noKD+'_1';
+  if(localStorage.getItem(skilScoreKDDefault_1Id)==undefined || localStorage.getItem(skilScoreKDDefault_1Id)==null){localStorage.setItem(skilScoreKDDefault_1Id,0);}
+  var skilScoreKDDefault_2Id=skill+'ScoreKD'+noKD+'_2';
+  if(localStorage.getItem(skilScoreKDDefault_2Id)==undefined || localStorage.getItem(skilScoreKDDefault_2Id)==null){localStorage.setItem(skilScoreKDDefault_2Id,0);}
+  var skilScoreKDDefault_3Id=skill+'ScoreKD'+noKD+'_3';
+  if(localStorage.getItem(skilScoreKDDefault_3Id)==undefined || localStorage.getItem(skilScoreKDDefault_3Id)==null){localStorage.setItem(skilScoreKDDefault_3Id,0);}
+  var skilScoreKDDefault_4Id=skill+'ScoreKD'+noKD+'_4';
+  if(localStorage.getItem(skilScoreKDDefault_4Id)==undefined || localStorage.getItem(skilScoreKDDefault_4Id)==null){localStorage.setItem(skilScoreKDDefault_4Id,0);}
+  var skilScoreKDDefault_5Id=skill+'ScoreKD'+noKD+'_5';
+  if(localStorage.getItem(skilScoreKDDefault_5Id)==undefined || localStorage.getItem(skilScoreKDDefault_5Id)==null){localStorage.setItem(skilScoreKDDefault_5Id,0);}
+  
+//update hasil nilai latihan default terbaru di offline  
+  var skillKDDefaultId=skill+'KDDefault';
+  var skilScoreKDDefault_NoDefault=skill+'ScoreKD'+noKD+'_'+noLatihan;
+  localStorage.setItem(skilScoreKDDefault_NoDefault,Score); 
+//update nilai total offline  
+  var skillScoreTotalKDDefaultId=skill+'ScoreTotalKD'+noKD;
+  var skillScoreTotalKDDefault_1=parseInt(localStorage.getItem(skilScoreKDDefault_1Id));
+  var skillScoreTotalKDDefault_2=parseInt(localStorage.getItem(skilScoreKDDefault_2Id));
+  var skillScoreTotalKDDefault_3=parseInt(localStorage.getItem(skilScoreKDDefault_3Id));
+  var skillScoreTotalKDDefault_4=parseInt(localStorage.getItem(skilScoreKDDefault_4Id));
+  var skillScoreTotalKDDefault_5=parseInt(localStorage.getItem(skilScoreKDDefault_5Id));
+  
+  var skilScoreTotalKDDefault=skillScoreTotalKDDefault_1+skillScoreTotalKDDefault_2+skillScoreTotalKDDefault_3+skillScoreTotalKDDefault_4+skillScoreTotalKDDefault_5;
+  skilScoreTotalKDDefault=skilScoreTotalKDDefault/jumlahLatihan;  
+  localStorage.setItem(skillScoreTotalKDDefaultId,skilScoreTotalKDDefault);
+//kirim ke server
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var obj=JSON.parse(this.responseText).resultItem;	
+      //storeItem(varStored,obj);
+    }
+  };
+  var noKolom=parseInt(noKD)+2;
+  var inputNamaSheet='hasil_'+skill;
+  var nis=localStorage.getItem('usernameStored');
+  var item=skilScoreTotalKDDefault;
+  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing&inputNamaSheet="+inputNamaSheet+"&action=sendItem&nis="+nis+"&item="+item+"&noKolom="+noKolom;
+  xhttp.open("POST", req, true);
+  xhttp.send();  
+//cek cup dan modal  
+  var skillCupKDId=skill+'CupKD';
+  var skillModalCupId=skill+'ModalCup';
+  var skillScoreTotalKDId=skill+'ScoreTotalKD'+noKD;
+  skillCupModal(30,skillScoreTotalKDId,skillCupKDId,skillModalCupId);
+  //playAudio('score');
+}
+function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
+	var skillScoreTotalKDDefault=parseInt(localStorage.getItem(skillScoreTotalKDId));
+	//cek apakah eksis
+	if(skillScoreTotalKDDefault>79)
+	{
+		  var skillCupWrite="<img src='image/cup.png' width='100'></img>";
+		  var skillCupKDId_=skillCupKDId+'_';
+		  document.getElementById(skillCupKDId).innerHTML=skillCupWrite;
+		  document.getElementById(skillCupKDId_).innerHTML=skillCupWrite;
+		  //tampilkan modal
+		  modalkan(skillModalCupId);
+		  //playAudio('yeah');
+	  }
+}
 
 </script>
 
@@ -1637,7 +1666,7 @@ function CheckFinished(){
 </div>
  
 <ol class="QuizQuestions" id="Questions">
-<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Number 1. Look at the picture marked number 1.<br /><img src="https://drive.google.com/file/d/1C5cclN1bmw959seu9EcmFBwYdtYPghTD/view?usp=sharing" alt="???" title="???" width="???" height="???"/><br /><br /><br /></div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(A) The chef is instructing the apprentices.</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(B) The professionals are chopping the food.</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(C) The customers are demanding menus.</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(D) The designers are incorporating fish motifs into the d&#x00E9;cor.</li></ol></li>
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Number 1. Look at the picture marked number 1.<br /><audio controls="controls"><source src="listeningDocumentKD28_1.mp3" type="audio/wav"/><br /><a href="listeningDocumentKD28_1.mp3" title="listeningDocumentKD28_1.mp3">listeningDocumentKD28_1.mp3</a><br /></audio> <br /><br /><br /></div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(A) The chef is instructing the apprentices.</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(B) The professionals are chopping the food.</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(C) The customers are demanding menus.</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(D) The designers are incorporating fish motifs into the d&#x00E9;cor.</li></ol></li>
 <li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Part 2: Question&#x2013;Response<br />Number 2. How did you decide to enter the cooking profession?</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(A) Yes, I&#x2019;m still looking for a profession.</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(B) The kitchen door is to your right.</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(C) I&#x2019;ve always wanted to work in a restaurant.</li></ol></li>
 <li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Number 3. How do you plan to draw new customers to the restaurant?<br /><br /><br /></div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(A) Yes, I&#x2019;m accustomed to eating here.</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(B) We will expand the menu and offer new specials.</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(C) We saw several new customers there.</li></ol></li>
 <li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Part 3: Short Conversation<br />Numbers 4 through 6 relate to the following conversation.<br />[W] There&#x2019;s been a large influx of new chefs recently. And they&#x2019;re all demanding high salaries.<br />[M] Good chefs manage to draw customers into restaurants, so they&#x2019;re worth the salaries they&#x2019;re paid.<br />[W] Yes, the good ones are. For a skilled, professional chef, cooking can be quite a profitable career.<br />[M] I suppose you&#x2019;re right, though I can&#x2019;t see becoming a chef myself. I have no interest in practicing the culinary arts. But I do enjoy the results of a good chef&#x2019;s work. Let&#x2019;s plan to eat out more often.<br /><br />According to the conversation, what do good chefs do?</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(A) Demand a lot from their assistants.</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(B) Manage their restaurants well.</li><li id="Q_3_2"><button class="FuncButton" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(C) Attract customers.</li><li id="Q_3_3"><button class="FuncButton" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(D) Influence new chefs.</li></ol></li>

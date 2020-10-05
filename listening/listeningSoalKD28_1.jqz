@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>widiopranoto</dc:creator>
+    <dc:title>Listening KD 28</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>7</version>
+
+<data>
+<title>Listening KD 28</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>Number 1. Look at the picture marked number 1.
+&amp;#x003C;audio controls=&quot;controls&quot;&amp;#x003E;
+&amp;#x003C;source src=&quot;listeningDocumentKD28_1.mp3&quot; type=&quot;audio/wav&quot;/&amp;#x003E;
+&amp;#x003C;a href=&quot;listeningDocumentKD28_1.mp3&quot; title=&quot;listeningDocumentKD28_1.mp3&quot;&amp;#x003E;listeningDocumentKD28_1.mp3&amp;#x003C;/a&amp;#x003E;
+&amp;#x003C;/audio&amp;#x003E; 
+
+
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>(A) The chef is instructing the apprentices.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(B) The professionals are chopping the food.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(C) The customers are demanding menus.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(D) The designers are incorporating fish motifs into the d&amp;#x00E9;cor.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Part 2: Question&amp;#x2013;Response
+Number 2. How did you decide to enter the cooking profession?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>(A) Yes, I&amp;#x2019;m still looking for a profession.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(B) The kitchen door is to your right.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(C) I&amp;#x2019;ve always wanted to work in a restaurant.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Number 3. How do you plan to draw new customers to the restaurant?
+
+
+</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>(A) Yes, I&amp;#x2019;m accustomed to eating here.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(B) We will expand the menu and offer new specials.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(C) We saw several new customers there.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Part 3: Short Conversation
+Numbers 4 through 6 relate to the following conversation.
+[W] There&amp;#x2019;s been a large influx of new chefs recently. And they&amp;#x2019;re all demanding high salaries.
+[M] Good chefs manage to draw customers into restaurants, so they&amp;#x2019;re worth the salaries they&amp;#x2019;re paid.
+[W] Yes, the good ones are. For a skilled, professional chef, cooking can be quite a profitable career.
+[M] I suppose you&amp;#x2019;re right, though I can&amp;#x2019;t see becoming a chef myself. I have no interest in practicing the culinary arts. But I do enjoy the results of a good chef&amp;#x2019;s work. Let&amp;#x2019;s plan to eat out more often.
+
+According to the conversation, what do good chefs do?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>(A) Demand a lot from their assistants.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(B) Manage their restaurants well.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(C) Attract customers.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(D) Influence new chefs.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Part 3: Short Conversation
+Numbers 4 through 6 relate to the following conversation.
+[W] There&amp;#x2019;s been a large influx of new chefs recently. And they&amp;#x2019;re all demanding high salaries.
+[M] Good chefs manage to draw customers into restaurants, so they&amp;#x2019;re worth the salaries they&amp;#x2019;re paid.
+[W] Yes, the good ones are. For a skilled, professional chef, cooking can be quite a profitable career.
+[M] I suppose you&amp;#x2019;re right, though I can&amp;#x2019;t see becoming a chef myself. I have no interest in practicing the culinary arts. But I do enjoy the results of a good chef&amp;#x2019;s work. Let&amp;#x2019;s plan to eat out more often.
+
+What does the woman think of cooking as a career?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>(A) It pays well.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(B) It&apos;s hard to manage.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(C) It&apos;s not worth the effort.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(D) It&apos;s very demanding</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Part 3: Short Conversation
+Numbers 4 through 6 relate to the following conversation.
+[W] There&amp;#x2019;s been a large influx of new chefs recently. And they&amp;#x2019;re all demanding high salaries.
+[M] Good chefs manage to draw customers into restaurants, so they&amp;#x2019;re worth the salaries they&amp;#x2019;re paid.
+[W] Yes, the good ones are. For a skilled, professional chef, cooking can be quite a profitable career.
+[M] I suppose you&amp;#x2019;re right, though I can&amp;#x2019;t see becoming a chef myself. I have no interest in practicing the culinary arts. But I do enjoy the results of a good chef&amp;#x2019;s work. Let&amp;#x2019;s plan to eat out more often.
+
+What does the man plan to do?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>(A) Take more rests.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(B) Eat at restaurants more often.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(C) Become a chef.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>(D) Practice cooking.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Part 4: Talk
+Questions 7 through 9 relate to the following recording.
+
+Are you trying to decide on a profession? Don&amp;#x2019;t forget to consider a career in the culinary arts. Many people find professional cooking to be an excellent outlet for their creativity. It&amp;#x2019;s a demanding but exciting career with numerous opportunities. It is important to become well-trained in this profession. Don&amp;#x2019;t be fooled into thinking that an apprenticeship is enough. People who plan to become chefs should enroll in an accredited culinary school. There they will learn the methods used by the best restaurants all around the world. Graduates of culinary schools become chefs, caterers, cooking instructors, and more. Join the many creative people who have been drawn to the cooking profession. You&amp;#x2019;ll never be bored!
+
+Who is this talk for?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Cooking instructors.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>People who work in culinary arts.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>People looking for a profession.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Career counselors.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Part 4: Talk
+Questions 7 through 9 relate to the following recording.
+
+Are you trying to decide on a profession? Don&amp;#x2019;t forget to consider a career in the culinary arts. Many people find professional cooking to be an excellent outlet for their creativity. It&amp;#x2019;s a demanding but exciting career with numerous opportunities. It is important to become well-trained in this profession. Don&amp;#x2019;t be fooled into thinking that an apprenticeship is enough. People who plan to become chefs should enroll in an accredited culinary school. There they will learn the methods used by the best restaurants all around the world. Graduates of culinary schools become chefs, caterers, cooking instructors, and more. Join the many creative people who have been drawn to the cooking profession. You&amp;#x2019;ll never be bored!
+
+What kind of people are attracted to the cooking profession?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Bored.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Demanding.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Exciting.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Creative.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>Part 4: Talk
+Questions 7 through 9 relate to the following recording.
+
+Are you trying to decide on a profession? Don&amp;#x2019;t forget to consider a career in the culinary arts. Many people find professional cooking to be an excellent outlet for their creativity. It&amp;#x2019;s a demanding but exciting career with numerous opportunities. It is important to become well-trained in this profession. Don&amp;#x2019;t be fooled into thinking that an apprenticeship is enough. People who plan to become chefs should enroll in an accredited culinary school. There they will learn the methods used by the best restaurants all around the world. Graduates of culinary schools become chefs, caterers, cooking instructors, and more. Join the many creative people who have been drawn to the cooking profession. You&amp;#x2019;ll never be bored!
+
+What does the speaker recommend to become a professional chef?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Becoming an apprentice.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Reading cookbooks.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Visiting restaurants around the world.</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Attending a culinary school.</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>Quiz</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correct!</guess-correct>
+<guess-incorrect>Sorry! Try again.</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>0</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>0</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Your score is </your-score-is>
+<correct-indicator>&amp;#x2714;</correct-indicator>
+<incorrect-indicator>&amp;#x2718;</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<completed-so-far>Questions completed so far: </completed-so-far>
+<exercise-completed>You have completed the exercise.</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>0</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>medium</font-size>
+<page-bg-color>#C0C0C0</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>Check</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>Show all questions</show-all-questions-caption>
+<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>
