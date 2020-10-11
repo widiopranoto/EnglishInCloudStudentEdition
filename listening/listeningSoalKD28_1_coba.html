@@ -1411,7 +1411,6 @@ function CheckMCAnswer(QNum, ANum, Btn){
 	
 //Check whether all questions are now done
 	CheckFinished();
-	kirimServer(Score,'listening',1,1,28);
 }
 
 function CalculateMCQuestionScore(QNum){
@@ -1573,72 +1572,19 @@ function CheckFinished(){
 	}
 
 }
-function kirimServer(Score,skill,noLatihan,jumlahLatihan,noKD)
-{
-  
-//hitung total score masing2 latihan dan simpan di offline  
-  var skilScoreKDDefault_1Id=skill+'ScoreKD'+noKD+'_1';
-  if(localStorage.getItem(skilScoreKDDefault_1Id)==undefined || localStorage.getItem(skilScoreKDDefault_1Id)==null){localStorage.setItem(skilScoreKDDefault_1Id,0);}
-  var skilScoreKDDefault_2Id=skill+'ScoreKD'+noKD+'_2';
-  if(localStorage.getItem(skilScoreKDDefault_2Id)==undefined || localStorage.getItem(skilScoreKDDefault_2Id)==null){localStorage.setItem(skilScoreKDDefault_2Id,0);}
-  var skilScoreKDDefault_3Id=skill+'ScoreKD'+noKD+'_3';
-  if(localStorage.getItem(skilScoreKDDefault_3Id)==undefined || localStorage.getItem(skilScoreKDDefault_3Id)==null){localStorage.setItem(skilScoreKDDefault_3Id,0);}
-  var skilScoreKDDefault_4Id=skill+'ScoreKD'+noKD+'_4';
-  if(localStorage.getItem(skilScoreKDDefault_4Id)==undefined || localStorage.getItem(skilScoreKDDefault_4Id)==null){localStorage.setItem(skilScoreKDDefault_4Id,0);}
-  var skilScoreKDDefault_5Id=skill+'ScoreKD'+noKD+'_5';
-  if(localStorage.getItem(skilScoreKDDefault_5Id)==undefined || localStorage.getItem(skilScoreKDDefault_5Id)==null){localStorage.setItem(skilScoreKDDefault_5Id,0);}
-  
-//update hasil nilai latihan default terbaru di offline  
-  var skillKDDefaultId=skill+'KDDefault';
-  var skilScoreKDDefault_NoDefault=skill+'ScoreKD'+noKD+'_'+noLatihan;
-  localStorage.setItem(skilScoreKDDefault_NoDefault,Score); 
-//update nilai total offline  
-  var skillScoreTotalKDDefaultId=skill+'ScoreTotalKD'+noKD;
-  var skillScoreTotalKDDefault_1=parseInt(localStorage.getItem(skilScoreKDDefault_1Id));
-  var skillScoreTotalKDDefault_2=parseInt(localStorage.getItem(skilScoreKDDefault_2Id));
-  var skillScoreTotalKDDefault_3=parseInt(localStorage.getItem(skilScoreKDDefault_3Id));
-  var skillScoreTotalKDDefault_4=parseInt(localStorage.getItem(skilScoreKDDefault_4Id));
-  var skillScoreTotalKDDefault_5=parseInt(localStorage.getItem(skilScoreKDDefault_5Id));
-  
-  var skilScoreTotalKDDefault=skillScoreTotalKDDefault_1+skillScoreTotalKDDefault_2+skillScoreTotalKDDefault_3+skillScoreTotalKDDefault_4+skillScoreTotalKDDefault_5;
-  skilScoreTotalKDDefault=skilScoreTotalKDDefault/jumlahLatihan;  
-  localStorage.setItem(skillScoreTotalKDDefaultId,skilScoreTotalKDDefault);
-//kirim ke server
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-	  var obj=JSON.parse(this.responseText).resultItem;	
-      //storeItem(varStored,obj);
-    }
-  };
-  var noKolom=parseInt(noKD)+2;
-  var inputNamaSheet='hasil_'+skill;
-  var nis=localStorage.getItem('usernameStored');
-  var item=skilScoreTotalKDDefault;
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing&inputNamaSheet="+inputNamaSheet+"&action=sendItem&nis="+nis+"&item="+item+"&noKolom="+noKolom;
-  xhttp.open("POST", req, true);
-  xhttp.send();  
-//cek cup dan modal  
-  var skillCupKDId=skill+'CupKD';
-  var skillModalCupId=skill+'ModalCup';
-  var skillScoreTotalKDId=skill+'ScoreTotalKD'+noKD;
-  skillCupModal(30,skillScoreTotalKDId,skillCupKDId,skillModalCupId);
-  //playAudio('score');
-}
-function skillCupModal(noKD,skillScoreTotalKDId,skillCupKDId,skillModalCupId){
-	var skillScoreTotalKDDefault=parseInt(localStorage.getItem(skillScoreTotalKDId));
-	//cek apakah eksis
-	if(skillScoreTotalKDDefault>79)
-	{
-		  var skillCupWrite="<img src='image/cup.png' width='100'></img>";
-		  var skillCupKDId_=skillCupKDId+'_';
-		  document.getElementById(skillCupKDId).innerHTML=skillCupWrite;
-		  document.getElementById(skillCupKDId_).innerHTML=skillCupWrite;
-		  //tampilkan modal
-		  modalkan(skillModalCupId);
-		  //playAudio('yeah');
-	  }
-}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
 
 </script>
 
