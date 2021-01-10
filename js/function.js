@@ -505,6 +505,184 @@ function getAndStoreDocumentSoalSpeakingWritingKD(inputNamaSheet,noKD,noSoal){
     xhttp.send();	
 }
 
+function storeNilaiPerItem(inputNamaSheet,inputNamaSkill,noKD){
+	var usernameStored=localStorage.getItem('usernameStored');
+	var loginOnline=parseInt(localStorage.getItem('loginOnline'));
+	var varStored=inputNamaSkill+'ScoreTotalKD'+noKD;
+	var noKD=parseInt(noKD);
+	var noSoal1=2;noSoal2=3;noSoal3=4;noSoal4=5;noSoal5=6;noSoal6=7;noSoal7=8;noSoal8=9;noSoal9=10;noSoal10=11;
+	if(noKD==1)
+	{ noSoal1=2;noSoal2=3;noSoal3=4;noSoal4=5;noSoal5=6;noSoal6=7;noSoal7=8;noSoal8=9;noSoal9=10;noSoal10=11;
+	}
+	if(noKD==2)
+	{ noSoal1=12;noSoal2=13;noSoal3=14;noSoal4=15;noSoal5=16;noSoal6=17;noSoal7=18;noSoal8=19;noSoal9=20;noSoal10=21;
+	}
+	if(noKD==3)
+	{ noSoal1=22;noSoal2=23;noSoal3=24;noSoal4=25;noSoal5=26;noSoal6=27;noSoal7=28;noSoal8=29;noSoal9=30;noSoal10=31;
+	}
+	if(noKD==4)
+	{noSoal1=32;noSoal2=33;noSoal3=34;noSoal4=35;noSoal5=36;noSoal6=37;noSoal7=38;noSoal8=39;noSoal9=40;noSoal10=51;
+	}
+	if(noKD==5)
+	{noSoal1=42;noSoal2=43;noSoal3=44;noSoal4=45;noSoal5=46;noSoal6=47;noSoal7=48;noSoal8=49;noSoal9=50;noSoal10=51;
+	}
+	if(noKD==6)
+	{noSoal1=52;noSoal2=53;noSoal3=54;noSoal4=55;noSoal5=56;noSoal6=57;noSoal7=58;noSoal8=59;noSoal9=60;noSoal10=61;
+	}
+	if(noKD==7)
+	{noSoal1=62;noSoal2=63;noSoal3=64;noSoal4=65;noSoal5=66;noSoal6=67;noSoal7=68;noSoal8=69;noSoal9=70;noSoal10=71;
+	}
+	if(noKD==8)
+	{ noSoal1=72;noSoal2=73;noSoal3=74;noSoal4=75;noSoal5=76;noSoal6=77;noSoal7=78;noSoal8=79;noSoal9=80;noSoal10=81;
+	}
+	if(noKD==9)
+	{ noSoal1=82;noSoal2=83;noSoal3=84;noSoal4=85;noSoal5=86;noSoal6=87;noSoal7=88;noSoal8=89;noSoal9=90;noSoal10=91;
+	}
+	if(noKD==10)
+	{ noSoal1=92;noSoal2=93;noSoal3=94;noSoal4=95;noSoal5=96;noSoal6=97;noSoal7=98;noSoal8=99;noSoal9=100;noSoal10=101;
+	}
+	if(noKD==10)
+	{ noSoal1=102;noSoal2=103;noSoal3=104;noSoal4=105;noSoal5=106;noSoal6=107;noSoal7=108;noSoal8=109;noSoal9=110;noSoal10=111;
+	}
+	if(noKD==11)
+	{ noSoal1=112;noSoal2=113;noSoal3=114;noSoal4=115;noSoal5=116;noSoal6=117;noSoal7=118;noSoal8=119;noSoal9=120;noSoal10=121;
+	}
+	if(noKD==12)
+	{ noSoal1=122;noSoal2=123;noSoal3=124;noSoal4=125;noSoal5=126;noSoal6=127;noSoal7=128;noSoal8=129;noSoal9=120;noSoal10=121;
+	}
+	if(noKD==13)
+	{ noSoal1=122;noSoal2=123;noSoal3=124;noSoal4=125;noSoal5=126;noSoal6=127;noSoal7=128;noSoal8=129;noSoal9=130;noSoal10=131;
+	}
+	if(noKD==14)
+	{ noSoal1=132;noSoal2=133;noSoal3=134;noSoal4=135;noSoal5=136;noSoal6=137;noSoal7=138;noSoal8=139;noSoal9=140;noSoal10=141;
+	}
+	if(noKD==15)
+	{ noSoal1=142;noSoal2=143;noSoal3=144;noSoal4=145;noSoal5=146;noSoal6=147;noSoal7=148;noSoal8=149;noSoal9=150;noSoal10=151;
+	}
+	if(noKD==16)
+	{ noSoal1=152;noSoal2=153;noSoal3=154;noSoal4=155;noSoal5=156;noSoal6=157;noSoal7=158;noSoal8=159;noSoal9=160;noSoal10=161;
+	}
+	if(noKD==17)
+	{ noSoal1=162;noSoal2=163;noSoal3=164;noSoal4=165;noSoal5=166;noSoal6=167;noSoal7=168;noSoal8=169;noSoal9=170;noSoal10=171;
+	}
+	if(noKD==18)
+	{ noSoal1=172;noSoal2=173;noSoal3=174;noSoal4=175;noSoal5=176;noSoal6=177;noSoal7=178;noSoal8=179;noSoal9=180;noSoal10=181;
+	}
+	if(noKD==19)
+	{ noSoal1=182;noSoal2=183;noSoal3=184;noSoal4=185;noSoal5=186;noSoal6=187;noSoal7=188;noSoal8=189;noSoal9=190;noSoal10=191;
+	}
+	if(noKD==20)
+	{ noSoal1=192;noSoal2=193;noSoal3=194;noSoal4=195;noSoal5=196;noSoal6=197;noSoal7=198;noSoal8=199;noSoal9=200;noSoal10=201;
+	}
+	if(noKD==21)
+	{ noSoal1=202;noSoal2=203;noSoal3=204;noSoal4=205;noSoal5=206;noSoal6=207;noSoal7=208;noSoal8=209;noSoal9=210;noSoal10=211;
+	}
+	if(noKD==22)
+	{ noSoal1=212;noSoal2=213;noSoal3=214;noSoal4=215;noSoal5=216;noSoal6=217;noSoal7=218;noSoal8=219;noSoal9=220;noSoal10=221;
+	}
+	if(noKD==23)
+	{ noSoal1=222;noSoal2=223;noSoal3=224;noSoal4=225;noSoal5=226;noSoal6=227;noSoal7=228;noSoal8=229;noSoal9=230;noSoal10=231;
+	}
+	if(noKD==24)
+	{ noSoal1=232;noSoal2=233;noSoal3=234;noSoal4=235;noSoal5=236;noSoal6=237;noSoal7=238;noSoal8=239;noSoal9=240;noSoal10=241;
+	}
+	if(noKD==25)
+	{ noSoal1=242;noSoal2=243;noSoal3=244;noSoal4=245;noSoal5=246;noSoal6=247;noSoal7=248;noSoal8=249;noSoal9=250;noSoal10=251;
+	}
+	if(noKD==26)
+	{ noSoal1=252;noSoal2=253;noSoal3=254;noSoal4=255;noSoal5=256;noSoal6=257;noSoal7=258;noSoal8=259;noSoal9=260;noSoal10=261;
+	}	
+	if(noKD==27)
+	{ noSoal1=262;noSoal2=263;noSoal3=264;noSoal4=265;noSoal5=266;noSoal6=267;noSoal7=268;noSoal8=269;noSoal9=270;noSoal10=271;
+	}
+	if(noKD==28)
+	{ noSoal1=272;noSoal2=273;noSoal3=274;noSoal4=275;noSoal5=276;noSoal6=277;noSoal7=278;noSoal8=279;noSoal9=280;noSoal10=281;
+	}
+	if(noKD==29)
+	{ noSoal1=282;noSoal2=283;noSoal3=284;noSoal4=285;noSoal5=286;noSoal6=287;noSoal7=288;noSoal8=289;noSoal9=290;noSoal10=291;
+	}
+	if(noKD==30)
+	{ noSoal1=292;noSoal2=293;noSoal3=294;noSoal4=295;noSoal5=296;noSoal6=297;noSoal7=298;noSoal8=299;noSoal9=300;noSoal10=301;
+	}
+	if(noKD==31)
+	{ noSoal1=302;noSoal2=303;noSoal3=304;noSoal4=305;noSoal5=306;noSoal6=307;noSoal7=308;noSoal8=309;noSoal9=310;noSoal10=311;
+	}
+	if(noKD==32)
+	{ noSoal1=312;noSoal2=313;noSoal3=314;noSoal4=315;noSoal5=316;noSoal6=317;noSoal7=318;noSoal8=319;noSoal9=320;noSoal10=321;
+	}
+	if(noKD==33)
+	{ noSoal1=322;noSoal2=323;noSoal3=324;noSoal4=325;noSoal5=326;noSoal6=327;noSoal7=328;noSoal8=329;noSoal9=330;noSoal10=331;
+	}	
+	if(noKD==34)
+	{ noSoal1=332;noSoal2=333;noSoal3=334;noSoal4=335;noSoal5=336;noSoal6=337;noSoal7=338;noSoal8=339;noSoal9=340;noSoal10=341;
+	}	
+	if(noKD==35)
+	{ noSoal1=342;noSoal2=343;noSoal3=344;noSoal4=345;noSoal5=346;noSoal6=347;noSoal7=348;noSoal8=349;noSoal9=350;noSoal10=351;
+	}	
+	if(noKD==36)
+	{ noSoal1=352;noSoal2=353;noSoal3=354;noSoal4=355;noSoal5=356;noSoal6=357;noSoal7=358;noSoal8=359;noSoal9=360;noSoal10=361;
+	}	
+	if(noKD==37)
+	{ noSoal1=362;noSoal2=363;noSoal3=364;noSoal4=365;noSoal5=366;noSoal6=367;noSoal7=368;noSoal8=369;noSoal9=370;noSoal10=371;
+	}		
+
+	var varStored1=inputNamaSkill+"ScoreKD"+noKD+"_"+1;
+	var varStored2=inputNamaSkill+"ScoreKD"+noKD+"_"+2;
+	var varStored3=inputNamaSkill+"ScoreKD"+noKD+"_"+3;
+	var varStored4=inputNamaSkill+"ScoreKD"+noKD+"_"+4;
+	var varStored5=inputNamaSkill+"ScoreKD"+noKD+"_"+5;
+	var varStored6=inputNamaSkill+"ScoreKD"+noKD+"_"+6;
+	var varStored7=inputNamaSkill+"ScoreKD"+noKD+"_"+7;
+	var varStored8=inputNamaSkill+"ScoreKD"+noKD+"_"+8;
+	var varStored9=inputNamaSkill+"ScoreKD"+noKD+"_"+9;
+	var varStored10=inputNamaSkill+"ScoreKD"+noKD+"_"+10;
+	
+	var valStored1=localStorage.getItem(varStored1);
+	var valStored2=localStorage.getItem(varStored2);
+	var valStored3=localStorage.getItem(varStored3);
+	var valStored4=localStorage.getItem(varStored4);
+	var valStored5=localStorage.getItem(varStored5);
+	var valStored6=localStorage.getItem(varStored6);
+	var valStored7=localStorage.getItem(varStored7);
+	var valStored8=localStorage.getItem(varStored8);
+	var valStored9=localStorage.getItem(varStored9);
+	var valStored10=localStorage.getItem(varStored10);
+
+	if(loginOnline==1)
+	  {	
+        if(valStored1==undefined || valStored1==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal1,varStored1);
+		}
+        if(valStored2==undefined || valStored2==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal2,varStored2);
+	    }
+        if(valStored3==undefined || valStored3==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal3,varStored3);
+	    }
+        if(valStored4==undefined || valStored4==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal4,varStored4);
+	    }
+        if(valStored5==undefined || valStored5==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal5,varStored5);
+	    }
+        if(valStored6==undefined || valStored6==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal6,varStored6);
+	    }
+        if(valStored7==undefined || valStored7==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal7,varStored7);
+	    }
+        if(valStored8==undefined || valStored8==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal8,varStored8);
+	    }
+        if(valStored9==undefined || valStored9==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal9,varStored9);
+	    }		
+        if(valStored10==undefined || valStored10==null)
+	    { getAndStoreNilai("https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing",inputNamaSheet,'getNilai',usernameStored,noSoal10,varStored10);
+	    }			
+      }
+}
+
 function getAndStoreNilaiPerItem(inputNamaSheet,inputNamaSkill,noKD){
 	var usernameStored=localStorage.getItem('usernameStored');
 	var loginOnline=parseInt(localStorage.getItem('loginOnline'));
