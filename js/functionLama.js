@@ -1,4 +1,3 @@
-var inputUrlSpreadSheet='https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec';
 function hideAll(){
 w3.hide('#welcome');w3.hide('#home');w3.hide('#home_asli');w3.hide('#login');w3.hide('#learn');w3.hide('#learn_x');w3.hide('#learn_xi');  
 w3.hide('#learn_xii');w3.hide('#learn_xiii');  w3.hide('#learn_kd1');w3.hide('#learn_kd2');w3.hide('#learn_kd3');w3.hide('#learn_kd4');
