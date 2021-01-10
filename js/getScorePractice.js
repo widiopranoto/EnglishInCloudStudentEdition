@@ -308,7 +308,7 @@ function showNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,elShown
       document.getElementById(elShown).innerHTML=obj;
     }
   };
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&nis=" +
             nis + "&noKolom=" + noKolom;
   xhttp.open("GET", req, true);
