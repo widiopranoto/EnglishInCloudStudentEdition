@@ -1,4 +1,3 @@
-var inputUrlSpreadSheet='https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec';
 function hideAll(){
 w3.hide('#welcome');w3.hide('#home');w3.hide('#home_asli');w3.hide('#login');w3.hide('#learn');w3.hide('#learn_x');w3.hide('#learn_xi');  
 w3.hide('#learn_xii');w3.hide('#learn_xiii');  w3.hide('#learn_kd1');w3.hide('#learn_kd2');w3.hide('#learn_kd3');w3.hide('#learn_kd4');
@@ -85,7 +84,7 @@ function getNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom){
 	  localStorage.setItem('storeNilai',obj);
     }
   };
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&nis=" +
             nis + "&noKolom=" + noKolom;
   xhttp.open("GET", req, true);
@@ -153,7 +152,7 @@ function showOneItem(inputUrlSpreadSheet,inputNamaSheet,action,noBaris,noKolom,e
         var inputNamaSheet = 'speaking';
         var action = 'getOneItem';
         w3.getHttpObject(
-            "https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+            "https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&noBaris=" +
             noBaris + "&noKolom=" + noKolom,
             myFunction);
@@ -170,7 +169,7 @@ function t(inputUrlSpreadSheet,inputNamaSheet,action,noBaris,noKolom,elShown){
       return obj;
     }
   };
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&noBaris=" +
             noBaris + "&noKolom=" + noKolom;
   xhttp.open("GET", req, true);
@@ -194,7 +193,7 @@ function passwordOnline(usernameStored,passwordStored){
   var inputNamaSheet='login';
   var action='getItem';
   var noKolom=2;
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+usernameStored+"+&noKolom="+noKolom;
   xhttp.open("GET", req, true);
   xhttp.send();
@@ -217,7 +216,7 @@ function loginOnline(usernameStored,passwordStored,elShown){
   var action='getItem';
   var nis=usernameStored;
   var noKolom=0;
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+usernameStored+"+&noKolom="+noKolom;
   xhttp.open("GET", req, true);
   xhttp.send();
@@ -234,7 +233,7 @@ function loginOnlineStatus(usernameStored,passwordStored,elShown){
   var inputUrlSpreadSheet='https://docs.google.com/spreadsheets/d/1lN8x2EDR5otJYFWB_UDS0IodZQBuAdk1thOuksZly_Q/edit?usp=sharing';
   var inputNamaSheet='login';
   var action='loginOnlineStatus';
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&username="+usernameStored+"&password="+passwordStored;
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&username="+usernameStored+"&password="+passwordStored;
   xhttp.open("GET", req, true);
   xhttp.send();
 }
@@ -275,7 +274,7 @@ function storeOneItem(inputUrlSpreadSheet,inputNamaSheet,action,noBaris,noKolom,
       storeItem(varStored,obj);
     }
   };
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&noBaris=" +
             noBaris + "&noKolom=" + noKolom;
   xhttp.open("GET", req, true);
@@ -334,7 +333,7 @@ function sendItem(inputUrlSpreadSheet,inputNamaSheet,action,username,item,noKolo
 	  var obj=JSON.parse(this.responseText).resultItem;	
     }
     };
-    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+item+"&noKolom="+noKolom;
+    var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+item+"&noKolom="+noKolom;
     xhttp.open("POST", req, true);
     xhttp.send();
     }
@@ -347,7 +346,7 @@ function showNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,elShown
       document.getElementById(elShown).innerHTML=obj;
     }
   };
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&nis=" +
             nis + "&noKolom=" + noKolom;
   xhttp.open("GET", req, true);
@@ -363,7 +362,7 @@ function getAndStoreItem(inputUrlSpreadSheet,inputNamaSheet,username,noKolom,var
 	  localStorage.setItem(varStored,valStored);
     }
     };
-    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+valStored+"&noKolom="+noKolom;
+    var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+valStored+"&noKolom="+noKolom;
     xhttp.open("GET", req, true);
     xhttp.send();
 }
@@ -376,7 +375,7 @@ function postItem(inputUrlSpreadSheet,inputNamaSheet,username,item,noKolom){
 	  var obj=JSON.parse(this.responseText).hasil;	
     }
     };
-    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+item+"&noKolom="+noKolom;
+    var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+item+"&noKolom="+noKolom;
     xhttp.open("POST", req, true);
     xhttp.send();
 }
@@ -390,7 +389,7 @@ function postAndStoreItem(inputUrlSpreadSheet,inputNamaSheet,username,noKolom,va
 	  localStorage.setItem(varStored,valStored);
     }
     };
-    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+valStored+"&noKolom="+noKolom;
+    var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet="+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+username+"&item="+valStored+"&noKolom="+noKolom;
     xhttp.open("POST", req, true);
     xhttp.send();
 }
@@ -447,7 +446,7 @@ function getAndStoreNilai(inputUrlSpreadSheet,inputNamaSheet,action,nis,noKolom,
 	  localStorage.setItem(varStored,obj);
     }
   };
-  var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+  var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action + "&nis=" +
             nis + "&noKolom=" + noKolom;
   xhttp.open("GET", req, true);
@@ -469,7 +468,7 @@ function getAndStoreDocumentSoalKD(inputNamaSheet,documentOrSoal,noKD,noLatihan)
 	  localStorage.setItem(varStored,obj);
     }
     };
-    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet="
+    var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet="
 	+inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+nis+"&noKolom="+noKolom;
     xhttp.open("GET", req, true);
     xhttp.send();	
@@ -500,7 +499,7 @@ function getAndStoreDocumentSoalSpeakingWritingKD(inputNamaSheet,noKD,noSoal){
 	  localStorage.setItem(varStored,obj);
     }
     };
-    var req="https://script.google.com/macros/s/AKfycbyb4tZUywn6hnDd1ieSpPZ4BSaaWDBfXJBEDkZS2cYZ4BtmZCc/exec?inputUrlSpreadSheet=" +
+    var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet + "&inputNamaSheet=" + inputNamaSheet + "&action=" + action +"&nis="+nis+"&noKolom=" + noKolom;
     xhttp.open("GET", req, true);
     xhttp.send();	
