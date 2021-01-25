@@ -215,7 +215,7 @@ function loginOnline(usernameStored,passwordStored,elShown){
   var inputNamaSheet='login';
   var action='getItem';
   var nis=usernameStored;
-  var noKolom=0;
+  var noKolom=1;
   var req="https://script.google.com/macros/s/AKfycbwwQpjerLK3moZDdr8W_ksxt8el6Ay77I7cjwIoVqpWXJSq0q0/exec?inputUrlSpreadSheet=" +
             inputUrlSpreadSheet+"&inputNamaSheet="+inputNamaSheet+"&action="+action+"&nis="+usernameStored+"+&noKolom="+noKolom;
   xhttp.open("GET", req, true);

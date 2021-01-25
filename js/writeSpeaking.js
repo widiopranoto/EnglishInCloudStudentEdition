@@ -1,6 +1,6 @@
+var noKD=localStorage.getItem('speakingKDDefault');
 function writeSpeaking(elSpeaking,title,noKD){
 writeSpeaking_(elSpeaking,title,noKD);
-					var noKD=noKD;
 					speakingPerlihatkan('#speakingItem'+noKD);
 					//getSpeaking(noKD); 
                     getOfflineSpeaking(noKD); 					
@@ -400,7 +400,7 @@ var speakingNo7=storeItem('speakingNo7',getRndInteger(13,14).toString());
 var speakingNo8=storeItem('speakingNo8',getRndInteger(15,16).toString());
 var speakingNo9=storeItem('speakingNo9',getRndInteger(17,18).toString());
 var speakingNo10=storeItem('speakingNo10',getRndInteger(19,20).toString());
-var speakingItem1='speakingItemKD'+noKD+'_'+'1';
+var speakingItem1='speakingItemCoba';
 var speakingItem2='speakingItemKD'+noKD+'_'+'2';
 var speakingItem3='speakingItemKD'+noKD+'_'+'3';
 var speakingItem4='speakingItemKD'+noKD+'_'+'4';
@@ -410,6 +410,7 @@ var speakingItem7='speakingItemKD'+noKD+'_'+'7';
 var speakingItem8='speakingItemKD'+noKD+'_'+'8';
 var speakingItem9='speakingItemKD'+noKD+'_'+'9';
 var speakingItem10='speakingItemKD'+noKD+'_'+'10';
+
 
 var speakingContent1=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo1)-1));
 var speakingContent2=parseItem('speakingSoalKD'+noKD+'_1',toString(parseInt(speakingNo2)-1));
@@ -769,3 +770,8 @@ function speakingModalkan(id){
     {playAudio('fail');}
 }
 
+function parseItem(varStored,kataKunci){
+var text = localStorage.getItem(varStored);
+var obj = JSON.parse(text);
+	return obj.kataKunci;
+}
